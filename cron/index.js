@@ -29,6 +29,4 @@ fetch(ARTICLES_INDEX)
     Promise.all(
       links.map(link =>
         fetch(link).then(res => res.text()).then(html => [link, html]))
-    ))
-  .then(linksWithHtml =>
-    links.reverse().reduce(addChapter, cheerio.load(BOOK_STARTER)));
+    ));
