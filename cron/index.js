@@ -1,18 +1,17 @@
-const _ = require('lodash');
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
 
 const ROOT_PATH = 'http://www.paulgraham.com';
 const ARTICLES_INDEX = `${ROOT_PATH}/articles.html`;
 
-const BOOK_COVER = `
+const BOOK_STARTER = `
   <html>
     <body>
     </body>
   </html>
 `;
 
-function toBlogLinks($) {
+function toLinks($) {
   const essaysTable = $('img[alt=Essays]').closest('table').next('table');
   return essaysTable
     .find('a')
@@ -22,16 +21,14 @@ function toBlogLinks($) {
     .map(path => `${ROOT_PATH}/${path}`);
 }
 
-function toLinksWithHtml(links) {
-  return Promise.all(
-    links.map(link =>
-      fetch(link).then(res => res.text()).then(html => [link, html]))
-  );
-}
-
 fetch(ARTICLES_INDEX)
   .then(res => res.text())
   .then(text => cheerio.load(text))
-  .then(toBlogLinks)
-  .then(toLinksWithHtml)
-  .then(xs => console.log(xs));
+  .then(toLinks)
+  .then(links =>
+    Promise.all(
+      links.map(link =>
+        fetch(link).then(res => res.text()).then(html => [link, html]))
+    ))
+  .then(linksWithHtml =>
+    links.reverse().reduce(addChapter, cheerio.load(BOOK_STARTER)));
