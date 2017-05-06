@@ -19,8 +19,9 @@ function fetchHtml(articlesIndex) {
 }
 
 function toLinks($) {
-  const essaysTable = $('img[alt=Essays]').closest('table').next('table');
-  return essaysTable
+  return $('img[alt=Essays]')
+    .closest('table')
+    .next('table')
     .find('a')
     .toArray()
     .map(node => node.attribs.href)
