@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
 const fs = require('fs');
@@ -10,20 +11,10 @@ const BOOK_DIR = 'book';
 const COVER_PATH = `cover.jpg`;
 const HTML_PATH = `index.html`;
 const NCX_PATH = `ncx.xml`;
-const OPF_PATH = `opf.xml`;
+const OPF_PATH = `index.opf`;
+const MOBI_PATH = `index.mobi`;
 const TOC_ID = 'toc';
-
-const BOOK_STARTER = `
-  <!doctype html>
-    <html lang="en">
-    <head>
-    <meta charset="utf-8" />
-    <title>${BOOK_TITLE}</title>
-    </head>
-    <body>
-    </body>
-  </html>
-`;
+const PAGE_BREAK = '<mbp:pagebreak />';
 
 const OPF = `
   <?xml version="1.0" encoding="iso-8859-1"?>
@@ -41,7 +32,7 @@ const OPF = `
       </dc-metadata>
     </metadata>
     <manifest>
-        <item id="content" media-type="text/x-oeb1-document" href="${HTML_PATH}#${TOC_ID}"></item>
+        <item id="content" media-type="text/x-oeb1-document" href="${HTML_PATH}"></item>
         <item id="ncx" media-type="application/x-dtbncx+xml" href="${NCX_PATH}"/>
     </manifest>
     <spine toc="ncx">
@@ -56,6 +47,7 @@ function buildNcx(linksWithChapters) {
       <navLabel>
         <text>${chapterTitle(link, $chapter)}</text>
       </navLabel>
+      <content src="${HTML_PATH}#${chapterId(link)}" />
     </navPoint>
   `;
   return `
@@ -73,9 +65,53 @@ function buildNcx(linksWithChapters) {
          <navLabel><text>Table of Contents</text></navLabel>
          <content src="${HTML_PATH}#${TOC_ID}" />
        </navPoint>
-       ${linksWithChapters.map(toNav)}
+       ${linksWithChapters.map(toNav).join('')}
    </ncx>
   `;
+}
+
+function buildToc(linksWithChapters) {
+  const toLi = ([link, $chapter], idx) => `
+    <li><a href="#${chapterId(link)}">${chapterTitle(link, $chapter)}</a></li>
+  `;
+  return `
+    <div id="${TOC_ID}">
+      <h1>Table of Contents</h1>
+      <ul>
+        ${linksWithChapters.map(toLi).join('')}
+      </ul>
+    </div>
+  `;
+}
+
+function buildHTML(linksWithChapters) {
+  const chapters = linksWithChapters
+    .map(([_, $chapter]) => $chapter('body').html())
+    .join(PAGE_BREAK);
+
+  return `
+    <!doctype html>
+    <html lang="en">
+      <head>
+      <meta charset="utf-8" />
+      <title>${BOOK_TITLE}</title>
+      </head>
+      <body>
+        ${buildToc(linksWithChapters)}
+        ${PAGE_BREAK}
+        ${chapters}
+        <h1>THE END</h1>
+      </body>
+    </html>
+  `;
+}
+
+function buildMobi(linksWithChapters) {
+  const dir = `${__dirname}/${BOOK_DIR}`;
+  fs.writeFileSync(`${dir}/${OPF_PATH}`, OPF);
+  fs.writeFileSync(`${dir}/${NCX_PATH}`, buildNcx(linksWithChapters));
+  fs.writeFileSync(`${dir}/${HTML_PATH}`, buildHTML(linksWithChapters));
+  cp.execSync(`~/kindlegen ${dir}/${OPF_PATH} -verbose -o ${MOBI_PATH}`);
 }
 
 function fetchHtml(url) {
@@ -95,64 +131,61 @@ function toLinks($) {
 }
 
 function chapterId(link) {
-  return link;
+  return _.first(_.last(link.split('/')).split('.'));
 }
 
-function removeMenu(link, $body) {
+function removeMenu($) {
   // TODO(stopachka) -- best way to remove the first td
   $('td:first-child').toArray()[0].children = [];
   return $;
 }
 
-function removeLogo(link, $body) {
+function removeLogo($, link) {
   $('a[href="index.html"]').remove();
   return $;
 }
 
-function removeApplyYC(link, $body) {
-  $link = $('a[href="http://ycombinator.com/apply.html"]').toArray()[0];
-  $link && $link.closest('table').remove();
+function removeApplyYC($, link) {
+  $link = $('font:contains("Want to start a startup")')
+    .last()
+    .closest('table')
+    .remove();
   return $;
 }
 
-function addPageBreak(link, $body) {
-  $.append('<mbp:pagebreak />');
-  return $;
-}
-
-function replaceChapterTitle($) {
-  $firstImageWithAlt = $('img').toArray().find(x => x.attribs.alt);
+function replaceChapterTitle($, link) {
+  $firstImageWithAlt = $('img[alt]').first();
+  const title = $firstImageWithAlt.toArray()[0].attribs.alt;
   $firstImageWithAlt
     .parent()
-    .append(
-      `<h1 id={${chapterId($link)}}>${firstImageWithAlt.attribts.alt}</h1>`
-    );
+    .prepend(`<h1 id="${chapterId(link)}">${title}</h1>`);
   $firstImageWithAlt.remove();
   return $;
 }
 
-function toChapter(link, $body) {
+function ensureAbsoluteLinks($, link) {
+  $('a')
+    .toArray()
+    .filter(x => x.attribs.href)
+    .filter(x => x.attribs.href.indexOf('http') === -1)
+    .forEach(x => {
+      x.attribs.href = `${ROOT_PATH}/${x.attribs.href}`;
+    });
+  return $;
+}
+
+function toChapter(link, $html) {
   return [
     removeMenu,
     removeLogo,
+    replaceChapterTitle,
     removeApplyYC,
-    addPageBreak,
-    replaceChapterTitle
-  ].reduce(($, f) => f(link, $), $body);
+    ensureAbsoluteLinks,
+  ].reduce(($, f) => f($, link), $html);
 }
 
 function chapterTitle(link, $chapter) {
-  return $chapter(`#${chapterId($link)}`).toArray()[0].textContent;
-}
-
-function buildChapters($book, html) {
-  return $book;
-}
-
-function buildBook(linksWithChapters) {}
-
-function buildMobi(linksWithChapters) {
-  const [ncx, toc, html] = [buildNcx(linksWithBody), buildToc, buildBook(linksWithBody)];
+  return $chapter(`#${chapterId(link)}`).first().text();
 }
 
 function run() {
@@ -160,38 +193,11 @@ function run() {
     .then(toLinks)
     .then(links =>
       Promise.all(
-        links
-          .slice(0, 3)
-          .map(link =>
-            fetchHtml(link).then($html => [
-              link,
-              toChapter(link, $html('body'))
-            ]))
+        links.map(link =>
+          fetchHtml(link).then($html => [link, toChapter(link, $html)]))
       ))
-    .then(buildMobi);
+    .then(buildMobi)
+    .catch(e => console.error('err>', e, e.stack));
 }
 
-// ----------------------------------------------------------
-// Dev
-
-// cp.execSync(`~/kindlegen ${pathToHtml} -verbose -o ${pathToMobi}`);
-// buildMobi(`${__dirname}/chapters.html`, `chapters.mobi`);
-
-function writeChapters($) {
-  fs.writeFileSync('chapters.html', $.html());
-}
-function writeLinks(xs) {
-  fs.writeFileSync('links.json', JSON.stringify(xs, null, 2));
-}
-
-function readLinks() {
-  return JSON.parse(fs.readFileSync('links.json', 'utf-8'));
-}
-// const linksWithHtml = readLinks();
-//
-// const bookHTML = linksWithHtml
-//   .map(([link, html]) => toChapter(cheerio.load(html)))
-//   .map(chapt)
-//   .slice(0, 10)
-//   .reduce(buildBook, cheerio.load(BOOK_STARTER));
-// fs.writeFileSync('book.html', bookHTML.html());
+run();
