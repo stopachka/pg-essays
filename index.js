@@ -66,25 +66,11 @@ function replaceChapterTitle($, link) {
   return $;
 }
 
-function ensureAbsoluteLinks($, link) {
-  $('a')
-    .toArray()
-    .filter(x => x.attribs.href)
-    .filter(x => x.attribs.href.indexOf('http') === -1)
-    .forEach(x => {
-      x.attribs.href = `${ROOT_PATH}/${x.attribs.href}`;
-    });
-  return $;
-}
-
 function toChapter(link, $html) {
-  return [
-    removeMenu,
-    removeLogo,
-    replaceChapterTitle,
-    removeApplyYC,
-    ensureAbsoluteLinks,
-  ].reduce(($, f) => f($, link), $html);
+  return [removeMenu, removeLogo, replaceChapterTitle, removeApplyYC].reduce(
+    ($, f) => f($, link),
+    $html
+  );
 }
 
 // ------------------------------------------------------------
@@ -192,7 +178,6 @@ function buildMobi(linksWithChapters) {
   fs.writeFileSync(`${dir}/${HTML_PATH}`, buildHTML(linksWithChapters));
   cp.exec(`~/kindlegen ${dir}/${OPF_PATH} -verbose -o ${MOBI_PATH}`);
 }
-
 
 // ------------------------------------------------------------
 // Get Chapters
