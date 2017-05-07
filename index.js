@@ -17,7 +17,7 @@ const NCX_PATH = `toc.ncx`;
 const OPF_PATH = `index.opf`;
 const MOBI_PATH = `pg_essays.mobi`;
 const TOC_ID = 'toc';
-const PAGE_BREAK = '<mbp:pagebreak />';
+const PAGE_BREAK = '<div style="page-break-before: always;"></div>';
 
 // ------------------------------------------------------------
 // Helpers
@@ -48,6 +48,11 @@ function removeLogo($, link) {
   return $;
 }
 
+function removeHr($, link) {
+  $('hr').remove();
+  return $;
+}
+
 function removeApplyYC($, link) {
   $link = $('font:contains("Want to start a startup")')
     .last()
@@ -67,10 +72,13 @@ function replaceChapterTitle($, link) {
 }
 
 function toChapter(link, $html) {
-  return [removeMenu, removeLogo, replaceChapterTitle, removeApplyYC].reduce(
-    ($, f) => f($, link),
-    $html
-  );
+  return [
+    removeMenu,
+    removeLogo,
+    replaceChapterTitle,
+    removeApplyYC,
+    removeHr,
+  ].reduce(($, f) => f($, link), $html);
 }
 
 // ------------------------------------------------------------
@@ -143,7 +151,9 @@ function buildToc(linksWithChapters) {
   `;
   return `
     <div id="${TOC_ID}">
+      ${PAGE_BREAK}
       <h1>Table of Contents</h1>
+      ${PAGE_BREAK}
       <ul>
         ${linksWithChapters.map(toLi).join('')}
       </ul>
@@ -168,6 +178,7 @@ function buildHTML(linksWithChapters) {
         ${PAGE_BREAK}
         ${chapters}
         <h1>THE END</h1>
+        ${PAGE_BREAK}
       </body>
     </html>
   `;
