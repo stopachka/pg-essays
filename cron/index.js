@@ -11,8 +11,7 @@ const BOOK_STARTER = `
   <html lang="en">
   <head>
   <meta charset="utf-8" />
-  <title>Essays by Paul Gragam</title>
-  <link rel="stylesheet" href="style.css"  type="text/css" />
+  <title>Essays by Paul Graham</title>
   </head>
   <body>
   <!-- Your book goes here -->
