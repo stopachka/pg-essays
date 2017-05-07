@@ -111,7 +111,7 @@ function buildMobi(linksWithChapters) {
   fs.writeFileSync(`${dir}/${OPF_PATH}`, OPF);
   fs.writeFileSync(`${dir}/${NCX_PATH}`, buildNcx(linksWithChapters));
   fs.writeFileSync(`${dir}/${HTML_PATH}`, buildHTML(linksWithChapters));
-  cp.execSync(`~/kindlegen ${dir}/${OPF_PATH} -verbose -o ${MOBI_PATH}`);
+  cp.exec(`~/kindlegen ${dir}/${OPF_PATH} -verbose -o ${MOBI_PATH}`);
 }
 
 function fetchHtml(url) {
