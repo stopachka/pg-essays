@@ -14,7 +14,6 @@ const BOOK_STARTER = `
   <title>Essays by Paul Graham</title>
   </head>
   <body>
-  <!-- Your book goes here -->
   </body>
 </html>
 `;
