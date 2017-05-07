@@ -26,9 +26,6 @@ function fetchHtml(url) {
   return fetch(url).then(res => res.text()).then(text => cheerio.load(text));
 }
 
-// ------------------------------------------------------------
-// Build Chapter
-
 function chapterId(link) {
   return _.first(_.last(link.split('/')).split('.'));
 }
@@ -36,6 +33,9 @@ function chapterId(link) {
 function chapterTitle(link, $chapter) {
   return $chapter(`#${chapterId(link)}`).first().text();
 }
+
+// ------------------------------------------------------------
+// Build Chapters
 
 function removeMenu($) {
   // TODO(stopachka) -- best way to remove the first td
@@ -76,35 +76,37 @@ function toChapter(link, $html) {
 // ------------------------------------------------------------
 // Build Mobi
 
-const OPF = `
-  <?xml version="1.0" encoding="iso-8859-1"?>
-  <package
-    unique-identifier="uid"
-    xmlns:opf="http://www.idpf.org/2007/opf"
-    xmlns:asd="http://www.idpf.org/asdfaf"
-  >
-    <metadata>
-      <dc-metadata
-        xmlns:dc="http://purl.org/metadata/dublin_core"
-        xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/"
-      >
-        <dc:Title>${BOOK_TITLE}</dc:Title>
-        <dc:Language>en</dc:Language>
-        <dc:Creator>Paul Graham</dc:Creator>
-        <dc:Copyrights>Paul Graham</dc:Copyrights>
-        <dc:Publisher>Stepan Parunashvili</dc:Publisher>
-        <x-metadata>
-          <EmbeddedCover>${COVER_PATH}</EmbeddedCover>
-        </x-metadata>
-      </dc-metadata>
-    </metadata>
-    <manifest>
-      <item id="content" media-type="text/x-oeb1-document" href="${HTML_PATH}" />
-      <item id="ncx" media-type="application/x-dtbncx+xml" href="${NCX_PATH}" />
-    </manifest>
-    <spine toc="ncx"><itemref idref="content"/></spine>
-  </package>
-`;
+function buildOpf() {
+  return `
+    <?xml version="1.0" encoding="iso-8859-1"?>
+    <package
+      unique-identifier="uid"
+      xmlns:opf="http://www.idpf.org/2007/opf"
+      xmlns:asd="http://www.idpf.org/asdfaf"
+    >
+      <metadata>
+        <dc-metadata
+          xmlns:dc="http://purl.org/metadata/dublin_core"
+          xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/"
+        >
+          <dc:Title>${BOOK_TITLE}</dc:Title>
+          <dc:Language>en</dc:Language>
+          <dc:Creator>Paul Graham</dc:Creator>
+          <dc:Copyrights>Paul Graham</dc:Copyrights>
+          <dc:Publisher>Stepan Parunashvili</dc:Publisher>
+          <x-metadata>
+            <EmbeddedCover>${COVER_PATH}</EmbeddedCover>
+          </x-metadata>
+        </dc-metadata>
+      </metadata>
+      <manifest>
+        <item id="content" media-type="text/x-oeb1-document" href="${HTML_PATH}" />
+        <item id="ncx" media-type="application/x-dtbncx+xml" href="${NCX_PATH}" />
+      </manifest>
+      <spine toc="ncx"><itemref idref="content"/></spine>
+    </package>
+  `;
+}
 
 function buildNcx(linksWithChapters) {
   const toNav = ([link, $chapter], idx) => `
@@ -173,7 +175,7 @@ function buildHTML(linksWithChapters) {
 
 function buildMobi(linksWithChapters) {
   const dir = `${__dirname}/${BOOK_DIR}`;
-  fs.writeFileSync(`${dir}/${OPF_PATH}`, OPF);
+  fs.writeFileSync(`${dir}/${OPF_PATH}`, buildOpf());
   fs.writeFileSync(`${dir}/${NCX_PATH}`, buildNcx(linksWithChapters));
   fs.writeFileSync(`${dir}/${HTML_PATH}`, buildHTML(linksWithChapters));
   cp.exec(`~/kindlegen ${dir}/${OPF_PATH} -verbose -o ${MOBI_PATH}`);
