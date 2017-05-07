@@ -4,23 +4,104 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const cp = require('child_process');
 
+// ------------------------------------------------------------
+// Config
+
 const BOOK_TITLE = 'Essays by Paul Graham';
 const ROOT_PATH = 'http://www.paulgraham.com';
 const ARTICLES_INDEX = `${ROOT_PATH}/articles.html`;
 const BOOK_DIR = 'book';
 const COVER_PATH = `cover.jpg`;
 const HTML_PATH = `index.html`;
-const NCX_PATH = `ncx.xml`;
+const NCX_PATH = `toc.ncx`;
 const OPF_PATH = `index.opf`;
-const MOBI_PATH = `index.mobi`;
+const MOBI_PATH = `pg_esasys.mobi`;
 const TOC_ID = 'toc';
 const PAGE_BREAK = '<mbp:pagebreak />';
 
+// ------------------------------------------------------------
+// Helpers
+
+function fetchHtml(url) {
+  return fetch(url).then(res => res.text()).then(text => cheerio.load(text));
+}
+
+// ------------------------------------------------------------
+// Build Chapter
+
+function chapterId(link) {
+  return _.first(_.last(link.split('/')).split('.'));
+}
+
+function chapterTitle(link, $chapter) {
+  return $chapter(`#${chapterId(link)}`).first().text();
+}
+
+function removeMenu($) {
+  // TODO(stopachka) -- best way to remove the first td
+  $('td:first-child').toArray()[0].children = [];
+  return $;
+}
+
+function removeLogo($, link) {
+  $('a[href="index.html"]').remove();
+  return $;
+}
+
+function removeApplyYC($, link) {
+  $link = $('font:contains("Want to start a startup")')
+    .last()
+    .closest('table')
+    .remove();
+  return $;
+}
+
+function replaceChapterTitle($, link) {
+  $firstImageWithAlt = $('img[alt]').first();
+  const title = $firstImageWithAlt.toArray()[0].attribs.alt;
+  $firstImageWithAlt
+    .parent()
+    .prepend(`<h1 id="${chapterId(link)}">${title}</h1>`);
+  $firstImageWithAlt.remove();
+  return $;
+}
+
+function ensureAbsoluteLinks($, link) {
+  $('a')
+    .toArray()
+    .filter(x => x.attribs.href)
+    .filter(x => x.attribs.href.indexOf('http') === -1)
+    .forEach(x => {
+      x.attribs.href = `${ROOT_PATH}/${x.attribs.href}`;
+    });
+  return $;
+}
+
+function toChapter(link, $html) {
+  return [
+    removeMenu,
+    removeLogo,
+    replaceChapterTitle,
+    removeApplyYC,
+    ensureAbsoluteLinks,
+  ].reduce(($, f) => f($, link), $html);
+}
+
+// ------------------------------------------------------------
+// Build Mobi
+
 const OPF = `
   <?xml version="1.0" encoding="iso-8859-1"?>
-  <package unique-identifier="uid" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:asd="http://www.idpf.org/asdfaf">
+  <package
+    unique-identifier="uid"
+    xmlns:opf="http://www.idpf.org/2007/opf"
+    xmlns:asd="http://www.idpf.org/asdfaf"
+  >
     <metadata>
-      <dc-metadata  xmlns:dc="http://purl.org/metadata/dublin_core" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+      <dc-metadata
+        xmlns:dc="http://purl.org/metadata/dublin_core"
+        xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/"
+      >
         <dc:Title>${BOOK_TITLE}</dc:Title>
         <dc:Language>en</dc:Language>
         <dc:Creator>Paul Graham</dc:Creator>
@@ -32,12 +113,10 @@ const OPF = `
       </dc-metadata>
     </metadata>
     <manifest>
-        <item id="content" media-type="text/x-oeb1-document" href="${HTML_PATH}"></item>
-        <item id="ncx" media-type="application/x-dtbncx+xml" href="${NCX_PATH}"/>
+      <item id="content" media-type="text/x-oeb1-document" href="${HTML_PATH}" />
+      <item id="ncx" media-type="application/x-dtbncx+xml" href="${NCX_PATH}" />
     </manifest>
-    <spine toc="ncx">
-        <itemref idref="content"/>
-    </spine>
+    <spine toc="ncx"><itemref idref="content"/></spine>
   </package>
 `;
 
@@ -114,9 +193,9 @@ function buildMobi(linksWithChapters) {
   cp.exec(`~/kindlegen ${dir}/${OPF_PATH} -verbose -o ${MOBI_PATH}`);
 }
 
-function fetchHtml(url) {
-  return fetch(url).then(res => res.text()).then(text => cheerio.load(text));
-}
+
+// ------------------------------------------------------------
+// Get Chapters
 
 function toLinks($) {
   return $('img[alt=Essays]')
@@ -130,63 +209,8 @@ function toLinks($) {
     .reverse(); // earlier first
 }
 
-function chapterId(link) {
-  return _.first(_.last(link.split('/')).split('.'));
-}
-
-function removeMenu($) {
-  // TODO(stopachka) -- best way to remove the first td
-  $('td:first-child').toArray()[0].children = [];
-  return $;
-}
-
-function removeLogo($, link) {
-  $('a[href="index.html"]').remove();
-  return $;
-}
-
-function removeApplyYC($, link) {
-  $link = $('font:contains("Want to start a startup")')
-    .last()
-    .closest('table')
-    .remove();
-  return $;
-}
-
-function replaceChapterTitle($, link) {
-  $firstImageWithAlt = $('img[alt]').first();
-  const title = $firstImageWithAlt.toArray()[0].attribs.alt;
-  $firstImageWithAlt
-    .parent()
-    .prepend(`<h1 id="${chapterId(link)}">${title}</h1>`);
-  $firstImageWithAlt.remove();
-  return $;
-}
-
-function ensureAbsoluteLinks($, link) {
-  $('a')
-    .toArray()
-    .filter(x => x.attribs.href)
-    .filter(x => x.attribs.href.indexOf('http') === -1)
-    .forEach(x => {
-      x.attribs.href = `${ROOT_PATH}/${x.attribs.href}`;
-    });
-  return $;
-}
-
-function toChapter(link, $html) {
-  return [
-    removeMenu,
-    removeLogo,
-    replaceChapterTitle,
-    removeApplyYC,
-    ensureAbsoluteLinks,
-  ].reduce(($, f) => f($, link), $html);
-}
-
-function chapterTitle(link, $chapter) {
-  return $chapter(`#${chapterId(link)}`).first().text();
-}
+// ------------------------------------------------------------
+// run
 
 function run() {
   fetchHtml(ARTICLES_INDEX)
