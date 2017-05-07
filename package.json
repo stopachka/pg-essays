@@ -1,18 +1,11 @@
 {
-  "name": "essay-maker",
-  "version": "0.1.0",
-  "private": true,
+  "name": "pg-cron",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
-  "devDependencies": {
-    "react-scripts": "0.9.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "cheerio": "^0.22.0",
+    "node-fetch": "^1.6.3",
+    "osmosis": "^1.1.4"
   }
 }
