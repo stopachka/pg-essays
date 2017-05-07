@@ -15,7 +15,7 @@ const COVER_PATH = `cover.jpg`;
 const HTML_PATH = `index.html`;
 const NCX_PATH = `toc.ncx`;
 const OPF_PATH = `index.opf`;
-const MOBI_PATH = `pg_esasys.mobi`;
+const MOBI_PATH = `pg_essays.mobi`;
 const TOC_ID = 'toc';
 const PAGE_BREAK = '<mbp:pagebreak />';
 
