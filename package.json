@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.22.0",
+    "lodash": "^4.17.4",
     "node-fetch": "^1.6.3",
     "osmosis": "^1.1.4"
   }
