@@ -71,6 +71,14 @@ function replaceChapterTitle($, link) {
   return $;
 }
 
+function replaceTables($) {
+  const toDiv = tag => $(tag).toArray().reverse().forEach(function(x) {
+    $(x).replaceWith(`<div>${$(x).html()}</div>`);
+  });
+  ['td', 'td', 'tbody', 'thead', 'table'].forEach(toDiv);
+  return $;
+}
+
 function toChapter(link, $html) {
   return [
     removeMenu,
@@ -78,6 +86,7 @@ function toChapter(link, $html) {
     replaceChapterTitle,
     removeApplyYC,
     removeHr,
+    replaceTables,
   ].reduce(($, f) => f($, link), $html);
 }
 
