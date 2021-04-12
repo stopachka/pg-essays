@@ -205,12 +205,10 @@ function buildMobi(linksWithChapters) {
 // Get Chapters
 
 function toLinks($) {
-  return $('img[alt=Essays]')
-    .closest('table')
-    .next('table')
+  return $('table:nth-of-type(2)')
     .find('a')
     .toArray()
-    .map(node => node.attribs.href)
+    .map(node => node.attribs && node.attribs.href)
     .filter(href => href.indexOf('http') === -1)
     .map(path => `${ROOT_PATH}/${path}`)
     .reverse(); // earlier first
