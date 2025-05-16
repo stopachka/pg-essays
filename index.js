@@ -3,14 +3,24 @@ import cheerio from "cheerio";
 import fs from "fs";
 import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
-import { dirname, resolve } from "path";
+import path, { dirname, resolve } from "path";
 import puppeteer from "puppeteer";
+import crypto from "node:crypto";
+import pLimit from "p-limit";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const limit = pLimit(10);
+async function limitedFetch(...args) {
+  return await limit(() => {
+    console.log(`Fetching ${args[0]}`);
+    return fetch(...args);
+  });
+}
 
 // ------------------------------------------------------------
 // Config
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const BOOK_TITLE = "Essays by Paul Graham";
 const ROOT_PATH = "http://www.paulgraham.com";
@@ -24,6 +34,7 @@ const MOBI_FILENAME = "index.mobi";
 const TOC_ID = "toc";
 const PAGE_BREAK = '<div style="page-break-before: always;"></div>';
 const GEN_DIR = `${BOOK_DIR}/gen`;
+const ASSETS_DIR = `${GEN_DIR}/assets`;
 const PDF_FILENAME = "index.pdf";
 const COVER_FILENAME = "cover.jpg";
 
@@ -95,8 +106,43 @@ function replaceTables($) {
   return $;
 }
 
-function toChapter(link, $html) {
-  return [
+const badImages = new Set(["http://www.virtumundo.com/images/spacer.gif"]);
+async function localiseImages($) {
+  const toLocalName = (url) => {
+    const ext = path.extname(new URL(url).pathname) || ".jpg";
+    const hash = crypto.createHash("md5").update(url).digest("hex");
+    return `${hash}${ext}`;
+  };
+
+  await Promise.all(
+    $("img[src]")
+      .toArray()
+      .filter((n) => /^https?:/.test(n.attribs.src))
+      .map(async (node) => {
+        const remote = node.attribs.src;
+        if (badImages.has(remote)) {
+          console.log(`Removing ${remote}`);
+          $(node).remove();
+          return;
+        }
+        const filename = toLocalName(remote);
+        const dest = path.join(ASSETS_DIR, filename);
+
+        if (!fs.existsSync(dest)) {
+          const res = await limitedFetch(remote);
+          const buf = Buffer.from(await res.arrayBuffer());
+          fs.writeFileSync(dest, buf);
+        }
+
+        node.attribs.src = `${ASSETS_DIR}/${filename}`;
+      })
+  );
+
+  return $;
+}
+
+async function toChapter(link, $html) {
+  const ch$ = [
     removeMenu,
     removeLogo,
     replaceChapterTitle,
@@ -104,6 +150,8 @@ function toChapter(link, $html) {
     removeHr,
     replaceTables,
   ].reduce(($, f) => f($, link), $html);
+  const $ = await localiseImages(ch$);
+  return $;
 }
 
 // ------------------------------------------------------------
@@ -222,15 +270,7 @@ export async function htmlToPdf(htmlPath, pdfPath) {
     args: ["--no-sandbox"],
     headless: true,
   });
-  const page = await browser.newPage(); // local file URI
-  await page.setRequestInterception(true);
-  page.on("request", (req) => {
-    const type = req.resourceType();
-    if (type === "image") {
-      return req.abort();
-    }
-    req.continue();
-  });
+  const page = await browser.newPage();
   await page.goto(`file://${resolve(htmlPath)}`, {
     waitUntil: "domcontentloaded",
     timeout: 0,
@@ -284,7 +324,7 @@ async function loadLinksWithHTML() {
   if (fromDisk) {
     console.log("Loading from disk...");
     console.log(`If you'd like to refetch, delete ${jsonPath}`);
-    return JSON.parse(fs.readFileSync(jsonPath));
+    return JSON.parse(fs.readFileSync(jsonPath).toString());
   }
 
   console.log("Loading articles index...");
@@ -315,12 +355,19 @@ const ignoredLinks = new Set(["http://www.paulgraham.com/prop62.html"]);
 
 async function run() {
   const linksWithHTML = await loadLinksWithHTML();
-  const linksWithChapters = linksWithHTML
-    .filter(([link]) => !ignoredLinks.has(link))
-    .map(([link, html]) => [link, toChapter(link, cheerio.load(html))]);
-  const listLength = linksWithChapters.length;
-  const chunks = _.chunk(linksWithChapters, listLength / 3);
-  chunks.forEach((chunk, idx) =>
+  const linksWithChapters = await Promise.all(
+    linksWithHTML
+      .filter(([link]) => !ignoredLinks.has(link))
+      .map(async ([link, html]) => [
+        link,
+        await toChapter(link, cheerio.load(html)),
+      ])
+  );
+  const pt1 = linksWithChapters.slice(0, 45);
+  const pt2 = linksWithChapters.slice(45, 95);
+  const pt3 = linksWithChapters.slice(95, 175);
+  const pt4 = linksWithChapters.slice(175);
+  [pt1, pt2, pt3, pt4].forEach((chunk, idx) =>
     buildBook({
       linksWithChapters: chunk,
       title: `Essays by Paul Graham, Part ${idx + 1}`,
