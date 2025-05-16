@@ -1,37 +1,45 @@
-const _ = require('lodash');
-const fetch = require('node-fetch');
-const cheerio = require('cheerio');
-const fs = require('fs');
-const cp = require('child_process');
+import _ from "lodash";
+import cheerio from "cheerio";
+import fs from "fs";
+import cp from "child_process";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // ------------------------------------------------------------
 // Config
 
-const BOOK_TITLE = 'Essays by Paul Graham';
-const ROOT_PATH = 'http://www.paulgraham.com';
+const BOOK_TITLE = "Essays by Paul Graham";
+const ROOT_PATH = "http://www.paulgraham.com";
 const ARTICLES_INDEX = `${ROOT_PATH}/articles.html`;
-const BOOK_DIR = 'book';
+const BOOK_DIR = "book";
 const COVER_PATH = `cover.jpg`;
 const HTML_PATH = `index.html`;
 const NCX_PATH = `toc.ncx`;
 const OPF_PATH = `index.opf`;
 const MOBI_PATH = `pg_essays.mobi`;
-const TOC_ID = 'toc';
+const TOC_ID = "toc";
 const PAGE_BREAK = '<div style="page-break-before: always;"></div>';
 
 // ------------------------------------------------------------
 // Helpers
 
-function fetchHtml(url) {
-  return fetch(url).then(res => res.text()).then(text => cheerio.load(text));
+async function loadHTML(url) {
+  const res = await fetch(url);
+  const text = await res.text();
+  return cheerio.load(text);
 }
 
 function chapterId(link) {
-  return _.first(_.last(link.split('/')).split('.'));
+  return _.first(_.last(link.split("/")).split("."));
 }
 
 function chapterTitle(link, $chapter) {
-  return $chapter(`#${chapterId(link)}`).first().text();
+  return $chapter(`#${chapterId(link)}`)
+    .first()
+    .text();
 }
 
 // ------------------------------------------------------------
@@ -39,7 +47,7 @@ function chapterTitle(link, $chapter) {
 
 function removeMenu($) {
   // TODO(stopachka) -- best way to remove the first td
-  $('td:first-child').toArray()[0].children = [];
+  $("td:first-child").toArray()[0].children = [];
   return $;
 }
 
@@ -49,20 +57,20 @@ function removeLogo($, link) {
 }
 
 function removeHr($, link) {
-  $('hr').remove();
+  $("hr").remove();
   return $;
 }
 
 function removeApplyYC($, link) {
-  $link = $('font:contains("Want to start a startup")')
+  $('font:contains("Want to start a startup")')
     .last()
-    .closest('table')
+    .closest("table")
     .remove();
   return $;
 }
 
 function replaceChapterTitle($, link) {
-  $firstImageWithAlt = $('img[alt]').first();
+  const $firstImageWithAlt = $("img[alt]").first();
   const title = $firstImageWithAlt.toArray()[0].attribs.alt;
   $firstImageWithAlt
     .parent()
@@ -72,10 +80,14 @@ function replaceChapterTitle($, link) {
 }
 
 function replaceTables($) {
-  const toDiv = tag => $(tag).toArray().reverse().forEach(function(x) {
-    $(x).replaceWith(`<div>${$(x).html()}</div>`);
-  });
-  ['td', 'td', 'tbody', 'thead', 'table'].forEach(toDiv);
+  const toDiv = (tag) =>
+    $(tag)
+      .toArray()
+      .reverse()
+      .forEach(function (x) {
+        $(x).replaceWith(`<div>${$(x).html()}</div>`);
+      });
+  ["td", "td", "tbody", "thead", "table"].forEach(toDiv);
   return $;
 }
 
@@ -149,7 +161,7 @@ function buildNcx(linksWithChapters) {
          <navLabel><text>Table of Contents</text></navLabel>
          <content src="${HTML_PATH}#${TOC_ID}" />
        </navPoint>
-       ${linksWithChapters.map(toNav).join('')}
+       ${linksWithChapters.map(toNav).join("")}
    </ncx>
   `;
 }
@@ -164,7 +176,7 @@ function buildToc(linksWithChapters) {
       <h1>Table of Contents</h1>
       ${PAGE_BREAK}
       <ul>
-        ${linksWithChapters.map(toLi).join('')}
+        ${linksWithChapters.map(toLi).join("")}
       </ul>
     </div>
   `;
@@ -172,7 +184,7 @@ function buildToc(linksWithChapters) {
 
 function buildHTML(linksWithChapters) {
   const chapters = linksWithChapters
-    .map(([_, $chapter]) => $chapter('body').html())
+    .map(([_, $chapter]) => $chapter("body").html())
     .join(PAGE_BREAK);
 
   return `
@@ -193,40 +205,44 @@ function buildHTML(linksWithChapters) {
   `;
 }
 
-function buildMobi(linksWithChapters) {
+function buildBook(linksWithChapters) {
+  cp.exec(`rm -rf ${__dirname}/${BOOK_DIR}`);
   const dir = `${__dirname}/${BOOK_DIR}`;
   fs.writeFileSync(`${dir}/${OPF_PATH}`, buildOpf());
   fs.writeFileSync(`${dir}/${NCX_PATH}`, buildNcx(linksWithChapters));
   fs.writeFileSync(`${dir}/${HTML_PATH}`, buildHTML(linksWithChapters));
-  cp.exec(`~/kindlegen ${dir}/${OPF_PATH} -verbose -o ${MOBI_PATH}`);
 }
 
 // ------------------------------------------------------------
 // Get Chapters
 
 function toLinks($) {
-  return $('table:nth-of-type(2)')
-    .find('a')
+  return $("table:nth-of-type(2)")
+    .find("a")
     .toArray()
-    .map(node => node.attribs && node.attribs.href)
-    .filter(href => href.indexOf('http') === -1)
-    .map(path => `${ROOT_PATH}/${path}`)
+    .map((node) => node.attribs && node.attribs.href)
+    .filter((href) => href.indexOf("http") === -1)
+    .map((path) => `${ROOT_PATH}/${path}`)
     .reverse(); // earlier first
 }
 
 // ------------------------------------------------------------
 // run
 
-function run() {
-  fetchHtml(ARTICLES_INDEX)
-    .then(toLinks)
-    .then(links =>
-      Promise.all(
-        links.map(link =>
-          fetchHtml(link).then($html => [link, toChapter(link, $html)]))
-      ))
-    .then(buildMobi)
-    .catch(e => console.error('err>', e, e.stack));
+async function run() {
+  console.log("Loading articles index...");
+  const $ = await loadHTML(ARTICLES_INDEX);
+  const links = toLinks($);
+  console.log(`Found ${links.length} articles`);
+  const linksWithChapters = await Promise.all(
+    links.map(async (link) => {
+      console.log(`Loading ${link}`);
+      const $html = await loadHTML(link);
+      return [link, toChapter(link, $html)];
+    })
+  );
+  console.log(`Building book...`);
+  buildBook(linksWithChapters);
 }
 
-run();
+await run();
