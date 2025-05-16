@@ -241,6 +241,7 @@ async function run() {
       return [link, toChapter(link, $html)];
     })
   );
+
   console.log(`Building book...`);
   buildBook(linksWithChapters);
 }
