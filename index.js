@@ -1,7 +1,7 @@
 import _ from "lodash";
 import cheerio from "cheerio";
 import fs from "fs";
-import cp from "child_process";
+import cp, { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 
@@ -15,21 +15,23 @@ const BOOK_TITLE = "Essays by Paul Graham";
 const ROOT_PATH = "http://www.paulgraham.com";
 const ARTICLES_INDEX = `${ROOT_PATH}/articles.html`;
 const BOOK_DIR = "book";
-const COVER_PATH = `cover.jpg`;
-const HTML_PATH = `index.html`;
-const NCX_PATH = `toc.ncx`;
-const OPF_PATH = `index.opf`;
-const MOBI_PATH = `pg_essays.mobi`;
+const COVER_PATH = "cover.jpg";
+const JSON_PATH = "loaded-links.json";
+const HTML_PATH = "index.html";
+const NCX_PATH = "toc.ncx";
+const OPF_PATH = "index.opf";
+const MOBI_PATH = "index.mobi";
 const TOC_ID = "toc";
 const PAGE_BREAK = '<div style="page-break-before: always;"></div>';
+const GEN_DIR = `${__dirname}/${BOOK_DIR}/gen`;
 
 // ------------------------------------------------------------
 // Helpers
 
-async function loadHTML(url) {
+async function loadHTMLText(url) {
   const res = await fetch(url);
   const text = await res.text();
-  return cheerio.load(text);
+  return text;
 }
 
 function chapterId(link) {
@@ -205,12 +207,22 @@ function buildHTML(linksWithChapters) {
   `;
 }
 
+function runKindleGen() {
+  spawnSync(
+    "./kindlegen",
+    [`${GEN_DIR}/${OPF_PATH}`, "-o", `${MOBI_PATH}`, "-verbose"],
+    {
+      stdio: "inherit",
+      encoding: "utf8",
+    }
+  );
+}
+
 function buildBook(linksWithChapters) {
-  cp.exec(`rm -rf ${__dirname}/${BOOK_DIR}`);
-  const dir = `${__dirname}/${BOOK_DIR}`;
-  fs.writeFileSync(`${dir}/${OPF_PATH}`, buildOpf());
-  fs.writeFileSync(`${dir}/${NCX_PATH}`, buildNcx(linksWithChapters));
-  fs.writeFileSync(`${dir}/${HTML_PATH}`, buildHTML(linksWithChapters));
+  fs.writeFileSync(`${GEN_DIR}/${OPF_PATH}`, buildOpf());
+  fs.writeFileSync(`${GEN_DIR}/${NCX_PATH}`, buildNcx(linksWithChapters));
+  fs.writeFileSync(`${GEN_DIR}/${HTML_PATH}`, buildHTML(linksWithChapters));
+  runKindleGen();
 }
 
 // ------------------------------------------------------------
@@ -226,23 +238,46 @@ function toLinks($) {
     .reverse(); // earlier first
 }
 
+async function loadLinksWithHTML() {
+  const jsonPath = `${__dirname}/${BOOK_DIR}/gen/${JSON_PATH}`;
+  const fromDisk = fs.existsSync(jsonPath);
+
+  if (fromDisk) {
+    console.log("Loading from disk...");
+    console.log(`If you'd like to refetch, delete ${jsonPath}`);
+    return JSON.parse(fs.readFileSync(jsonPath));
+  }
+
+  console.log("Loading articles index...");
+  const articles = await loadHTMLText(ARTICLES_INDEX);
+  const $articles = cheerio.load(articles);
+  const links = toLinks($articles);
+  console.log(`Found ${links.length} articles`);
+
+  const linkAndHTML = await Promise.all(
+    links.map(async (link) => {
+      console.log(`Loading ${link}`);
+      const html = await loadHTMLText(link);
+      return [link, html];
+    })
+  );
+
+  console.log(`Saving to disk...`);
+
+  fs.writeFileSync(jsonPath, JSON.stringify(linkAndHTML, null, 2));
+
+  return linkAndHTML;
+}
+
 // ------------------------------------------------------------
 // run
 
 async function run() {
-  console.log("Loading articles index...");
-  const $ = await loadHTML(ARTICLES_INDEX);
-  const links = toLinks($);
-  console.log(`Found ${links.length} articles`);
-  const linksWithChapters = await Promise.all(
-    links.map(async (link) => {
-      console.log(`Loading ${link}`);
-      const $html = await loadHTML(link);
-      return [link, toChapter(link, $html)];
-    })
-  );
-
-  console.log(`Building book...`);
+  const linksWithHTML = await loadLinksWithHTML();
+  const linksWithChapters = linksWithHTML.map(([link, html]) => [
+    link,
+    toChapter(link, cheerio.load(html)),
+  ]);
   buildBook(linksWithChapters);
 }
 
