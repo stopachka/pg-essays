@@ -3,7 +3,8 @@ import cheerio from "cheerio";
 import fs from "fs";
 import cp, { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
-import { dirname } from "path";
+import { dirname, resolve } from "path";
+import puppeteer from "puppeteer";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -24,6 +25,7 @@ const MOBI_PATH = "index.mobi";
 const TOC_ID = "toc";
 const PAGE_BREAK = '<div style="page-break-before: always;"></div>';
 const GEN_DIR = `${__dirname}/${BOOK_DIR}/gen`;
+const PDF_PATH = "index.pdf";
 
 // ------------------------------------------------------------
 // Helpers
@@ -207,22 +209,53 @@ function buildHTML(linksWithChapters) {
   `;
 }
 
-function runKindleGen() {
-  spawnSync(
-    "./kindlegen",
-    [`${GEN_DIR}/${OPF_PATH}`, "-o", `${MOBI_PATH}`, "-verbose"],
-    {
-      stdio: "inherit",
-      encoding: "utf8",
-    }
-  );
+function runKindleGen(opfPath, mobiPath) {
+  spawnSync("./kindlegen", [opfPath, "-o", mobiPath, "-verbose"], {
+    stdio: "inherit",
+    encoding: "utf8",
+  });
 }
 
-function buildBook(linksWithChapters) {
+export async function htmlToPdf(htmlPath, pdfPath) {
+  console.log(`Building PDF ${pdfPath}`);
+  const browser = await puppeteer.launch({
+    args: ["--no-sandbox"],
+    headless: false,
+  });
+  const page = await browser.newPage(); // local file URI
+  await page.setRequestInterception(true);
+  page.on("request", (req) => {
+    const type = req.resourceType();
+    if (type === "image") {
+      return req.abort();
+    }
+    req.continue();
+  });
+  await page.goto(`file://${resolve(htmlPath)}`, {
+    waitUntil: "domcontentloaded",
+    timeout: 0,
+  });
+  await page.pdf({
+    path: pdfPath,
+    width: "6.125in",
+    height: "9.25in",
+    printBackground: true,
+    margin: {
+      top: "0.125in",
+      bottom: "0.125in",
+      left: "0.125in",
+      right: "0.125in",
+    },
+  });
+  await browser.close();
+}
+
+async function buildBook(linksWithChapters) {
   fs.writeFileSync(`${GEN_DIR}/${OPF_PATH}`, buildOpf());
   fs.writeFileSync(`${GEN_DIR}/${NCX_PATH}`, buildNcx(linksWithChapters));
   fs.writeFileSync(`${GEN_DIR}/${HTML_PATH}`, buildHTML(linksWithChapters));
-  runKindleGen();
+  await htmlToPdf(`${GEN_DIR}/${HTML_PATH}`, `${GEN_DIR}/${PDF_PATH}`);
+  runKindleGen(`${GEN_DIR}/${OPF_PATH}`, MOBI_PATH);
 }
 
 // ------------------------------------------------------------
