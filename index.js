@@ -1,7 +1,7 @@
 import _ from "lodash";
 import cheerio from "cheerio";
 import fs from "fs";
-import cp, { spawnSync } from "child_process";
+import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 import puppeteer from "puppeteer";
@@ -15,17 +15,17 @@ const __dirname = dirname(__filename);
 const BOOK_TITLE = "Essays by Paul Graham";
 const ROOT_PATH = "http://www.paulgraham.com";
 const ARTICLES_INDEX = `${ROOT_PATH}/articles.html`;
-const BOOK_DIR = "book";
-const COVER_PATH = "cover.jpg";
-const JSON_PATH = "loaded-links.json";
-const HTML_PATH = "index.html";
-const NCX_PATH = "toc.ncx";
-const OPF_PATH = "index.opf";
-const MOBI_PATH = "index.mobi";
+const BOOK_DIR = `${__dirname}/book`;
+const JSON_FILENAME = "loaded-links.json";
+const HTML_FILENAME = "index.html";
+const NCX_FILENAME = "toc.ncx";
+const OPF_FILENAME = "index.opf";
+const MOBI_FILENAME = "index.mobi";
 const TOC_ID = "toc";
 const PAGE_BREAK = '<div style="page-break-before: always;"></div>';
-const GEN_DIR = `${__dirname}/${BOOK_DIR}/gen`;
-const PDF_PATH = "index.pdf";
+const GEN_DIR = `${BOOK_DIR}/gen`;
+const PDF_FILENAME = "index.pdf";
+const COVER_FILENAME = "cover.jpg";
 
 // ------------------------------------------------------------
 // Helpers
@@ -109,7 +109,7 @@ function toChapter(link, $html) {
 // ------------------------------------------------------------
 // Build Mobi
 
-function buildOpf() {
+function buildOpf({ title }) {
   return `
     <?xml version="1.0" encoding="iso-8859-1"?>
     <package
@@ -122,19 +122,19 @@ function buildOpf() {
           xmlns:dc="http://purl.org/metadata/dublin_core"
           xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/"
         >
-          <dc:Title>${BOOK_TITLE}</dc:Title>
+          <dc:Title>${title}</dc:Title>
           <dc:Language>en</dc:Language>
           <dc:Creator>Paul Graham</dc:Creator>
           <dc:Copyrights>Paul Graham</dc:Copyrights>
           <dc:Publisher>Stepan Parunashvili</dc:Publisher>
           <x-metadata>
-            <EmbeddedCover>${COVER_PATH}</EmbeddedCover>
+            <EmbeddedCover>${COVER_FILENAME}</EmbeddedCover>
           </x-metadata>
         </dc-metadata>
       </metadata>
       <manifest>
-        <item id="content" media-type="text/x-oeb1-document" href="${HTML_PATH}" />
-        <item id="ncx" media-type="application/x-dtbncx+xml" href="${NCX_PATH}" />
+        <item id="content" media-type="text/x-oeb1-document" href="${HTML_FILENAME}" />
+        <item id="ncx" media-type="application/x-dtbncx+xml" href="${NCX_FILENAME}" />
       </manifest>
       <spine toc="ncx"><itemref idref="content"/></spine>
     </package>
@@ -147,7 +147,7 @@ function buildNcx(linksWithChapters) {
       <navLabel>
         <text>${chapterTitle(link, $chapter)}</text>
       </navLabel>
-      <content src="${HTML_PATH}#${chapterId(link)}" />
+      <content src="${HTML_FILENAME}#${chapterId(link)}" />
     </navPoint>
   `;
   return `
@@ -163,7 +163,7 @@ function buildNcx(linksWithChapters) {
      <navMap>
        <navPoint id="${TOC_ID}" playOrder="1">
          <navLabel><text>Table of Contents</text></navLabel>
-         <content src="${HTML_PATH}#${TOC_ID}" />
+         <content src="${HTML_FILENAME}#${TOC_ID}" />
        </navPoint>
        ${linksWithChapters.map(toNav).join("")}
    </ncx>
@@ -250,12 +250,18 @@ export async function htmlToPdf(htmlPath, pdfPath) {
   await browser.close();
 }
 
-async function buildBook(linksWithChapters) {
-  fs.writeFileSync(`${GEN_DIR}/${OPF_PATH}`, buildOpf());
-  fs.writeFileSync(`${GEN_DIR}/${NCX_PATH}`, buildNcx(linksWithChapters));
-  fs.writeFileSync(`${GEN_DIR}/${HTML_PATH}`, buildHTML(linksWithChapters));
-  await htmlToPdf(`${GEN_DIR}/${HTML_PATH}`, `${GEN_DIR}/${PDF_PATH}`);
-  runKindleGen(`${GEN_DIR}/${OPF_PATH}`, MOBI_PATH);
+async function buildBook({ linksWithChapters, subDir, title }) {
+  const dir = `${GEN_DIR}/${subDir}`;
+  fs.writeFileSync(
+    `${dir}/${OPF_FILENAME}`,
+    buildOpf({
+      title,
+    })
+  );
+  fs.writeFileSync(`${dir}/${NCX_FILENAME}`, buildNcx(linksWithChapters));
+  fs.writeFileSync(`${dir}/${HTML_FILENAME}`, buildHTML(linksWithChapters));
+  await htmlToPdf(`${dir}/${HTML_FILENAME}`, `${dir}/${PDF_FILENAME}`);
+  runKindleGen(`${dir}/${OPF_FILENAME}`, MOBI_FILENAME);
 }
 
 // ------------------------------------------------------------
@@ -272,7 +278,7 @@ function toLinks($) {
 }
 
 async function loadLinksWithHTML() {
-  const jsonPath = `${__dirname}/${BOOK_DIR}/gen/${JSON_PATH}`;
+  const jsonPath = `${BOOK_DIR}/gen/${JSON_FILENAME}`;
   const fromDisk = fs.existsSync(jsonPath);
 
   if (fromDisk) {
@@ -305,13 +311,22 @@ async function loadLinksWithHTML() {
 // ------------------------------------------------------------
 // run
 
+const ignoredLinks = new Set(["http://www.paulgraham.com/prop62.html"]);
+
 async function run() {
   const linksWithHTML = await loadLinksWithHTML();
-  const linksWithChapters = linksWithHTML.map(([link, html]) => [
-    link,
-    toChapter(link, cheerio.load(html)),
-  ]);
-  buildBook(linksWithChapters);
+  const linksWithChapters = linksWithHTML
+    .filter(([link]) => !ignoredLinks.has(link))
+    .map(([link, html]) => [link, toChapter(link, cheerio.load(html))]);
+  const listLength = linksWithChapters.length;
+  const chunks = _.chunk(linksWithChapters, listLength / 3);
+  chunks.forEach((chunk, idx) =>
+    buildBook({
+      linksWithChapters: chunk,
+      title: `Essays by Paul Graham, Part ${idx + 1}`,
+      subDir: `pt_${idx + 1}`,
+    })
+  );
 }
 
 await run();

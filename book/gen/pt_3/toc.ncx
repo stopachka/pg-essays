@@ -1,0 +1,543 @@
+
+    <?xml version="1.0"?>
+    <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+      "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+    <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+    <head>
+    </head>
+     <docTitle>
+       <text>Essays by Paul Graham</text>
+     </docTitle>
+     <navMap>
+       <navPoint id="toc" playOrder="1">
+         <navLabel><text>Table of Contents</text></navLabel>
+         <content src="index.html#toc" />
+       </navPoint>
+       
+    <navPoint id="convince" playOrder="2">
+      <navLabel>
+        <text>How to Convince Investors</text>
+      </navLabel>
+      <content src="index.html#convince" />
+    </navPoint>
+  
+    <navPoint id="herd" playOrder="3">
+      <navLabel>
+        <text>Investor Herd Dynamics</text>
+      </navLabel>
+      <content src="index.html#herd" />
+    </navPoint>
+  
+    <navPoint id="fr" playOrder="4">
+      <navLabel>
+        <text>How to Raise Money</text>
+      </navLabel>
+      <content src="index.html#fr" />
+    </navPoint>
+  
+    <navPoint id="before" playOrder="5">
+      <navLabel>
+        <text>Before the Startup</text>
+      </navLabel>
+      <content src="index.html#before" />
+    </navPoint>
+  
+    <navPoint id="mean" playOrder="6">
+      <navLabel>
+        <text>Mean People Fail</text>
+      </navLabel>
+      <content src="index.html#mean" />
+    </navPoint>
+  
+    <navPoint id="pinch" playOrder="7">
+      <navLabel>
+        <text>The Fatal Pinch</text>
+      </navLabel>
+      <content src="index.html#pinch" />
+    </navPoint>
+  
+    <navPoint id="know" playOrder="8">
+      <navLabel>
+        <text>How You Know</text>
+      </navLabel>
+      <content src="index.html#know" />
+    </navPoint>
+  
+    <navPoint id="ecw" playOrder="9">
+      <navLabel>
+        <text>How to Be an Expert in a Changing World</text>
+      </navLabel>
+      <content src="index.html#ecw" />
+    </navPoint>
+  
+    <navPoint id="95" playOrder="10">
+      <navLabel>
+        <text>Let the Other 95% of Great Programmers In</text>
+      </navLabel>
+      <content src="index.html#95" />
+    </navPoint>
+  
+    <navPoint id="corpdev" playOrder="11">
+      <navLabel>
+        <text>Don't Talk to Corp Dev</text>
+      </navLabel>
+      <content src="index.html#corpdev" />
+    </navPoint>
+  
+    <navPoint id="work" playOrder="12">
+      <navLabel>
+        <text>What Doesn't Seem Like Work?</text>
+      </navLabel>
+      <content src="index.html#work" />
+    </navPoint>
+  
+    <navPoint id="ronco" playOrder="13">
+      <navLabel>
+        <text>The Ronco Principle</text>
+      </navLabel>
+      <content src="index.html#ronco" />
+    </navPoint>
+  
+    <navPoint id="altair" playOrder="14">
+      <navLabel>
+        <text>What Microsoft Is this the Altair Basic of?</text>
+      </navLabel>
+      <content src="index.html#altair" />
+    </navPoint>
+  
+    <navPoint id="name" playOrder="15">
+      <navLabel>
+        <text>Change Your Name</text>
+      </navLabel>
+      <content src="index.html#name" />
+    </navPoint>
+  
+    <navPoint id="safe" playOrder="16">
+      <navLabel>
+        <text>Why It's Safe for Founders to Be Nice</text>
+      </navLabel>
+      <content src="index.html#safe" />
+    </navPoint>
+  
+    <navPoint id="aord" playOrder="17">
+      <navLabel>
+        <text>Default Alive or Default Dead?</text>
+      </navLabel>
+      <content src="index.html#aord" />
+    </navPoint>
+  
+    <navPoint id="talk" playOrder="18">
+      <navLabel>
+        <text>Write Like You Talk</text>
+      </navLabel>
+      <content src="index.html#talk" />
+    </navPoint>
+  
+    <navPoint id="bias" playOrder="19">
+      <navLabel>
+        <text>A Way to Detect Bias</text>
+      </navLabel>
+      <content src="index.html#bias" />
+    </navPoint>
+  
+    <navPoint id="jessica" playOrder="20">
+      <navLabel>
+        <text>Jessica Livingston</text>
+      </navLabel>
+      <content src="index.html#jessica" />
+    </navPoint>
+  
+    <navPoint id="re" playOrder="21">
+      <navLabel>
+        <text>The Refragmentation</text>
+      </navLabel>
+      <content src="index.html#re" />
+    </navPoint>
+  
+    <navPoint id="ineq" playOrder="22">
+      <navLabel>
+        <text>Economic Inequality</text>
+      </navLabel>
+      <content src="index.html#ineq" />
+    </navPoint>
+  
+    <navPoint id="vb" playOrder="23">
+      <navLabel>
+        <text>Life is Short</text>
+      </navLabel>
+      <content src="index.html#vb" />
+    </navPoint>
+  
+    <navPoint id="pgh" playOrder="24">
+      <navLabel>
+        <text>How to Make Pittsburgh a Startup Hub</text>
+      </navLabel>
+      <content src="index.html#pgh" />
+    </navPoint>
+  
+    <navPoint id="disc" playOrder="25">
+      <navLabel>
+        <text>The Risk of Discovery</text>
+      </navLabel>
+      <content src="index.html#disc" />
+    </navPoint>
+  
+    <navPoint id="pow" playOrder="26">
+      <navLabel>
+        <text>Charisma / Power</text>
+      </navLabel>
+      <content src="index.html#pow" />
+    </navPoint>
+  
+    <navPoint id="sun" playOrder="27">
+      <navLabel>
+        <text>General and Surprising</text>
+      </navLabel>
+      <content src="index.html#sun" />
+    </navPoint>
+  
+    <navPoint id="genius" playOrder="28">
+      <navLabel>
+        <text>The Bus Ticket Theory of Genius</text>
+      </navLabel>
+      <content src="index.html#genius" />
+    </navPoint>
+  
+    <navPoint id="nov" playOrder="29">
+      <navLabel>
+        <text>Novelty and Heresy</text>
+      </navLabel>
+      <content src="index.html#nov" />
+    </navPoint>
+  
+    <navPoint id="lesson" playOrder="30">
+      <navLabel>
+        <text>The Lesson to Unlearn</text>
+      </navLabel>
+      <content src="index.html#lesson" />
+    </navPoint>
+  
+    <navPoint id="kids" playOrder="31">
+      <navLabel>
+        <text>Having Kids</text>
+      </navLabel>
+      <content src="index.html#kids" />
+    </navPoint>
+  
+    <navPoint id="fp" playOrder="32">
+      <navLabel>
+        <text>Fashionable Problems</text>
+      </navLabel>
+      <content src="index.html#fp" />
+    </navPoint>
+  
+    <navPoint id="mod" playOrder="33">
+      <navLabel>
+        <text>The Two Kinds of Moderate</text>
+      </navLabel>
+      <content src="index.html#mod" />
+    </navPoint>
+  
+    <navPoint id="fh" playOrder="34">
+      <navLabel>
+        <text>Haters</text>
+      </navLabel>
+      <content src="index.html#fh" />
+    </navPoint>
+  
+    <navPoint id="noob" playOrder="35">
+      <navLabel>
+        <text>Being a Noob</text>
+      </navLabel>
+      <content src="index.html#noob" />
+    </navPoint>
+  
+    <navPoint id="useful" playOrder="36">
+      <navLabel>
+        <text>How to Write Usefully</text>
+      </navLabel>
+      <content src="index.html#useful" />
+    </navPoint>
+  
+    <navPoint id="cred" playOrder="37">
+      <navLabel>
+        <text>Coronavirus and Credibility</text>
+      </navLabel>
+      <content src="index.html#cred" />
+    </navPoint>
+  
+    <navPoint id="orth" playOrder="38">
+      <navLabel>
+        <text>Orthodox Privilege</text>
+      </navLabel>
+      <content src="index.html#orth" />
+    </navPoint>
+  
+    <navPoint id="conformism" playOrder="39">
+      <navLabel>
+        <text>The Four Quadrants of Conformism</text>
+      </navLabel>
+      <content src="index.html#conformism" />
+    </navPoint>
+  
+    <navPoint id="wtax" playOrder="40">
+      <navLabel>
+        <text>Modeling a Wealth Tax</text>
+      </navLabel>
+      <content src="index.html#wtax" />
+    </navPoint>
+  
+    <navPoint id="early" playOrder="41">
+      <navLabel>
+        <text>Early Work</text>
+      </navLabel>
+      <content src="index.html#early" />
+    </navPoint>
+  
+    <navPoint id="think" playOrder="42">
+      <navLabel>
+        <text>How to Think for Yourself</text>
+      </navLabel>
+      <content src="index.html#think" />
+    </navPoint>
+  
+    <navPoint id="airbnbs" playOrder="43">
+      <navLabel>
+        <text>The Airbnbs</text>
+      </navLabel>
+      <content src="index.html#airbnbs" />
+    </navPoint>
+  
+    <navPoint id="ace" playOrder="44">
+      <navLabel>
+        <text>Billionaires Build</text>
+      </navLabel>
+      <content src="index.html#ace" />
+    </navPoint>
+  
+    <navPoint id="earnest" playOrder="45">
+      <navLabel>
+        <text>Earnestness</text>
+      </navLabel>
+      <content src="index.html#earnest" />
+    </navPoint>
+  
+    <navPoint id="worked" playOrder="46">
+      <navLabel>
+        <text>What I Worked On</text>
+      </navLabel>
+      <content src="index.html#worked" />
+    </navPoint>
+  
+    <navPoint id="donate" playOrder="47">
+      <navLabel>
+        <text>Donate Unrestricted</text>
+      </navLabel>
+      <content src="index.html#donate" />
+    </navPoint>
+  
+    <navPoint id="simply" playOrder="48">
+      <navLabel>
+        <text>Write Simply</text>
+      </navLabel>
+      <content src="index.html#simply" />
+    </navPoint>
+  
+    <navPoint id="richnow" playOrder="49">
+      <navLabel>
+        <text>How People Get Rich Now</text>
+      </navLabel>
+      <content src="index.html#richnow" />
+    </navPoint>
+  
+    <navPoint id="real" playOrder="50">
+      <navLabel>
+        <text>The Real Reason to End the Death Penalty</text>
+      </navLabel>
+      <content src="index.html#real" />
+    </navPoint>
+  
+    <navPoint id="nft" playOrder="51">
+      <navLabel>
+        <text>An NFT That Saves Lives</text>
+      </navLabel>
+      <content src="index.html#nft" />
+    </navPoint>
+  
+    <navPoint id="newideas" playOrder="52">
+      <navLabel>
+        <text>Crazy New Ideas</text>
+      </navLabel>
+      <content src="index.html#newideas" />
+    </navPoint>
+  
+    <navPoint id="fn" playOrder="53">
+      <navLabel>
+        <text>Fierce Nerds</text>
+      </navLabel>
+      <content src="index.html#fn" />
+    </navPoint>
+  
+    <navPoint id="own" playOrder="54">
+      <navLabel>
+        <text>A Project of One's Own</text>
+      </navLabel>
+      <content src="index.html#own" />
+    </navPoint>
+  
+    <navPoint id="hwh" playOrder="55">
+      <navLabel>
+        <text>How to Work Hard</text>
+      </navLabel>
+      <content src="index.html#hwh" />
+    </navPoint>
+  
+    <navPoint id="weird" playOrder="56">
+      <navLabel>
+        <text>Weird Languages</text>
+      </navLabel>
+      <content src="index.html#weird" />
+    </navPoint>
+  
+    <navPoint id="smart" playOrder="57">
+      <navLabel>
+        <text>Beyond Smart</text>
+      </navLabel>
+      <content src="index.html#smart" />
+    </navPoint>
+  
+    <navPoint id="goodtaste" playOrder="58">
+      <navLabel>
+        <text>Is There Such a Thing as Good Taste?</text>
+      </navLabel>
+      <content src="index.html#goodtaste" />
+    </navPoint>
+  
+    <navPoint id="words" playOrder="59">
+      <navLabel>
+        <text>Putting Ideas into Words</text>
+      </navLabel>
+      <content src="index.html#words" />
+    </navPoint>
+  
+    <navPoint id="heresy" playOrder="60">
+      <navLabel>
+        <text>Heresy</text>
+      </navLabel>
+      <content src="index.html#heresy" />
+    </navPoint>
+  
+    <navPoint id="users" playOrder="61">
+      <navLabel>
+        <text>What I've Learned from Users</text>
+      </navLabel>
+      <content src="index.html#users" />
+    </navPoint>
+  
+    <navPoint id="alien" playOrder="62">
+      <navLabel>
+        <text>Alien Truth</text>
+      </navLabel>
+      <content src="index.html#alien" />
+    </navPoint>
+  
+    <navPoint id="want" playOrder="63">
+      <navLabel>
+        <text>What You (Want to)* Want</text>
+      </navLabel>
+      <content src="index.html#want" />
+    </navPoint>
+  
+    <navPoint id="read" playOrder="64">
+      <navLabel>
+        <text>The Need to Read</text>
+      </navLabel>
+      <content src="index.html#read" />
+    </navPoint>
+  
+    <navPoint id="getideas" playOrder="65">
+      <navLabel>
+        <text>How to Get New Ideas</text>
+      </navLabel>
+      <content src="index.html#getideas" />
+    </navPoint>
+  
+    <navPoint id="greatwork" playOrder="66">
+      <navLabel>
+        <text>How to Do Great Work</text>
+      </navLabel>
+      <content src="index.html#greatwork" />
+    </navPoint>
+  
+    <navPoint id="superlinear" playOrder="67">
+      <navLabel>
+        <text>Superlinear Returns</text>
+      </navLabel>
+      <content src="index.html#superlinear" />
+    </navPoint>
+  
+    <navPoint id="best" playOrder="68">
+      <navLabel>
+        <text>The Best Essay</text>
+      </navLabel>
+      <content src="index.html#best" />
+    </navPoint>
+  
+    <navPoint id="google" playOrder="69">
+      <navLabel>
+        <text>How to Start Google</text>
+      </navLabel>
+      <content src="index.html#google" />
+    </navPoint>
+  
+    <navPoint id="reddits" playOrder="70">
+      <navLabel>
+        <text>The Reddits</text>
+      </navLabel>
+      <content src="index.html#reddits" />
+    </navPoint>
+  
+    <navPoint id="persistence" playOrder="71">
+      <navLabel>
+        <text>The Right Kind of Stubborn</text>
+      </navLabel>
+      <content src="index.html#persistence" />
+    </navPoint>
+  
+    <navPoint id="foundermode" playOrder="72">
+      <navLabel>
+        <text>Founder Mode</text>
+      </navLabel>
+      <content src="index.html#foundermode" />
+    </navPoint>
+  
+    <navPoint id="when" playOrder="73">
+      <navLabel>
+        <text>When To Do What You Love</text>
+      </navLabel>
+      <content src="index.html#when" />
+    </navPoint>
+  
+    <navPoint id="writes" playOrder="74">
+      <navLabel>
+        <text>Writes and Write-Nots</text>
+      </navLabel>
+      <content src="index.html#writes" />
+    </navPoint>
+  
+    <navPoint id="woke" playOrder="75">
+      <navLabel>
+        <text>The Origins of Wokeness</text>
+      </navLabel>
+      <content src="index.html#woke" />
+    </navPoint>
+  
+    <navPoint id="do" playOrder="76">
+      <navLabel>
+        <text>What to Do</text>
+      </navLabel>
+      <content src="index.html#do" />
+    </navPoint>
+  
+   </ncx>
+  
