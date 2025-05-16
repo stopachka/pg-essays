@@ -1,5 +1,5 @@
 # pg-essays
 
-```
-  yarn install && node index.js
+```bash
+npm i && node index.js
 ```
