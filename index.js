@@ -141,6 +141,11 @@ async function localiseImages($) {
   return $;
 }
 
+function removeFontTags($) {
+  $("font").each((_, el) => $(el).replaceWith($(el).html()));
+  return $;
+}
+
 async function toChapter(link, $html) {
   const ch$ = [
     removeMenu,
@@ -148,6 +153,7 @@ async function toChapter(link, $html) {
     replaceChapterTitle,
     removeApplyYC,
     removeHr,
+    removeFontTags,
     replaceTables,
   ].reduce(($, f) => f($, link), $html);
   const $ = await localiseImages(ch$);
@@ -245,6 +251,11 @@ function buildHTML(linksWithChapters) {
       <head>
       <meta charset="utf-8" />
       <title>${BOOK_TITLE}</title>
+      <style>
+      body { 
+        font-family: "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+      }
+      </style>
       </head>
       <body>
         ${buildToc(linksWithChapters)}
@@ -266,6 +277,8 @@ function runKindleGen(opfPath, mobiPath) {
 
 export async function htmlToPdf(htmlPath, pdfPath) {
   console.log(`Building PDF ${pdfPath}`);
+  const widthIn = 6 + 0.125 * 2;
+  const heightIn = 9 + 0.125 * 2;
   const browser = await puppeteer.launch({
     args: ["--no-sandbox"],
     headless: true,
@@ -277,14 +290,14 @@ export async function htmlToPdf(htmlPath, pdfPath) {
   });
   await page.pdf({
     path: pdfPath,
-    width: "6.125in",
-    height: "9.25in",
+    width: `${widthIn}in`,
+    height: `${heightIn}in`,
     printBackground: true,
     margin: {
-      top: "0.125in",
-      bottom: "0.125in",
-      left: "0.125in",
-      right: "0.125in",
+      top: "0.7in",
+      bottom: "0.7in",
+      left: "0.7in",
+      right: "0.7in",
     },
   });
   await browser.close();
