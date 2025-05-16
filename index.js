@@ -220,7 +220,7 @@ export async function htmlToPdf(htmlPath, pdfPath) {
   console.log(`Building PDF ${pdfPath}`);
   const browser = await puppeteer.launch({
     args: ["--no-sandbox"],
-    headless: false,
+    headless: true,
   });
   const page = await browser.newPage(); // local file URI
   await page.setRequestInterception(true);
