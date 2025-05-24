@@ -50,7 +50,7 @@ const ignoredPosts = new Set(["https://paulgraham.com/prop62.html"]);
 
 type IndexEntry = { url: string; title: string };
 
-async function loadArticleEntries(): Promise<IndexEntry[]> {
+async function loadArticleIndex(): Promise<IndexEntry[]> {
   const entriesJSON = await withCache("articles", "index.json", async () => {
     const $ = await loadHTML(ARTICLES_URL);
 
@@ -75,4 +75,27 @@ async function loadArticleEntries(): Promise<IndexEntry[]> {
   return JSON.parse(entriesJSON);
 }
 
-await loadArticleEntries();
+// -------------
+// cleanEssayHTML
+
+function cleanEssayHTML($: cheerio.CheerioAPI): string {
+  return $.html();
+}
+
+// -------------
+// main
+
+async function main() {
+  const index = await loadArticleIndex();
+  const with$ = await Promise.all(
+    index.map(async (entry) => {
+      const $ = await loadHTML(entry.url);
+      return {
+        ...entry,
+        $,
+      };
+    })
+  );
+}
+
+await main();
