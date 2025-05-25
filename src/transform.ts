@@ -3,6 +3,7 @@ import * as cheerio from "cheerio";
 import path from "path";
 import crypto from "node:crypto";
 import turndown from "turndown";
+import prettier from "prettier";
 
 const turnDownService = new turndown();
 
@@ -117,6 +118,10 @@ function replaceTables($: cheerio.CheerioAPI) {
       });
   ["td", "td", "tbody", "thead", "table"].forEach(toDiv);
   return $;
+}
+
+function removeFooterLinks($: cheerio.CheerioAPI) {
+  $("a:contains('Translation')").remove();
 }
 
 const urlToFilename = (url: string) => {
@@ -242,9 +247,16 @@ async function replaceWithBBNTalk($: cheerio.CheerioAPI) {
   $.root().empty().append(bodyTxt);
 }
 
+function fixNota($: cheerio.CheerioAPI) {
+  $("nota").each((_, e) => {
+    $(e).replaceWith($(e).html() || "");
+  });
+}
+
 const pageSpecificCleanupFns: Record<string, CleanFn[]> = {
   "Programming Bottom-Up": [removeNewOnLispLink],
   "Lisp for Web-Based Applications": [replaceWithBBNTalk],
+  "The Founder Visa": [fixNota],
 };
 
 type CleanFn =
@@ -258,9 +270,11 @@ async function cleanEssayHTML(
   idx: number,
   $: cheerio.CheerioAPI
 ) {
+  const paddedIdx = idx.toString().padStart(3, "0");
+
   return withCache(
     "cleanedEssayHTML",
-    `${idx}_${stringifiedTitle(entry.title)}.html`,
+    `${paddedIdx}_${stringifiedTitle(entry.title)}.html`,
     async () => {
       const baseFns: CleanFn[] = [
         removeMenu,
@@ -283,7 +297,9 @@ async function cleanEssayHTML(
       for (const fn of fns) {
         await fn($);
       }
-      return $.html();
+      return prettier.format($.html(), {
+        parser: "html",
+      });
     }
   );
 }
