@@ -123,8 +123,26 @@ const urlToFilename = (url: string) => {
   return new URL(url).pathname.split("/").pop();
 };
 
-const ignoreFilenames = new Set(["spacer.gif", "trans_1x1.gif"]);
-async function localiseImages(idx: number, $: cheerio.CheerioAPI) {
+const ignoredFilenames = new Set([
+  "spacer.gif",
+  "trans_1x1.gif",
+  "serious-2.gif",
+  "japanese-translation-1.gif",
+  "y18.gif",
+  "the-reddits-2.gif",
+  "how-to-get-new-ideas-5.gif",
+]);
+
+const fontImageToText = {
+  "five-questions-about-language-design-18.gif": "Guiding Philosophy",
+  "five-questions-about-language-design-22.gif": "Pitfalls and Gotchas",
+  "five-questions-about-language-design-19.gif": "Open Problems",
+  "five-questions-about-language-design-20.gif": "Little-Known Secrets",
+  "five-questions-about-language-design-21.gif":
+    "Ideas Whose Time Has Returned",
+};
+
+async function localiseImages($: cheerio.CheerioAPI) {
   await Promise.all(
     $("img[src]")
       .toArray()
@@ -135,10 +153,16 @@ async function localiseImages(idx: number, $: cheerio.CheerioAPI) {
         if (!filename) {
           throw new Error(`Unknown filename: ${remote}`);
         }
-
-        if (ignoreFilenames.has(filename)) {
+        if (ignoredFilenames.has(filename)) {
           console.log(`[asset-cache] ignore: ${remote}`);
           $(node).remove();
+          return;
+        }
+        if (filename in fontImageToText) {
+          const fontText =
+            fontImageToText[filename as keyof typeof fontImageToText];
+          console.log(`[asset-cache] font text: ${remote}, ${fontText}`);
+          $(node).replaceWith(`<h2>${fontText}</h2>`);
           return;
         }
         const localFilename = `${crypto
@@ -201,7 +225,7 @@ async function cleanEssayHTML(
       removeFontTags($);
       replaceTables($);
       removeOuterTags($);
-      await localiseImages(idx, $);
+      await localiseImages($);
       return $.html();
     }
   );
