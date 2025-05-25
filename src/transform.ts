@@ -208,6 +208,10 @@ function removeOuterTags($: cheerio.CheerioAPI) {
 
 const stringifiedTitle = (title: string) => title.replace(/\//g, "_");
 
+type CleanFn =
+  | (($: cheerio.CheerioAPI) => void)
+  | (($: cheerio.CheerioAPI) => Promise<void>);
+
 async function cleanEssayHTML(
   entry: IndexEntry,
   idx: number,
@@ -217,15 +221,22 @@ async function cleanEssayHTML(
     "cleanedEssayHTML",
     `${idx}_${stringifiedTitle(entry.title)}.html`,
     async () => {
-      removeMenu($);
-      removeLogo($);
-      removeTitleImage($);
-      removeApplyYC($);
-      removeHr($);
-      removeFontTags($);
-      replaceTables($);
-      removeOuterTags($);
-      await localiseImages($);
+      const fns: CleanFn[] = [
+        removeMenu,
+        removeLogo,
+        removeTitleImage,
+        removeApplyYC,
+        removeHr,
+        removeFontTags,
+        replaceTables,
+        removeOuterTags,
+        localiseImages,
+      ];
+
+      for (const fn of fns) {
+        await fn($);
+      }
+
       return $.html();
     }
   );
