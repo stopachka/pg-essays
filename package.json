@@ -3,13 +3,15 @@
   "module": "src/transform.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/turndown": "^5.0.5"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
     "cheerio": "^1.0.0",
-    "p-limit": "^6.2.0"
+    "p-limit": "^6.2.0",
+    "turndown": "^7.2.0"
   }
 }

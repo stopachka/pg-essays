@@ -2,6 +2,9 @@ import pLimit from "p-limit";
 import * as cheerio from "cheerio";
 import path from "path";
 import crypto from "node:crypto";
+import turndown from "turndown";
+
+const turnDownService = new turndown();
 
 // ----------------
 // Utils
@@ -116,33 +119,38 @@ function replaceTables($: cheerio.CheerioAPI) {
   return $;
 }
 
-const badImages = new Set(["http://www.virtumundo.com/images/spacer.gif"]);
-async function localiseImages($: cheerio.CheerioAPI) {
-  const toLocalName = (url: string) => {
-    const ext = path.extname(new URL(url).pathname) || ".jpg";
-    const key = crypto.createHash("md5").update(url).digest("hex");
-    return `${key}${ext}`;
-  };
+const urlToFilename = (url: string) => {
+  return new URL(url).pathname.split("/").pop();
+};
 
+const ignoreFilenames = new Set(["spacer.gif", "trans_1x1.gif"]);
+async function localiseImages(idx: number, $: cheerio.CheerioAPI) {
   await Promise.all(
     $("img[src]")
       .toArray()
       .filter((n) => n.attribs.src.includes("http"))
       .map(async (node) => {
         const remote = node.attribs.src;
-        if (badImages.has(remote)) {
-          console.log(`[asset-cache] remove: ${remote}`);
+        const filename = urlToFilename(remote);
+        if (!filename) {
+          throw new Error(`Unknown filename: ${remote}`);
+        }
+
+        if (ignoreFilenames.has(filename)) {
+          console.log(`[asset-cache] ignore: ${remote}`);
           $(node).remove();
           return;
         }
-        const filename = toLocalName(remote);
-
+        const localFilename = `${crypto
+          .createHash("md5")
+          .update(remote)
+          .digest("hex")}_${filename}`;
         const dest = path.join(
           import.meta.dir,
           "..",
           "cache",
           "assets",
-          filename
+          localFilename
         );
         const file = Bun.file(dest);
         const fileExists = await file.exists();
@@ -155,7 +163,7 @@ async function localiseImages($: cheerio.CheerioAPI) {
           console.log(`[asset-cache] hit: ${remote}`);
         }
 
-        node.attribs.src = `../assets/${filename}`;
+        node.attribs.src = `../assets/${localFilename}`;
       })
   );
 }
@@ -193,7 +201,7 @@ async function cleanEssayHTML(
       removeFontTags($);
       replaceTables($);
       removeOuterTags($);
-      await localiseImages($);
+      await localiseImages(idx, $);
       return $.html();
     }
   );
