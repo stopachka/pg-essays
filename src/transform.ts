@@ -206,11 +206,52 @@ function removeOuterTags($: cheerio.CheerioAPI) {
   $("html").replaceWith($("html").html() || "");
 }
 
-const stringifiedTitle = (title: string) => title.replace(/\//g, "_");
+function removeNewOnLispLink($: cheerio.CheerioAPI) {
+  $("a[href='onlisptext.html']").each((_, el) => {
+    const $el = $(el);
+    const prev = $el.prev();
+    if (prev.text() === "New:") {
+      prev.remove();
+    }
+    const nextSib = el.nextSibling;
+    if (nextSib && nextSib.type === "text" && nextSib.data === ".") {
+      $(nextSib).remove();
+    }
+    $el.remove();
+  });
+}
+
+async function replaceWithBBNTalk($: cheerio.CheerioAPI) {
+  const $a = $("a:contains('BBN Talk Excerpts')").first();
+  const url = $a.attr("href");
+  if (!url) {
+    throw new Error("No URL found for BBN Talk Excerpts");
+  }
+  const $bbn = await loadHTML(url);
+  const txt = $bbn.text();
+  const idx = txt.indexOf("(This is an excerpt");
+  const bodyTxt = txt
+    .slice(idx)
+    .split(/\n\s*\n/)
+    .filter((txt) => txt)
+    .map((txt) => {
+      const tag = txt.split(" ").length < 5 ? "h3" : "p";
+      return `<${tag}>${txt}</${tag}>`;
+    })
+    .join("\n");
+  $.root().empty().append(bodyTxt);
+}
+
+const pageSpecificCleanupFns: Record<string, CleanFn[]> = {
+  "Programming Bottom-Up": [removeNewOnLispLink],
+  "Lisp for Web-Based Applications": [replaceWithBBNTalk],
+};
 
 type CleanFn =
   | (($: cheerio.CheerioAPI) => void)
   | (($: cheerio.CheerioAPI) => Promise<void>);
+
+const stringifiedTitle = (title: string) => title.replace(/\//g, "_");
 
 async function cleanEssayHTML(
   entry: IndexEntry,
@@ -221,7 +262,7 @@ async function cleanEssayHTML(
     "cleanedEssayHTML",
     `${idx}_${stringifiedTitle(entry.title)}.html`,
     async () => {
-      const fns: CleanFn[] = [
+      const baseFns: CleanFn[] = [
         removeMenu,
         removeLogo,
         removeTitleImage,
@@ -232,11 +273,16 @@ async function cleanEssayHTML(
         removeOuterTags,
         localiseImages,
       ];
-
+      const extraFns = pageSpecificCleanupFns[entry.title] || [];
+      if (extraFns.length) {
+        console.log(
+          `[clean] ${entry.title}: extra cleanups: ${extraFns.length}`
+        );
+      }
+      const fns = [...baseFns, ...extraFns];
       for (const fn of fns) {
         await fn($);
       }
-
       return $.html();
     }
   );
