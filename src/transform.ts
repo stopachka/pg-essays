@@ -2,10 +2,7 @@ import pLimit from "p-limit";
 import * as cheerio from "cheerio";
 import path from "path";
 import crypto from "node:crypto";
-import turndown from "turndown";
 import prettier from "prettier";
-
-const turnDownService = new turndown();
 
 // ----------------
 // Utils
