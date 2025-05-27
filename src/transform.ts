@@ -283,6 +283,7 @@ async function cleanEssayHTML(
         replaceTables,
         removeOuterTags,
         localiseImages,
+        removeFooterLinks,
       ];
       const extraFns = pageSpecificCleanupFns[entry.title] || [];
       if (extraFns.length) {
@@ -306,7 +307,7 @@ async function cleanEssayHTML(
 
 async function main() {
   const index = await loadArticleIndex();
-  const with$ = await Promise.all(
+  await Promise.all(
     index.map(async (entry, idx) => {
       const $ = await loadHTML(entry.url);
       const cleanedHTMLString = await cleanEssayHTML(entry, idx, $);
