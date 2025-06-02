@@ -14,7 +14,7 @@ const PG_URL = "https://paulgraham.com";
 const ARTICLES_URL = `${PG_URL}/articles.html`;
 
 const ignoredPosts = new Set([
-  "https://paulgraham.com/prop62.html", 
+  "https://paulgraham.com/prop62.html",
   "https://paulgraham.com/nft.html",
   "https://paulgraham.com/foundervisa.html",
 ]);
@@ -80,24 +80,82 @@ async function fetchHTMLText(entry: IndexEntry): Promise<string> {
   await Bun.write(file, text, { createPath: true });
   return text;
 }
+const ant = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const limit = pLimit(5);
 
 async function prepareEntry(entry: IndexEntry): Promise<void> {
   const htmlText = await fetchHTMLText(entry);
   const $ = cheerio.load(htmlText);
-  
+  $("script").remove();
+
   const mdFile = Bun.file(
     path.join(import.meta.dir, "..", "prep", keyFn(entry), `${keyFn(entry)}.md`)
   );
   if (await mdFile.exists()) {
     console.log(`[llm] ${entry.title}: already done`);
     return;
-  })
-  const plain = $("body").text();
+  }
 
-  const key = keyFn(entry);
+  console.log(`[llm] ${entry.title}: from network`);
+  const res = await limit(async () => {
+    return await ant.messages.create({
+      system: `
+You are an expert with HTML and Markdown. You are an assistant that is going to help create a book from Paul Graham's essays. 
 
-  console.log(`[txt] ${entry.title}: from network`);
-  await Bun.write(file, plain);
+I am going to give you the actual HTML of one of Paul Graham's essays. "
+
+**Your goal is to return the markdown version of this essay.**
+
+**IMPORTANT: Be _exact_: use the exact same text as in the essay.** 
+
+Here are some of the things you can _ignore_: 
+- At the beginning of the hmtl, sometimes you'll see an advertisement link: like to check out Hacker news, or to apply to YC. Don't include that in the markdown. 
+- At the end of the html, sometimes you'll see advertisements (to check out book), or related links, or translation links. Do not include those in the markdown. 
+
+**How to handle footnotes:**
+- Keep track of footnotes. You can use the [^1] syntax for footnotes. 
+
+**Spacing** 
+- Paul Graham sometimes adds spaces between text lines. Don't do that in markdown. Keep the paragaraphs together. 
+
+At the end, sometimes PG has a section he specifically calls "Notes". Don't include the "Notes" subtitle. Just include the footnotes. 
+
+**Links** 
+- If the essay contains a link to a page on paulgraham.com, make it an actual full paulgraham.com link. 
+
+**General structure**
+
+The general structure should look like: 
+
+# Title 
+
+_Date_ 
+
+Content
+
+Thanks note
+
+Footnotes
+
+Return _just_ the markdown. Nothing else. 
+
+`.trim(),
+      messages: [
+        {
+          role: "user",
+          content: htmlText,
+        },
+      ],
+      model: "claude-4-sonnet-20250514",
+      max_tokens: 10000,
+    });
+  });
+  const msg = res.content[res.content.length - 1];
+  if (msg.type !== "text") {
+    throw new Error("Unexpected message type");
+  }
+  const text = msg.text;
+  await Bun.write(mdFile, text);
 }
 
 // -------------
