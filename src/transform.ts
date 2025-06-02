@@ -374,6 +374,7 @@ You are an expert with HTML and Markdown. You are tasked with converting Paul Gr
 - Convert HTML links to markdown links
 - Keep paragraph structure intact
 - Use # for main title, ## for subsections
+- If you see a link _inside_ the essay that goes to a page on paulgraham.com, make sure the href _includes_ paulgraham.com
 
 **Structure should be:**
 # Essay Title
