@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-06-02T22:36:29.681Z",
+  "summary": {
+    "total": 3,
+    "successful": 1,
+    "failed": 2,
+    "withDifferences": 1
+  },
+  "results": [
+    {
+      "title": "Programming Bottom-Up",
+      "url": "https://paulgraham.com/progbot.html",
+      "success": true,
+      "textComparison": {
+        "originalLength": 5437,
+        "convertedLength": 5442,
+        "hasDifferences": true,
+        "similarityScore": 0.9891583976479236,
+        "significantDifferences": [
+          {
+            "type": "added",
+            "value": "Programming Bottom-Up "
+          },
+          {
+            "type": "added",
+            "value": "_"
+          },
+          {
+            "type": "added",
+            "value": "_ "
+          },
+          {
+            "type": "removed",
+            "value": "top"
+          },
+          {
+            "type": "added",
+            "value": "_top"
+          },
+          {
+            "type": "added",
+            "value": "_ "
+          },
+          {
+            "type": "removed",
+            "value": "bottom"
+          },
+          {
+            "type": "added",
+            "value": "_bottom"
+          },
+          {
+            "type": "removed",
+            "value": "design"
+          },
+          {
+            "type": "added",
+            "value": "design_"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Lisp for Web-Based Applications",
+      "url": "https://paulgraham.com/lwba.html",
+      "success": false,
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"max_tokens: 10000 > 8192, which is the maximum allowed number of output tokens for claude-3-5-sonnet-20241022\"}}",
+      "textComparison": null
+    },
+    {
+      "title": "Beating the Averages",
+      "url": "https://paulgraham.com/avg.html",
+      "success": false,
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"max_tokens: 10000 > 8192, which is the maximum allowed number of output tokens for claude-3-5-sonnet-20241022\"}}",
+      "textComparison": null
+    }
+  ]
+}
