@@ -1,4 +1,3 @@
-import * as diff from "diff";
 import path from "node:path";
 
 // ANSI color codes
@@ -30,14 +29,18 @@ interface DetailedReport {
     url: string;
     success: boolean;
     error?: string;
+    processingTimeMs?: number;
     textComparison?: {
       originalLength: number;
       convertedLength: number;
       hasDifferences: boolean;
       similarityScore: number;
-      significantDifferences: Array<{
+      contextualDifferences: Array<{
         type: 'added' | 'removed' | 'unchanged';
         value: string;
+        contextBefore?: string;
+        contextAfter?: string;
+        position?: number;
       }>;
     };
   }>;
@@ -60,6 +63,14 @@ function displayColorizedReport(report: DetailedReport): void {
   console.log(`   ${colorize('✅', 'green')} Successful: ${colorize(report.summary.successful.toString(), 'green')}`);
   console.log(`   ${colorize('❌', 'red')} Failed: ${colorize(report.summary.failed.toString(), 'red')}`);
   console.log(`   ${colorize('⚠️', 'yellow')} With differences: ${colorize(report.summary.withDifferences.toString(), 'yellow')}`);
+  
+  // Show processing time info
+  const successfulWithTime = report.results.filter(r => r.success && r.processingTimeMs);
+  if (successfulWithTime.length > 0) {
+    const avgTime = successfulWithTime.reduce((sum, r) => sum + (r.processingTimeMs || 0), 0) / successfulWithTime.length;
+    console.log(`   ${colorize('⏱️', 'blue')} Avg processing time: ${colorize(Math.round(avgTime) + 'ms', 'blue')}`);
+  }
+  
   console.log(`   Generated: ${colorize(new Date(report.timestamp).toLocaleString(), 'cyan')}`);
   console.log();
 
@@ -90,14 +101,19 @@ function displayColorizedReport(report: DetailedReport): void {
       console.log(`   Original: ${colorize(comp.originalLength.toString(), 'white')} chars`);
       console.log(`   Converted: ${colorize(comp.convertedLength.toString(), 'white')} chars`);
       
-      if (comp.significantDifferences.length > 0) {
+      if (comp.contextualDifferences && comp.contextualDifferences.length > 0) {
         console.log(`   ${colorize('Key differences:', 'bright')}`);
-        comp.significantDifferences.forEach(diff => {
-          const preview = diff.value.length > 60 ? diff.value.slice(0, 60) + '...' : diff.value;
+        comp.contextualDifferences.slice(0, 3).forEach(diff => {
+          const preview = diff.value.length > 50 ? diff.value.slice(0, 50) + '...' : diff.value;
           if (diff.type === 'removed') {
             console.log(`   ${colorize('🔴 REMOVED:', 'red')} "${colorize(preview, 'red')}"`);
           } else if (diff.type === 'added') {
             console.log(`   ${colorize('🟢 ADDED:', 'green')} "${colorize(preview, 'green')}"`);
+          }
+          
+          if (diff.contextBefore || diff.contextAfter) {
+            const context = `...${diff.contextBefore || ''} ${colorize('[CHANGE]', 'bright')} ${diff.contextAfter || ''}...`;
+            console.log(`      ${colorize('Context:', 'cyan')} ${context}`);
           }
         });
       }
@@ -136,18 +152,32 @@ function displayDifferencesForEntry(report: DetailedReport, entryTitle: string):
     return;
   }
 
+  if (!entry.textComparison.contextualDifferences || entry.textComparison.contextualDifferences.length === 0) {
+    console.log(colorize(`✅ No contextual differences available for: ${entry.title}`, 'green'));
+    return;
+  }
+
   console.log();
   console.log(colorize(`📄 DETAILED DIFFERENCES: ${entry.title}`, 'bright'));
   console.log(colorize("-".repeat(60), 'cyan'));
   console.log();
 
-  entry.textComparison.significantDifferences.forEach((diff, index) => {
+  entry.textComparison.contextualDifferences.forEach((diff, index) => {
     console.log(colorize(`[${index + 1}] ${diff.type.toUpperCase()}:`, 'bright'));
     
     if (diff.type === 'removed') {
       console.log(colorize(`- ${diff.value}`, 'red'));
     } else if (diff.type === 'added') {
       console.log(colorize(`+ ${diff.value}`, 'green'));
+    }
+    
+    if (diff.contextBefore || diff.contextAfter) {
+      console.log(colorize(`   Context:`, 'cyan'));
+      console.log(`   Before: ${colorize(diff.contextBefore || '(none)', 'white')}`);
+      console.log(`   After: ${colorize(diff.contextAfter || '(none)', 'white')}`);
+      if (diff.position !== undefined) {
+        console.log(`   Position: ${colorize(diff.position.toString(), 'yellow')} chars`);
+      }
     }
     console.log();
   });

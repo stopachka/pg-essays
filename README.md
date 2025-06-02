@@ -9,6 +9,10 @@ A tool that converts Paul Graham's essays from HTML to Markdown using Claude AI,
 - 🎨 **Colorized Reports**: Beautiful, colorized terminal output showing conversion results
 - 💾 **Smart Caching**: Caches both HTML downloads and AI conversions to avoid redundant work
 - 📈 **Detailed Analytics**: Similarity scores, difference detection, and comprehensive reporting
+- 🌊 **Streaming Responses**: LLM responses stream directly to files with real-time progress
+- ⚡ **Smart Rate Limiting**: Automatic retry with exponential backoff and configurable delays
+- 📍 **Contextual Diffs**: Shows surrounding text context for better understanding of changes
+- 📊 **Progress Tracking**: Real-time progress bars and processing time analytics
 
 ## Setup
 
@@ -119,8 +123,10 @@ The tool performs sophisticated text comparison:
 
 - **HTML → Plaintext**: Strips HTML tags and normalizes whitespace
 - **Markdown → Plaintext**: Removes Markdown syntax and normalizes
-- **Diff Analysis**: Uses word-level diffing to identify changes
+- **Contextual Diff Analysis**: Uses word-level diffing with surrounding context
 - **Similarity Scoring**: Calculates percentage similarity between versions
+- **Position Tracking**: Shows exact character positions of changes
+- **Smart Context**: Displays before/after text snippets for each difference
 
 ## Report Types
 
@@ -138,17 +144,33 @@ The tool performs sophisticated text comparison:
 
 ## Configuration
 
-Edit `src/transform.ts` to customize:
+Configure via environment variables or runner options:
+
+```bash
+# Set concurrency (default: 2, max: 3 for safety)
+bun src/runner.ts --concurrency 2
+
+# Set minimum delay between requests (default: 3000ms)
+# Edit RateLimitedProcessor in src/transform.ts
+
+# Process specific number of essays
+bun src/runner.ts --limit 10
+
+# Process all essays
+bun src/runner.ts --all
+```
+
+Or edit `src/transform.ts` to customize:
 
 ```typescript
-// Number of concurrent AI requests
-const limit = pLimit(5);
+// Rate limiting configuration
+const processor = new RateLimitedProcessor(
+  concurrency,     // Max concurrent requests
+  3000            // Min delay between requests (ms)
+);
 
 // Essays to skip
 const ignoredPosts = new Set([...]);
-
-// Process subset for testing
-index.slice(0, 3) // Remove slice() to process all
 ```
 
 ## Quality Metrics
@@ -163,15 +185,24 @@ index.slice(0, 3) // Remove slice() to process all
 ### Common Issues
 
 1. **API Key Missing**: Ensure `ANTHROPIC_API_KEY` is set
-2. **Rate Limits**: Adjust `pLimit(5)` to lower concurrency
-3. **Memory Issues**: Process essays in smaller batches
+2. **Rate Limits**: Reduce `--concurrency` (default: 2) or increase delay in `RateLimitedProcessor`
+3. **Memory Issues**: Process essays in smaller batches using `--limit`
+4. **Streaming Errors**: Check network connection; streaming will auto-retry with backoff
+5. **Low Similarity Scores**: Review contextual diffs to identify conversion issues
 
 ### Debugging
 
 Check the generated files:
-- `prep/conversion_report.json` - Full details
+- `prep/conversion_report.json` - Full details with contextual diffs
 - `prep/[essay]/[essay].html` - Original HTML
-- `prep/[essay]/[essay].md` - Converted Markdown
+- `prep/[essay]/[essay].md` - Converted Markdown (streamed in real-time)
+
+Use the diff viewer for detailed analysis:
+```bash
+bun run diff "Essay Title"  # Shows contextual differences
+```
+
+Monitor processing in real-time with the progress bar and streaming dots.
 
 ## Dependencies
 

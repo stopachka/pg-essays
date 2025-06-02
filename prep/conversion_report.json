@@ -1,61 +1,239 @@
 {
-  "timestamp": "2025-06-02T22:39:10.837Z",
+  "timestamp": "2025-06-02T23:12:54.422Z",
   "summary": {
-    "total": 3,
-    "successful": 3,
+    "total": 8,
+    "successful": 8,
     "failed": 0,
-    "withDifferences": 3
+    "withDifferences": 8
   },
   "results": [
     {
       "title": "Programming Bottom-Up",
       "url": "https://paulgraham.com/progbot.html",
       "success": true,
+      "processingTimeMs": 24,
       "textComparison": {
         "originalLength": 5437,
-        "convertedLength": 5442,
+        "convertedLength": 5435,
         "hasDifferences": true,
-        "similarityScore": 0.9891583976479236,
-        "significantDifferences": [
+        "similarityScore": 0.9882288026485194,
+        "contextualDifferences": [
           {
-            "type": "added",
-            "value": "Programming Bottom-Up "
+            "type": "removed",
+            "value": "1993 ",
+            "contextBefore": "",
+            "contextAfter": "(This essay is from the introd",
+            "position": 0
           },
           {
             "type": "added",
-            "value": "_"
+            "value": "Programming Bottom-Up _1993_ _",
+            "contextBefore": "1993",
+            "contextAfter": "(This essay is from the introd",
+            "position": 5
           },
           {
             "type": "added",
-            "value": "_ "
+            "value": "_ ",
+            "contextBefore": "the introduction to On Lisp.)",
+            "contextAfter": "It's a long-standing principl",
+            "position": 54
           },
           {
             "type": "removed",
-            "value": "top"
+            "value": "top",
+            "contextBefore": "raditional approach is called",
+            "contextAfter": "-down design: you say \"the pur",
+            "position": 630
           },
           {
             "type": "added",
-            "value": "_top"
+            "value": "_top",
+            "contextBefore": "itional approach is called top",
+            "contextAfter": "-down design: you say \"the pur",
+            "position": 633
           },
           {
             "type": "added",
-            "value": "_ "
+            "value": "_ ",
+            "contextBefore": "ach is called top-down design:",
+            "contextAfter": "you say \"the purpose of the p",
+            "position": 646
           },
           {
             "type": "removed",
-            "value": "bottom"
+            "value": "bottom",
+            "contextBefore": "inciple which could be called",
+            "contextAfter": "-up design-- changing the lang",
+            "position": 1200
           },
           {
             "type": "added",
-            "value": "_bottom"
+            "value": "_bottom",
+            "contextBefore": "e which could be called bottom",
+            "contextAfter": "-up design-- changing the lang",
+            "position": 1206
           },
           {
             "type": "removed",
-            "value": "design"
+            "value": "design",
+            "contextBefore": "ich could be called bottom-up",
+            "contextAfter": "-- changing the language to su",
+            "position": 1210
           },
           {
             "type": "added",
-            "value": "design_"
+            "value": "design_",
+            "contextBefore": "uld be called bottom-up design",
+            "contextAfter": "-- changing the language to su",
+            "position": 1216
+          },
+          {
+            "type": "removed",
+            "value": "[1] ",
+            "contextBefore": "a special-purpose subroutine.",
+            "contextAfter": "Because it causes you always t",
+            "position": 3786
+          },
+          {
+            "type": "removed",
+            "value": "The",
+            "contextBefore": "be done by a small group. In T",
+            "contextAfter": "Mythical Man-Month, Frederick",
+            "position": 4685
+          },
+          {
+            "type": "added",
+            "value": "_The",
+            "contextBefore": "done by a small group. In The",
+            "contextAfter": "Mythical Man-Month, Frederick",
+            "position": 4688
+          },
+          {
+            "type": "removed",
+            "value": "Month",
+            "contextBefore": "l group. In The Mythical Man-M",
+            "contextAfter": "Frederick Brooks proposed tha",
+            "position": 4702
+          },
+          {
+            "type": "added",
+            "value": "Month_",
+            "contextBefore": "up. In The Mythical Man-Month,",
+            "contextAfter": "Frederick Brooks proposed tha",
+            "position": 4707
+          },
+          {
+            "type": "removed",
+            "value": "New",
+            "contextBefore": "ssible, it can win outright.Ne",
+            "contextAfter": "Download On Lisp for Free. [1]",
+            "position": 5258
+          },
+          {
+            "type": "removed",
+            "value": "Download On Lisp for Free. [1] ",
+            "contextBefore": "e, it can win outright.New: Do",
+            "contextAfter": "ut no one can read the program",
+            "position": 5263
+          }
+        ]
+      }
+    },
+    {
+      "title": "The Roots of Lisp",
+      "url": "https://paulgraham.com/rootsoflisp.html",
+      "success": true,
+      "processingTimeMs": 23,
+      "textComparison": {
+        "originalLength": 2186,
+        "convertedLength": 2073,
+        "hasDifferences": true,
+        "similarityScore": 0.929551692589204,
+        "contextualDifferences": [
+          {
+            "type": "removed",
+            "value": "May 2001 ",
+            "contextBefore": "",
+            "contextAfter": "(I wrote this article to help",
+            "position": 0
+          },
+          {
+            "type": "added",
+            "value": "The Roots of Lisp _May 2001_ _",
+            "contextBefore": "May 2001",
+            "contextAfter": "(I wrote this article to help",
+            "position": 9
+          },
+          {
+            "type": "removed",
+            "value": "�",
+            "contextBefore": "nderstand the essence of Lisp",
+            "contextAfter": "both in the sense of its orig",
+            "position": 224
+          },
+          {
+            "type": "added",
+            "value": "—",
+            "contextBefore": "derstand the essence of Lisp �",
+            "contextAfter": "both in the sense of its orig",
+            "position": 225
+          },
+          {
+            "type": "added",
+            "value": "_ ",
+            "contextBefore": "languages, Lisp has dialects.)",
+            "contextAfter": "In 1960, John McCarthy publish",
+            "position": 420
+          },
+          {
+            "type": "removed",
+            "value": "list",
+            "contextBefore": "imple data structure called a",
+            "contextAfter": "for both code and data.It's w",
+            "position": 800
+          },
+          {
+            "type": "added",
+            "value": "_list_",
+            "contextBefore": "e data structure called a list",
+            "contextAfter": "for both code and data.It's w",
+            "position": 804
+          },
+          {
+            "type": "removed",
+            "value": "�",
+            "contextBefore": "he unusual thing about Lisp �",
+            "contextAfter": "n fact, the defining quality o",
+            "position": 1820
+          },
+          {
+            "type": "added",
+            "value": "—",
+            "contextBefore": "e unusual thing about Lisp � i",
+            "contextAfter": "n fact, the defining quality o",
+            "position": 1821
+          },
+          {
+            "type": "removed",
+            "value": "�",
+            "contextBefore": "he defining quality of Lisp �",
+            "contextAfter": "s that it can be written in it",
+            "position": 1860
+          },
+          {
+            "type": "added",
+            "value": "—",
+            "contextBefore": "e defining quality of Lisp � i",
+            "contextAfter": "s that it can be written in it",
+            "position": 1861
+          },
+          {
+            "type": "removed",
+            "value": "Complete Article (Postscript)What Made Lisp DifferentThe CodeChinese TranslationJapanese TranslationPortuguese TranslationKorean Translation",
+            "contextBefore": "to running Common Lisp code.Co",
+            "contextAfter": "",
+            "position": 2048
           }
         ]
       }
@@ -64,15 +242,460 @@
       "title": "Lisp for Web-Based Applications",
       "url": "https://paulgraham.com/lwba.html",
       "success": true,
+      "processingTimeMs": 25,
       "textComparison": {
         "originalLength": 318,
         "convertedLength": 351,
         "hasDifferences": true,
         "similarityScore": 0.9088319088319088,
-        "significantDifferences": [
+        "contextualDifferences": [
           {
             "type": "added",
-            "value": "Lisp for Web-Based Applications "
+            "value": "Lisp for Web-Based Applications ",
+            "contextBefore": "",
+            "contextAfter": "After a link to Beating the Av",
+            "position": 0
+          }
+        ]
+      }
+    },
+    {
+      "title": "Java's Cover",
+      "url": "https://paulgraham.com/javacover.html",
+      "success": true,
+      "processingTimeMs": 29,
+      "textComparison": {
+        "originalLength": 7668,
+        "convertedLength": 7545,
+        "hasDifferences": true,
+        "similarityScore": 0.9800469483568075,
+        "contextualDifferences": [
+          {
+            "type": "removed",
+            "value": "April 2001This",
+            "contextBefore": "",
+            "contextAfter": "essay developed out of conver",
+            "position": 0
+          },
+          {
+            "type": "added",
+            "value": "Java's Cover _April 2001_ This",
+            "contextBefore": "April 2001This",
+            "contextAfter": "essay developed out of conver",
+            "position": 14
+          },
+          {
+            "type": "removed",
+            "value": "1. ",
+            "contextBefore": "t like the look of Java: 1. It",
+            "contextAfter": "s been so energetically hyped.",
+            "position": 1921
+          },
+          {
+            "type": "removed",
+            "value": "2.",
+            "contextBefore": "rength of its own merits.2. It",
+            "contextAfter": "aimed low. In the original Ja",
+            "position": 2234
+          },
+          {
+            "type": "removed",
+            "value": "3.",
+            "contextBefore": "C, Perl, Smalltalk, Lisp.3. It",
+            "contextAfter": "as ulterior motives. Someone o",
+            "position": 2823
+          },
+          {
+            "type": "removed",
+            "value": "4.",
+            "contextBefore": "n to undermine Microsoft.4. No",
+            "contextAfter": "ne loves it. C, Perl, Python,",
+            "position": 3207
+          },
+          {
+            "type": "removed",
+            "value": "5.",
+            "contextBefore": "say that they loved Java.5. Pe",
+            "contextAfter": "le are forced to use it. A lot",
+            "position": 3347
+          },
+          {
+            "type": "removed",
+            "value": "6.",
+            "contextBefore": "have used it voluntarily.6. It",
+            "contextAfter": "as too many cooks. The best pr",
+            "position": 3705
+          },
+          {
+            "type": "removed",
+            "value": "7.",
+            "contextBefore": "designed a good language.7. It",
+            "contextAfter": "bureaucratic. From what littl",
+            "position": 3958
+          },
+          {
+            "type": "removed",
+            "value": "8.",
+            "contextBefore": "t and get out of the way.8. It",
+            "contextAfter": "pseudo-hip. Sun now pretends",
+            "position": 4163
+          },
+          {
+            "type": "removed",
+            "value": "9.",
+            "contextBefore": "mes out of a big company.9. It",
+            "contextAfter": "designed for large organizati",
+            "position": 4443
+          },
+          {
+            "type": "removed",
+            "value": "10.",
+            "contextBefore": "hacker is tomorrow's CTO.10. T",
+            "contextAfter": "wrong people like it. The prog",
+            "position": 5013
+          },
+          {
+            "type": "removed",
+            "value": "11.",
+            "contextBefore": "s change with every wind.11. I",
+            "contextAfter": "daddy is in a pinch. Sun's bus",
+            "position": 5504
+          },
+          {
+            "type": "removed",
+            "value": "12.",
+            "contextBefore": "drag Java down with them.12. T",
+            "contextAfter": "DoD likes it. The Defense Depa",
+            "position": 6091
+          },
+          {
+            "type": "removed",
+            "value": "Trevor Re: Java's CoverBerners-Lee Re: JavaBeing PopularSun Internal Memo2005: BusinessWeek AgreesJapanese Translation",
+            "contextBefore": "it seems very unlikely.Trevor",
+            "contextAfter": "",
+            "position": 7557
+          }
+        ]
+      }
+    },
+    {
+      "title": "Five Questions about Language Design",
+      "url": "https://paulgraham.com/langdes.html",
+      "success": true,
+      "processingTimeMs": 59,
+      "textComparison": {
+        "originalLength": 16825,
+        "convertedLength": 5697,
+        "hasDifferences": true,
+        "similarityScore": 0.3265378900445765,
+        "contextualDifferences": [
+          {
+            "type": "removed",
+            "value": "May 2001 ",
+            "contextBefore": "",
+            "contextAfter": "(These are some notes I made f",
+            "position": 0
+          },
+          {
+            "type": "added",
+            "value": "Five Questions about Language Design _May 2001_ _",
+            "contextBefore": "May 2001",
+            "contextAfter": "(These are some notes I made f",
+            "position": 9
+          },
+          {
+            "type": "removed",
+            "value": "1.",
+            "contextBefore": "esign at MIT on May 10, 2001.)",
+            "contextAfter": "Programming Languages Are for",
+            "position": 116
+          },
+          {
+            "type": "added",
+            "value": "_",
+            "contextBefore": "ign at MIT on May 10, 2001.)1.",
+            "contextAfter": "Programming Languages Are for",
+            "position": 118
+          },
+          {
+            "type": "removed",
+            "value": "2.",
+            "contextBefore": "with integer subscripts.2. De",
+            "contextAfter": "gn for Yourself and Your Frien",
+            "position": 1806
+          },
+          {
+            "type": "removed",
+            "value": "3.",
+            "contextBefore": "nteresting question.3. Give th",
+            "contextAfter": "Programmer as Much Control as",
+            "position": 2955
+          },
+          {
+            "type": "removed",
+            "value": "4.",
+            "contextBefore": "n-source software.4. Aim for B",
+            "contextAfter": "vity.Brevity is underestimated",
+            "position": 3705
+          },
+          {
+            "type": "removed",
+            "value": "5.",
+            "contextBefore": "ch explanation.5. Admit What H",
+            "contextAfter": "king Is.A lot of people wish t",
+            "position": 4634
+          },
+          {
+            "type": "removed",
+            "value": "1",
+            "contextBefore": "paper about.1. How to Organiz",
+            "contextAfter": "Big Libraries?Libraries are b",
+            "position": 5456
+          },
+          {
+            "type": "added",
+            "value": " [Continued",
+            "contextBefore": "paper about.1. How to Organize",
+            "contextAfter": "Big Libraries?Libraries are b",
+            "position": 5457
+          },
+          {
+            "type": "removed",
+            "value": " How to Organize Big Libraries?Libraries are becoming an increasingly important component of programming languages",
+            "contextBefore": "aper about.1. How to Organize",
+            "contextAfter": "tting bigger, and this can be",
+            "position": 5458
+          },
+          {
+            "type": "removed",
+            "value": " They're also getting bigger, and this can be dangerous",
+            "contextBefore": "ng languages. They're also get",
+            "contextAfter": "ger to find the library functi",
+            "position": 5573
+          },
+          {
+            "type": "removed",
+            "value": " If it takes longer to find the library function that will do what you want than it would take to write it yourself, then all that code is doing nothing but make your manual thick. (The Symbolics manu",
+            "contextBefore": "be dangerous. If it takes long",
+            "contextAfter": "have to work on ways to organi",
+            "position": 5629
+          },
+          {
+            "type": "added",
+            "value": "] [Note:",
+            "contextBefore": "in point.) So I think we will",
+            "contextAfter": "have to work on ways to organi",
+            "position": 5858
+          },
+          {
+            "type": "removed",
+            "value": " think we will have to work on ways to organize libraries. The ideal would be to design them so that the programmer could guess what library call would do the right thing.2. Are People Really Scared o",
+            "contextBefore": "point.) So I think we will ha",
+            "contextAfter": "r. Prefix syntax seems perfect",
+            "position": 5860
+          },
+          {
+            "type": "removed",
+            "value": "t know the answer. Prefix syntax seems perfectly natural to me, except possibly for math. But it could be that a lot of Lisp's unpopularity is simply due to having an unfamiliar syntax. Whether to do ",
+            "contextBefore": "nd still don't know the answer",
+            "contextAfter": "t for the new way that server-",
+            "position": 6167
+          },
+          {
+            "type": "removed",
+            "value": "need is support for",
+            "contextBefore": "thing we'll need is support f",
+            "contextAfter": "server-based apps get release",
+            "position": 6755
+          },
+          {
+            "type": "added",
+            "value": "continue",
+            "contextBefore": "s support for the new way that",
+            "contextAfter": "server-based apps get release",
+            "position": 6774
+          },
+          {
+            "type": "removed",
+            "value": "new way that server-based apps get released. Instead of having one or two big releases a year, like desktop software, server-based apps get released as a series of small changes. You may have as many ",
+            "contextBefore": "port for the new way that serv",
+            "contextAfter": "y stateless world of a Web ses",
+            "position": 6779
+          },
+          {
+            "type": "added",
+            "value": "conversion",
+            "contextBefore": "f subroutines in the inherentl",
+            "contextAfter": "y stateless world of a Web ses",
+            "position": 7523
+          },
+          {
+            "type": "removed",
+            "value": "the inherently stateless world of a Web session. Maybe it would be worthwhile having actual continuations, if it was not too expensive.4. What New Abstractions Are Left",
+            "contextBefore": "broutines in the inherently st",
+            "contextAfter": "not sure how reasonable a hope",
+            "position": 7527
+          },
+          {
+            "type": "added",
+            "value": "following parts due",
+            "contextBefore": "ions Are Left to Discover?I'm",
+            "contextAfter": "not sure how reasonable a hope",
+            "position": 7695
+          },
+          {
+            "type": "removed",
+            "value": "Discover?I'm not sure how reasonable a hope this is",
+            "contextBefore": "Are Left to Discover?I'm not",
+            "contextAfter": "would really love to do, pers",
+            "position": 7699
+          },
+          {
+            "type": "added",
+            "value": "length limits",
+            "contextBefore": "hope this is, but one thing I",
+            "contextAfter": "would really love to do, pers",
+            "position": 7750
+          },
+          {
+            "type": "removed",
+            "value": "but one thing I would really love to do, personally, is discover a new abstraction-- something that would make as much of a difference as having first class functions or recursion or even keyword para",
+            "contextBefore": "ope this is, but one thing I w",
+            "contextAfter": "in the same language as the op",
+            "position": 7752
+          },
+          {
+            "type": "added",
+            "value": "maintaining",
+            "contextBefore": "oward writing the application",
+            "contextAfter": "in the same language as the op",
+            "position": 8231
+          },
+          {
+            "type": "removed",
+            "value": "application in the",
+            "contextBefore": "writing the application in th",
+            "contextAfter": "the operating system. And so",
+            "position": 8236
+          },
+          {
+            "type": "added",
+            "value": "exact",
+            "contextBefore": "cation in the same language as",
+            "contextAfter": "the operating system. And so",
+            "position": 8254
+          },
+          {
+            "type": "removed",
+            "value": "language as the operating system. And so ten years ago, writing software pretty much meant writing software in C. Eventually a tradition evolved: application programs must not be written in unusual la",
+            "contextBefore": "in the same language as the o",
+            "contextAfter": "grams need to be rewritten. Th",
+            "position": 8260
+          },
+          {
+            "type": "added",
+            "value": "approach",
+            "contextBefore": "em what parts of their own pro",
+            "contextAfter": "grams need to be rewritten. Th",
+            "position": 9667
+          },
+          {
+            "type": "removed",
+            "value": "their own programs need to be rewritten. That's where speed comes from in practice. So maybe it would be a net win if language implementors took half the time they would have spent doing compiler opti",
+            "contextBefore": "hat parts of their own program",
+            "contextAfter": "ke the best languages all evol",
+            "position": 9671
+          },
+          {
+            "type": "added",
+            "value": "complete",
+            "contextBefore": "absolute rule, but it seems li",
+            "contextAfter": "ke the best languages all evol",
+            "position": 10019
+          },
+          {
+            "type": "removed",
+            "value": "but it seems like the best languages all evolved together with some application they were being used to write. C was written by people who needed it for systems programming. Lisp was developed partly ",
+            "contextBefore": "solute rule, but it seems like",
+            "contextAfter": "ns.[During the panel, Guy Stee",
+            "position": 10021
+          },
+          {
+            "type": "added",
+            "value": "word",
+            "contextBefore": "riting server-based applicatio",
+            "contextAfter": "ns.[During the panel, Guy Stee",
+            "position": 10613
+          },
+          {
+            "type": "removed",
+            "value": "based applications.[During the panel, Guy Steele also made this point, with the additional suggestion that the application should not consist of writing the compiler ",
+            "contextBefore": "iting server-based application",
+            "contextAfter": ", unless your language happens",
+            "position": 10614
+          },
+          {
+            "type": "removed",
+            "value": " your language, unless your language happens to be intended for writing compilers.]4. A Language Has to Be Good for Writing Throwaway Programs.You know what a throwaway program is: something you write",
+            "contextBefore": "compiler for your language, u",
+            "contextAfter": "ill make new languages fashion",
+            "position": 10783
+          },
+          {
+            "type": "removed",
+            "value": "based software will make new languages fashionable again. With server-based software, you can use any language you want, so if someone does design a language that actually seems better than others tha",
+            "contextBefore": "think server-based software wi",
+            "contextAfter": "le to assume about them is tha",
+            "position": 12267
+          },
+          {
+            "type": "added",
+            "value": "word conversion while preserving",
+            "contextBefore": "b access, and all you'll be ab",
+            "contextAfter": "le to assume about them is tha",
+            "position": 14461
+          },
+          {
+            "type": "removed",
+            "value": "you'll be able to assume about them is that they can support simple html",
+            "contextBefore": "ess, and all you'll be able to",
+            "contextAfter": "you have a browser on your cel",
+            "position": 14466
+          },
+          {
+            "type": "added",
+            "value": "formatting",
+            "contextBefore": "t simple html and forms. Will",
+            "contextAfter": "you have a browser on your cel",
+            "position": 14538
+          },
+          {
+            "type": "removed",
+            "value": "forms",
+            "contextBefore": "ple html and forms. Will you h",
+            "contextAfter": "browser on your cell phone? W",
+            "position": 14543
+          },
+          {
+            "type": "added",
+            "value": "links",
+            "contextBefore": "tml and forms. Will you have a",
+            "contextAfter": "browser on your cell phone? W",
+            "position": 14548
+          },
+          {
+            "type": "removed",
+            "value": " Will you have a browser on your cell phone? Will there be a phone in your palm pilot? Will your blackberry get a bigger screen? Will you be able to browse the Web on your gameboy? Your watch? I don't",
+            "contextBefore": "ml and forms. Will you have a",
+            "contextAfter": "",
+            "position": 14549
+          },
+          {
+            "type": "added",
+            "value": "]",
+            "contextBefore": "e Translation",
+            "contextAfter": "",
+            "position": 16842
           }
         ]
       }
@@ -81,51 +704,817 @@
       "title": "Beating the Averages",
       "url": "https://paulgraham.com/avg.html",
       "success": true,
+      "processingTimeMs": 74,
       "textComparison": {
         "originalLength": 25384,
-        "convertedLength": 25214,
+        "convertedLength": 24791,
         "hasDifferences": true,
-        "similarityScore": 0.9891270091396155,
-        "significantDifferences": [
+        "similarityScore": 0.9730538922155688,
+        "contextualDifferences": [
           {
             "type": "removed",
-            "value": "Want to start a startup? Get funded by Y Combinator. April"
+            "value": "Want to start a startup? Get funded by Y Combinator. April",
+            "contextBefore": "",
+            "contextAfter": "2001, rev. April 2003(This ar",
+            "position": 0
           },
           {
             "type": "added",
-            "value": "Beating the Averages _April"
-          },
-          {
-            "type": "removed",
-            "value": "2003"
-          },
-          {
-            "type": "added",
-            "value": "2003_ _"
-          },
-          {
-            "type": "added",
-            "value": "_ "
-          },
-          {
-            "type": "added",
-            "value": "^"
+            "value": "Beating the Averages _April",
+            "contextBefore": "funded by Y Combinator. April",
+            "contextAfter": "2001, rev. April 2003(This ar",
+            "position": 58
           },
           {
             "type": "removed",
-            "value": "WeaponEric"
+            "value": "2003",
+            "contextBefore": "nator. April 2001, rev. April",
+            "contextAfter": "(This article is derived from",
+            "position": 76
           },
           {
             "type": "added",
-            "value": "Weapon Eric"
+            "value": "2003_ _",
+            "contextBefore": "r. April 2001, rev. April 2003",
+            "contextAfter": "(This article is derived from",
+            "position": 80
+          },
+          {
+            "type": "added",
+            "value": "_ ",
+            "contextBefore": "01 Franz Developer Symposium.)",
+            "contextAfter": "In the summer of 1995, my fri",
+            "position": 162
           },
           {
             "type": "removed",
-            "value": "The"
+            "value": "[1]",
+            "contextBefore": "versities and research labs. [",
+            "contextAfter": "he Secret WeaponEric Raymond h",
+            "position": 1019
+          },
+          {
+            "type": "removed",
+            "value": "WeaponEric",
+            "contextBefore": "research labs. [1]The Secret W",
+            "contextAfter": "Raymond has written an essay c",
+            "position": 1033
           },
           {
             "type": "added",
-            "value": "_The"
+            "value": "Weapon Eric",
+            "contextBefore": "abs. [1]The Secret WeaponEric",
+            "contextAfter": "Raymond has written an essay c",
+            "position": 1043
+          },
+          {
+            "type": "removed",
+            "value": "The",
+            "contextBefore": "of a copy of The Day of the Ja",
+            "contextAfter": "l, by Frederick Forsyth. The m",
+            "position": 8175
+          },
+          {
+            "type": "added",
+            "value": "_The",
+            "contextBefore": "a copy of The Day of the Jacka",
+            "contextAfter": "l, by Frederick Forsyth. The m",
+            "position": 8178
+          },
+          {
+            "type": "removed",
+            "value": "Jackal",
+            "contextBefore": "e Day of the Jackal, by Freder",
+            "contextAfter": "rsyth. The main character is a",
+            "position": 8190
+          },
+          {
+            "type": "added",
+            "value": "Jackal_",
+            "contextBefore": "of the Jackal, by Frederick Fo",
+            "contextAfter": "rsyth. The main character is a",
+            "position": 8196
+          },
+          {
+            "type": "removed",
+            "value": "[2]",
+            "contextBefore": "that way.[2]The people who un",
+            "contextAfter": "stood our technology best were",
+            "position": 9334
+          },
+          {
+            "type": "removed",
+            "value": "ParadoxWhat",
+            "contextBefore": "The Blub ParadoxWhat's so gre",
+            "contextAfter": "sp? And if Lisp is so great, w",
+            "position": 10096
+          },
+          {
+            "type": "added",
+            "value": "Paradox What",
+            "contextBefore": "aradoxWhat's so great about Li",
+            "contextAfter": "sp? And if Lisp is so great, w",
+            "position": 10107
+          },
+          {
+            "type": "removed",
+            "value": "[3]",
+            "contextBefore": "l one. [3]There are many excep",
+            "contextAfter": "ns to this rule. If you're wri",
+            "position": 11473
+          },
+          {
+            "type": "removed",
+            "value": "[4] ",
+            "contextBefore": "inuum [4] of abstractness, fro",
+            "contextAfter": "e most powerful all the way do",
+            "position": 12693
+          },
+          {
+            "type": "removed",
+            "value": "[5]",
+            "contextBefore": "any languages have something c",
+            "contextAfter": "ed a macro. But Lisp macros ar",
+            "position": 16201
+          },
+          {
+            "type": "removed",
+            "value": "StartupsBut",
+            "contextBefore": "t I don't expect to convince a",
+            "contextAfter": "25) to go out and learn Lisp.",
+            "position": 19051
+          },
+          {
+            "type": "added",
+            "value": "Startups But",
+            "contextBefore": "xpect to convince anyone (over",
+            "contextAfter": "25) to go out and learn Lisp.",
+            "position": 19062
+          },
+          {
+            "type": "removed",
+            "value": "[6]",
+            "contextBefore": "he median language, meaning wh",
+            "contextAfter": "ver language the median progra",
+            "position": 20427
+          },
+          {
+            "type": "removed",
+            "value": "Notes[1]",
+            "contextBefore": "at first had two parts: the ed",
+            "contextAfter": "itten in Lisp, which people us",
+            "position": 22788
+          },
+          {
+            "type": "added",
+            "value": ":",
+            "contextBefore": "had two parts: the editor, wr",
+            "contextAfter": "itten in Lisp, which people us",
+            "position": 22796
+          },
+          {
+            "type": "removed",
+            "value": "In January 2003, Yahoo released a new version of the editor written in C++ and Perl. It's hard to say whether the program is no longer written in Lisp, though, because to translate this program into C",
+            "contextBefore": "Yahoo released a new version o",
+            "contextAfter": "emplates are still, as far as",
+            "position": 23148
+          },
+          {
+            "type": "removed",
+            "value": "the source files of all the page-generating templates are still, as far as I know, Lisp code. (See Greenspun's Tenth Rule.)[2] ",
+            "contextBefore": "of all the page-generating tem",
+            "contextAfter": "retive, because even if our co",
+            "position": 23399
+          },
+          {
+            "type": "removed",
+            "value": "[3]",
+            "contextBefore": "are equally powerful in the s",
+            "contextAfter": "e of being Turing equivalent,",
+            "position": 23742
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "e equally powerful in the sens",
+            "contextAfter": "e of being Turing equivalent,",
+            "position": 23745
+          },
+          {
+            "type": "removed",
+            "value": "[4]",
+            "contextBefore": ": or possibly a lattice, narro",
+            "contextAfter": "g toward the top; it's not the",
+            "position": 24496
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "r possibly a lattice, narrowin",
+            "contextAfter": "g toward the top; it's not the",
+            "position": 24499
+          },
+          {
+            "type": "removed",
+            "value": "[5]",
+            "contextBefore": "isleading to treat macros as a",
+            "contextAfter": "parate feature. In practice th",
+            "position": 24653
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "eading to treat macros as a se",
+            "contextAfter": "parate feature. In practice th",
+            "position": 24656
+          },
+          {
+            "type": "removed",
+            "value": "[6]",
+            "contextBefore": "comparisons of programming lan",
+            "contextAfter": "ges either take the form of re",
+            "position": 24833
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "parisons of programming langua",
+            "contextAfter": "ges either take the form of re",
+            "position": 24836
+          },
+          {
+            "type": "removed",
+            "value": "More Technical DetailsJapanese TranslationTurkish TranslationUzbek TranslationOrbitz Uses Lisp TooHow To Become A HackerA Scheme StoryItalian Translation You'll find this essay and 14 others in Hacker",
+            "contextBefore": "tailsJapanese TranslationTurki",
+            "contextAfter": "",
+            "position": 25218
+          }
+        ]
+      }
+    },
+    {
+      "title": "The Other Road Ahead",
+      "url": "https://paulgraham.com/road.html",
+      "success": true,
+      "processingTimeMs": 176,
+      "textComparison": {
+        "originalLength": 68477,
+        "convertedLength": 861,
+        "hasDifferences": true,
+        "similarityScore": 0.010967186062473532,
+        "contextualDifferences": [
+          {
+            "type": "removed",
+            "value": "September 2001 ",
+            "contextBefore": "",
+            "contextAfter": "(This article explains why muc",
+            "position": 0
+          },
+          {
+            "type": "added",
+            "value": "The Other Road Ahead _September 2001_ _",
+            "contextBefore": "September 2001",
+            "contextAfter": "(This article explains why muc",
+            "position": 15
+          },
+          {
+            "type": "added",
+            "value": "_ ",
+            "contextBefore": "ived from a talk at BBN Labs.)",
+            "contextAfter": "In the summer of 1995, my fri",
+            "position": 249
+          },
+          {
+            "type": "removed",
+            "value": "For the first week or so we intended to make this an ordinary desktop application. Then one day we had the idea of making the software run on our Web server, using the browser as an interface. We trie",
+            "contextBefore": "m, so we decided to write some",
+            "contextAfter": ". [1]It will take about a tent",
+            "position": 680
+          },
+          {
+            "type": "removed",
+            "value": "1]It will take about a tenth of a second",
+            "contextBefore": "s you do now with telephones.",
+            "contextAfter": "d for a click to get to the se",
+            "position": 4140
+          },
+          {
+            "type": "added",
+            "value": "Content continues",
+            "contextBefore": "take about a tenth of a secon",
+            "contextAfter": "d for a click to get to the se",
+            "position": 4180
+          },
+          {
+            "type": "removed",
+            "value": "a click to get to the server and back, so users of heavily interactive software, like Photoshop, will still want to have the computations happening on the desktop. But if you look at the kind of thing",
+            "contextBefore": "about a tenth of a second for",
+            "contextAfter": "over the hardware.Because the",
+            "position": 4185
+          },
+          {
+            "type": "removed",
+            "value": "the hardware.Because the software in a Web-based application will be a collection of programs rather than a single binary",
+            "contextBefore": "idn't have direct control over",
+            "contextAfter": "y, it can be written in any nu",
+            "position": 12322
+          },
+          {
+            "type": "added",
+            "value": "18",
+            "contextBefore": "ams rather than a single binar",
+            "contextAfter": "y, it can be written in any nu",
+            "position": 12443
+          },
+          {
+            "type": "removed",
+            "value": " it can be written in any number of different languages. When you're writing desktop software, you're practically forced to write the application in the same language as the underlying operating syste",
+            "contextBefore": "ms rather than a single binary",
+            "contextAfter": ",000 lb. aircraft at 140 miles",
+            "position": 12444
+          },
+          {
+            "type": "removed",
+            "value": "lb. aircraft at 140 miles per hour on a pitching carrier deck, at night, more safely than the average teenager can cut a bagel.This way of writing software is a double",
+            "contextBefore": "a Navy pilot can land a 40,000",
+            "contextAfter": "e-edged sword of course. It wo",
+            "position": 27605
+          },
+          {
+            "type": "added",
+            "value": "words ",
+            "contextBefore": "of writing software is a doubl",
+            "contextAfter": "e-edged sword of course. It wo",
+            "position": 27772
+          },
+          {
+            "type": "removed",
+            "value": "edged sword of course. It works a lot better for a small team of good, trusted programmers than it would for a big company of mediocre ones, where bad ideas are caught by committees instead of the peo",
+            "contextBefore": "f writing software is a double",
+            "contextAfter": ". I once worked for a medium-s",
+            "position": 27773
+          },
+          {
+            "type": "removed",
+            "value": " once worked for a medium-sized desktop software company that had over 100 people working in engineering as a whole. Only 13 of these were in product development. All the rest were working on releases",
+            "contextBefore": "es require fewer programmers.",
+            "contextAfter": "y'll spend in meetings negotia",
+            "position": 28073
+          },
+          {
+            "type": "removed",
+            "value": "spend in meetings negotiating how their software will work together, and the more bugs they'll get from unforeseen interactions. Fortunately, this process also works in reverse: as groups get smaller,",
+            "contextBefore": "e group, the more time they'll",
+            "contextAfter": "continue to thrive, even thou",
+            "position": 29031
+          },
+          {
+            "type": "removed",
+            "value": "to thrive, even though it is probably a bad idea. It's simply more expensive. There is nothing you can do about this conundrum, so the best plan is to go for the smaller customers first. The rest will",
+            "contextBefore": "ntranet software will continue",
+            "contextAfter": "with day jobs or in school, w",
+            "position": 42588
+          },
+          {
+            "type": "removed",
+            "value": "day jobs or in school, writing a prototype of something that might, if it looks promising, turn into a company. At this larval stage, any significant obstacle will stop ",
+            "contextBefore": "as a couple guys, either with",
+            "contextAfter": "the startup dead in its track",
+            "position": 43828
+          },
+          {
+            "type": "removed",
+            "value": "startup dead in its tracks. Writing mainframe software required too much commitment up front. Development machines were expensive, and because the customers would be big companies, you'd need an impre",
+            "contextBefore": "ificant obstacle will stop the",
+            "contextAfter": "s if server-based software wil",
+            "position": 44001
+          },
+          {
+            "type": "added",
+            "value": "next section",
+            "contextBefore": "e software for them.It looks a",
+            "contextAfter": "s if server-based software wil",
+            "position": 45173
+          },
+          {
+            "type": "removed",
+            "value": "server-based software will be good this time around, because startups will write it. Computers are so cheap now that ",
+            "contextBefore": "ftware for them.It looks as if",
+            "contextAfter": "you can get started, as we di",
+            "position": 45177
+          },
+          {
+            "type": "removed",
+            "value": " can get started, as we did, using a desktop computer as a server. Inexpensive processors have eaten the workstation market (you rarely even hear the word now) and are most of the way through the serv",
+            "contextBefore": "uters are so cheap now that yo",
+            "contextAfter": "o's servers, which deal with l",
+            "position": 45297
+          },
+          {
+            "type": "removed",
+            "value": "s servers, which deal with loads as high as any on the Internet, all have the same inexpensive Intel processors that you have in your desktop machine. And once you've written the software, all you nee",
+            "contextBefore": "rough the server market; Yahoo",
+            "contextAfter": "'d have to use it. The Web let",
+            "position": 45514
+          },
+          {
+            "type": "removed",
+            "value": "have to use it. The Web let us do an end-run around Windows, and deliver software running on Unix direct to users through the browser. That is a liberating prospect, a lot ",
+            "contextBefore": "rite software for Windows we'd",
+            "contextAfter": "like the arrival of PCs twent",
+            "position": 47329
+          },
+          {
+            "type": "removed",
+            "value": "the arrival of PCs twenty-five years ago.MicrosoftBack when desktop computers arrived, IBM was the giant that everyone was afraid of. It's hard",
+            "contextBefore": "iberating prospect, a lot like",
+            "contextAfter": "d to imagine now, but I rememb",
+            "position": 47506
+          },
+          {
+            "type": "added",
+            "value": "me",
+            "contextBefore": "eryone was afraid of. It's har",
+            "contextAfter": "d to imagine now, but I rememb",
+            "position": 47649
+          },
+          {
+            "type": "removed",
+            "value": "imagine now, but I remember the feeling very well. Now the frightening giant is Microsoft, and I don't think they are as blind to the threat facing them as IBM was. After all, Microsoft deliberately b",
+            "contextBefore": "ne was afraid of. It's hard to",
+            "contextAfter": "r with servers they control. A",
+            "position": 47653
+          },
+          {
+            "type": "added",
+            "value": "proceed",
+            "contextBefore": "operating system works togethe",
+            "contextAfter": "r with servers they control. A",
+            "position": 48359
+          },
+          {
+            "type": "removed",
+            "value": "servers they control. At a minimum, files will be centrally available for users who want that. I don't expect Microsoft to go all ",
+            "contextBefore": "ing system works together with",
+            "contextAfter": "the way to the extreme of doi",
+            "position": 48365
+          },
+          {
+            "type": "removed",
+            "value": "way to the extreme",
+            "contextBefore": "expect Microsoft to go all the",
+            "contextAfter": "e of doing the computations on",
+            "position": 48499
+          },
+          {
+            "type": "added",
+            "value": "full conversion",
+            "contextBefore": "o go all the way to the extrem",
+            "contextAfter": "e of doing the computations on",
+            "position": 48517
+          },
+          {
+            "type": "removed",
+            "value": "doing the computations on the server, with only a browser for a client, if they can avoid it. If you only need a browser for a client, you don't need Microsoft on the client, and if Microsoft doesn't ",
+            "contextBefore": "all the way to the extreme of",
+            "contextAfter": "this new world as they did th",
+            "position": 48521
+          },
+          {
+            "type": "removed",
+            "value": "new world as they did the world of desktop applications.It's not so much that a competitor will trip them up as that they will trip over themselves. With the rise of Web-based software, they will be f",
+            "contextBefore": "'t think they'll dominate this",
+            "contextAfter": "s essay, I advised avoiding Ja",
+            "position": 49280
+          },
+          {
+            "type": "added",
+            "value": "lengthy",
+            "contextBefore": "In the original version of thi",
+            "contextAfter": "s essay, I advised avoiding Ja",
+            "position": 67985
+          },
+          {
+            "type": "removed",
+            "value": ", I advised avoiding Javascript. That was a good plan in 2001, but Javascript now works. Thanks to Sarah Harlin, Trevor Blackwell, Robert Morris, Eric Raymond, Ken Anderson, and Dan Giffin for reading",
+            "contextBefore": "original version of this essa",
+            "contextAfter": "l",
+            "position": 67991
+          },
+          {
+            "type": "added",
+            "value": "]",
+            "contextBefore": "osoft finally agreesGates Emai",
+            "contextAfter": "l",
+            "position": 68476
+          }
+        ]
+      }
+    },
+    {
+      "title": "Being Popular",
+      "url": "https://paulgraham.com/popular.html",
+      "success": true,
+      "processingTimeMs": 245324,
+      "textComparison": {
+        "originalLength": 43320,
+        "convertedLength": 36575,
+        "hasDifferences": true,
+        "similarityScore": 0.8397506925207756,
+        "contextualDifferences": [
+          {
+            "type": "removed",
+            "value": "May 2001",
+            "contextBefore": "",
+            "contextAfter": "(This article was written as a",
+            "position": 0
+          },
+          {
+            "type": "added",
+            "value": "Being Popular _May 2001_ _",
+            "contextBefore": "May 2001",
+            "contextAfter": "(This article was written as a",
+            "position": 8
+          },
+          {
+            "type": "added",
+            "value": "_ ",
+            "contextBefore": ": very powerful abstractions.)",
+            "contextAfter": "A friend of mine once told an",
+            "position": 216
+          },
+          {
+            "type": "removed",
+            "value": "he",
+            "contextBefore": "had happened to the language",
+            "contextAfter": "had designed.What does make a",
+            "position": 596
+          },
+          {
+            "type": "added",
+            "value": "_he_",
+            "contextBefore": "ad happened to the language he",
+            "contextAfter": "had designed.What does make a",
+            "position": 598
+          },
+          {
+            "type": "removed",
+            "value": "for",
+            "contextBefore": ". Programming languages are fo",
+            "contextAfter": "ackers, and a programming lang",
+            "position": 904
+          },
+          {
+            "type": "added",
+            "value": "_for_",
+            "contextBefore": "rogramming languages are for h",
+            "contextAfter": "ackers, and a programming lang",
+            "position": 907
+          },
+          {
+            "type": "removed",
+            "value": "PopularityIt",
+            "contextBefore": "like it.1 The Mechanics of Pop",
+            "contextAfter": "true, certainly, that most peo",
+            "position": 1106
+          },
+          {
+            "type": "added",
+            "value": "Popularity It",
+            "contextBefore": "e Mechanics of PopularityIt's",
+            "contextAfter": "true, certainly, that most peo",
+            "position": 1118
+          },
+          {
+            "type": "removed",
+            "value": "[1]",
+            "contextBefore": "to write real programs. [1]So",
+            "contextAfter": "ther or not a language has to",
+            "position": 3385
+          },
+          {
+            "type": "removed",
+            "value": "FactorsLet",
+            "contextBefore": "language.2 External FactorsLe",
+            "contextAfter": "by acknowledging one external",
+            "position": 4555
+          },
+          {
+            "type": "added",
+            "value": "Factors Let",
+            "contextBefore": "2 External FactorsLet's start",
+            "contextAfter": "by acknowledging one external",
+            "position": 4565
+          },
+          {
+            "type": "removed",
+            "value": "BrevityGiven",
+            "contextBefore": "languages.3 BrevityGiven that",
+            "contextAfter": "ly the three things any langua",
+            "position": 7686
+          },
+          {
+            "type": "added",
+            "value": "Brevity Given",
+            "contextBefore": "BrevityGiven that you can supp",
+            "contextAfter": "ly the three things any langua",
+            "position": 7698
+          },
+          {
+            "type": "removed",
+            "value": "writeadd",
+            "contextBefore": "asked to writeadd x to y givi",
+            "contextAfter": "ead ofz = x+yas something betw",
+            "position": 8491
+          },
+          {
+            "type": "added",
+            "value": "write add",
+            "contextBefore": "o writeadd x to y giving zinst",
+            "contextAfter": "ead ofz = x+yas something betw",
+            "position": 8499
+          },
+          {
+            "type": "removed",
+            "value": "zinstead ofz",
+            "contextBefore": "y giving zinstead ofz = x+yas",
+            "contextAfter": "etween an insult to his intell",
+            "position": 8514
+          },
+          {
+            "type": "added",
+            "value": "z instead of z",
+            "contextBefore": "nstead ofz = x+yas something b",
+            "contextAfter": "etween an insult to his intell",
+            "position": 8526
+          },
+          {
+            "type": "removed",
+            "value": "yas",
+            "contextBefore": "d ofz = x+yas something betwee",
+            "contextAfter": "n insult to his intelligence a",
+            "position": 8531
+          },
+          {
+            "type": "added",
+            "value": "y as",
+            "contextBefore": "fz = x+yas something between a",
+            "contextAfter": "n insult to his intelligence a",
+            "position": 8534
+          },
+          {
+            "type": "removed",
+            "value": "HackabilityThere",
+            "contextBefore": "een.4 HackabilityThere is one",
+            "contextAfter": "tant than brevity to a hacker:",
+            "position": 9947
+          },
+          {
+            "type": "added",
+            "value": "Hackability There",
+            "contextBefore": "yThere is one thing more impor",
+            "contextAfter": "tant than brevity to a hacker:",
+            "position": 9963
+          },
+          {
+            "type": "removed",
+            "value": "Let",
+            "contextBefore": "gner.Let yourself be second gu",
+            "contextAfter": "ed. When you make any tool, pe",
+            "position": 11116
+          },
+          {
+            "type": "added",
+            "value": " _Let",
+            "contextBefore": "r.Let yourself be second guess",
+            "contextAfter": "ed. When you make any tool, pe",
+            "position": 11119
+          },
+          {
+            "type": "added",
+            "value": "_ ",
+            "contextBefore": "ssed. When you make any tool,",
+            "contextAfter": "people use it in ways you didn",
+            "position": 11147
+          },
+          {
+            "type": "removed",
+            "value": "[2] ",
+            "contextBefore": "ts. [2] For boys, at least, ce",
+            "contextAfter": "n kinds of horrors are fascina",
+            "position": 12288
+          },
+          {
+            "type": "removed",
+            "value": "ProgramsTo",
+            "contextBefore": "rogramsTo be attractive to hac",
+            "contextAfter": "nguage must be good for writin",
+            "position": 14086
+          },
+          {
+            "type": "added",
+            "value": "Programs To",
+            "contextBefore": "be attractive to hackers, a la",
+            "contextAfter": "nguage must be good for writin",
+            "position": 14096
+          },
+          {
+            "type": "removed",
+            "value": "LibrariesOf",
+            "contextBefore": "Of course the ultimate in brev",
+            "contextAfter": "ave the program already writte",
+            "position": 17203
+          },
+          {
+            "type": "added",
+            "value": "Libraries Of",
+            "contextBefore": "he ultimate in brevity is to h",
+            "contextAfter": "ave the program already writte",
+            "position": 17214
+          },
+          {
+            "type": "removed",
+            "value": "SyntaxCould",
+            "contextBefore": "language with Lisp's syntax,",
+            "contextAfter": "cisely, lack of syntax, ever b",
+            "position": 19424
+          },
+          {
+            "type": "added",
+            "value": "Syntax Could",
+            "contextBefore": "ith Lisp's syntax, or more pre",
+            "contextAfter": "cisely, lack of syntax, ever b",
+            "position": 19435
+          },
+          {
+            "type": "removed",
+            "value": "EfficiencyA",
+            "contextBefore": "age, as everyone knows, should",
+            "contextAfter": "ast code. But in practice I do",
+            "position": 22708
+          },
+          {
+            "type": "added",
+            "value": "Efficiency A",
+            "contextBefore": "ryone knows, should generate f",
+            "contextAfter": "ast code. But in practice I do",
+            "position": 22719
+          },
+          {
+            "type": "removed",
+            "value": "TimeThe",
+            "contextBefore": "language needs is time. No one",
+            "contextAfter": "to write programs in a languag",
+            "position": 27912
+          },
+          {
+            "type": "added",
+            "value": "Time The",
+            "contextBefore": "e needs is time. No one wants",
+            "contextAfter": "to write programs in a languag",
+            "position": 27919
+          },
+          {
+            "type": "removed",
+            "value": "users",
+            "contextBefore": "ad the old version are unlikel",
+            "contextAfter": "complain that their thoughts h",
+            "position": 33862
+          },
+          {
+            "type": "added",
+            "value": "_users",
+            "contextBefore": "e old version are unlikely to",
+            "contextAfter": "complain that their thoughts h",
+            "position": 33867
+          },
+          {
+            "type": "added",
+            "value": "_ ",
+            "contextBefore": "old version are unlikely to c",
+            "contextAfter": "omplain that their thoughts ha",
+            "position": 33868
+          },
+          {
+            "type": "removed",
+            "value": "LispWhat",
+            "contextBefore": "ew Lisp. There is hope for any",
+            "contextAfter": "e that gives hackers what they",
+            "position": 35651
+          },
+          {
+            "type": "added",
+            "value": "Lisp What",
+            "contextBefore": "There is hope for any languag",
+            "contextAfter": "e that gives hackers what they",
+            "position": 35659
+          },
+          {
+            "type": "removed",
+            "value": " encouragement. Over time, successive new programming languages have taken more and more features from Lisp. There is no longer much left to copy before the language you've made is Lisp. The latest ho",
+            "contextBefore": "guages have taken more and mor",
+            "contextAfter": "",
+            "position": 36537
           }
         ]
       }
