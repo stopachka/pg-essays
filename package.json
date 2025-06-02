@@ -2,6 +2,14 @@
   "name": "pg-essays",
   "module": "src/transform.ts",
   "type": "module",
+  "scripts": {
+    "convert": "bun src/runner.ts convert",
+    "convert:all": "bun src/runner.ts --all",
+    "convert:test": "bun src/runner.ts --limit 3",
+    "report": "bun src/runner.ts --view",
+    "diff": "bun src/runner.ts diff",
+    "help": "bun src/runner.ts --help"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/diff": "^5.2.0",

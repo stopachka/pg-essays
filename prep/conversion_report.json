@@ -1,10 +1,10 @@
 {
-  "timestamp": "2025-06-02T22:36:29.681Z",
+  "timestamp": "2025-06-02T22:39:10.837Z",
   "summary": {
     "total": 3,
-    "successful": 1,
-    "failed": 2,
-    "withDifferences": 1
+    "successful": 3,
+    "failed": 0,
+    "withDifferences": 3
   },
   "results": [
     {
@@ -63,16 +63,72 @@
     {
       "title": "Lisp for Web-Based Applications",
       "url": "https://paulgraham.com/lwba.html",
-      "success": false,
-      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"max_tokens: 10000 > 8192, which is the maximum allowed number of output tokens for claude-3-5-sonnet-20241022\"}}",
-      "textComparison": null
+      "success": true,
+      "textComparison": {
+        "originalLength": 318,
+        "convertedLength": 351,
+        "hasDifferences": true,
+        "similarityScore": 0.9088319088319088,
+        "significantDifferences": [
+          {
+            "type": "added",
+            "value": "Lisp for Web-Based Applications "
+          }
+        ]
+      }
     },
     {
       "title": "Beating the Averages",
       "url": "https://paulgraham.com/avg.html",
-      "success": false,
-      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"max_tokens: 10000 > 8192, which is the maximum allowed number of output tokens for claude-3-5-sonnet-20241022\"}}",
-      "textComparison": null
+      "success": true,
+      "textComparison": {
+        "originalLength": 25384,
+        "convertedLength": 25214,
+        "hasDifferences": true,
+        "similarityScore": 0.9891270091396155,
+        "significantDifferences": [
+          {
+            "type": "removed",
+            "value": "Want to start a startup? Get funded by Y Combinator. April"
+          },
+          {
+            "type": "added",
+            "value": "Beating the Averages _April"
+          },
+          {
+            "type": "removed",
+            "value": "2003"
+          },
+          {
+            "type": "added",
+            "value": "2003_ _"
+          },
+          {
+            "type": "added",
+            "value": "_ "
+          },
+          {
+            "type": "added",
+            "value": "^"
+          },
+          {
+            "type": "removed",
+            "value": "WeaponEric"
+          },
+          {
+            "type": "added",
+            "value": "Weapon Eric"
+          },
+          {
+            "type": "removed",
+            "value": "The"
+          },
+          {
+            "type": "added",
+            "value": "_The"
+          }
+        ]
+      }
     }
   ]
 }

@@ -175,7 +175,8 @@ const keyFn = (entry: IndexEntry) => {
 };
 
 const ant = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-const limit = pLimit(5);
+const concurrency = parseInt(process.env.PG_CONVERT_CONCURRENCY || "5");
+const limit = pLimit(concurrency);
 
 async function processEntry(entry: IndexEntry): Promise<ProcessingResult> {
   try {
@@ -411,9 +412,14 @@ async function main() {
   const index = await loadArticleIndex();
   console.log(`📚 Found ${index.length} essays to process\n`);
   
-  // Process entries (limit to first few for testing, remove slice to process all)
+  // Process entries based on environment configuration
+  const processLimit = process.env.PG_CONVERT_LIMIT;
+  const entriesToProcess = processLimit === "all" ? index : index.slice(0, parseInt(processLimit || "3"));
+  
+  console.log(`📝 Processing ${entriesToProcess.length} essays with concurrency ${concurrency}\n`);
+  
   const results = await Promise.all(
-    index.slice(0, 3).map(async (entry) => {
+    entriesToProcess.map(async (entry) => {
       return processEntry(entry);
     })
   );

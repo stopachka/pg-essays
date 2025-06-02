@@ -26,32 +26,68 @@ export ANTHROPIC_API_KEY="your-api-key-here"
 
 ### Convert Essays
 
-Run the main conversion script:
+#### Using npm scripts (recommended):
+```bash
+# Convert first 3 essays (for testing)
+bun run convert:test
+
+# Convert all essays
+bun run convert:all
+
+# Convert with default settings (3 essays)
+bun run convert
+
+# View latest report
+bun run report
+
+# Show differences for specific essay
+bun run diff "Programming Bottom Up"
+
+# Show help
+bun run help
+```
+
+#### Using runner script directly:
+```bash
+# Convert with custom options
+bun src/runner.ts --limit 10 --concurrency 3 --report
+
+# Convert all essays
+bun src/runner.ts --all
+
+# View existing report
+bun src/runner.ts --view
+
+# Show differences
+bun src/runner.ts --diff "Essay Title"
+```
+
+#### Using original script:
 ```bash
 bun src/transform.ts
 ```
-
-This will:
-- Download PG's essay index
-- Process each essay (HTML → Markdown via Claude)
-- Compare original vs converted text
-- Generate a comprehensive report
 
 ### View Reports
 
 #### Full Report (Colorized)
 ```bash
+bun run report
+# or
 bun src/report-viewer.ts view
 ```
 
 #### Specific Entry Differences
 ```bash
+bun run diff "Programming Bottom Up"
+# or
 bun src/report-viewer.ts diff "Programming Bottom Up"
 ```
 
 #### Help
 ```bash
-bun src/report-viewer.ts
+bun run help
+# or
+bun src/runner.ts --help
 ```
 
 ## Project Structure
