@@ -1,0 +1,431 @@
+{
+  "timestamp": "2025-06-02T23:17:43.304Z",
+  "summary": {
+    "total": 3,
+    "successful": 3,
+    "failed": 0,
+    "withDifferences": 3
+  },
+  "results": [
+    {
+      "title": "Lisp for Web-Based Applications",
+      "url": "https://paulgraham.com/lwba.html",
+      "success": true,
+      "processingTimeMs": 9455,
+      "textComparison": {
+        "originalLength": 318,
+        "convertedLength": 351,
+        "hasDifferences": true,
+        "similarityScore": 0.9088319088319088,
+        "contextualDifferences": [
+          {
+            "type": "added",
+            "value": "Lisp for Web-Based Applications ",
+            "contextBefore": "",
+            "contextAfter": "After a link to Beating the Av",
+            "position": 0
+          }
+        ]
+      }
+    },
+    {
+      "title": "Programming Bottom-Up",
+      "url": "https://paulgraham.com/progbot.html",
+      "success": true,
+      "processingTimeMs": 39277,
+      "textComparison": {
+        "originalLength": 5437,
+        "convertedLength": 5467,
+        "hasDifferences": true,
+        "similarityScore": 0.9884763124199744,
+        "contextualDifferences": [
+          {
+            "type": "removed",
+            "value": "1993 ",
+            "contextBefore": "",
+            "contextAfter": "(This essay is from the introd",
+            "position": 0
+          },
+          {
+            "type": "added",
+            "value": "Programming Bottom-Up _1993_ _",
+            "contextBefore": "1993",
+            "contextAfter": "(This essay is from the introd",
+            "position": 5
+          },
+          {
+            "type": "added",
+            "value": "_ ",
+            "contextBefore": "the introduction to On Lisp.)",
+            "contextAfter": "It's a long-standing principl",
+            "position": 54
+          },
+          {
+            "type": "removed",
+            "value": "top",
+            "contextBefore": "raditional approach is called",
+            "contextAfter": "-down design: you say \"the pur",
+            "position": 630
+          },
+          {
+            "type": "added",
+            "value": "_top",
+            "contextBefore": "itional approach is called top",
+            "contextAfter": "-down design: you say \"the pur",
+            "position": 633
+          },
+          {
+            "type": "added",
+            "value": "_ ",
+            "contextBefore": "ach is called top-down design:",
+            "contextAfter": "you say \"the purpose of the p",
+            "position": 646
+          },
+          {
+            "type": "removed",
+            "value": "bottom",
+            "contextBefore": "inciple which could be called",
+            "contextAfter": "-up design-- changing the lang",
+            "position": 1200
+          },
+          {
+            "type": "added",
+            "value": "_bottom",
+            "contextBefore": "e which could be called bottom",
+            "contextAfter": "-up design-- changing the lang",
+            "position": 1206
+          },
+          {
+            "type": "removed",
+            "value": "design",
+            "contextBefore": "ich could be called bottom-up",
+            "contextAfter": "-- changing the language to su",
+            "position": 1210
+          },
+          {
+            "type": "added",
+            "value": "design_",
+            "contextBefore": "uld be called bottom-up design",
+            "contextAfter": "-- changing the language to su",
+            "position": 1216
+          },
+          {
+            "type": "removed",
+            "value": "[1] ",
+            "contextBefore": "a special-purpose subroutine.",
+            "contextAfter": "Because it causes you always t",
+            "position": 3786
+          },
+          {
+            "type": "removed",
+            "value": "The",
+            "contextBefore": "be done by a small group. In T",
+            "contextAfter": "Mythical Man-Month, Frederick",
+            "position": 4685
+          },
+          {
+            "type": "added",
+            "value": "_The",
+            "contextBefore": "done by a small group. In The",
+            "contextAfter": "Mythical Man-Month, Frederick",
+            "position": 4688
+          },
+          {
+            "type": "removed",
+            "value": "Month",
+            "contextBefore": "l group. In The Mythical Man-M",
+            "contextAfter": "Frederick Brooks proposed tha",
+            "position": 4702
+          },
+          {
+            "type": "added",
+            "value": "Month_",
+            "contextBefore": "up. In The Mythical Man-Month,",
+            "contextAfter": "Frederick Brooks proposed tha",
+            "position": 4707
+          },
+          {
+            "type": "removed",
+            "value": "[1]",
+            "contextBefore": "Download On Lisp for Free. [1",
+            "contextAfter": "But no one can read the progra",
+            "position": 5290
+          },
+          {
+            "type": "added",
+            "value": ":",
+            "contextBefore": "wnload On Lisp for Free. [1] \"",
+            "contextAfter": "But no one can read the progra",
+            "position": 5293
+          }
+        ]
+      }
+    },
+    {
+      "title": "Beating the Averages",
+      "url": "https://paulgraham.com/avg.html",
+      "success": true,
+      "processingTimeMs": 210545,
+      "textComparison": {
+        "originalLength": 25384,
+        "convertedLength": 25170,
+        "hasDifferences": true,
+        "similarityScore": 0.9878663725181217,
+        "contextualDifferences": [
+          {
+            "type": "removed",
+            "value": "Want to start a startup? Get funded by Y Combinator. April",
+            "contextBefore": "",
+            "contextAfter": "2001, rev. April 2003(This ar",
+            "position": 0
+          },
+          {
+            "type": "added",
+            "value": "Beating the Averages _April",
+            "contextBefore": "funded by Y Combinator. April",
+            "contextAfter": "2001, rev. April 2003(This ar",
+            "position": 58
+          },
+          {
+            "type": "removed",
+            "value": "2003",
+            "contextBefore": "nator. April 2001, rev. April",
+            "contextAfter": "(This article is derived from",
+            "position": 76
+          },
+          {
+            "type": "added",
+            "value": "2003_ _",
+            "contextBefore": "r. April 2001, rev. April 2003",
+            "contextAfter": "(This article is derived from",
+            "position": 80
+          },
+          {
+            "type": "added",
+            "value": "_ ",
+            "contextBefore": "01 Franz Developer Symposium.)",
+            "contextAfter": "In the summer of 1995, my fri",
+            "position": 162
+          },
+          {
+            "type": "removed",
+            "value": "[1]",
+            "contextBefore": "versities and research labs. [",
+            "contextAfter": "he Secret WeaponEric Raymond h",
+            "position": 1019
+          },
+          {
+            "type": "removed",
+            "value": "WeaponEric",
+            "contextBefore": "research labs. [1]The Secret W",
+            "contextAfter": "Raymond has written an essay c",
+            "position": 1033
+          },
+          {
+            "type": "added",
+            "value": "Weapon Eric",
+            "contextBefore": "abs. [1]The Secret WeaponEric",
+            "contextAfter": "Raymond has written an essay c",
+            "position": 1043
+          },
+          {
+            "type": "removed",
+            "value": "The",
+            "contextBefore": "of a copy of The Day of the Ja",
+            "contextAfter": "l, by Frederick Forsyth. The m",
+            "position": 8175
+          },
+          {
+            "type": "added",
+            "value": "_The",
+            "contextBefore": "a copy of The Day of the Jacka",
+            "contextAfter": "l, by Frederick Forsyth. The m",
+            "position": 8178
+          },
+          {
+            "type": "removed",
+            "value": "Jackal",
+            "contextBefore": "e Day of the Jackal, by Freder",
+            "contextAfter": "rsyth. The main character is a",
+            "position": 8190
+          },
+          {
+            "type": "added",
+            "value": "Jackal_",
+            "contextBefore": "of the Jackal, by Frederick Fo",
+            "contextAfter": "rsyth. The main character is a",
+            "position": 8196
+          },
+          {
+            "type": "removed",
+            "value": "[2]",
+            "contextBefore": "that way.[2]The people who un",
+            "contextAfter": "stood our technology best were",
+            "position": 9334
+          },
+          {
+            "type": "removed",
+            "value": "ParadoxWhat",
+            "contextBefore": "The Blub ParadoxWhat's so gre",
+            "contextAfter": "sp? And if Lisp is so great, w",
+            "position": 10096
+          },
+          {
+            "type": "added",
+            "value": "Paradox What",
+            "contextBefore": "aradoxWhat's so great about Li",
+            "contextAfter": "sp? And if Lisp is so great, w",
+            "position": 10107
+          },
+          {
+            "type": "removed",
+            "value": "[3]",
+            "contextBefore": "l one. [3]There are many excep",
+            "contextAfter": "ns to this rule. If you're wri",
+            "position": 11473
+          },
+          {
+            "type": "removed",
+            "value": "[4] ",
+            "contextBefore": "inuum [4] of abstractness, fro",
+            "contextAfter": "e most powerful all the way do",
+            "position": 12693
+          },
+          {
+            "type": "removed",
+            "value": "[5]",
+            "contextBefore": "any languages have something c",
+            "contextAfter": "ed a macro. But Lisp macros ar",
+            "position": 16201
+          },
+          {
+            "type": "removed",
+            "value": "StartupsBut",
+            "contextBefore": "t I don't expect to convince a",
+            "contextAfter": "25) to go out and learn Lisp.",
+            "position": 19051
+          },
+          {
+            "type": "added",
+            "value": "Startups But",
+            "contextBefore": "xpect to convince anyone (over",
+            "contextAfter": "25) to go out and learn Lisp.",
+            "position": 19062
+          },
+          {
+            "type": "removed",
+            "value": "(",
+            "contextBefore": "to go out and learn Lisp. The",
+            "contextAfter": "urpose of this article is not",
+            "position": 19097
+          },
+          {
+            "type": "removed",
+            "value": ")",
+            "contextBefore": "t and learn Lisp. The purpose",
+            "contextAfter": "f this article is not to chang",
+            "position": 19105
+          },
+          {
+            "type": "removed",
+            "value": "[6]",
+            "contextBefore": "he median language, meaning wh",
+            "contextAfter": "ver language the median progra",
+            "position": 20427
+          },
+          {
+            "type": "removed",
+            "value": "[1]",
+            "contextBefore": "rst had two parts: the editor,",
+            "contextAfter": "itten in Lisp, which people us",
+            "position": 22793
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "had two parts: the editor, wr",
+            "contextAfter": "itten in Lisp, which people us",
+            "position": 22796
+          },
+          {
+            "type": "removed",
+            "value": "[2]",
+            "contextBefore": "says that I didn't need to be",
+            "contextAfter": "cretive, because even if our c",
+            "position": 23522
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "ys that I didn't need to be se",
+            "contextAfter": "cretive, because even if our c",
+            "position": 23525
+          },
+          {
+            "type": "removed",
+            "value": "[3]",
+            "contextBefore": "are equally powerful in the s",
+            "contextAfter": "e of being Turing equivalent,",
+            "position": 23742
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "e equally powerful in the sens",
+            "contextAfter": "e of being Turing equivalent,",
+            "position": 23745
+          },
+          {
+            "type": "removed",
+            "value": "[4]",
+            "contextBefore": ": or possibly a lattice, narro",
+            "contextAfter": "g toward the top; it's not the",
+            "position": 24496
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "r possibly a lattice, narrowin",
+            "contextAfter": "g toward the top; it's not the",
+            "position": 24499
+          },
+          {
+            "type": "removed",
+            "value": "[5]",
+            "contextBefore": "isleading to treat macros as a",
+            "contextAfter": "parate feature. In practice th",
+            "position": 24653
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "eading to treat macros as a se",
+            "contextAfter": "parate feature. In practice th",
+            "position": 24656
+          },
+          {
+            "type": "removed",
+            "value": "[6]",
+            "contextBefore": "comparisons of programming lan",
+            "contextAfter": "ges either take the form of re",
+            "position": 24833
+          },
+          {
+            "type": "added",
+            "value": " :",
+            "contextBefore": "parisons of programming langua",
+            "contextAfter": "ges either take the form of re",
+            "position": 24836
+          },
+          {
+            "type": "removed",
+            "value": "More Technical DetailsJapanese TranslationTurkish TranslationUzbek TranslationOrbitz Uses Lisp TooHow To Become A HackerA Scheme StoryItalian Translation You'll find this essay and 14 others in Hacker",
+            "contextBefore": "tailsJapanese TranslationTurki",
+            "contextAfter": "",
+            "position": 25218
+          }
+        ]
+      }
+    }
+  ]
+}
