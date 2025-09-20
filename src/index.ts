@@ -475,7 +475,7 @@ async function loadChapters(): Promise<Chapter[]> {
 const ignoredLinks = new Set<string>([
   "http://www.paulgraham.com/prop62.html",
   // TODO: Make BBN excerpt look nice.
-  "https://www.paulgraham.com/lwba.html",
+  "lwba.html",
 ]);
 
 async function run(): Promise<void> {
