@@ -214,7 +214,7 @@ async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<Chee
     removeApplyYC,
     removeHr,
     removeFontTags,
-    // removeOnLispDownload,
+    removeOnLispDownload,
     replaceTables,
   ].reduce(($, f) => f($, chapter.url), $html);
   const $ = await localiseImages(ch$);
