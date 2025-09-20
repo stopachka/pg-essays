@@ -8,6 +8,14 @@ import path, { dirname, resolve } from "path";
 import puppeteer from "puppeteer";
 import prettier from "prettier";
 import limitedFetch from "./limitedFetch";
+import TurndownService from "turndown";
+import { marked } from "marked";
+
+// Initialize Turndown (HTML to Markdown)
+const turndownService = new TurndownService({
+  headingStyle: "atx",
+  codeBlockStyle: "fenced",
+});
 
 // ------------------------------------------------------------
 // Config
@@ -142,7 +150,11 @@ function replaceTables($: CheerioAPI): CheerioAPI {
   return $;
 }
 
-const badImages = new Set<string>(["http://www.virtumundo.com/images/spacer.gif"]);
+const badImages = new Set<string>([
+  "http://www.virtumundo.com/images/spacer.gif",
+  "https://s.turbifycdn.com/aah/paulgraham/serious-2.gif",
+  "https://sep.turbifycdn.com/ca/Img/trans_1x1.gif",
+]);
 
 async function localiseImages($: CheerioAPI): Promise<CheerioAPI> {
   const toLocalName = (input: string): string => {
@@ -206,6 +218,19 @@ function removeOnLispDownload($: CheerioAPI): CheerioAPI {
   return $;
 }
 
+async function markdownTransform(chapter: Chapter, $html: CheerioAPI): Promise<CheerioAPI> {
+  const markdown = turndownService.turndown($html.html());
+  fs.writeFileSync(HTML_CACHE_DIR + "/" + chapter.key + ".md", markdown);
+  // Convert Markdown back to HTML
+  const transformedHtml = await marked(markdown);
+  return load(transformedHtml);
+}
+
+function removeScriptTags($: CheerioAPI): CheerioAPI {
+  $("script").remove();
+  return $;
+}
+
 async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<CheerioAPI> {
   const ch$ = [
     removeMenu,
@@ -216,8 +241,10 @@ async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<Chee
     removeFontTags,
     removeOnLispDownload,
     replaceTables,
+    removeScriptTags,
   ].reduce(($, f) => f($, chapter.url), $html);
-  const $ = await localiseImages(ch$);
+  const $withImage = await localiseImages(ch$);
+  const $ = $withImage;
   const changed = $.html();
   const savedKey = chapter.key + "_transformed.html";
   fs.writeFileSync(HTML_CACHE_DIR + "/" + savedKey, await safeFormat(changed, savedKey));
@@ -426,7 +453,7 @@ async function loadChapters(): Promise<Chapter[]> {
 const ignoredLinks = new Set<string>([
   "http://www.paulgraham.com/prop62.html",
   // TODO: Make BBN excerpt look nice.
-  "https://paulgraham.com/lwba.html",
+  "https://www.paulgraham.com/lwba.html",
 ]);
 
 async function run(): Promise<void> {
