@@ -23,7 +23,7 @@
   
     <navPoint id="lwba" playOrder="3">
       <navLabel>
-        <text></text>
+        <text>Lisp for Web-Based Applications</text>
       </navLabel>
       <content src="index.html#lwba" />
     </navPoint>
