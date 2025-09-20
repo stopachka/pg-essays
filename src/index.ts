@@ -6,7 +6,7 @@ import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
 import path, { dirname, resolve } from "path";
 import puppeteer from "puppeteer";
-import crypto from "node:crypto";
+import prettier from "prettier";
 import limitedFetch from "./limitedFetch";
 
 // ------------------------------------------------------------
@@ -44,6 +44,15 @@ interface Chapter {
 // ------------------------------------------------------------
 // Helpers
 
+async function safeFormat(text: string, key: string, parser: string = "html"): Promise<string> {
+  try {
+    return await prettier.format(text, { parser });
+  } catch (err) {
+    console.warn(`Warning: Could not format ${key} with prettier, using original`);
+    return text;
+  }
+}
+
 async function loadHTMLText(url: string, cacheKey: string): Promise<string> {
   // Create cache directory if it doesn't exist
   if (!fs.existsSync(HTML_CACHE_DIR)) {
@@ -64,10 +73,11 @@ async function loadHTMLText(url: string, cacheKey: string): Promise<string> {
   const res = await limitedFetch(url);
   const text = await res.text();
 
-  // Save to cache
-  fs.writeFileSync(cachePath, text);
+  // Format with prettier before saving to cache
+  const formatted = await safeFormat(text, cacheKey);
+  fs.writeFileSync(cachePath, formatted);
 
-  return text;
+  return formatted;
 }
 
 function chapterId(link: string): string | undefined {
@@ -105,10 +115,7 @@ function removeHr($: CheerioAPI, link: string): CheerioAPI {
 }
 
 function removeApplyYC($: CheerioAPI, link: string): CheerioAPI {
-  $('font:contains("Want to start a startup")')
-    .last()
-    .closest("table")
-    .remove();
+  $('font:contains("Want to start a startup")').last().closest("table").remove();
   return $;
 }
 
@@ -117,9 +124,7 @@ function replaceChapterTitle($: CheerioAPI, link: string): CheerioAPI {
   const firstImg = $firstImageWithAlt.toArray()[0];
   if (firstImg && "attribs" in firstImg) {
     const title = (firstImg as any).attribs.alt;
-    $firstImageWithAlt
-      .parent()
-      .prepend(`<h1 id="${chapterId(link)}">${title}</h1>`);
+    $firstImageWithAlt.parent().prepend(`<h1 id="${chapterId(link)}">${title}</h1>`);
     $firstImageWithAlt.remove();
   }
   return $;
@@ -137,15 +142,12 @@ function replaceTables($: CheerioAPI): CheerioAPI {
   return $;
 }
 
-const badImages = new Set<string>([
-  "http://www.virtumundo.com/images/spacer.gif",
-]);
+const badImages = new Set<string>(["http://www.virtumundo.com/images/spacer.gif"]);
 
 async function localiseImages($: CheerioAPI): Promise<CheerioAPI> {
   const toLocalName = (input: string): string => {
     const url = new URL(input);
-    const res =
-      url.hostname.split(".").join("_") + url.pathname.split("/").join("_");
+    const res = url.hostname.split(".").join("_") + url.pathname.split("/").join("_");
     if (!res) {
       throw new Error("oi");
     }
@@ -163,6 +165,11 @@ async function localiseImages($: CheerioAPI): Promise<CheerioAPI> {
           $(node).remove();
           return;
         }
+        // Create cache directory if it doesn't exist
+        if (!fs.existsSync(ASSETS_DIR)) {
+          fs.mkdirSync(ASSETS_DIR, { recursive: true });
+        }
+
         const filename = toLocalName(remote);
         const dest = path.join(ASSETS_DIR, filename);
 
@@ -173,7 +180,7 @@ async function localiseImages($: CheerioAPI): Promise<CheerioAPI> {
         }
 
         node.attribs.src = `${ASSETS_DIR}/${filename}`;
-      })
+      }),
   );
 
   return $;
@@ -186,10 +193,7 @@ function removeFontTags($: CheerioAPI): CheerioAPI {
   return $;
 }
 
-async function processChapter(
-  chapter: Chapter,
-  $html: CheerioAPI
-): Promise<CheerioAPI> {
+async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<CheerioAPI> {
   const ch$ = [
     removeMenu,
     removeLogo,
@@ -318,10 +322,7 @@ function runKindleGen(opfPath: string, mobiPath: string): void {
   });
 }
 
-export async function htmlToPdf(
-  htmlPath: string,
-  pdfPath: string
-): Promise<void> {
+export async function htmlToPdf(htmlPath: string, pdfPath: string): Promise<void> {
   console.log(`Building PDF ${pdfPath}`);
   const widthIn = 6 + 0.125 * 2;
   const heightIn = 9 + 0.125 * 2;
@@ -355,20 +356,18 @@ interface BuildBookParams {
   title: string;
 }
 
-async function buildBook({
-  chapters,
-  subDir,
-  title,
-}: BuildBookParams): Promise<void> {
+async function buildBook({ chapters, subDir, title }: BuildBookParams): Promise<void> {
   const dir = `${GEN_DIR}/${subDir}`;
   fs.writeFileSync(
     `${dir}/${OPF_FILENAME}`,
     buildOpf({
       title,
-    })
+    }),
   );
   fs.writeFileSync(`${dir}/${NCX_FILENAME}`, buildNcx(chapters));
-  fs.writeFileSync(`${dir}/${HTML_FILENAME}`, buildHTML(chapters));
+  const htmlContent = buildHTML(chapters);
+  const formattedHtml = await safeFormat(htmlContent, `${subDir}/${HTML_FILENAME}`);
+  fs.writeFileSync(`${dir}/${HTML_FILENAME}`, formattedHtml);
   await htmlToPdf(`${dir}/${HTML_FILENAME}`, `${dir}/${PDF_FILENAME}`);
   runKindleGen(`${dir}/${OPF_FILENAME}`, MOBI_FILENAME);
 }
@@ -421,7 +420,7 @@ async function run(): Promise<void> {
           ...chapter,
           $,
         };
-      })
+      }),
   );
 
   const pt1 = processedChapters.slice(0, 45);
@@ -434,7 +433,7 @@ async function run(): Promise<void> {
       chapters: chunk,
       title: `Essays by Paul Graham, Part ${idx + 1}`,
       subDir: `pt_${idx + 1}`,
-    })
+    }),
   );
 }
 

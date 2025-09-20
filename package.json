@@ -10,7 +10,8 @@
     "cheerio": "^1.1.2",
     "lodash": "^4.17.21",
     "p-limit": "^6.2.0",
-    "puppeteer": "^24.8.2"
+    "puppeteer": "^24.8.2",
+    "prettier": "^3.6.2"
   },
   "devDependencies": {
     "@types/bun": "latest"
