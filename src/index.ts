@@ -1,5 +1,5 @@
 import _ from "lodash";
-import cheerio from "cheerio";
+import cheerio, { CheerioAPI } from "cheerio";
 import fs from "fs";
 import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
@@ -9,7 +9,7 @@ import crypto from "node:crypto";
 import pLimit from "p-limit";
 
 const limit = pLimit(10);
-async function limitedFetch(...args) {
+async function limitedFetch(...args: Parameters<typeof fetch>): Promise<Response> {
   return await limit(() => {
     console.log(`Fetching ${args[0]}`);
     return fetch(...args);
@@ -19,39 +19,39 @@ async function limitedFetch(...args) {
 // ------------------------------------------------------------
 // Config
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __filename: string = fileURLToPath(import.meta.url);
+const __dirname: string = dirname(__filename);
 
-const BOOK_TITLE = "Essays by Paul Graham";
-const ROOT_PATH = "http://www.paulgraham.com";
-const ARTICLES_INDEX = `${ROOT_PATH}/articles.html`;
-const BOOK_DIR = `${__dirname}/book`;
-const JSON_FILENAME = "loaded-links.json";
-const HTML_FILENAME = "index.html";
-const NCX_FILENAME = "toc.ncx";
-const OPF_FILENAME = "index.opf";
-const MOBI_FILENAME = "index.mobi";
-const TOC_ID = "toc";
-const PAGE_BREAK = '<div style="page-break-before: always;"></div>';
-const GEN_DIR = `${BOOK_DIR}/gen`;
-const ASSETS_DIR = `${GEN_DIR}/assets`;
-const PDF_FILENAME = "index.pdf";
-const COVER_FILENAME = "cover.jpg";
+const BOOK_TITLE: string = "Essays by Paul Graham";
+const ROOT_PATH: string = "http://www.paulgraham.com";
+const ARTICLES_INDEX: string = `${ROOT_PATH}/articles.html`;
+const BOOK_DIR: string = `${__dirname}/../book`;
+const JSON_FILENAME: string = "loaded-links.json";
+const HTML_FILENAME: string = "index.html";
+const NCX_FILENAME: string = "toc.ncx";
+const OPF_FILENAME: string = "index.opf";
+const MOBI_FILENAME: string = "index.mobi";
+const TOC_ID: string = "toc";
+const PAGE_BREAK: string = '<div style="page-break-before: always;"></div>';
+const GEN_DIR: string = `${BOOK_DIR}/gen`;
+const ASSETS_DIR: string = `${GEN_DIR}/assets`;
+const PDF_FILENAME: string = "index.pdf";
+const COVER_FILENAME: string = "cover.jpg";
 
 // ------------------------------------------------------------
 // Helpers
 
-async function loadHTMLText(url) {
+async function loadHTMLText(url: string): Promise<string> {
   const res = await fetch(url);
   const text = await res.text();
   return text;
 }
 
-function chapterId(link) {
-  return _.first(_.last(link.split("/")).split("."));
+function chapterId(link: string): string | undefined {
+  return _.first(_.last(link.split("/"))?.split("."));
 }
 
-function chapterTitle(link, $chapter) {
+function chapterTitle(link: string, $chapter: CheerioAPI): string {
   return $chapter(`#${chapterId(link)}`)
     .first()
     .text();
@@ -60,23 +60,26 @@ function chapterTitle(link, $chapter) {
 // ------------------------------------------------------------
 // Build Chapters
 
-function removeMenu($) {
+function removeMenu($: CheerioAPI): CheerioAPI {
   // TODO(stopachka) -- best way to remove the first td
-  $("td:first-child").toArray()[0].children = [];
+  const firstTd = $("td:first-child").toArray()[0];
+  if (firstTd) {
+    (firstTd as any).children = [];
+  }
   return $;
 }
 
-function removeLogo($, link) {
+function removeLogo($: CheerioAPI, link: string): CheerioAPI {
   $('a[href="index.html"]').remove();
   return $;
 }
 
-function removeHr($, link) {
+function removeHr($: CheerioAPI, link: string): CheerioAPI {
   $("hr").remove();
   return $;
 }
 
-function removeApplyYC($, link) {
+function removeApplyYC($: CheerioAPI, link: string): CheerioAPI {
   $('font:contains("Want to start a startup")')
     .last()
     .closest("table")
@@ -84,18 +87,21 @@ function removeApplyYC($, link) {
   return $;
 }
 
-function replaceChapterTitle($, link) {
+function replaceChapterTitle($: CheerioAPI, link: string): CheerioAPI {
   const $firstImageWithAlt = $("img[alt]").first();
-  const title = $firstImageWithAlt.toArray()[0].attribs.alt;
-  $firstImageWithAlt
-    .parent()
-    .prepend(`<h1 id="${chapterId(link)}">${title}</h1>`);
-  $firstImageWithAlt.remove();
+  const firstImg = $firstImageWithAlt.toArray()[0];
+  if (firstImg && 'attribs' in firstImg) {
+    const title = (firstImg as any).attribs.alt;
+    $firstImageWithAlt
+      .parent()
+      .prepend(`<h1 id="${chapterId(link)}">${title}</h1>`);
+    $firstImageWithAlt.remove();
+  }
   return $;
 }
 
-function replaceTables($) {
-  const toDiv = (tag) =>
+function replaceTables($: CheerioAPI): CheerioAPI {
+  const toDiv = (tag: string) =>
     $(tag)
       .toArray()
       .reverse()
@@ -106,9 +112,9 @@ function replaceTables($) {
   return $;
 }
 
-const badImages = new Set(["http://www.virtumundo.com/images/spacer.gif"]);
-async function localiseImages($) {
-  const toLocalName = (url) => {
+const badImages = new Set<string>(["http://www.virtumundo.com/images/spacer.gif"]);
+async function localiseImages($: CheerioAPI): Promise<CheerioAPI> {
+  const toLocalName = (url: string): string => {
     const ext = path.extname(new URL(url).pathname) || ".jpg";
     const hash = crypto.createHash("md5").update(url).digest("hex");
     return `${hash}${ext}`;
@@ -117,8 +123,8 @@ async function localiseImages($) {
   await Promise.all(
     $("img[src]")
       .toArray()
-      .filter((n) => /^https?:/.test(n.attribs.src))
-      .map(async (node) => {
+      .filter((n: any) => n.attribs?.src && /^https?:/.test(n.attribs.src))
+      .map(async (node: any) => {
         const remote = node.attribs.src;
         if (badImages.has(remote)) {
           console.log(`Removing ${remote}`);
@@ -141,12 +147,14 @@ async function localiseImages($) {
   return $;
 }
 
-function removeFontTags($) {
-  $("font").each((_, el) => $(el).replaceWith($(el).html()));
+function removeFontTags($: CheerioAPI): CheerioAPI {
+  $("font").each((_, el) => $(el).replaceWith($(el).html() || ''));
   return $;
 }
 
-async function toChapter(link, $html) {
+type ChapterProcessor = ($: CheerioAPI, link: string) => CheerioAPI;
+
+async function toChapter(link: string, $html: CheerioAPI): Promise<CheerioAPI> {
   const ch$ = [
     removeMenu,
     removeLogo,
@@ -155,7 +163,7 @@ async function toChapter(link, $html) {
     removeHr,
     removeFontTags,
     replaceTables,
-  ].reduce(($, f) => f($, link), $html);
+  ].reduce(($, f) => (f as ChapterProcessor)($, link), $html);
   const $ = await localiseImages(ch$);
   return $;
 }
@@ -163,7 +171,7 @@ async function toChapter(link, $html) {
 // ------------------------------------------------------------
 // Build Mobi
 
-function buildOpf({ title }) {
+function buildOpf({ title }: { title: string }): string {
   return `
     <?xml version="1.0" encoding="iso-8859-1"?>
     <package
@@ -195,8 +203,10 @@ function buildOpf({ title }) {
   `;
 }
 
-function buildNcx(linksWithChapters) {
-  const toNav = ([link, $chapter], idx) => `
+type LinkWithChapter = [string, CheerioAPI];
+
+function buildNcx(linksWithChapters: LinkWithChapter[]): string {
+  const toNav = ([link, $chapter]: LinkWithChapter, idx: number) => `
     <navPoint id="${chapterId(link)}" playOrder="${2 + idx}">
       <navLabel>
         <text>${chapterTitle(link, $chapter)}</text>
@@ -224,8 +234,8 @@ function buildNcx(linksWithChapters) {
   `;
 }
 
-function buildToc(linksWithChapters) {
-  const toLi = ([link, $chapter], idx) => `
+function buildToc(linksWithChapters: LinkWithChapter[]): string {
+  const toLi = ([link, $chapter]: LinkWithChapter, idx: number) => `
     <li><a href="#${chapterId(link)}">${chapterTitle(link, $chapter)}</a></li>
   `;
   return `
@@ -240,7 +250,7 @@ function buildToc(linksWithChapters) {
   `;
 }
 
-function buildHTML(linksWithChapters) {
+function buildHTML(linksWithChapters: LinkWithChapter[]): string {
   const chapters = linksWithChapters
     .map(([_, $chapter]) => $chapter("body").html())
     .join(PAGE_BREAK);
@@ -268,14 +278,14 @@ function buildHTML(linksWithChapters) {
   `;
 }
 
-function runKindleGen(opfPath, mobiPath) {
+function runKindleGen(opfPath: string, mobiPath: string): void {
   spawnSync("./kindlegen", [opfPath, "-o", mobiPath, "-verbose"], {
     stdio: "inherit",
     encoding: "utf8",
   });
 }
 
-export async function htmlToPdf(htmlPath, pdfPath) {
+export async function htmlToPdf(htmlPath: string, pdfPath: string): Promise<void> {
   console.log(`Building PDF ${pdfPath}`);
   const widthIn = 6 + 0.125 * 2;
   const heightIn = 9 + 0.125 * 2;
@@ -303,7 +313,13 @@ export async function htmlToPdf(htmlPath, pdfPath) {
   await browser.close();
 }
 
-async function buildBook({ linksWithChapters, subDir, title }) {
+interface BuildBookParams {
+  linksWithChapters: LinkWithChapter[];
+  subDir: string;
+  title: string;
+}
+
+async function buildBook({ linksWithChapters, subDir, title }: BuildBookParams): Promise<void> {
   const dir = `${GEN_DIR}/${subDir}`;
   fs.writeFileSync(
     `${dir}/${OPF_FILENAME}`,
@@ -320,24 +336,26 @@ async function buildBook({ linksWithChapters, subDir, title }) {
 // ------------------------------------------------------------
 // Get Chapters
 
-function toLinks($) {
+function toLinks($: CheerioAPI): string[] {
   return $("table:nth-of-type(2)")
     .find("a")
     .toArray()
-    .map((node) => node.attribs && node.attribs.href)
-    .filter((href) => href.indexOf("http") === -1)
+    .map((node: any) => node.attribs && node.attribs.href)
+    .filter((href): href is string => href && href.indexOf("http") === -1)
     .map((path) => `${ROOT_PATH}/${path}`)
     .reverse(); // earlier first
 }
 
-async function loadLinksWithHTML() {
+type LinkAndHTML = [string, string];
+
+async function loadLinksWithHTML(): Promise<LinkAndHTML[]> {
   const jsonPath = `${BOOK_DIR}/gen/${JSON_FILENAME}`;
   const fromDisk = fs.existsSync(jsonPath);
 
   if (fromDisk) {
     console.log("Loading from disk...");
     console.log(`If you'd like to refetch, delete ${jsonPath}`);
-    return JSON.parse(fs.readFileSync(jsonPath).toString());
+    return JSON.parse(fs.readFileSync(jsonPath).toString()) as LinkAndHTML[];
   }
 
   console.log("Loading articles index...");
@@ -347,7 +365,7 @@ async function loadLinksWithHTML() {
   console.log(`Found ${links.length} articles`);
 
   const linkAndHTML = await Promise.all(
-    links.map(async (link) => {
+    links.map(async (link): Promise<LinkAndHTML> => {
       console.log(`Loading ${link}`);
       const html = await loadHTMLText(link);
       return [link, html];
@@ -364,14 +382,14 @@ async function loadLinksWithHTML() {
 // ------------------------------------------------------------
 // run
 
-const ignoredLinks = new Set(["http://www.paulgraham.com/prop62.html"]);
+const ignoredLinks = new Set<string>(["http://www.paulgraham.com/prop62.html"]);
 
-async function run() {
+async function run(): Promise<void> {
   const linksWithHTML = await loadLinksWithHTML();
-  const linksWithChapters = await Promise.all(
+  const linksWithChapters: LinkWithChapter[] = await Promise.all(
     linksWithHTML
       .filter(([link]) => !ignoredLinks.has(link))
-      .map(async ([link, html]) => [
+      .map(async ([link, html]): Promise<LinkWithChapter> => [
         link,
         await toChapter(link, cheerio.load(html)),
       ])
