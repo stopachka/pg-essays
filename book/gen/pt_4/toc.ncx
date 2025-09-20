@@ -364,5 +364,19 @@
       <content src="index.html#do" />
     </navPoint>
   
+    <navPoint id="goodwriting" playOrder="52">
+      <navLabel>
+        <text>Good Writing</text>
+      </navLabel>
+      <content src="index.html#goodwriting" />
+    </navPoint>
+  
+    <navPoint id="field" playOrder="53">
+      <navLabel>
+        <text>The Shape of the Essay Field</text>
+      </navLabel>
+      <content src="index.html#field" />
+    </navPoint>
+  
    </ncx>
   

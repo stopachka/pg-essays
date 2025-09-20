@@ -19,7 +19,6 @@ const BOOK_TITLE: string = "Essays by Paul Graham";
 const ROOT_PATH: string = "http://www.paulgraham.com";
 const ARTICLES_INDEX: string = `${ROOT_PATH}/articles.html`;
 const BOOK_DIR: string = `${__dirname}/../book`;
-const JSON_FILENAME: string = "loaded-links.json";
 const HTML_FILENAME: string = "index.html";
 const NCX_FILENAME: string = "toc.ncx";
 const OPF_FILENAME: string = "index.opf";
@@ -28,15 +27,46 @@ const TOC_ID: string = "toc";
 const PAGE_BREAK: string = '<div style="page-break-before: always;"></div>';
 const GEN_DIR: string = `${BOOK_DIR}/gen`;
 const ASSETS_DIR: string = `${GEN_DIR}/assets`;
+const HTML_CACHE_DIR: string = `${GEN_DIR}/html_cache`;
 const PDF_FILENAME: string = "index.pdf";
 const COVER_FILENAME: string = "cover.jpg";
 
 // ------------------------------------------------------------
+// Types
+
+interface Chapter {
+  url: string;
+  key: string;
+  slug: string;
+  $?: CheerioAPI;
+}
+
+// ------------------------------------------------------------
 // Helpers
 
-async function loadHTMLText(url: string): Promise<string> {
-  const res = await fetch(url);
+async function loadHTMLText(url: string, cacheKey: string): Promise<string> {
+  // Create cache directory if it doesn't exist
+  if (!fs.existsSync(HTML_CACHE_DIR)) {
+    fs.mkdirSync(HTML_CACHE_DIR, { recursive: true });
+  }
+
+  // Use the provided key for the cache filename
+  const cachePath = path.join(HTML_CACHE_DIR, `${cacheKey}.html`);
+
+  // Check if cached version exists
+  if (fs.existsSync(cachePath)) {
+    console.log(`Loading from cache: ${cacheKey} (${url})`);
+    return fs.readFileSync(cachePath, "utf-8");
+  }
+
+  // Fetch and cache the HTML
+  console.log(`Fetching and caching: ${cacheKey} (${url})`);
+  const res = await limitedFetch(url);
   const text = await res.text();
+
+  // Save to cache
+  fs.writeFileSync(cachePath, text);
+
   return text;
 }
 
@@ -44,8 +74,10 @@ function chapterId(link: string): string | undefined {
   return _.first(_.last(link.split("/"))?.split("."));
 }
 
-function chapterTitle(link: string, $chapter: CheerioAPI): string {
-  return $chapter(`#${chapterId(link)}`)
+function chapterTitle(chapter: Chapter): string {
+  if (!chapter.$) return "";
+  return chapter
+    .$(`#${chapterId(chapter.url)}`)
     .first()
     .text();
 }
@@ -108,11 +140,16 @@ function replaceTables($: CheerioAPI): CheerioAPI {
 const badImages = new Set<string>([
   "http://www.virtumundo.com/images/spacer.gif",
 ]);
+
 async function localiseImages($: CheerioAPI): Promise<CheerioAPI> {
-  const toLocalName = (url: string): string => {
-    const ext = path.extname(new URL(url).pathname) || ".jpg";
-    const hash = crypto.createHash("md5").update(url).digest("hex");
-    return `${hash}${ext}`;
+  const toLocalName = (input: string): string => {
+    const url = new URL(input);
+    const res =
+      url.hostname.split(".").join("_") + url.pathname.split("/").join("_");
+    if (!res) {
+      throw new Error("oi");
+    }
+    return res;
   };
 
   await Promise.all(
@@ -149,7 +186,10 @@ function removeFontTags($: CheerioAPI): CheerioAPI {
   return $;
 }
 
-async function toChapter(link: string, $html: CheerioAPI): Promise<CheerioAPI> {
+async function processChapter(
+  chapter: Chapter,
+  $html: CheerioAPI
+): Promise<CheerioAPI> {
   const ch$ = [
     removeMenu,
     removeLogo,
@@ -158,7 +198,7 @@ async function toChapter(link: string, $html: CheerioAPI): Promise<CheerioAPI> {
     removeHr,
     removeFontTags,
     replaceTables,
-  ].reduce(($, f) => f($, link), $html);
+  ].reduce(($, f) => f($, chapter.url), $html);
   const $ = await localiseImages(ch$);
   return $;
 }
@@ -198,15 +238,13 @@ function buildOpf({ title }: { title: string }): string {
   `;
 }
 
-type LinkWithChapter = [string, CheerioAPI];
-
-function buildNcx(linksWithChapters: LinkWithChapter[]): string {
-  const toNav = ([link, $chapter]: LinkWithChapter, idx: number) => `
-    <navPoint id="${chapterId(link)}" playOrder="${2 + idx}">
+function buildNcx(chapters: Chapter[]): string {
+  const toNav = (chapter: Chapter, idx: number) => `
+    <navPoint id="${chapterId(chapter.url)}" playOrder="${2 + idx}">
       <navLabel>
-        <text>${chapterTitle(link, $chapter)}</text>
+        <text>${chapterTitle(chapter)}</text>
       </navLabel>
-      <content src="${HTML_FILENAME}#${chapterId(link)}" />
+      <content src="${HTML_FILENAME}#${chapterId(chapter.url)}" />
     </navPoint>
   `;
   return `
@@ -224,14 +262,14 @@ function buildNcx(linksWithChapters: LinkWithChapter[]): string {
          <navLabel><text>Table of Contents</text></navLabel>
          <content src="${HTML_FILENAME}#${TOC_ID}" />
        </navPoint>
-       ${linksWithChapters.map(toNav).join("")}
+       ${chapters.map(toNav).join("")}
    </ncx>
   `;
 }
 
-function buildToc(linksWithChapters: LinkWithChapter[]): string {
-  const toLi = ([link, $chapter]: LinkWithChapter, idx: number) => `
-    <li><a href="#${chapterId(link)}">${chapterTitle(link, $chapter)}</a></li>
+function buildToc(chapters: Chapter[]): string {
+  const toLi = (chapter: Chapter) => `
+    <li><a href="#${chapterId(chapter.url)}">${chapterTitle(chapter)}</a></li>
   `;
   return `
     <div id="${TOC_ID}">
@@ -239,15 +277,15 @@ function buildToc(linksWithChapters: LinkWithChapter[]): string {
       <h1>Table of Contents</h1>
       ${PAGE_BREAK}
       <ul>
-        ${linksWithChapters.map(toLi).join("")}
+        ${chapters.map(toLi).join("")}
       </ul>
     </div>
   `;
 }
 
-function buildHTML(linksWithChapters: LinkWithChapter[]): string {
-  const chapters = linksWithChapters
-    .map(([_, $chapter]) => $chapter("body").html())
+function buildHTML(chapters: Chapter[]): string {
+  const chapterContents = chapters
+    .map((chapter) => (chapter.$ ? chapter.$("body").html() : ""))
     .join(PAGE_BREAK);
 
   return `
@@ -257,15 +295,15 @@ function buildHTML(linksWithChapters: LinkWithChapter[]): string {
       <meta charset="utf-8" />
       <title>${BOOK_TITLE}</title>
       <style>
-      body { 
+      body {
         font-family: "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
       }
       </style>
       </head>
       <body>
-        ${buildToc(linksWithChapters)}
+        ${buildToc(chapters)}
         ${PAGE_BREAK}
-        ${chapters}
+        ${chapterContents}
         <h1>THE END</h1>
         ${PAGE_BREAK}
       </body>
@@ -312,13 +350,13 @@ export async function htmlToPdf(
 }
 
 interface BuildBookParams {
-  linksWithChapters: LinkWithChapter[];
+  chapters: Chapter[];
   subDir: string;
   title: string;
 }
 
 async function buildBook({
-  linksWithChapters,
+  chapters,
   subDir,
   title,
 }: BuildBookParams): Promise<void> {
@@ -329,8 +367,8 @@ async function buildBook({
       title,
     })
   );
-  fs.writeFileSync(`${dir}/${NCX_FILENAME}`, buildNcx(linksWithChapters));
-  fs.writeFileSync(`${dir}/${HTML_FILENAME}`, buildHTML(linksWithChapters));
+  fs.writeFileSync(`${dir}/${NCX_FILENAME}`, buildNcx(chapters));
+  fs.writeFileSync(`${dir}/${HTML_FILENAME}`, buildHTML(chapters));
   await htmlToPdf(`${dir}/${HTML_FILENAME}`, `${dir}/${PDF_FILENAME}`);
   runKindleGen(`${dir}/${OPF_FILENAME}`, MOBI_FILENAME);
 }
@@ -348,37 +386,22 @@ function toLinks($: CheerioAPI): string[] {
     .reverse(); // earlier first
 }
 
-type LinkAndHTML = [string, string];
-
-async function loadLinksWithHTML(): Promise<LinkAndHTML[]> {
-  const jsonPath = `${BOOK_DIR}/gen/${JSON_FILENAME}`;
-  const fromDisk = fs.existsSync(jsonPath);
-
-  if (fromDisk) {
-    console.log("Loading from disk...");
-    console.log(`If you'd like to refetch, delete ${jsonPath}`);
-    return JSON.parse(fs.readFileSync(jsonPath).toString()) as LinkAndHTML[];
-  }
-
+async function loadChapters(): Promise<Chapter[]> {
   console.log("Loading articles index...");
-  const articles = await loadHTMLText(ARTICLES_INDEX);
+  const articles = await loadHTMLText(ARTICLES_INDEX, "00_articles_index");
   const $articles = load(articles);
   const links = toLinks($articles);
   console.log(`Found ${links.length} articles`);
 
-  const linkAndHTML = await Promise.all(
-    links.map(async (link): Promise<LinkAndHTML> => {
-      console.log(`Loading ${link}`);
-      const html = await loadHTMLText(link);
-      return [link, html];
-    })
-  );
-
-  console.log(`Saving to disk...`);
-
-  fs.writeFileSync(jsonPath, JSON.stringify(linkAndHTML, null, 2));
-
-  return linkAndHTML;
+  return links.map((url, index) => {
+    const slug = chapterId(url) || `chapter_${index}`;
+    const key = `${String(index + 1).padStart(3, "0")}_${slug}`;
+    return {
+      url,
+      key,
+      slug,
+    };
+  });
 }
 
 // ------------------------------------------------------------
@@ -387,24 +410,28 @@ async function loadLinksWithHTML(): Promise<LinkAndHTML[]> {
 const ignoredLinks = new Set<string>(["http://www.paulgraham.com/prop62.html"]);
 
 async function run(): Promise<void> {
-  const linksWithHTML = await loadLinksWithHTML();
-  const linksWithChapters: LinkWithChapter[] = await Promise.all(
-    linksWithHTML
-      .filter(([link]) => !ignoredLinks.has(link))
-      .map(
-        async ([link, html]): Promise<LinkWithChapter> => [
-          link,
-          await toChapter(link, load(html)),
-        ]
-      )
+  const chapters = await loadChapters();
+  const processedChapters = await Promise.all(
+    chapters
+      .filter((chapter) => !ignoredLinks.has(chapter.url))
+      .map(async (chapter): Promise<Chapter> => {
+        const html = await loadHTMLText(chapter.url, chapter.key);
+        const $ = await processChapter(chapter, load(html));
+        return {
+          ...chapter,
+          $,
+        };
+      })
   );
-  const pt1 = linksWithChapters.slice(0, 45);
-  const pt2 = linksWithChapters.slice(45, 95);
-  const pt3 = linksWithChapters.slice(95, 175);
-  const pt4 = linksWithChapters.slice(175);
+
+  const pt1 = processedChapters.slice(0, 45);
+  const pt2 = processedChapters.slice(45, 95);
+  const pt3 = processedChapters.slice(95, 175);
+  const pt4 = processedChapters.slice(175);
+
   [pt1, pt2, pt3, pt4].forEach((chunk, idx) =>
     buildBook({
-      linksWithChapters: chunk,
+      chapters: chunk,
       title: `Essays by Paul Graham, Part ${idx + 1}`,
       subDir: `pt_${idx + 1}`,
     })
