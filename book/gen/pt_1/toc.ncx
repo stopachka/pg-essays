@@ -16,315 +16,315 @@
        
     <navPoint id="progbot" playOrder="2">
       <navLabel>
-        <text>Programming Bottom-Up</text>
+        <text></text>
       </navLabel>
       <content src="index.html#progbot" />
     </navPoint>
   
     <navPoint id="lwba" playOrder="3">
       <navLabel>
-        <text>Lisp for Web-Based Applications</text>
+        <text></text>
       </navLabel>
       <content src="index.html#lwba" />
     </navPoint>
   
     <navPoint id="avg" playOrder="4">
       <navLabel>
-        <text>Beating the Averages</text>
+        <text></text>
       </navLabel>
       <content src="index.html#avg" />
     </navPoint>
   
     <navPoint id="javacover" playOrder="5">
       <navLabel>
-        <text>Java's Cover</text>
+        <text></text>
       </navLabel>
       <content src="index.html#javacover" />
     </navPoint>
   
     <navPoint id="popular" playOrder="6">
       <navLabel>
-        <text>Being Popular</text>
+        <text></text>
       </navLabel>
       <content src="index.html#popular" />
     </navPoint>
   
     <navPoint id="langdes" playOrder="7">
       <navLabel>
-        <text>Five Questions about Language Design</text>
+        <text></text>
       </navLabel>
       <content src="index.html#langdes" />
     </navPoint>
   
     <navPoint id="rootsoflisp" playOrder="8">
       <navLabel>
-        <text>The Roots of Lisp</text>
+        <text></text>
       </navLabel>
       <content src="index.html#rootsoflisp" />
     </navPoint>
   
     <navPoint id="road" playOrder="9">
       <navLabel>
-        <text>The Other Road Ahead</text>
+        <text></text>
       </navLabel>
       <content src="index.html#road" />
     </navPoint>
   
     <navPoint id="diff" playOrder="10">
       <navLabel>
-        <text>What Made Lisp Different</text>
+        <text></text>
       </navLabel>
       <content src="index.html#diff" />
     </navPoint>
   
     <navPoint id="noop" playOrder="11">
       <navLabel>
-        <text>Why Arc Isn't Especially Object-Oriented</text>
+        <text></text>
       </navLabel>
       <content src="index.html#noop" />
     </navPoint>
   
     <navPoint id="taste" playOrder="12">
       <navLabel>
-        <text>Taste for Makers</text>
+        <text></text>
       </navLabel>
       <content src="index.html#taste" />
     </navPoint>
   
     <navPoint id="fix" playOrder="13">
       <navLabel>
-        <text>What Languages Fix</text>
+        <text></text>
       </navLabel>
       <content src="index.html#fix" />
     </navPoint>
   
     <navPoint id="power" playOrder="14">
       <navLabel>
-        <text>Succinctness is Power</text>
+        <text></text>
       </navLabel>
       <content src="index.html#power" />
     </navPoint>
   
     <navPoint id="icad" playOrder="15">
       <navLabel>
-        <text>Revenge of the Nerds</text>
+        <text></text>
       </navLabel>
       <content src="index.html#icad" />
     </navPoint>
   
     <navPoint id="spam" playOrder="16">
       <navLabel>
-        <text>A Plan for Spam</text>
+        <text></text>
       </navLabel>
       <content src="index.html#spam" />
     </navPoint>
   
     <navPoint id="desres" playOrder="17">
       <navLabel>
-        <text>Design and Research</text>
+        <text></text>
       </navLabel>
       <content src="index.html#desres" />
     </navPoint>
   
     <navPoint id="better" playOrder="18">
       <navLabel>
-        <text>Better Bayesian Filtering</text>
+        <text></text>
       </navLabel>
       <content src="index.html#better" />
     </navPoint>
   
     <navPoint id="nerds" playOrder="19">
       <navLabel>
-        <text>Why Nerds are Unpopular</text>
+        <text></text>
       </navLabel>
       <content src="index.html#nerds" />
     </navPoint>
   
     <navPoint id="hundred" playOrder="20">
       <navLabel>
-        <text>The Hundred-Year Language</text>
+        <text></text>
       </navLabel>
       <content src="index.html#hundred" />
     </navPoint>
   
     <navPoint id="iflisp" playOrder="21">
       <navLabel>
-        <text>If Lisp is So Great</text>
+        <text></text>
       </navLabel>
       <content src="index.html#iflisp" />
     </navPoint>
   
     <navPoint id="hp" playOrder="22">
       <navLabel>
-        <text>Hackers and Painters</text>
+        <text></text>
       </navLabel>
       <content src="index.html#hp" />
     </navPoint>
   
     <navPoint id="ffb" playOrder="23">
       <navLabel>
-        <text>Filters that Fight Back</text>
+        <text></text>
       </navLabel>
       <content src="index.html#ffb" />
     </navPoint>
   
     <navPoint id="say" playOrder="24">
       <navLabel>
-        <text>What You Can't Say</text>
+        <text></text>
       </navLabel>
       <content src="index.html#say" />
     </navPoint>
   
     <navPoint id="gba" playOrder="25">
       <navLabel>
-        <text>The Word "Hacker"</text>
+        <text></text>
       </navLabel>
       <content src="index.html#gba" />
     </navPoint>
   
     <navPoint id="wealth" playOrder="26">
       <navLabel>
-        <text>How to Make Wealth</text>
+        <text></text>
       </navLabel>
       <content src="index.html#wealth" />
     </navPoint>
   
     <navPoint id="gap" playOrder="27">
       <navLabel>
-        <text>Mind the Gap</text>
+        <text></text>
       </navLabel>
       <content src="index.html#gap" />
     </navPoint>
   
     <navPoint id="gh" playOrder="28">
       <navLabel>
-        <text>Great Hackers</text>
+        <text></text>
       </navLabel>
       <content src="index.html#gh" />
     </navPoint>
   
     <navPoint id="pypar" playOrder="29">
       <navLabel>
-        <text>The Python Paradox</text>
+        <text></text>
       </navLabel>
       <content src="index.html#pypar" />
     </navPoint>
   
     <navPoint id="essay" playOrder="30">
       <navLabel>
-        <text>The Age of the Essay</text>
+        <text></text>
       </navLabel>
       <content src="index.html#essay" />
     </navPoint>
   
     <navPoint id="bubble" playOrder="31">
       <navLabel>
-        <text>What the Bubble Got Right</text>
+        <text></text>
       </navLabel>
       <content src="index.html#bubble" />
     </navPoint>
   
     <navPoint id="laundry" playOrder="32">
       <navLabel>
-        <text>A Version 1.0</text>
+        <text></text>
       </navLabel>
       <content src="index.html#laundry" />
     </navPoint>
   
     <navPoint id="polls" playOrder="33">
       <navLabel>
-        <text>Bradley's Ghost</text>
+        <text></text>
       </navLabel>
       <content src="index.html#polls" />
     </navPoint>
   
     <navPoint id="charisma" playOrder="34">
       <navLabel>
-        <text>It's Charisma, Stupid</text>
+        <text></text>
       </navLabel>
       <content src="index.html#charisma" />
     </navPoint>
   
     <navPoint id="usa" playOrder="35">
       <navLabel>
-        <text>Made in USA</text>
+        <text></text>
       </navLabel>
       <content src="index.html#usa" />
     </navPoint>
   
     <navPoint id="hs" playOrder="36">
       <navLabel>
-        <text>What You'll Wish You'd Known</text>
+        <text></text>
       </navLabel>
       <content src="index.html#hs" />
     </navPoint>
   
     <navPoint id="start" playOrder="37">
       <navLabel>
-        <text>How to Start a Startup</text>
+        <text></text>
       </navLabel>
       <content src="index.html#start" />
     </navPoint>
   
     <navPoint id="venturecapital" playOrder="38">
       <navLabel>
-        <text>A Unified Theory of VC Suckage</text>
+        <text></text>
       </navLabel>
       <content src="index.html#venturecapital" />
     </navPoint>
   
     <navPoint id="college" playOrder="39">
       <navLabel>
-        <text>Undergraduation</text>
+        <text></text>
       </navLabel>
       <content src="index.html#college" />
     </navPoint>
   
     <navPoint id="writing44" playOrder="40">
       <navLabel>
-        <text>Writing,  Briefly</text>
+        <text></text>
       </navLabel>
       <content src="index.html#writing44" />
     </navPoint>
   
     <navPoint id="mac" playOrder="41">
       <navLabel>
-        <text>Return of the Mac</text>
+        <text></text>
       </navLabel>
       <content src="index.html#mac" />
     </navPoint>
   
     <navPoint id="bronze" playOrder="42">
       <navLabel>
-        <text>Why Smart People Have Bad Ideas</text>
+        <text></text>
       </navLabel>
       <content src="index.html#bronze" />
     </navPoint>
   
     <navPoint id="submarine" playOrder="43">
       <navLabel>
-        <text>The Submarine</text>
+        <text></text>
       </navLabel>
       <content src="index.html#submarine" />
     </navPoint>
   
     <navPoint id="hiring" playOrder="44">
       <navLabel>
-        <text>Hiring is Obsolete</text>
+        <text></text>
       </navLabel>
       <content src="index.html#hiring" />
     </navPoint>
   
     <navPoint id="opensource" playOrder="45">
       <navLabel>
-        <text>What Business Can Learn from Open Source</text>
+        <text></text>
       </navLabel>
       <content src="index.html#opensource" />
     </navPoint>
   
     <navPoint id="ladder" playOrder="46">
       <navLabel>
-        <text>After the Ladder</text>
+        <text></text>
       </navLabel>
       <content src="index.html#ladder" />
     </navPoint>

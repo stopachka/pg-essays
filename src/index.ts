@@ -218,9 +218,27 @@ function removeOnLispDownload($: CheerioAPI): CheerioAPI {
   return $;
 }
 
+function cleanMarkdown(markdown: string): string {
+  return markdown;
+  const arr = markdown.split("\n");
+  let indexToCut = arr.length - 1;
+  while (indexToCut > 0) {
+    const s = arr[indexToCut];
+    if (!s || s[0] === "[" || s[0] === "!") {
+      indexToCut--;
+      continue;
+    }
+    break;
+  }
+  return arr.slice(0, indexToCut).join("\n");
+}
+
 async function markdownTransform(chapter: Chapter, $html: CheerioAPI): Promise<CheerioAPI> {
   const markdown = turndownService.turndown($html.html());
   fs.writeFileSync(HTML_CACHE_DIR + "/" + chapter.key + ".md", markdown);
+
+  const transformedMarkown = cleanMarkdown(markdown);
+  fs.writeFileSync(HTML_CACHE_DIR + "/" + chapter.key + "transformed.md", transformedMarkown);
   // Convert Markdown back to HTML
   const transformedHtml = await marked(markdown);
   return load(transformedHtml);
@@ -244,7 +262,7 @@ async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<Chee
     removeScriptTags,
   ].reduce(($, f) => f($, chapter.url), $html);
   const $withImage = await localiseImages(ch$);
-  const $ = $withImage;
+  const $ = await markdownTransform(chapter, $withImage);
   const changed = $.html();
   const savedKey = chapter.key + "_transformed.html";
   fs.writeFileSync(HTML_CACHE_DIR + "/" + savedKey, await safeFormat(changed, savedKey));
