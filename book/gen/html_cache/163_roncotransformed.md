@@ -50,8 +50,3 @@ Fortunately that future is not limited to the startup world. The startup world i
 \[2\] Y Combinator in particular, because it aggregates data from so many startups, has a pretty comprehensive view of investor behavior.  
   
 **Thanks** to Sam Altman and Jessica Livingston for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/nad5412419026)

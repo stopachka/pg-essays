@@ -44,8 +44,3 @@ Or more precisely, you have to be independent-minded about the ideas you work wi
 \[3\] Having heretical opinions doesn't mean you have to express them openly. It may be [easier to have them](say.html) if you don't.  
   
 **Thanks** to Austen Allred, Trevor Blackwell, Patrick Collison, Jessica Livingston, Amjad Masad, Ryan Petersen, and Harj Taggar for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/n64147f0ff2f3)

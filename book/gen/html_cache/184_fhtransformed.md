@@ -68,12 +68,3 @@ Since haters are equivalent to fanboys, that's the way to deal with them too. Th
   
   
 **Thanks** to Austen Allred, Trevor Blackwell, Patrick Collison, Christine Ford, Daniel Gackle, Jessica Livingston, Robert Morris, Elon Musk, Harj Taggar, and Peter Thiel for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/n5c47575488b6)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post_22.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Polish Translation](https://stronglyagainst.com/pgraham-fanboy-hater/)

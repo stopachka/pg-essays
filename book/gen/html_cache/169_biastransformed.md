@@ -36,10 +36,3 @@ I predict we'll see this technique used more in the future. The information need
 \[2\] As Paul Buchheit points out, First Round excluded their most successful investment, Uber, from the study. And while it makes sense to exclude outliers from some types of studies, studies of returns from startup investing, which is all about hitting outliers, are not one of them.  
   
 **Thanks** to Sam Altman, Jessica Livingston, and Geoff Ralston for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post_29.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Swedish Translation](http://www.jensbackbom.se/2020/09/10/ett-satt-att-upptacka-bias/)

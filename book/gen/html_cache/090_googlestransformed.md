@@ -73,8 +73,3 @@ But there is a big opportunity here, and one way or the other it's going to get 
 \[1\] Another tip: If you want to get all that value, don't destroy the startup after you buy it. Give the founders enough autonomy that they can grow the acquisition into what it would have become.  
   
 **Thanks** to Sam Altman, Paul Buchheit, David Hornik, Jessica Livingston, Robert Morris, and Fred Wilson for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://spring.jumpidea.com/2008/08/paul-graham-googles.html)

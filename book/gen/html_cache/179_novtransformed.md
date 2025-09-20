@@ -18,16 +18,3 @@ So it's particularly dangerous for an organization or society to have a culture 
 Every cherished mistaken assumption has a dead zone of unexplored ideas around it. And the more preposterous the assumption, the bigger the dead zone it creates.  
   
 There is a positive side to this phenomenon though. If you're looking for new ideas, one way to find them is by [looking for heresies](say.html). When you look at the question this way, the depressingly large dead zones around mistaken assumptions become excitingly large mines of new ideas.  
-  
-  
-  
-  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/n2cd5fc7b8eeb)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](https://ideanomics.ru/articles/19728)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Simplified Chinese Translation](https://www.douban.com/note/758984996/)

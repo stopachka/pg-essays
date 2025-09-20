@@ -47,8 +47,3 @@ While few startups will experience a stampede of interest, almost all will at le
 \[3\] If an investor pushes you hard to tell them about your conversations with other investors, is this someone you want as an investor?  
   
 **Thanks** to Paul Buchheit, Jessica Livingston, Geoff Ralston, and Garry Tan for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://blog.perevedem.ru/2013/08/26/investor-herd-dynamics/)

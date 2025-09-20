@@ -28,8 +28,3 @@ So if you want to expand your concept of what programming can be, one way to do 
   
   
 **Thanks** to Trevor Blackwell, Patrick Collison, Daniel Gackle, Amjad Masad, and Robert Morris for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://practical-scheme.net/trans/weird-j.html)

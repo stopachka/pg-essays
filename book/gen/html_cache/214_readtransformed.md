@@ -40,14 +40,3 @@ People who just want information may find other ways to get it. But people who w
 \[1\] Audiobooks can give you examples of good writing, but having them read to you doesn't teach you as much about writing as reading them yourself.  
   
 \[2\] By "good at reading" I don't mean good at the mechanics of reading. You don't have to be good at extracting words from the page so much as extracting meaning from the words.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://practical-scheme.net/trans/read-j.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Chinese Translation](https://catcoding.me/p/read/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Italian Translation](https://marcotrombetti.com/leggere)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](https://dorianmarie.fr/paulgraham/lire.html)

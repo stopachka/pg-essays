@@ -44,8 +44,3 @@ Companies that use patents on startups are attacking innovation at the root. Now
 \[1\] Because the pledge is deliberately vague, we're going to need common sense when intepreting it. And even more vice versa: the pledge is vague in order to make people use common sense when interpreting it.  
   
 So for example I've deliberately avoided saying whether the 25 people have to be employees, or whether contractors count too. If a company has to split hairs that fine about whether a suit would violate the patent pledge, it's probably still a dick move.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[The Investment That Didn't Happen](http://k9ventures.com/blog/2011/04/27/modista/)

@@ -55,18 +55,3 @@ And my main computer is now freed for work. If you try this trick, you'll probab
 _Wow. All I can do at this computer is work. Ok, I better work then._  
   
 That's the good part. Your old bad habits now help you to work. You're used to sitting in front of that computer for hours at a time. But you can't browse the web or check email now. What are you going to do? You can't just sit there. So you start working.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Good and Bad Procrastination](http://paulgraham.com/procrastination.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Spanish Translation](http://wiki.alsanan.info/index.php?nom=desconectar%20las%20distracciones)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](http://blog.amr-g.com/?p=11)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Catalan Translation](http://capalfar.wordpress.com/2008/05/20/traduccions-de-paul-graham-2-disconnecting-distraction/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://ryba4.com/translations/distraction)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Spanish Translation](http://www.internazionale.it/interblog/index.php?itemid=2579)

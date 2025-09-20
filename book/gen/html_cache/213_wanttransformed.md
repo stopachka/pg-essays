@@ -42,8 +42,3 @@ So one way to express the correct answer is to use a regular expression. You can
   
   
 **Thanks** to Trevor Blackwell, Jessica Livingston, Robert Morris, and Michael Nielsen for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Irish Translation](https://oisinthomasmorrin.com/2022/11/28/na-rudai-ata-fonn-ort-fonn-a-bheith-ort-a-dheanamh/)

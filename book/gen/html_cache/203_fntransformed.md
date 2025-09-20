@@ -58,8 +58,3 @@ So the worst-case scenario is someone who's both naturally bitter and extremely 
   
   
 **Thanks** to Trevor Blackwell, Steve Blank, Patrick Collison, Jessica Livingston, Amjad Masad, and Robert Morris for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Chinese Translation](https://xueqiu.com/6663886898/188768282)

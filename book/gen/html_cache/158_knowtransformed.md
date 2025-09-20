@@ -40,8 +40,3 @@ Eventually we may be able not just to play back experiences but also to index an
   
   
 **Thanks** to Sam Altman, Jessica Livingston, and Robert Morris for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](http://postd.cc/how-you-know/)

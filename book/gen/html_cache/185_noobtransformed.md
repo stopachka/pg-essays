@@ -24,26 +24,3 @@ I think the answer is that there are two sources of feeling like a noob: being s
 Now that too much food is more of a problem than too little, our dislike of feeling hungry leads us astray. And I think our dislike of feeling like a noob does too.  
   
 Though it feels unpleasant, and people will sometimes ridicule you for it, the more you feel like a noob, the better.  
-  
-  
-  
-  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/n199d0f1a0ec6)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post_20.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](https://corrigan2.blogspot.com/2020/01/etre-un-noob-paul-graham.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Korean Translation](https://soojin.ro/blog/noob)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Polish Translation](https://stronglyagainst.com/pgraham-being-a-noob/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Chinese Translation](https://qcngt.com/2020/04/18/noob.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Serbian Translation](https://jelenadobric.com/writing-translations/biti-noob-paul-graham)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](https://corrigan2.blogspot.com/2020/01/etre-un-noob-paul-graham.html)

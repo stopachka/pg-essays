@@ -52,12 +52,3 @@ Another advantage of admitting to beginning writers that the 5 paragraph essay i
 \[1\] Articles of this type are also startlingly popular on Delicious, but I think that's because [delicious/popular](http://delicious.com/popular) is driven by bookmarking, not because Delicious users are stupid. Delicious users are collectors, and a list of n things seems particularly collectible because it's a collection itself.  
   
 \[2\] Most "word problems" in school math textbooks are similarly misleading. They look superficially like the application of math to real problems, but they're not. So if anything they reinforce the impression that math is merely a complicated but pointless collection of stuff to be memorized.  
-  
-  
-  
-  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://iggant.blogspot.com/2009/09/n-paul-graham-list-of-n-things.html)

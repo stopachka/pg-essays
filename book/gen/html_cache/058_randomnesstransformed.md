@@ -40,10 +40,3 @@ I say pick b. No one knows who said "never attribute to malice what can be expla
 Or better still, the positive version:
 
 > See randomness.
-
-  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Korean Translation](http://owla.textcube.com/50)

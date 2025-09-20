@@ -44,12 +44,3 @@ This circus of incompetence and dishonesty is the real issue with the death pena
   
   
 **Related:**  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Will Florida Kill an Innocent Man?](https://www.nytimes.com/2019/12/29/opinion/james-dailey-florida-murder.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Was Kevin Cooper Framed for Murder?](https://www.nytimes.com/interactive/2018/05/17/opinion/sunday/kevin-cooper-california-death-row.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Did Texas execute an innocent man?](https://www.newyorker.com/magazine/2009/09/07/trial-by-fire)

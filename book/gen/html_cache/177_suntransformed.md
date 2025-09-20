@@ -28,8 +28,3 @@ It's not true that there's nothing new under the sun. There are some domains whe
   
   
 **Thanks** to Sam Altman, Patrick Collison, and Jessica Livingston for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/nbdc4bb355499)

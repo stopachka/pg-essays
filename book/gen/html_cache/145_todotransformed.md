@@ -20,8 +20,3 @@ I would like to avoid making these mistakes. But how do you avoid mistakes you m
 > Don't ignore your dreams; don't work too much; say what you think; cultivate friendships; be happy.
 
 which I then put at the top of the file I use as a todo list.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/n2e6a78d2e1e3)

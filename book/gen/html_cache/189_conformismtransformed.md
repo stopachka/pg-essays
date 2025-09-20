@@ -90,12 +90,3 @@ But I'm hopeful long term. The independent-minded are good at protecting themsel
   
   
 **Thanks** to Sam Altman, Trevor Blackwell, Nicholas Christakis, Patrick Collison, Sam Gichuru, Jessica Livingston, Patrick McKenzie, Geoff Ralston, and Harj Taggar for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[German Translation](https://www.noahleidinger.com/unlisted/konformismus-graham-paul)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Korean Translation](https://github.com/j30ng/translations/blob/main/paul-graham/%EC%BD%98%ED%8F%AC%EB%AF%B8%EC%A6%98%EC%9D%98%EC%82%AC%EB%B6%84%EB%A9%B4-conformism.md)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Serbian Translation](https://jelenadobric.com/writing-translations/konformizam-paul-graham)

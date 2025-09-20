@@ -20,14 +20,3 @@ But epidemics are rare enough that these people clearly didn't realize this was 
 An event like this is thus a uniquely powerful way of taking people's measure. As Warren Buffett said, "It's only when the tide goes out that you learn who's been swimming naked." And the tide has just gone out like never before.  
   
 Now that we've seen the results, let's remember what we saw, because this is the most accurate test of credibility we're ever likely to have. I hope.  
-  
-  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Finnish Translation](https://medium.com/brandin-kirjasto/koronavirus-ja-uskottavuus-6054bd52c335)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[German Translation](https://www.noahleidinger.com/unlisted/graham-coronavirus)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](https://corrigan2.blogspot.com/p/coronavirus-et-credibilite-paul-graham.html)

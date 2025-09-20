@@ -54,8 +54,3 @@ The people running the US may not like it when voters or other countries refuse 
 \[4\] The state of technology isn't simply a function of the definition of property. They each constrain the other. But that being so, you can't mess with the definition of property without affecting (and probably harming) the state of technology. The history of the USSR offers a vivid illustration of that.  
   
 **Thanks** to Sam Altman and Geoff Ralston for reading drafts of this.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](http://christhurston.com.au/japanese/paul-graham-defining-property/)
