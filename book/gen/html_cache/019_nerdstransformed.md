@@ -230,30 +230,3 @@ I've said some harsh things in this essay, but really the thesis is an optimisti
   
   
 **Thanks** to Sarah Harlin, Trevor Blackwell, Robert Morris, Eric Raymond, and Jackie Weicker for reading drafts of this essay, and Maria Daniels for scanning photos.  
-  
-  
-
-  
-
-[Re: Why Nerds are Unpopular](renerds.html)  
-  
-
-[Gateway High School, 1981](gateway.html)  
-  
-
-[Japanese Translation](http://www.blog.net/nerds-jp.htm)  
-  
-
-[French Translation](http://www.kobal2.free.fr/ws_whynerds.php)  
-  
-
-[My War With Brian](http://www.amazon.com/exec/obidos/ASIN/1561632155)  
-  
-
-[Buttons](http://armandfrasco.typepad.com/armandele/)  
-  
-
-[Portuguese Translation](http://sirfraj.blogspot.com/2009/03/por-que-nerds-nao-sao-populares.html)  
-  
-
-[Spanish Translation](http://historiasecretadelsistemaeducativo.weebly.com/uploads/2/3/8/3/2383384/nerds.html)

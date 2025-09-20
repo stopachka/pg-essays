@@ -223,7 +223,12 @@ function cleanMarkdown(markdown: string): string {
   let indexToCut = arr.length;
   while (indexToCut > 0) {
     const s = arr[indexToCut - 1]?.trim();
-    if (!s || s.startsWith("![]")) {
+    if (
+      !s ||
+      s.startsWith("![]") ||
+      s.startsWith("You'll find this essay and 14 others in") ||
+      s.startsWith("[")
+    ) {
       indexToCut--;
       continue;
     }

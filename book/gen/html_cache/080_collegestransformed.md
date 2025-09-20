@@ -78,8 +78,3 @@ Indeed, the great advantage of not caring where people went to college is not ju
 \[4\] Possible doesn't mean easy, of course. A smart student at a party school will inevitably be something of an outcast, just as he or she would be in most [high schools](nerds.html).  
   
 **Thanks** to Trevor Blackwell, Sarah Harlin, Jessica Livingston, Jackie McDonough, Peter Norvig, and Robert Morris for reading drafts of this.  
-  
-
-  
-
-[French Translation](http://penelope.jdsfriends.com/pg_from_the_front_francais.html)

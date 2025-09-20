@@ -227,23 +227,3 @@ Historically, scarce-resource arguments have been the losing side in debates abo
   
   
 **Related:**  
-  
-
-  
-
-[A Plan for Spam](spam.html)  
-  
-
-[Plan for Spam FAQ](spamfaq.html)  
-  
-
-[2003 Spam Conference Proceedings](http://spamconference.org/proceedings2003.html)  
-  
-
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/better-j.html)  
-  
-
-[Chinese Translation](http://people.brandeis.edu/~liji/_private/translation/better.htm)  
-  
-
-[Test of These Suggestions](http://www.bgl.nu/bogofilter/graham.html)

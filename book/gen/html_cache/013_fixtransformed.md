@@ -60,18 +60,3 @@ Kevin Kelleher suggested an interesting way to compare programming languages: to
 **Ruby:** Perl is a kludge, and Lisp syntax is scary.  
   
 **Prolog:** Programming is not enough like logic.  
-  
-  
-  
-  
-  
-
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070206)  
-  
-
-[French Translation](http://jargonf.org/wiki/Document:Un_langage_veut_en_corriger_un_autre)  
-  
-
-[Portuguese Translation](http://rudamoura.com/consertam.html)

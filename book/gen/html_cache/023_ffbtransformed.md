@@ -50,17 +50,3 @@ There should probably be multiple blacklists. A single point of failure would be
   
   
 **Thanks** to Brian Burton, Bill Yerazunis, Dan Giffin, Eric Raymond, and Richard Jowsey for reading drafts of this.  
-  
-
-  
-
-[FFB FAQ](ffbfaq.html)  
-  
-
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/ffb-j.html)  
-  
-
-[A Perl FFB](http://radio.weblogs.com/0111823/2003/11/16.html#a373)  
-  
-
-[Lycos DDoS@Home](http://news.bbc.co.uk/2/hi/technology/4051553.stm)

@@ -303,29 +303,3 @@ If you want to do it, do it. Starting a startup is not the great mystery it seem
 \[9\] You could probably write a book about how to succeed in business by doing everything in exactly the opposite way from the DMV.  
   
 **Thanks** to Trevor Blackwell, Sarah Harlin, Jessica Livingston, and Robert Morris for reading drafts of this essay, and to Steve Melendez and Gregory Price for inviting me to speak.  
-  
-
-  
-
-[Domain Name Search](http://instantdomainsearch.com)  
-  
-
-[Turkish Translation](http://ileriseviye.org/arasayfa.php?inode=boylekurun.html)  
-  
-
-[Hebrew Translation](http://www.optimistec.com/start.htm)  
-  
-
-[Russian Translation](http://defann.cyberflash.ru/2005/10/21/1)  
-  
-
-[Chinese Translation](http://www.lgao.org/download/start.html)  
-  
-
-[French Translation](http://cultureinternet.com/paul-graham-startup-traduction/)  
-  
-
-[Japanese Translation](http://www.aoky.net/articles/paul_graham/start.htm)  
-  
-
-[Arabic Translation](https://chefrour.blogspot.com/2020/02/blog-post.html)

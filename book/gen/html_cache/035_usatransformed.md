@@ -82,12 +82,3 @@ In many technologies, version 2 has higher resolution. Why not in design general
 \[1\] Japanese cities are ugly too, but for different reasons. Japan is prone to earthquakes, so buildings are traditionally seen as temporary; there is no grand tradition of city planning like the one Europeans inherited from Rome. The other cause is the notoriously corrupt relationship between the government and construction companies.  
   
 **Thanks** to Trevor Blackwell, Barry Eisler, Sarah Harlin, Shiro Kawai, Jessica Livingston, Jackie McDonough, Robert Morris, and Eric Raymond for reading drafts of this.  
-  
-  
-
-  
-
-[American Gothic](amcars.html)  
-  
-
-[The John Rain Books](http://www.barryeisler.com)

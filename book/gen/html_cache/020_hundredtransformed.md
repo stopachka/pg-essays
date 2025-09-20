@@ -200,10 +200,3 @@ When you're working on language design, I think it is good to have such a target
 I believe Lisp Machine Lisp was the first language to embody the principle that declarations (except those of dynamic variables) were merely optimization advice, and would not change the meaning of a correct program. Common Lisp seems to have been the first to state this explicitly.  
   
 **Thanks** to Trevor Blackwell, Robert Morris, and Dan Giffin for reading drafts of this, and to Guido van Rossum, Jeremy Hylton, and the rest of the Python crew for inviting me to speak at PyCon.  
-  
-  
-
-  
-  
-
-You'll find this essay and 14 others in [**_Hackers & Painters_**](hackpaint.html).

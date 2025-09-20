@@ -143,37 +143,3 @@ In January 2003, Yahoo released a new version of the editor written in C++ and P
 \[5\] It is a bit misleading to treat macros as a separate feature. In practice their usefulness is greatly enhanced by other Lisp features like lexical closures and rest parameters.  
   
 \[6\] As a result, comparisons of programming languages either take the form of religious wars or undergraduate textbooks so determinedly neutral that they're really works of anthropology. People who value their peace, or want tenure, avoid the topic. But the question is only half a religious one; there is something there worth studying, especially if you want to design new languages.  
-  
-
-  
-
-[More Technical Details](lwba.html)  
-  
-
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/beating-the-averages-j.html)  
-  
-
-[Turkish Translation](http://ileriseviye.org/arasayfa.php?inode=beatingaverages-tr.html)  
-  
-
-[Uzbek Translation](http://bobir.livejournal.com/17358.html)  
-  
-
-[Orbitz Uses Lisp Too](carl.html)  
-  
-
-[How To Become A Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html)  
-  
-
-[A Scheme Story](http://www.trollope.org/scheme.html)  
-  
-
-[Italian Translation](https://marcotrombetti.com/media)  
-  
-
-  
-
-  
-  
-
-You'll find this essay and 14 others in [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

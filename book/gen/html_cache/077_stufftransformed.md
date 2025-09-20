@@ -52,38 +52,3 @@ I'm not claiming this is because I've achieved some kind of zenlike detachment f
 In industrialized countries the same thing happened with food in the middle of the twentieth century. As food got cheaper (or we got richer; they're indistinguishable), eating too much started to be a bigger danger than eating too little. We've now reached that point with stuff. For most people, rich or poor, stuff has become a burden.  
   
 The good news is, if you're carrying a burden without knowing it, your life could be better than you realize. Imagine walking around for years with five pound ankle weights, then suddenly having them removed.  
-  
-  
-  
-  
-  
-  
-  
-
-  
-
-[Spanish Translation](http://betawriting.blogspot.com/2007/08/cosas-por-paul-graham.html)  
-  
-
-[Russian Translation](http://ryba4.com/translations/stuff)  
-  
-
-[Italian Translation](http://www.internazionale.it/interblog/index.php?itemid=2196)  
-  
-
-[Polish Translation](http://nhw.pl/pl/2007/11/rzeczy)  
-  
-
-[Turkish Translation](http://tayfunsen.blogspot.com/2007/12/eyalar.html)  
-  
-
-[French Translation](http://versionfrancaise.blogspot.com/2008/07/trucs.html)  
-  
-
-[Slovak Translation](http://aan.bloguje.sk/801255-veci-paul-graham.php)  
-  
-
-[Romanian Translation](http://marius.sigheti.eu/lucruri/)  
-  
-
-[German Translation](http://52wege.de/von-der-wertlosigkeit-der-dinge)

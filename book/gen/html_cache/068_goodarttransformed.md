@@ -126,14 +126,3 @@ The idea that you could make great things was not just a useful illusion. They w
 Incidentally, I'm not saying that good art = fifteenth century European art. I'm not saying we should make what they made, but that we should work like they worked. There are fields now in which many people work with the same energy and honesty that fifteenth century artists did, but art is not one of them.  
   
 **Thanks** to Trevor Blackwell, Jessica Livingston, and Robert Morris for reading drafts of this, and to Paul Watson for permission to use the image at the top.  
-  
-  
-  
-  
-
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070126)  
-  
-
-[Simplified Chinese Translation](https://www.onekayakcoffee.com/post/howartcanbegood)

@@ -192,9 +192,3 @@ Wolter, Allan (trans), _Duns Scotus: Philosophical Writings_, Nelson, 1963, p. 9
 This argument seems to me like someone in 1500 looking at the lack of results achieved by alchemy and saying its value was as a process. No, they were going about it wrong. It turns out it is possible to transmute lead into gold (though not economically at current energy prices), but the route to that knowledge was to backtrack and try another approach.  
   
 **Thanks** to Trevor Blackwell, Paul Buchheit, Jessica Livingston, Robert Morris, Mark Nitzberg, and Peter Norvig for reading drafts of this.  
-  
-  
-
-  
-
-[French Translation](http://versionfrancaise.blogspot.com/2008/08/comment-faire-de-la-philosophie.html)

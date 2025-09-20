@@ -74,20 +74,3 @@ Whether or not understanding this can help large organizations, it can certainly
   
   
 **Thanks** to Sam Altman, David Greenspan, Aaron Iba, Jessica Livingston, Robert Morris, Peter Norvig, Lisa Randall, Emmett Shear, Sergei Tsarev, and Stephen Wolfram for reading drafts of this.  
-  
-
-  
-
-[Japanese Translation](http://www.aoky.net/articles/paul_graham/head.htm)  
-  
-
-[Simplified Chinese Translation](http://flyingapplet.spaces.live.com/blog/cns!F682AFBD82F7E261!547.entry)  
-  
-
-[Portuguese Translation](http://www.sounerd.com.br/index.php?option=com_content&view=article&id=261:tellarin&catid=101:graham&Itemid=44)  
-  
-
-[Bulgarian Translation](http://www.matematika.bg/wiki/%D0%9A%D0%B0%D0%BA_%D0%B4%D0%B0_%D0%B7%D0%B0%D0%B4%D1%8A%D1%80%D0%B6%D0%B8%D0%BC_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0_%D0%B2_%D0%B3%D0%BB%D0%B0%D0%B2%D0%B0%D1%82%D0%B0_%D1%81%D0%B8)  
-  
-
-[Russian Translation](http://ryba4.com/translations/head)

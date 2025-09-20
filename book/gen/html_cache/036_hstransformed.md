@@ -190,17 +190,3 @@ It might also be argued that kids who went to prep schools, because they've lear
 \[10\] Your teachers are always telling you to behave like adults. I wonder if they'd like it if you did. You may be loud and disorganized, but you're very docile compared to adults. If you actually started acting like adults, it would be just as if a bunch of adults had been transposed into your bodies. Imagine the reaction of an FBI agent or taxi driver or reporter to being told they had to ask permission to go the bathroom, and only one person could go at a time. To say nothing of the things you're taught. If a bunch of actual adults suddenly found themselves trapped in high school, the first thing they'd do is form a union and renegotiate all the rules with the administration.  
   
 **Thanks** to Ingrid Bassett, Trevor Blackwell, Rich Draves, Dan Giffin, Sarah Harlin, Jessica Livingston, Jackie McDonough, Robert Morris, Mark Nitzberg, Lisa Randall, and Aaron Swartz for reading drafts of this, and to many others for talking to me about high school.  
-  
-
-  
-
-[Why Nerds are Unpopular](nerds.html)  
-  
-
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/hs-j.html)  
-  
-
-[Russian Translation](http://www.livejournal.com/users/nixxbox/63008.html)  
-  
-
-[Georgian Translation](https://stopa.io/post/266)

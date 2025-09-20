@@ -70,11 +70,3 @@ And that's why startups thrive in startup hubs like Silicon Valley. Startups are
 \[2\] An investor who merely seems like he will fund you, however, you can ignore. Seeming like they will fund you one day is the way investors say No.  
   
 **Thanks** to Sam Altman, Jessica Livingston, Harjeet Taggar, and Kulveer Taggar for reading drafts of this.  
-  
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/ycombinator_com_images_y18.gif) [Comment](http://news.ycombinator.com/item?id=65815) on this essay.  
-  
-  
-
-  
-
-[Japanese Translation](http://www.aoky.net/articles/paul_graham/startuphubs.htm)

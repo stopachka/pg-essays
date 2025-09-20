@@ -155,15 +155,3 @@ Which implies a surprising but apparently inevitable consequence: little liberal
   
   
 **Thanks** to Trevor Blackwell, Alex Lewin, Jessica Livingston, Robert Morris, Eric Raymond, and several [anonymous CS professors](undergrad2.html) for reading drafts of this, and to the students whose questions began it.  
-  
-  
-
-  
-
-[More Advice for Undergrads](undergrad2.html)  
-  
-
-[Joel Spolsky: Advice for Computer Science College Students](http://www.joelonsoftware.com/articles/CollegeAdvice.html)  
-  
-
-[Eric Raymond: How to Become a Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html)

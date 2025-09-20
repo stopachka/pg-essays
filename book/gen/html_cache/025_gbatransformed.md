@@ -78,23 +78,3 @@ Those in a position to impose rules naturally want them to be obeyed. But be car
 **Thanks** to Ken Anderson, Trevor Blackwell, Daniel Giffin, Sarah Harlin, Shiro Kawai, Jessica Livingston, Matz, Jackie McDonough, Robert Morris, Eric Raymond, Guido van Rossum, David Weinberger, and Steven Wolfram for reading drafts of this essay.  
   
 (The [image](bluebox.html) shows Steves Jobs and Wozniak with a "blue box." Photo by Margret Wozniak. Reproduced by permission of Steve Wozniak.)  
-  
-  
-
-  
-
-[Portuguese Translation](http://www.sounerd.com.br/index.php?option=com_content&task=view&id=192&Itemid=43)  
-  
-
-[Hebrew Translation](http://www.trans.co.il/heb/68/the_word_hacker/)  
-  
-
-[Romanian Translation](http://ro.goobix.com/pg/gba/)  
-  
-
-  
-
-  
-  
-
-You'll find this essay and 14 others in [**_Hackers & Painters_**](hackpaint.html).

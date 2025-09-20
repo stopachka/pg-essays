@@ -348,21 +348,3 @@ If you want to change the world, write a new Mosaic. Think it's too late? In 199
 \[16\] In the original version of this essay, I advised avoiding Javascript. That was a good plan in 2001, but Javascript now works.  
   
 **Thanks** to Sarah Harlin, Trevor Blackwell, Robert Morris, Eric Raymond, Ken Anderson, and Dan Giffin for reading drafts of this paper; to Dan Bricklin and Bob Frankston for information about VisiCalc; and again to Ken Anderson for inviting me to speak at BBN.  
-  
-  
-  
-
-You'll find this essay and 14 others in [**_Hackers & Painters_**](hackpaint.html).  
-
-  
-
-[Some Technical Details](lwba.html)  
-  
-
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/road-j.html)  
-  
-
-[Microsoft finally agrees](http://www.informationweek.com/story/showArticle.jhtml?articleID=172900624)  
-  
-
-[Gates Email](gatesemail.html)

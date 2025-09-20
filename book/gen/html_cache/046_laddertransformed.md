@@ -28,14 +28,3 @@ I like the new model better. For one thing, it seems a bad plan to treat jobs as
 The big disadvantage of the new system is that it involves more [risk](inequality.html). If you develop ideas in a startup instead of within a big company, any number of random factors could sink you before you can finish. But maybe the older generation would laugh at me for saying that the way we do things is riskier. After all, projects within big companies were always getting cancelled as a result of arbitrary decisions from higher up. My father's entire industry (breeder reactors) disappeared that way.  
   
 For better or worse, the idea of the corporate ladder is probably gone for good. The new model seems more liquid, and more efficient. But it is less of a change, financially, than one might think. Our fathers weren't _that_ stupid.  
-  
-  
-  
-  
-
-  
-
-[Romanian Translation](http://ro.goobix.com/pg/ladder/)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20060111)

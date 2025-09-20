@@ -289,28 +289,3 @@ What's the connection? None at all. Which is precisely my point. If you want to 
 \[10\] It is probably no accident that the middle class first appeared in northern Italy and the low countries, where there were no strong central governments. These two regions were the richest of their time and became the twin centers from which Renaissance civilization radiated. If they no longer play that role, it is because other places, like the United States, have been truer to the principles they discovered.  
   
 \[11\] It may indeed be a sufficient condition. But if so, why didn't the Industrial Revolution happen earlier? Two possible (and not incompatible) answers: (a) It did. The Industrial Revolution was one in a series. (b) Because in medieval towns, monopolies and guild regulations initially slowed the development of new means of production.  
-  
-[![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/sep_turbifycdn_com_ty_cdn_paulgraham_redditino.png)](http://reddit.com) [Comment](http://reddit.com/info?id=20775) on this essay.  
-  
-  
-  
-  
-  
-
-  
-
-[Russian Translation](http://the-notebook.org/26/01/2006/kak-stat-bogatyim/)  
-  
-
-[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post_16.html)  
-  
-
-[Spanish Translation](http://www.liberalismo.org/articulo/359/)  
-  
-
-  
-
-  
-  
-
-You'll find this essay and 14 others in [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

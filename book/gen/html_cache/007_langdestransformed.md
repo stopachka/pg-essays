@@ -166,8 +166,3 @@ What this means for language design, I think, is that you shouldn't build object
 Having your language designed by a committee is a big pitfall, and not just for the reasons everyone knows about. Everyone knows that committees tend to yield lumpy, inconsistent designs. But I think a greater danger is that they won't take risks. When one person is in charge he can take risks that a committee would never agree on.  
   
 Is it necessary to take risks to design a good language though? Many people might suspect that language design is something where you should stick fairly close to the conventional wisdom. I bet this isn't true. In everything else people do, reward is proportionate to risk. Why should language design be any different?  
-  
-
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070215)

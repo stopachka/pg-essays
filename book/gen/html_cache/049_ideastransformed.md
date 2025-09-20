@@ -169,35 +169,3 @@ It seems like it violates some kind of conservation law, but there it is: the be
 \[2\] A lot of classic abstract expressionism is doodling of this type: artists trained to paint from life using the same gestures but without using them to represent anything. This explains why such paintings are (slightly) more interesting than random marks would be.  
   
 \[3\] Bill Yerazunis had solved the problem, but he got there by another path. He made a general-purpose file classifier so good that it also worked for spam.  
-  
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_japanese-translation-1.gif)
-
-[One Specific Idea](fixrazr.html)  
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_japanese-translation-1.gif)
-
-[Romanian Translation](http://ro.goobix.com/pg/ideas/)  
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_japanese-translation-1.gif)
-
-[Japanese Translation](http://blog.livedoor.jp/simoom634/archives/50642854.html)  
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_japanese-translation-1.gif)
-
-[Traditional Chinese Translation](http://www.csie.ntu.edu.tw/~p92005/paulgraham/ideas.html)  
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_japanese-translation-1.gif)
-
-[Russian Translation](http://the-notebook.org/21/04/2006/idei-dlya-startapa/)  
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_japanese-translation-1.gif)
-
-[Arabic Translation](https://chefrour.blogspot.com/2020/03/blog-post.html)

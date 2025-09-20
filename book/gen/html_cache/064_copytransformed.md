@@ -28,24 +28,3 @@ Even when you find genuinely good things to copy, there's another pitfall to be 
 It was painting, incidentally, that cured me of copying the wrong things. Halfway through grad school I decided I wanted to try being a painter, and the art world was so manifestly corrupt that it snapped the leash of credulity. These people made philosophy professors seem as scrupulous as mathematicians. It was so clearly a choice of doing good work xor being an insider that I was forced to see the distinction. It's there to some degree in almost every field, but I had till then managed to avoid facing it.  
   
 That was one of the most valuable things I learned from painting: you have to figure out for yourself what's [good](taste.html). You can't trust authorities. They'll lie to you on this one.  
-  
-  
-  
-  
-  
-[![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/sep_turbifycdn_com_ty_cdn_paulgraham_redditino.png)](http://reddit.com) [Comment](http://reddit.com/info/9bm4/comments) on this essay.  
-  
-  
-
-  
-
-[Chinese Translation](http://mailper.googlepages.com/copywhatyoulike)  
-  
-
-[Romanian Translation](http://ro.goobix.com/pg/copy/)  
-  
-
-[Spanish Translation](http://www.simpleoption.com/ensayo-copia-lo-que-te-gusta)  
-  
-
-[Russian Translation](http://ryba4.com/translations/copy)

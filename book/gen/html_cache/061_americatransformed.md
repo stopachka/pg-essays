@@ -214,17 +214,3 @@ World Bank, _Doing Business in 2006_, http://doingbusiness.org
 \[7\] The point where things start to go wrong seems to be about 50%. Above that people get serious about tax avoidance. The reason is that the payoff for avoiding tax grows hyperexponentially (x/1-x for 0 < x < 1). If your income tax rate is 10%, moving to Monaco would only give you 11% more income, which wouldn't even cover the extra cost. If it's 90%, you'd get ten times as much income. And at 98%, as it was briefly in Britain in the 70s, moving to Monaco would give you fifty times as much income. It seems quite likely that European governments of the 70s never drew this curve.  
   
 **Thanks** to Trevor Blackwell, Matthias Felleisen, Jessica Livingston, Robert Morris, Neil Rimer, Hugues Steinier, Brad Templeton, Fred Wilson, and Stephen Wolfram for reading drafts of this, and to Ed Dumbill for inviting me to speak.  
-  
-
-  
-
-[French Translation](http://penelope.jdsfriends.com/traduction_francaise.htm)  
-  
-
-[Russian Translation](http://www.perevedem.ru/article/america.htm)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070204)  
-  
-
-[Arabic Translation](https://chefrour.blogspot.com/2020/01/page-size-8.html)

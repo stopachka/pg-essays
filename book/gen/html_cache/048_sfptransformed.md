@@ -124,12 +124,3 @@ If I'm right, "hacker" will mean something different in twenty years than it doe
 The [image](https://sep.turbifycdn.com/ty/cdn/paulgraham/sfptable.jpg?t=1688221954&) shows us, the 2005 summer founders, and Smartleaf co-founders Mark Nitzberg and Olin Shivers at the 30-foot table Kate Courteau designed for us. Photo by Alex Lewin.  
   
 **Thanks** to Sarah Harlin, Steve Huffman, Jessica Livingston, Zak Stone, and Aaron Swartz for reading drafts of this.  
-  
-  
-
-  
-
-[Romanian Translation](http://ro.goobix.com/pg/sfp/)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20060112)

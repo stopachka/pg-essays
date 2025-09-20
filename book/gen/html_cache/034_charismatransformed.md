@@ -70,17 +70,3 @@ Finally, to the people who say that the theory is probably true, but rather depr
 \[4\] One implication of this theory is that parties shouldn't be too quick to reject candidates with skeletons in their closets. Charismatic candidates will tend to have more skeletons than squeaky clean dullards, but in practice that doesn't seem to lose elections. The current Bush, for example, probably did more drugs in his twenties than any preceding president, and yet managed to get elected with a base of evangelical Christians. All you have to do is say you've reformed, and stonewall about the details.  
   
 **Thanks** to Trevor Blackwell, Maria Daniels, Jessica Livingston, Jackie McDonough, and Robert Morris for reading drafts of this, and to Eric Raymond for pointing out that I was wrong about 1968.  
-  
-[![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/sep_turbifycdn_com_ty_cdn_paulgraham_redditino.png)](http://reddit.com) [Comment](http://reddit.com/info/8zp7/comments) on this essay.  
-  
-  
-
-  
-
-[What Charisma Is](recharisma.html)  
-  
-
-[Politics and the Art of Acting](http://www.neh.gov/whoweare/miller/lecture.html)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070212)

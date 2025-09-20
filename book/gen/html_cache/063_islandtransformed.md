@@ -38,12 +38,3 @@ I realize this dependence on books is not entirely good—that what I need them 
 There is a point where I'll do without books. I was walking in some steep mountains once, and decided I'd rather just think, if I was bored, rather than carry a single unnecessary ounce. It wasn't so bad. I found I could entertain myself by having ideas instead of reading other people's. If you stop eating jam, fruit starts to taste better.  
   
 So maybe I'll try not bringing books on some future trip. They're going to have to pry the plugs out of my cold, dead ears, however.  
-  
-  
-
-  
-
-[Spanish Translation](http://www.simpleoption.com/ensayo-test-isla)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20060721)

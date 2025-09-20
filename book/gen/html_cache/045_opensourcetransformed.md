@@ -172,20 +172,3 @@ That may be the greatest effect, in the long run, of the forces underlying open 
 \[6\] The word "boss" is derived from the Dutch _baas_, meaning "master."  
   
 **Thanks** to Sarah Harlin, Jessica Livingston, and Robert Morris for reading drafts of this.  
-  
-
-  
-
-[French Translation](http://www.tddsworld.com/translations/pg_opensource.html)  
-  
-
-[Russian Translation](http://www.computerra.ru/think/222115/)  
-  
-
-[Japanese Translation](http://blog.livedoor.jp/simoom634/archives/50810670.html)  
-  
-
-[Spanish Translation](http://juanuruguay.blogspot.com/2008/12/lo-que-los-negocios-pueden-aprender-del.html)  
-  
-
-[Arabic Translation](http://academy.hsoub.com/entrepreneurship/general/%D9%85%D8%A7-%D9%8A%D9%85%D9%83%D9%86-%D8%A3%D9%86-%D9%8A%D8%AA%D8%B9%D9%84%D9%91%D9%8E%D9%85%D9%87-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9-r54/)

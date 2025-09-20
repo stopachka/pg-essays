@@ -52,16 +52,3 @@ So Dad, there's this company called Apple. They make a new kind of computer that
 \[1\] These horrible stickers are much like the intrusive ads popular on pre-Google search engines. They say to the customer: you are unimportant. We care about Intel and Microsoft, not you.  
   
 \[2\] [Y Combinator](http://ycombinator.com) is (we hope) visited mostly by hackers. The proportions of OSes are: Windows 66.4%, Macintosh 18.8%, Linux 11.4%, and FreeBSD 1.5%. The Mac number is a big change from what it would have been five years ago.  
-  
-  
-  
-
-  
-
-[Italian Translation](http://www.alfonsomartone.itb.it/pavrgi.html)  
-  
-
-[Russian Translation](http://anton.kovalyov.net/translations/return-of-the-mac.html)  
-  
-
-[Chinese Translation](http://flyingapplet.spaces.live.com/blog/cns!F682AFBD82F7E261!390.entry)

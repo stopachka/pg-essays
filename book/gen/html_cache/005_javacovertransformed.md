@@ -52,23 +52,3 @@ Bear in mind, this is not a critique of Java, but a critique of its cover. I don
 It may seem cavalier to dismiss a language before you've even tried writing programs in it. But this is something all programmers have to do. There are too many technologies out there to learn them all. You have to learn to judge by outward signs which will be worth your time. I have likewise cavalierly dismissed Cobol, Ada, Visual Basic, the IBM AS400, VRML, ISO 9000, the SET protocol, VMS, Novell Netware, and CORBA, among others. They just smelled wrong.  
   
 It could be that in Java's case I'm mistaken. It could be that a language promoted by one big company to undermine another, designed by a committee for a "mainstream" audience, hyped to the skies, and beloved of the DoD, happens nonetheless to be a clean, beautiful, powerful language that I would love programming in. It could be, but it seems very unlikely.  
-  
-
-  
-
-[Trevor Re: Java's Cover](trevrejavcov.html)  
-  
-
-[Berners-Lee Re: Java](bljava.html)  
-  
-
-[Being Popular](popular.html)  
-  
-
-[Sun Internal Memo](http://www.archub.org/javamemo.txt)  
-  
-
-[2005: BusinessWeek Agrees](http://www.businessweek.com/technology/content/dec2005/tc20051213_042973.htm)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070211)

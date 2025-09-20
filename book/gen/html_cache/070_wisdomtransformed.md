@@ -148,17 +148,3 @@ Some translators use "calm" instead of "happy." One source of difficulty here is
 \[10\] The bias toward wisdom in ancient philosophy may be exaggerated by the fact that, in both Greece and China, many of the first philosophers (including Confucius and Plato) saw themselves as teachers of administrators, and so thought disproportionately about such matters. The few people who did invent things, like storytellers, must have seemed an outlying data point that could be ignored.  
   
 **Thanks** to Trevor Blackwell, Sarah Harlin, Jessica Livingston, and Robert Morris for reading drafts of this.  
-  
-
-  
-
-[Polish Translation](http://duch.mimuw.edu.pl/~matmis/blog/static.php?page=static070223-191923)  
-  
-
-[French Translation](http://www.jscoron.fr/misc/sagesse.html)  
-  
-
-[Russian Translation](http://evilnero.blogspot.com/2008/08/blog-post.html)  
-  
-
-[Russian Translation](http://ryba4.com/translations/wisdom)

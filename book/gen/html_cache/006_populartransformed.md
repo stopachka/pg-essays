@@ -266,20 +266,3 @@ Nothing is hidden from you that doesn't absolutely have to be. The language offe
 > Gary and I ordered a large pizza and found an open booth. The chief lit a cigarette. "Look at those goddamn fleas, jabbering about some disease they'll see once in their lifetimes. That's the trouble with fleas, they only like the bizarre stuff. They hate their bread and butter cases. That's the difference between us and the fucking fleas. See, we love big juicy lumbar disc herniations, but they hate hypertension...."
 
 It's hard to think of a lumbar disc herniation as juicy (except literally). And yet I think I know what they mean. I've often had a juicy bug to track down. Someone who's not a programmer would find it hard to imagine that there could be pleasure in a bug. Surely it's better if everything just works. In one way, it is. And yet there is undeniably a grim satisfaction in hunting down certain sorts of bugs.  
-  
-
-  
-
-[Postscript Version](https://sep.turbifycdn.com/ty/cdn/paulgraham/bepop.ps?t=1688221954&)  
-  
-
-[Arc](http://www.paulgraham.com/arc.html)  
-  
-
-[Five Questions about Language Design](langdes.html)  
-  
-
-[How to Become a Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html)  
-  
-
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/being-popular-j.html)

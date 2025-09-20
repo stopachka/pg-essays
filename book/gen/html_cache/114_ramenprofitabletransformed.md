@@ -99,8 +99,3 @@ Investors are one of the biggest sources of pain for founders; if they stopped c
 \[3\] It's conceivable that a startup could grow big by transforming consulting into a form that would scale. But if they did that they'd really be a product company.  
   
 **Thanks** to Jessica Livingston for reading drafts of this.  
-  
-
-  
-
-[Japanese Translation](https://note.com/tokyojack/n/n612e835ac15c)

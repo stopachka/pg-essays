@@ -226,28 +226,3 @@ Stephen G. Brush, "Why was Relativity Accepted?" _Phys. Perspect. 1 (1999) 184-2
   
   
 _  
-
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/taste-j.html)  
-  
-
-[Chinese Translation](http://daiyuwen.freeshell.org/gb/taste/taste.html)  
-  
-
-[Slovenian Translation](http://janezsvetlin.naspletu.com/okus2.html)  
-  
-
-[German Translation](http://www.magplot.de/TasteForMakers.php)  
-  
-
-[Interview: Milton Glaser](http://www.believermag.com/issues/200309/?read=interview_glaser)  
-  
-
-[Russian Translation](http://pujib.livejournal.com/492.html)  
-  
-
-  
-
-  
-  
-
-You'll find this essay and 14 others in [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

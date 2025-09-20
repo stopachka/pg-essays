@@ -69,11 +69,3 @@ And however tough things get for the Octoparts, I predict they'll succeed. They 
 All of you guys already have the first two. You're all smart and working on promising ideas. Whether you end up among the living or the dead comes down to the third ingredient, not giving up.  
   
 So I'll tell you now: bad shit is coming. It always is in a startup. The odds of getting from launch to liquidity without some kind of disaster happening are one in a thousand. So don't get demoralized. When the disaster strikes, just say to yourself, ok, this was what Paul was talking about. What did he say to do? Oh, yeah. Don't give up.  
-  
-
-  
-
-[Japanese Translation](http://www.aoky.net/articles/paul_graham/die.htm)  
-  
-
-[Arabic Translation](http://academy.hsoub.com/entrepreneurship/general/%D9%83%D9%8A%D9%81-%D8%AA%D9%82%D8%A7%D9%88%D9%85-%D8%A7%D9%84%D8%B4%D9%91%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%91%D8%A7%D8%B4%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%AA%D8%9Fhow-not-to-die-r62/)

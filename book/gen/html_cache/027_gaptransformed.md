@@ -194,8 +194,3 @@ Another approach would be to ask, if you were going back to the year x in a time
 According to a 2002 report by the National Center for Education Statistics, about 1.7% of American kids attend private, non-sectarian schools. At Princeton, 36% of the class of 2007 came from such schools. (Interestingly, the number at Harvard is significantly lower, about 28%.) Obviously this is a huge loophole. It does at least seem to be closing, not widening.  
   
 Perhaps the designers of admissions processes should take a lesson from the example of computer security, and instead of just assuming that their system can't be hacked, measure the degree to which it is.  
-  
-
-  
-
-[Spanish Translation](http://www.liberalismo.org/articulo/392/)

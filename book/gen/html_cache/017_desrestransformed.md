@@ -102,17 +102,3 @@ I'm inclined to think there isn't-- that good design requires a dictator. One re
   
   
 **Related:**  
-  
-
-  
-
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/desres-j.html)  
-  
-
-[Taste for Makers](http://www.paulgraham.com/taste.html)  
-  
-
-[Romanian Translation](http://ro.goobix.com/pg/desres/)  
-  
-
-[Spanish Translation](http://www.cibercalli.com/erick/hackingnews/diseo-e-investigacion)

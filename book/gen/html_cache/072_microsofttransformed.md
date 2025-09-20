@@ -63,14 +63,3 @@ I already know what the reaction to this essay will be. Half the readers will sa
 \[1\] It doesn't take a conscious effort to make software incompatible. All you have to do is not work too hard at fixing bugs—which, if you're a big company, you produce in copious quantities. The situation is analogous to the writing of "literary theorists." Most don't try to be obscure; they just don't make an effort to be clear. It wouldn't pay.  
   
 \[2\] In part because Steve Jobs got pushed out by John Sculley in a way that's rare among technology companies. If Apple's board hadn't made that blunder, they wouldn't have had to bounce back.  
-  
-
-  
-
-[Portuguese Translation](http://www.dicas-l.com.br/zonadecombate/zonadecombate_20070417.php)  
-  
-
-[Simplified Chinese Translation](http://flyingapplet.spaces.live.com/blog/cns!F682AFBD82F7E261!555.entry)  
-  
-
-[Korean Translation](http://appledelhi.wordpress.com/2008/10/05/)

@@ -32,14 +32,3 @@ People frightened by Lisp make up other reasons for not using it. The standard e
 Popularity is always self-perpetuating, but it's especially so in programming languages. More libraries get written for popular languages, which makes them still more popular. Programs often have to work with existing programs, and this is easier if they're written in the same language, so languages spread from program to program like a virus. And managers prefer popular languages, because they give them more leverage over developers, who can more easily be replaced.  
   
 Indeed, if programming languages were all more or less equivalent, there would be little justification for using any but the most popular. But they [aren't](icad.html) all equivalent, not by a long shot. And that's why less popular languages, like Jane Austen's novels, continue to survive at all. When everyone else is reading the latest John Grisham novel, there will always be a few people reading Jane Austen instead.  
-  
-
-  
-
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/iflisp-j.html)  
-  
-
-[Romanian Translation](http://ro.goobix.com/pg/iflisp/)  
-  
-
-[Spanish Translation](http://cibercalli.com/erick/hackingnews/lispnews/si-lisp-es-tan-grandioso)

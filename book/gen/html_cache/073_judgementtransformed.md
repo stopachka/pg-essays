@@ -30,14 +30,3 @@ Our early training and our self-centeredness combine to make us believe that eve
 And curiously enough, taking rejection less personally may help you to get rejected less often. If you think someone judging you will work hard to judge you correctly, you can afford to be passive. But the more you realize that most judgements are greatly influenced by random, extraneous factors—that most people judging you are more like a fickle novel buyer than a wise and perceptive magistrate—the more you realize you can do things to influence the outcome.  
   
 One good place to apply this principle is in college applications. Most high school students applying to college do it with the usual child's mix of inferiority and self-centeredness: inferiority in that they assume that admissions committees must be all-seeing; self-centeredness in that they assume admissions committees care enough about them to dig down into their application and figure out whether they're good or not. These combine to make applicants passive in applying and hurt when they're rejected. If college applicants realized how quick and impersonal most selection processes are, they'd make more effort to sell themselves, and take the outcome less personally.  
-  
-
-  
-
-[Spanish Translation](http://www.simpleoption.com/empresa/ensayo-dos-tipos-juicios)  
-  
-
-[Russian Translation](http://ryba4.com/translations/judgement)  
-  
-
-[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/02/blog-post_5.html)

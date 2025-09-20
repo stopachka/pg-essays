@@ -84,29 +84,3 @@ I think the way to "solve" the problem of procrastination is to let delight pull
   
   
 **Thanks** to Trevor Blackwell, Jessica Livingston, and Robert Morris for reading drafts of this.  
-  
-
-  
-
-[Romanian Translation](http://ro.goobix.com/pg/procrastination/)  
-  
-
-[Russian Translation](http://sergeybiryukov.ru/2006/02/09/horoshee-i-plohoe-otlyinivanie/)  
-  
-
-[Hebrew Translation](http://smallestbusiness.com/heb/blog/good-procrastination-hebrew/)  
-  
-
-[German Translation](http://www.volker-kopetzky.de/pg-prokrastination)  
-  
-
-[Portuguese Translation](http://gnustavo.blogspot.com/2006/11/boa-e-m-procrastinao-traduo-para-o.html)  
-  
-
-[Italian Translation](http://decio.blogspot.com/2006/11/good-and-bad-procrastination.html)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20060103)  
-  
-
-[Spanish Translation](http://www.juan.com.uy/2008/12/buena-y-mala-procastinacin.html)

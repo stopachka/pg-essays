@@ -253,11 +253,3 @@ It also set off an extensive and often useful discussion on the [LL1](http://www
 Some of the mail on LL1 led me to try to go deeper into the subject of language power in [Succinctness is Power](power.html).  
   
 A larger set of canonical implementations of the [accumulator generator benchmark](accgen.html) are collected together on their own page.  
-  
-[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/icad-j.html), [Spanish Translation](http://kapcoweb.com/p/docs/translations/revenge_of_the_nerds/revenge_of_the_nerds-es.html), [Chinese Translation](http://flyingapplet.spaces.live.com/blog/cns!F682AFBD82F7E261!375.entry )  
-  
-
-  
-  
-
-You'll find this essay and 14 others in [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

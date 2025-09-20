@@ -202,17 +202,3 @@ So no, there's nothing particularly grand about making money. That's not what ma
 \[9\] There are two ways to do [work you love](love.html): (a) to make money, then work on what you love, or (b) to get a job where you get paid to work on stuff you love. In practice the first phases of both consist mostly of unedifying schleps, and in (b) the second phase is less secure.  
   
 **Thanks** to Sam Altman, Trevor Blackwell, Beau Hartshorne, Jessica Livingston, and Robert Morris for reading drafts of this.  
-  
-
-  
-
-[Romanian Translation](http://ro.goobix.com/pg/startuplessons/)  
-  
-
-[Russian Translation](http://www.perevedem.ru/article/hardest_lessons.htm)  
-  
-
-[French Translation](http://omar.ouvaton.org/article/50/les-dures-lecons-des-startups)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070130)

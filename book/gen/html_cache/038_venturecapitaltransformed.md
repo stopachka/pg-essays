@@ -66,11 +66,3 @@ Perhaps this was the sort of strategic insight I was supposed to come up with as
 No, we don't use Oracle. We just store the data in files. Our secret is to use an OS that doesn't lose our data. Which OS? FreeBSD. Why do you use that instead of Windows NT? Because it's better and it doesn't cost anything. What, you're using a _freeware_ OS?  
   
 How many times that conversation was repeated. Then when we got to Yahoo, we found they used FreeBSD and stored their data in files too.  
-  
-
-  
-
-[Chinese Translation](http://flyingapplet.spaces.live.com/blog/cns!F682AFBD82F7E261!374.entry)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070214)
