@@ -239,7 +239,7 @@ async function markdownTransform(chapter: Chapter, $html: CheerioAPI): Promise<C
   const transformedMarkown = cleanMarkdown(markdown);
   fs.writeFileSync(HTML_CACHE_DIR + "/" + chapter.key + "transformed.md", transformedMarkown);
   // Convert Markdown back to HTML
-  const transformedHtml = await marked(markdown);
+  const transformedHtml = await marked(transformedMarkown);
   return load(transformedHtml);
 }
 
