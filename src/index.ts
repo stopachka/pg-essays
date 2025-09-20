@@ -7,17 +7,7 @@ import { fileURLToPath } from "url";
 import path, { dirname, resolve } from "path";
 import puppeteer from "puppeteer";
 import crypto from "node:crypto";
-import pLimit from "p-limit";
-
-const limit = pLimit(10);
-async function limitedFetch(
-  ...args: Parameters<typeof fetch>
-): Promise<Response> {
-  return await limit(() => {
-    console.log(`Fetching ${args[0]}`);
-    return fetch(...args);
-  });
-}
+import limitedFetch from "./limitedFetch";
 
 // ------------------------------------------------------------
 // Config
