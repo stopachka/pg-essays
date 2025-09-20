@@ -99,3 +99,4 @@ That's it, just two things, build stuff and do well in school.
   
   
   
+**Thanks** to Jared Friedman, Carolynn Levy, Jessica Livingston, Harj Taggar, and Garry Tan for reading drafts of this.

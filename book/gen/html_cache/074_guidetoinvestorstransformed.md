@@ -260,3 +260,5 @@ Apparently the most likely animals to be left alive after a nuclear war are cock
 \[4\] Actually this sounds to me like a VC who got buyer's remorse, then used a technicality to get out of the deal. But it's telling that it even seemed a plausible excuse.  
   
 **Thanks** to Sam Altman, Paul Buchheit, Hutch Fishman, and Robert Morris for reading drafts of this, and to Kenneth King of ASES for inviting me to speak.  
+  
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/ycombinator_com_images_y18.gif) [Comment](http://news.ycombinator.com/item?id=17947) on this essay.

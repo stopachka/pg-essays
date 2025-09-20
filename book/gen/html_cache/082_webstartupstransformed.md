@@ -158,3 +158,7 @@ This will change a lot of things for the better. In a big, straight pipe like th
   
 **Thanks** to Brian Oberkirch and Simon Willison for inviting me to speak, and the crew at Carson Systems for making everything run smoothly.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](http://www.aoky.net/articles/paul_graham/webstartups.htm)

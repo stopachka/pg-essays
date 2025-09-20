@@ -91,3 +91,4 @@ The superficial demands of orthodoxy make it an inexpensive substitute for virtu
   
   
   
+**Thanks** to Marc Andreessen, Chris Best, Trevor Blackwell, Nicholas Christakis, Daniel Gackle, Jonathan Haidt, Claire Lehmann, Jessica Livingston, Greg Lukianoff, Robert Morris, and Garry Tan for reading drafts of this.

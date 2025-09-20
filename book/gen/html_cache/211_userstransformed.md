@@ -89,3 +89,4 @@ YC founders aren't just inspired by one another. They also help one another. Tha
   
   
   
+**Thanks** to Trevor Blackwell, Jessica Livingston, Harj Taggar, and Garry Tan for reading drafts of this.

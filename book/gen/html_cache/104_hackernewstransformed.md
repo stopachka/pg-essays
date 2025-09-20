@@ -124,3 +124,5 @@ You may not have to kill bad comments to solve the problem. Comments at the bott
 \[7\] What makes most suburbs so demoralizing is that there's no center to walk to.  
   
 **Thanks** to Justin Kan, Jessica Livingston, Robert Morris, Alexis Ohanian, Emmet Shear, and Fred Wilson for reading drafts of this.  
+  
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/ycombinator_com_images_y18.gif) [Comment](http://news.ycombinator.com/item?id=495053) on this essay.

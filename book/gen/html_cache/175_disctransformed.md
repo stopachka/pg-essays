@@ -21,3 +21,7 @@ Newton made three bets. One of them worked. But they were all risky.
   
   
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/n6f02daf57237)

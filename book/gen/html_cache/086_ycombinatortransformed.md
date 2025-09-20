@@ -66,3 +66,5 @@ And it's natural that the new niche would at first be described, even by its inh
   
   
 **Thanks** to Trevor Blackwell, Jessica Livingston, and Robert Morris for reading drafts of this.  
+  
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/ycombinator_com_images_y18.gif) [Comment](http://news.ycombinator.com/item?id=133430) on this essay.

@@ -61,3 +61,6 @@ There should probably be multiple blacklists. A single point of failure would be
   
 
 [A Perl FFB](http://radio.weblogs.com/0111823/2003/11/16.html#a373)  
+  
+
+[Lycos DDoS@Home](http://news.bbc.co.uk/2/hi/technology/4051553.stm)

@@ -83,3 +83,4 @@ If it's harder as adults to retain that kind of confidence, we at least tend to 
   
   
   
+**Thanks** to Trevor Blackwell, Paul Buchheit, Andy Hertzfeld, Jessica Livingston, and Peter Norvig for reading drafts of this.

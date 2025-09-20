@@ -225,3 +225,6 @@ World Bank, _Doing Business in 2006_, http://doingbusiness.org
   
 
 [Japanese Translation](http://d.hatena.ne.jp/lionfan/20070204)  
+  
+
+[Arabic Translation](https://chefrour.blogspot.com/2020/01/page-size-8.html)

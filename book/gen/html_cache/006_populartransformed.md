@@ -280,3 +280,6 @@ It's hard to think of a lumbar disc herniation as juicy (except literally). And 
   
 
 [How to Become a Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html)  
+  
+
+[Japanese Translation](http://www.shiro.dreamhost.com/scheme/trans/being-popular-j.html)

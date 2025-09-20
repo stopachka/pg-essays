@@ -71,3 +71,4 @@ Startups seem to go more against the grain, socially. It's hard for them to flou
   
 \[4\] Lecuyer, Christophe, _Making Silicon Valley_, MIT Press, 2006.  
   
+**Thanks** to Trevor Blackwell, Paul Buchheit, Jessica Livingston, and Robert Morris for reading drafts of this.

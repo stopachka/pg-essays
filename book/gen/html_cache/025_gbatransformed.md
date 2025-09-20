@@ -96,3 +96,5 @@ Those in a position to impose rules naturally want them to be obeyed. But be car
 
   
   
+
+You'll find this essay and 14 others in [**_Hackers & Painters_**](hackpaint.html).

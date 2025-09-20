@@ -326,3 +326,6 @@ If you want to do it, do it. Starting a startup is not the great mystery it seem
   
 
 [Japanese Translation](http://www.aoky.net/articles/paul_graham/start.htm)  
+  
+
+[Arabic Translation](https://chefrour.blogspot.com/2020/02/blog-post.html)

@@ -45,3 +45,4 @@ The way I usually decide what to write about is by following curiosity. I notice
   
   
   
+**Thanks** to Jessica Livingston and Michael Nielsen for reading drafts of this.

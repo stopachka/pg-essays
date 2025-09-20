@@ -83,3 +83,4 @@ Ironically, the main reason I don't like "content" is the thesis of this essay. 
   
 \[4\] Unfortunately, making physically nice books will only be a niche within a niche. Publishers are more likely to resort to expedients like selling autographed copies, or editions with the buyer's picture on the cover.  
   
+**Thanks** to Michael Arrington, Trevor Blackwell, Steven Levy, Robert Morris, and Geoff Ralston for reading drafts of this.

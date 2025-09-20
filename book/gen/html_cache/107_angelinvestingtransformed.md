@@ -150,3 +150,5 @@ I'm not saying you should always absolutely refuse to give up your anti-dilution
 If you like a startup enough to invest in it, then invest in it. Just use the standard [series AA](http://ycombinator.com/seriesaa.html) terms and write them a check.  
   
 **Thanks** to Sam Altman, Paul Buchheit, Jessica Livingston, Robert Morris, and Fred Wilson for reading drafts of this.  
+  
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/ycombinator_com_images_y18.gif) [Comment](http://news.ycombinator.com/item?id=506671) on this essay.

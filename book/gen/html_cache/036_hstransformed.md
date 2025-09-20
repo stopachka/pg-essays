@@ -201,3 +201,6 @@ It might also be argued that kids who went to prep schools, because they've lear
   
 
 [Russian Translation](http://www.livejournal.com/users/nixxbox/63008.html)  
+  
+
+[Georgian Translation](https://stopa.io/post/266)

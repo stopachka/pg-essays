@@ -39,3 +39,4 @@ In late January 2009, about three weeks into Y Combinator, their efforts started
   
 "I assume you know what you've now set yourself up for next week," I responded.  
   
+Brian's reply was seven words: "We are not going to slow down."

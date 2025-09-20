@@ -113,3 +113,6 @@ I'm inclined to think there isn't-- that good design requires a dictator. One re
   
 
 [Romanian Translation](http://ro.goobix.com/pg/desres/)  
+  
+
+[Spanish Translation](http://www.cibercalli.com/erick/hackingnews/diseo-e-investigacion)

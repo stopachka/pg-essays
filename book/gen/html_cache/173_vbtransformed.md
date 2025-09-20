@@ -73,3 +73,11 @@ Relentlessly prune bullshit, don't wait to do things that matter, and savor the 
   
 **Thanks** to Jessica Livingston and Geoff Ralston for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Korean Translation](https://blog.naver.com/happy_alpaca/221346692172)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/ne4c25e990634)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Chinese Translation](https://www.jianshu.com/p/682429f8ac3f)

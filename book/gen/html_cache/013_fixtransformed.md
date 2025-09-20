@@ -72,3 +72,6 @@ Kevin Kelleher suggested an interesting way to compare programming languages: to
   
 
 [French Translation](http://jargonf.org/wiki/Document:Un_langage_veut_en_corriger_un_autre)  
+  
+
+[Portuguese Translation](http://rudamoura.com/consertam.html)

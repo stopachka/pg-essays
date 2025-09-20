@@ -56,3 +56,7 @@ Though useful to present-day programmers, it's strange to describe Lisp in terms
   
   
   
+
+  
+
+[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070217)

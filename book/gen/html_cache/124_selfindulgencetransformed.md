@@ -29,3 +29,4 @@ With time, as with money, avoiding pleasure is no longer enough to protect you. 
   
   
   
+**Thanks** to Sam Altman, Trevor Blackwell, Patrick Collison, Jessica Livingston, and Robert Morris for reading drafts of this.

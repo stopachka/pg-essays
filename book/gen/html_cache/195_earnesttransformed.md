@@ -77,3 +77,4 @@ The most earnest part of Europe is Scandinavia, and not surprisingly this is als
   
   
   
+**Thanks** to Trevor Blackwell, Patrick Collison, Suhail Doshi, Jessica Livingston, Mattias Ljungman, Harj Taggar, and Kyle Vogt for reading drafts of this.

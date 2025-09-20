@@ -33,3 +33,9 @@ I personally have never needed object-oriented abstractions. Common Lisp has an 
   
 Maybe I'm just stupid, or have worked on some limited subset of applications. There is a danger in designing a language based on one's own experience of programming. But it seems more dangerous to put stuff in that you've never needed because it's thought to be a good idea.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Rees Re: OO](reesoo.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Spanish Translation](http://www.cibercalli.com/erick/hackingnews/porque-arc-no-es-especialmente-orientado-a-objetos)

@@ -57,3 +57,7 @@ Another advantage of admitting to beginning writers that the 5 paragraph essay i
   
   
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://iggant.blogspot.com/2009/09/n-paul-graham-list-of-n-things.html)

@@ -43,3 +43,7 @@ Or better still, the positive version:
 
   
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Korean Translation](http://owla.textcube.com/50)

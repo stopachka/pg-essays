@@ -47,3 +47,9 @@ If you simply manage to write in spoken language, you'll be ahead of 95% of writ
   
 **Thanks** to Patrick Collison and Jessica Livingston for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/n9a13ac4cd47d)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post_30.html)

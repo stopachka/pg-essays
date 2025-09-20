@@ -113,3 +113,4 @@ Microsoft's revenues in 1988 were $590 million.
   
   
   
+**Thanks** to Trevor Blackwell, Jessica Livingston, Bob Lesko, Robert Morris, Russ Roberts, and Alex Tabarrok for reading drafts of this, and to Jon Erlichman for growth data.

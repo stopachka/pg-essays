@@ -189,3 +189,4 @@ Wokeness also shares something rather funny with many actual versions of Christi
   
   
   
+**Thanks** to Sam Altman, Ben Miller, Daniel Gackle, Robin Hanson, Jessica Livingston, Greg Lukianoff, Harj Taggar, Garry Tan, and Tim Urban for reading drafts of this.

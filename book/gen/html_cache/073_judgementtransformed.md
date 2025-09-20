@@ -38,3 +38,6 @@ One good place to apply this principle is in college applications. Most high sch
   
 
 [Russian Translation](http://ryba4.com/translations/judgement)  
+  
+
+[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/02/blog-post_5.html)

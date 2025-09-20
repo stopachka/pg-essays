@@ -107,3 +107,6 @@ I think the way to "solve" the problem of procrastination is to let delight pull
   
 
 [Japanese Translation](http://d.hatena.ne.jp/lionfan/20060103)  
+  
+
+[Spanish Translation](http://www.juan.com.uy/2008/12/buena-y-mala-procastinacin.html)

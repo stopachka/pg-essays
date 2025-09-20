@@ -213,3 +213,6 @@ So no, there's nothing particularly grand about making money. That's not what ma
   
 
 [French Translation](http://omar.ouvaton.org/article/50/les-dures-lecons-des-startups)  
+  
+
+[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070130)

@@ -71,3 +71,6 @@ How many times that conversation was repeated. Then when we got to Yahoo, we fou
   
 
 [Chinese Translation](http://flyingapplet.spaces.live.com/blog/cns!F682AFBD82F7E261!374.entry)  
+  
+
+[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070214)

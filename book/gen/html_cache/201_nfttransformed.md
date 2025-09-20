@@ -21,3 +21,4 @@ For this NFT, they're going to issue a public report tracking how this specific 
   
 NFTs are a new territory, and this way of using them is especially new, but I'm excited about its potential. And I'm excited to see what happens with this particular auction, because unlike an NFT representing something that has already happened, this NFT gets better as the price gets higher.  
   
+The reserve price was about $2.5 million, because that's what it takes for the name to be accurate: that's what it costs to save 2000 lives. But the higher the price of this NFT goes, the more lives will be saved. What a sentence to be able to write.

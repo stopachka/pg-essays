@@ -42,3 +42,4 @@ It's true that this style of development is better suited to programs which can 
 
   
   
+\[1\] "But no one can read the program without understanding all your new utilities." To see why such statements are usually mistaken, see Section 4.8.

@@ -55,3 +55,4 @@ Curiously enough it's an encouraging thought that we still know so little about 
   
   
   
+**Thanks** to Brian Chesky, Patrick Collison, Ron Conway, Jessica Livingston, Elon Musk, Ryan Petersen, Harj Taggar, and Garry Tan for reading drafts of this.

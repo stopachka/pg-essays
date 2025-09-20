@@ -49,3 +49,7 @@ This recession may be different from the one after the Internet Bubble. This tim
   
 **Thanks** to Sam Altman, Trevor Blackwell, David Hornik, Jessica Livingston, Robert Morris, and Fred Wilson for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://www.web30.ru/2008/12/07/mogut-li-venchurnye-kapitalisty-stat-zhertvami-krizisa/)

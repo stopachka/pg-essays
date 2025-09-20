@@ -149,3 +149,9 @@ The exciting thing is not that there's a lot left to write, but that there's a l
   
 **Thanks** to Trevor Blackwell, Daniel Gackle, Jessica Livingston, and Robert Morris for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Spanish Translation](https://wordsbridge.co.uk/como-escribir-de-forma-util/)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/n74e9ee344254)

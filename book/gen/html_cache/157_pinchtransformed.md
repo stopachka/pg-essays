@@ -77,3 +77,7 @@ The good news is, plenty of successful startups have passed through near-death e
   
 **Thanks** to Sam Altman, Paul Buchheit, Jessica Livingston, and Geoff Ralston for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](http://academy.hsoub.com/entrepreneurship/general/%D8%A7%D9%84%D9%82%D8%B1%D8%B5%D8%A9-%D8%A7%D9%84%D9%85%D9%8F%D9%85%D9%8A%D8%AA%D8%A9-the-fatal-pinch%E2%80%9D-r58/)

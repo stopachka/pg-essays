@@ -69,3 +69,6 @@ It could be that in Java's case I'm mistaken. It could be that a language promot
   
 
 [2005: BusinessWeek Agrees](http://www.businessweek.com/technology/content/dec2005/tc20051213_042973.htm)  
+  
+
+[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070211)

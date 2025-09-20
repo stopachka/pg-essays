@@ -100,3 +100,4 @@ The reason wealth taxes have such dramatic effects is that they're applied over 
   
 **Note**  
   
+\[1\] In practice, eventually some of this 8% would come in the form of dividends, which are taxed as income at issue, so this model actually represents the most optimistic case for the founder.

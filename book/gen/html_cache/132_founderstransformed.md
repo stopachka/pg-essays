@@ -48,3 +48,4 @@ Emmett Shear and Justin Kan of [Justin.tv](http://justin.tv) are a good example 
   
   
   
+**Thanks** to Jessica Livingston and Chris Steiner for reading drafts of this.

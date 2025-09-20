@@ -58,3 +58,17 @@ Those of us on the maker's schedule are willing to compromise. We know we have t
   
 **Related:**  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[How to Do What You Love](love.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Good and Bad Procrastination](procrastination.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Turkish Translation](http://bdgn.blogspot.com/2009/07/ureticilerin-is-takvimi-ve.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](http://versionfrancaise.blogspot.com/2009/07/emploi-du-temps-du-createur-emploi-du.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Korean Translation](http://justinchronicles.net/ko/2014/02/07/makers-schedule-managers-schedule/)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[German Translation](https://blog.robertsj.com/makers-schedule-managers-schedule/)

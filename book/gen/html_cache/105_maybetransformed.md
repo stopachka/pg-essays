@@ -110,3 +110,4 @@ I realize the chance of any city having the political will to carry out this pla
   
 \[4\] Thanks to Michael Keenan for pointing this out.  
   
+**Thanks** to Trevor Blackwell, Jessica Livingston, Robert Morris, and Fred Wilson for reading drafts of this.

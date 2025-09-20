@@ -43,3 +43,6 @@ As for how to write well, here's the short version: Write a bad version 1 as fas
   
 
 [Danish Translation](http://baltzersen.info/articles/writing_briefly.php)  
+  
+
+[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post_28.html)

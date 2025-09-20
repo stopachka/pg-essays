@@ -173,3 +173,6 @@ Siegel, Jeremy J. "What Is an Asset Price Bubble? An Operational Definition." _E
   
 
 [Russian Translation](http://www.perevedem.ru/article/the-bubble.htm)  
+  
+
+[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070115)

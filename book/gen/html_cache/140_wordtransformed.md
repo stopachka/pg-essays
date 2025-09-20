@@ -40,3 +40,4 @@ With the good groups, you can tell that everything you say is being looked at wi
   
   
   
+**Thanks** to Sam Altman, Patrick Collison, Aaron Iba, Jessica Livingston, Robert Morris, Harj Taggar, and Garry Tan for reading drafts of this.

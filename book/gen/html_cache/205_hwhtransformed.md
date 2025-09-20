@@ -127,3 +127,7 @@ In the average American high school, you have a choice of pretending to do somet
   
 **Thanks** to Trevor Blackwell, John Carmack, John Collison, Patrick Collison, Robert Morris, Geoff Ralston, and Harj Taggar for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://world.hey.com/amna/post-09ff9372)

@@ -186,3 +186,6 @@ To be safe either (a) don't use code written while you were still employed in yo
   
 
 [Chinese Translation](http://www.yeeyan.com/articles/view/little/60)  
+  
+
+[Arabic Translation](https://chefrour.blogspot.com/2020/08/blog-post.html)

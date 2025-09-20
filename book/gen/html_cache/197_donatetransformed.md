@@ -31,3 +31,4 @@ You can't expect candor in a relationship so asymmetric. So I'll tell you what n
   
 \[1\] Unfortunately restricted donations tend to generate more publicity than unrestricted ones. "X donates money to build a school in Africa" is not only more interesting than "X donates money to Y nonprofit to spend as Y chooses," but also focuses more attention on X.  
   
+**Thanks** to Chase Adam, Ingrid Bassett, Trevor Blackwell, and Edith Elliot for reading drafts of this.

@@ -67,3 +67,4 @@ If you're nice, as well as wise, you won't merely resist attacking such people, 
   
   
   
+**Thanks** to Trevor Blackwell, Patrick Collison, Suhail Doshi, Daniel Gackle, Jessica Livingston, and Robert Morris for reading drafts of this.

@@ -36,3 +36,6 @@ For better or worse, the idea of the corporate ladder is probably gone for good.
   
 
 [Romanian Translation](http://ro.goobix.com/pg/ladder/)  
+  
+
+[Japanese Translation](http://d.hatena.ne.jp/lionfan/20060111)

@@ -167,3 +167,4 @@ It's a good exercise for you, too, to sit down and try to figure out how to desc
 
   
   
+Image: Casey Muller: Trevor Blackwell at Rehearsal Day, summer 2006

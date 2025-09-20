@@ -138,3 +138,13 @@ It's a strange task to write an essay about why something isn't the problem, but
   
 **Related:**  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[The Short Version](sim.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[A Reply to Ezra Klein](klein.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[A Reply to Russell Okung](okung.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](https://medium.com/@edouardtheron/les-in�galit�s-�conomiques-da70011717c6)

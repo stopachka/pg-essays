@@ -46,3 +46,6 @@ That was one of the most valuable things I learned from painting: you have to fi
   
 
 [Spanish Translation](http://www.simpleoption.com/ensayo-copia-lo-que-te-gusta)  
+  
+
+[Russian Translation](http://ryba4.com/translations/copy)

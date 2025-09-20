@@ -74,3 +74,7 @@ And that's why startups thrive in startup hubs like Silicon Valley. Startups are
 ![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/ycombinator_com_images_y18.gif) [Comment](http://news.ycombinator.com/item?id=65815) on this essay.  
   
   
+
+  
+
+[Japanese Translation](http://www.aoky.net/articles/paul_graham/startuphubs.htm)

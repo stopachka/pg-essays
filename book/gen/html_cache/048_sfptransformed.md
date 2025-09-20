@@ -130,3 +130,6 @@ The [image](https://sep.turbifycdn.com/ty/cdn/paulgraham/sfptable.jpg?t=16882219
   
 
 [Romanian Translation](http://ro.goobix.com/pg/sfp/)  
+  
+
+[Japanese Translation](http://d.hatena.ne.jp/lionfan/20060112)

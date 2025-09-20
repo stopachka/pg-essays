@@ -45,3 +45,4 @@ It will be the same with writing. There will still be smart people, but only tho
   
   
   
+**Thanks** to Jessica Livingston, Ben Miller, and Robert Morris for reading drafts of this.

@@ -177,3 +177,4 @@ It may seem like bad luck for this concept that it arose at just the moment when
   
   
   
+**Thanks** to Trevor Blackwell, Patrick Collison, Tyler Cowen, Jessica Livingston, Harj Taggar, and Garry Tan for reading drafts of this.

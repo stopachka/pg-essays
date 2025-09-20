@@ -201,3 +201,5 @@ For all its power, Silicon Valley has a great weakness: the paradise Shockley fo
 
   
   
+
+If you liked this, you may also like [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

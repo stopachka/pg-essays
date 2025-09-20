@@ -119,3 +119,4 @@ Users are what the partners want to know about in YC interviews, and what I want
   
   
   
+**Thanks** to Trevor Blackwell, Jessica Livingston, Robert Morris, Geoff Ralston, and Harj Taggar for reading drafts of this.

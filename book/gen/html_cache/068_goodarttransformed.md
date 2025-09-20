@@ -134,3 +134,6 @@ Incidentally, I'm not saying that good art = fifteenth century European art. I'm
   
 
 [Japanese Translation](http://d.hatena.ne.jp/lionfan/20070126)  
+  
+
+[Simplified Chinese Translation](https://www.onekayakcoffee.com/post/howartcanbegood)

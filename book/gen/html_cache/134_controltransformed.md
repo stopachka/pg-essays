@@ -38,3 +38,4 @@ Knowing that founders will keep control of the board may even help VCs pick bett
   
   
   
+**Thanks** to Sam Altman, John Bautista, Trevor Blackwell, Paul Buchheit, Brian Chesky, Bill Clerico, Patrick Collison, Adam Goldstein, James Lindenbaum, Jessica Livingston, and Fred Wilson for reading drafts of this.

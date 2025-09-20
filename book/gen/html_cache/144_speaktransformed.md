@@ -45,3 +45,4 @@ Talks are also good at motivating me to do things. It's probably no coincidence 
   
 \[4\] For sufficiently small audiences, it may not be true that being part of an audience makes people dumber. The real decline seems to set in when the audience gets too big for the talk to feel like a conversation — maybe around 10 people.  
   
+**Thanks** to Sam Altman and Robert Morris for reading drafts of this.

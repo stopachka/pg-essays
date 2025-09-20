@@ -390,3 +390,21 @@ You probably can't overcome anything so pervasive as the model of work you grew 
   
 **Related:**  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[Startups in 13 Sentences](13sentences.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[The Hardest Lessons for Startups to Learn](startuplessons.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[How Not to Die](die.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[The 18 Mistakes That Kill Startups](startupmistakes.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[A Fundraising Survival Guide](fundraising.html)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[Russian Translation](http://the-notebook.org/08/11/2009/kakovy-startapy-na-samom-dele/)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[Korean Translation](http://design-play.textcube.com/entry/strartups-really-like)  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[Hebrew Translation](http://eranback.quora.com/What-startups-are-really-like-hebrew)

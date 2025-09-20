@@ -88,3 +88,6 @@ Whether or not understanding this can help large organizations, it can certainly
   
 
 [Bulgarian Translation](http://www.matematika.bg/wiki/%D0%9A%D0%B0%D0%BA_%D0%B4%D0%B0_%D0%B7%D0%B0%D0%B4%D1%8A%D1%80%D0%B6%D0%B8%D0%BC_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0_%D0%B2_%D0%B3%D0%BB%D0%B0%D0%B2%D0%B0%D1%82%D0%B0_%D1%81%D0%B8)  
+  
+
+[Russian Translation](http://ryba4.com/translations/head)

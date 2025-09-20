@@ -55,3 +55,4 @@ Incidentally, Google may appear to be an instance of a type II startup, but it w
   
 \[3\] The biggest counterexample here is Skype. If you're doing something that would get shut down in the US, it becomes an advantage to be located elsewhere. That's why Kazaa took the place of Napster. And the expertise and connections the founders gained from running Kazaa helped ensure the success of Skype.  
   
+**Thanks** to Patrick Collison, Jessica Livingston, and Fred Wilson for reading drafts of this.

@@ -44,3 +44,6 @@ So maybe I'll try not bringing books on some future trip. They're going to have 
   
 
 [Spanish Translation](http://www.simpleoption.com/ensayo-test-isla)  
+  
+
+[Japanese Translation](http://d.hatena.ne.jp/lionfan/20060721)

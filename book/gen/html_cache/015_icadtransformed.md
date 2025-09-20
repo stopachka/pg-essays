@@ -259,3 +259,5 @@ A larger set of canonical implementations of the [accumulator generator benchmar
 
   
   
+
+You'll find this essay and 14 others in [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

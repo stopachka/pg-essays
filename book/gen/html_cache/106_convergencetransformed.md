@@ -75,3 +75,7 @@ Shows will change even more. On the Internet there's no reason to keep their cur
   
 **Thanks** to Sam Altman, Trevor Blackwell, Nancy Cook, Michael Seibel, Emmett Shear, and Fred Wilson for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](http://www.turnyourideasintoreality.com/2015/03/2009_why_tv_lost/)

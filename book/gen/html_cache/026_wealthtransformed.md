@@ -312,3 +312,5 @@ What's the connection? None at all. Which is precisely my point. If you want to 
 
   
   
+
+You'll find this essay and 14 others in [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

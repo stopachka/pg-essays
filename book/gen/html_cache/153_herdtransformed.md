@@ -48,3 +48,7 @@ While few startups will experience a stampede of interest, almost all will at le
   
 **Thanks** to Paul Buchheit, Jessica Livingston, Geoff Ralston, and Garry Tan for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://blog.perevedem.ru/2013/08/26/investor-herd-dynamics/)

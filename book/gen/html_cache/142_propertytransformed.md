@@ -55,3 +55,7 @@ The people running the US may not like it when voters or other countries refuse 
   
 **Thanks** to Sam Altman and Geoff Ralston for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](http://christhurston.com.au/japanese/paul-graham-defining-property/)

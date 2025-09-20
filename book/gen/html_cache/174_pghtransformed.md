@@ -87,3 +87,4 @@ And that's an encouraging thought. If Pittsburgh's path to becoming a startup hu
   
   
   
+**Thanks** to Charlie Cheever and Jessica Livingston for reading drafts of this, and to Meg Cheever for organizing Opt412 and inviting me to speak.

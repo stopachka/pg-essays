@@ -63,3 +63,4 @@ It's hard enough to overcome one's own misconceptions without having to think ab
   
 **Thanks** to Jessica Livingston and Robert Morris for reading drafts of this.  
   
+**Note:** An earlier version of this essay began by talking about why people dislike Michael Arrington. I now believe that was mistaken, and that most people don't dislike him for the same reason I did when I first met him, but simply because he writes about controversial things.

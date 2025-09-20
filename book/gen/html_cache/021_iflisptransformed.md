@@ -40,3 +40,6 @@ Indeed, if programming languages were all more or less equivalent, there would b
   
 
 [Romanian Translation](http://ro.goobix.com/pg/iflisp/)  
+  
+
+[Spanish Translation](http://cibercalli.com/erick/hackingnews/lispnews/si-lisp-es-tan-grandioso)

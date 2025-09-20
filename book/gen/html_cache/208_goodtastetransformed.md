@@ -43,3 +43,4 @@ The situation with art is messier, of course. You can't measure effectiveness by
   
   
   
+**Thanks** to the Cambridge Union for inviting me, and to Trevor Blackwell, Jessica Livingston, and Robert Morris for reading drafts of this.

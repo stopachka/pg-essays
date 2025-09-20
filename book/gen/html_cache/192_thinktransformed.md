@@ -141,3 +141,7 @@ Some investment firms already seem to be able to grow revenues without growing t
   
 **Thanks** to Trevor Blackwell, Paul Buchheit, Patrick Collison, Jessica Livingston, Robert Morris, Harj Taggar, and Peter Thiel for reading drafts of this.  
   
+
+  
+
+![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Italian Translation](https://www.bookconfidential.blog/pensare-con-la-propria-testa-paul-graham/)

@@ -62,3 +62,4 @@ I suspect a lot of people aren't sure what's the top idea in their mind at any g
   
 \[4\] Letter to Oldenburg, quoted in Westfall, Richard, _Life of Isaac Newton_, p. 107.  
   
+**Thanks** to Sam Altman, Patrick Collison, Jessica Livingston, and Robert Morris for reading drafts of this.
