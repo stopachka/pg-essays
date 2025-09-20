@@ -1,0 +1,255 @@
+<html>
+  <head>
+    <title>Modeling a Wealth Tax</title>
+    <!-- <META NAME="ROBOTS" CONTENT="NOODP"> -->
+    <link rel="shortcut icon" href="http://ycombinator.com/arc/arc.png" />
+  </head>
+  <body
+    bgcolor="#ffffff"
+    background="https://s.turbifycdn.com/aah/paulgraham/essays-4.gif"
+    text="#000000"
+    link="#000099"
+    vlink="#464646"
+  >
+    <div>
+      <div>
+        <div></div>
+        <div>
+          <img
+            src="/Users/stopa/projects/pg-essays/src/../book/gen/assets/sep_turbifycdn_com_ca_Img_trans_1x1.gif"
+            height="1"
+            width="26"
+            border="0"
+          />
+        </div>
+        <div>
+          <br /><br />
+          <div>
+            <h1 id="wtax">Modeling a Wealth Tax</h1>
+            <br /><br />August 2020<br /><br />Some politicians are proposing to
+            introduce wealth taxes in addition to income and capital gains
+            taxes. Let's try modeling the effects of various levels of wealth
+            tax to see what they would mean in practice for a startup
+            founder.<br /><br />Suppose you start a successful startup in your
+            twenties, and then live for another 60 years. How much of your stock
+            will a wealth tax consume?<br /><br />If the wealth tax applies to
+            all your assets, it's easy to calculate its effect. A wealth tax of
+            1% means you get to keep 99% of your stock each year. After 60 years
+            the proportion of stock you'll have left will be .99^60, or .547. So
+            a straight 1% wealth tax means the government will over the course
+            of your life take 45% of your stock.<br /><br />(Losing shares does
+            not, obviously, mean becoming <i>net</i> poorer unless the value per
+            share is increasing by less than the wealth tax rate.)<br /><br />Here's
+            how much stock the government would take over 60 years at various
+            levels of wealth tax:<br /><br />
+            <center>
+              <div><font size="2">wealth tax</font></div>
+              <div><font size="2">government takes</font></div>
+              <div><font size="2">0.1%</font></div>
+              <div><font size="2">6%</font></div>
+              <div><font size="2">0.5%</font></div>
+              <div><font size="2">26%</font></div>
+              <div><font size="2">1.0%</font></div>
+              <div><font size="2">45%</font></div>
+              <div><font size="2">2.0%</font></div>
+              <div><font size="2">70%</font></div>
+              <div><font size="2">3.0%</font></div>
+              <div><font size="2">84%</font></div>
+              <div><font size="2">4.0%</font></div>
+              <div><font size="2">91%</font></div>
+              <div><font size="2">5.0%</font></div>
+              <div><font size="2">95%</font></div>
+            </center>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+
+          <p>
+            A wealth tax will usually have a threshold at which it starts. How
+            much difference would a high threshold make? To model that, we need
+            to make some assumptions about the initial value of your stock and
+            the growth rate.<br /><br />Suppose your stock is initially worth $2
+            million, and the company's trajectory is as follows: the value of
+            your stock grows 3x for 2 years, then 2x for 2 years, then 50% for 2
+            years, after which you just get a typical public company growth
+            rate, which we'll call 8%.
+            <font color="#dddddd"
+              >[<a href="#f1n"><font color="#dddddd">1</font></a
+              >]</font
+            >
+            Suppose the wealth tax threshold is $50 million. How much stock does
+            the government take now?
+          </p>
+          <center>
+            <div><font size="2">wealth tax</font></div>
+            <div><font size="2">government takes</font></div>
+            <div><font size="2">0.1%</font></div>
+            <div><font size="2">5%</font></div>
+            <div><font size="2">0.5%</font></div>
+            <div><font size="2">23%</font></div>
+            <div><font size="2">1.0%</font></div>
+            <div><font size="2">41%</font></div>
+            <div><font size="2">2.0%</font></div>
+            <div><font size="2">65%</font></div>
+            <div><font size="2">3.0%</font></div>
+            <div><font size="2">79%</font></div>
+            <div><font size="2">4.0%</font></div>
+            <div><font size="2">88%</font></div>
+            <div><font size="2">5.0%</font></div>
+            <div><font size="2">93%</font></div>
+            <div></div>
+            <div></div>
+          </center>
+          <p>
+            It may at first seem surprising that such apparently small tax rates
+            produce such dramatic effects. A 2% wealth tax with a
+            $50&nbsp;million threshold takes about two thirds of a successful
+            founder's stock.<br /><br />The reason wealth taxes have such
+            dramatic effects is that they're applied over and over to the same
+            money. Income tax happens every year, but only to that year's
+            income. Whereas if you live for 60 years after acquiring some asset,
+            a wealth tax will tax that same asset 60 times. A wealth tax
+            compounds.<br /><br /><br /><br /><br /><br /><br /><br /><b>Note</b
+            ><br /><br />[<a name="f1n"><font color="#000000">1</font></a
+            >] In practice, eventually some of this 8% would come in the form of
+            dividends, which are taxed as income at issue, so this model
+            actually represents the most optimistic case for the founder.<br /><br />
+          </p>
+        </div>
+        <div><br /><br /></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      csell_env = "ue1";
+      var storeCheckoutDomain = "order.store.turbify.net";
+    </script>
+
+    <script type="text/javascript">
+      function toOSTN(node) {
+        if (node.hasAttributes()) {
+          for (const attr of node.attributes) {
+            node.setAttribute(
+              attr.name,
+              attr.value.replace(
+                /(us-dc1-order|us-dc2-order|order)\.(store|stores)\.([a-z0-9-]+)\.(net|com)/g,
+                storeCheckoutDomain,
+              ),
+            );
+          }
+        }
+      }
+      document.addEventListener("readystatechange", (event) => {
+        if (
+          typeof storeCheckoutDomain != "undefined" &&
+          storeCheckoutDomain != "order.store.turbify.net"
+        ) {
+          if (event.target.readyState === "interactive") {
+            fromOSYN = document.getElementsByTagName("form");
+            for (let i = 0; i < fromOSYN.length; i++) {
+              toOSTN(fromOSYN[i]);
+            }
+          }
+        }
+      });
+    </script>
+    <script type="text/javascript">
+      // Begin Store Generated Code
+    </script>
+    <script
+      type="text/javascript"
+      src="https://s.turbifycdn.com/lq/ult/ylc_1.9.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://s.turbifycdn.com/ae/lib/smbiz/store/csell/beacon-a9518fc6e4.js"
+    ></script>
+    <script type="text/javascript">
+      // Begin Store Generated Code
+      csell_page_data = {};
+      csell_page_rec_data = [];
+      ts = "TOK_STORE_ID";
+    </script>
+    <script type="text/javascript">
+      // Begin Store Generated Code
+      function csell_GLOBAL_INIT_TAG() {
+        var csell_token_map = {};
+        csell_token_map["TOK_SPACEID"] = "2022276099";
+        csell_token_map["TOK_URL"] = "";
+        csell_token_map["TOK_STORE_ID"] = "paulgraham";
+        csell_token_map["TOK_ITEM_ID_LIST"] = "wtax";
+        csell_token_map["TOK_ORDER_HOST"] = "order.store.turbify.net";
+        csell_token_map["TOK_BEACON_TYPE"] = "prod";
+        csell_token_map["TOK_RAND_KEY"] = "t";
+        csell_token_map["TOK_IS_ORDERABLE"] = "2";
+        c = csell_page_data;
+        var x =
+          typeof storeCheckoutDomain == "string"
+            ? storeCheckoutDomain
+            : "order.store.turbify.net";
+        var t = csell_token_map;
+        c["s"] = t["TOK_SPACEID"];
+        c["url"] = t["TOK_URL"];
+        c["si"] = t[ts];
+        c["ii"] = t["TOK_ITEM_ID_LIST"];
+        c["bt"] = t["TOK_BEACON_TYPE"];
+        c["rnd"] = t["TOK_RAND_KEY"];
+        c["io"] = t["TOK_IS_ORDERABLE"];
+        YStore.addItemUrl =
+          "http%s://" +
+          x +
+          "/" +
+          t[ts] +
+          "/ymix/MetaController.html?eventName.addEvent&cartDS.shoppingcart_ROW0_m_orderItemVector_ROW0_m_itemId=%s&cartDS.shoppingcart_ROW0_m_orderItemVector_ROW0_m_quantity=1&ysco_key_cs_item=1&sectionId=ysco.cart&ysco_key_store_id=" +
+          t[ts];
+      }
+    </script>
+    <script type="text/javascript">
+      // Begin Store Generated Code
+      function csell_REC_VIEW_TAG() {
+        var env = typeof csell_env == "string" ? csell_env : "prod";
+        var p = csell_page_data;
+        var a =
+          "/sid=" +
+          p["si"] +
+          "/io=" +
+          p["io"] +
+          "/ii=" +
+          p["ii"] +
+          "/bt=" +
+          p["bt"] +
+          "-view" +
+          "/en=" +
+          env;
+        var r = Math.random();
+        YStore.CrossSellBeacon.renderBeaconWithRecData(
+          p["url"] + "/p/s=" + p["s"] + "/" + p["rnd"] + "=" + r + a,
+        );
+      }
+    </script>
+    <script type="text/javascript">
+      // Begin Store Generated Code
+      var csell_token_map = {};
+      csell_token_map["TOK_PAGE"] = "p";
+      csell_token_map["TOK_CURR_SYM"] = "$";
+      csell_token_map["TOK_WS_URL"] =
+        "https://paulgraham.csell.store.turbify.net/cs/recommend?itemids=wtax&location=p";
+      csell_token_map["TOK_SHOW_CS_RECS"] = "false";
+      var t = csell_token_map;
+      csell_GLOBAL_INIT_TAG();
+      YStore.page = t["TOK_PAGE"];
+      YStore.currencySymbol = t["TOK_CURR_SYM"];
+      YStore.crossSellUrl = t["TOK_WS_URL"];
+      YStore.showCSRecs = t["TOK_SHOW_CS_RECS"];
+    </script>
+    <script
+      type="text/javascript"
+      src="https://s.turbifycdn.com/ae/store/secure/recs-1.3.2.2.js"
+    ></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
+<!-- html108.prod.store.e1a.lumsb.com Sat Sep 20 13:36:51 PDT 2025 -->

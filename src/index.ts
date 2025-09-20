@@ -193,6 +193,19 @@ function removeFontTags($: CheerioAPI): CheerioAPI {
   return $;
 }
 
+function removeOnLispDownload($: CheerioAPI): CheerioAPI {
+  const bodyHtml = $("body").html();
+  if (bodyHtml) {
+    const cleaned = bodyHtml.replace(
+      /<b>New:<\/b>\s*<a href="onlisptext\.html">Download On Lisp for Free<\/a>\.\s*(<br\s*\/?>)*/g,
+      "",
+    );
+    $("body").html(cleaned);
+  }
+
+  return $;
+}
+
 async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<CheerioAPI> {
   const ch$ = [
     removeMenu,
@@ -201,9 +214,13 @@ async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<Chee
     removeApplyYC,
     removeHr,
     removeFontTags,
+    // removeOnLispDownload,
     replaceTables,
   ].reduce(($, f) => f($, chapter.url), $html);
   const $ = await localiseImages(ch$);
+  const changed = $.html();
+  const savedKey = chapter.key + "_transformed.html";
+  fs.writeFileSync(HTML_CACHE_DIR + "/" + savedKey, await safeFormat(changed, savedKey));
   return $;
 }
 
