@@ -206,7 +206,21 @@ function removeOnLispDownload($: CheerioAPI): CheerioAPI {
   return $;
 }
 
+async function replaceBBNTalk($: CheerioAPI, chapter: Chapter): Promise<CheerioAPI> {
+  const bbnLink = $('a:contains("BBN Talk Excerpts (ASCII)")').first();
+
+  const href = bbnLink.attr("href");
+  if (!href) return $;
+
+  const bbnKey = `${chapter.key}_bbn_talk`;
+  const content = await loadHTMLText(href, bbnKey);
+  const newHTML = `<div>${content}</div>`;
+
+  return load(newHTML);
+}
+
 async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<CheerioAPI> {
+  const replacedHtml = await replaceBBNTalk($html, chapter);
   const ch$ = [
     removeMenu,
     removeLogo,
@@ -216,7 +230,7 @@ async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<Chee
     removeFontTags,
     removeOnLispDownload,
     replaceTables,
-  ].reduce(($, f) => f($, chapter.url), $html);
+  ].reduce(($, f) => f($, chapter.url), replacedHtml);
   const $ = await localiseImages(ch$);
   const changed = $.html();
   const savedKey = chapter.key + "_transformed.html";
