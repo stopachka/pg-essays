@@ -1,5 +1,6 @@
 # pg-essays
 
 ```bash
-npm i && node index.js
+bun
+bun run src/index.ts
 ```
