@@ -107,7 +107,7 @@
   
     <navPoint id="icad" playOrder="15">
       <navLabel>
-        <text>Revenge of the Nerds</text>
+        <text></text>
       </navLabel>
       <content src="index.html#icad" />
     </navPoint>
@@ -219,7 +219,7 @@
   
     <navPoint id="bubble" playOrder="31">
       <navLabel>
-        <text>What the Bubble Got Right</text>
+        <text></text>
       </navLabel>
       <content src="index.html#bubble" />
     </navPoint>
@@ -317,7 +317,7 @@
   
     <navPoint id="opensource" playOrder="45">
       <navLabel>
-        <text>What Business Can Learn from Open Source</text>
+        <text></text>
       </navLabel>
       <content src="index.html#opensource" />
     </navPoint>

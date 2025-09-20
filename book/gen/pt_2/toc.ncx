@@ -170,7 +170,7 @@
   
     <navPoint id="foundersatwork" playOrder="24">
       <navLabel>
-        <text>Learning from Founders</text>
+        <text></text>
       </navLabel>
       <content src="index.html#foundersatwork" />
     </navPoint>

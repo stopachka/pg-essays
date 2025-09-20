@@ -53,7 +53,7 @@ async function safeFormat(text: string, key: string, parser: string = "html"): P
   }
 }
 
-async function loadHTMLText(url: string, cacheKey: string): Promise<string> {
+async function loadHTMLText(url: string, cacheKey: string, skipFormat = false): Promise<string> {
   // Create cache directory if it doesn't exist
   if (!fs.existsSync(HTML_CACHE_DIR)) {
     fs.mkdirSync(HTML_CACHE_DIR, { recursive: true });
@@ -74,7 +74,7 @@ async function loadHTMLText(url: string, cacheKey: string): Promise<string> {
   const text = await res.text();
 
   // Format with prettier before saving to cache
-  const formatted = await safeFormat(text, cacheKey);
+  const formatted = skipFormat ? text : await safeFormat(text, cacheKey);
   fs.writeFileSync(cachePath, formatted);
 
   return formatted;
@@ -206,6 +206,88 @@ function removeOnLispDownload($: CheerioAPI): CheerioAPI {
   return $;
 }
 
+function removeEndLinks($: CheerioAPI): CheerioAPI {
+  // Find and remove sections containing these specific end-of-essay links
+  const endLinkPatterns = [
+    "More Technical Details",
+    "Translation",
+    "Orbitz Uses Lisp",
+    "How To Become A Hacker",
+    "A Scheme Story",
+    "Hackers & Painters",
+  ];
+
+  // Find all links matching these patterns
+  endLinkPatterns.forEach((pattern) => {
+    $(`a:contains("${pattern}")`).each((_, el) => {
+      const $link = $(el);
+      // Navigate up to find the containing div structure
+      let $parent = $link.parent();
+
+      // Keep going up if parent is just a simple div wrapper
+      while ($parent.is("div") && $parent.children().length <= 3) {
+        const $grandparent = $parent.parent();
+        if ($grandparent.is("div")) {
+          $parent = $grandparent;
+        } else {
+          break;
+        }
+      }
+
+      // Remove the entire containing structure
+      $parent.remove();
+    });
+  });
+
+  // Also remove centered serious-2.gif images and their containers
+  $('img[src*="serious-2.gif"]').each((_, el) => {
+    const $img = $(el);
+    // These are typically in center tags within divs
+    const $center = $img.closest("center");
+    if ($center.length) {
+      const $div = $center.parent();
+      if ($div.is("div")) {
+        $div.remove();
+      }
+    }
+  });
+
+  // Remove the "You'll find this essay" promotional section
+  $('font:contains("You\'ll find this essay")').each((_, el) => {
+    const $font = $(el);
+    const $container = $font.closest("div");
+    if ($container.length) {
+      // Also remove surrounding br tags and parent divs
+      let $parent = $container.parent();
+      while ($parent.is("div") && $parent.children().length <= 3) {
+        const $grandparent = $parent.parent();
+        if ($grandparent.is("div")) {
+          $parent = $grandparent;
+        } else {
+          break;
+        }
+      }
+      $parent.remove();
+    }
+  });
+
+  // Clean up spacer images only if they appear after we've removed end links
+  // This is more conservative - only removes isolated spacers in empty divs
+  // that come after the last paragraph of actual content
+  const $lastParagraph = $("p").last();
+  if ($lastParagraph.length) {
+    $lastParagraph.nextAll("div").each((_, el) => {
+      const $div = $(el);
+      // Only remove divs that contain just a spacer image and nothing else
+      if ($div.children().length === 1 && $div.find('img[src*="trans_1x1.gif"]').length === 1) {
+        $div.remove();
+      }
+    });
+  }
+
+  return $;
+}
+
 async function replaceBBNTalk($: CheerioAPI, chapter: Chapter): Promise<CheerioAPI> {
   const bbnLink = $('a:contains("BBN Talk Excerpts (ASCII)")').first();
 
@@ -213,14 +295,16 @@ async function replaceBBNTalk($: CheerioAPI, chapter: Chapter): Promise<CheerioA
   if (!href) return $;
 
   const bbnKey = `${chapter.key}_bbn_talk`;
-  const content = await loadHTMLText(href, bbnKey);
+  const content = await loadHTMLText(href, bbnKey, true);
   const newHTML = `<div>${content}</div>`;
 
   return load(newHTML);
 }
 
 async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<CheerioAPI> {
+  // Check for BBN Talk content first and replace if found
   const replacedHtml = await replaceBBNTalk($html, chapter);
+
   const ch$ = [
     removeMenu,
     removeLogo,
@@ -230,6 +314,7 @@ async function processChapter(chapter: Chapter, $html: CheerioAPI): Promise<Chee
     removeFontTags,
     removeOnLispDownload,
     replaceTables,
+    removeEndLinks,
   ].reduce(($, f) => f($, chapter.url), replacedHtml);
   const $ = await localiseImages(ch$);
   const changed = $.html();
