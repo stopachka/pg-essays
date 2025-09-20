@@ -164,6 +164,3 @@ Which implies a surprising but apparently inevitable consequence: little liberal
   
 
 [Joel Spolsky: Advice for Computer Science College Students](http://www.joelonsoftware.com/articles/CollegeAdvice.html)  
-  
-
-[Eric Raymond: How to Become a Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html)

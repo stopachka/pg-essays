@@ -84,6 +84,3 @@ The good news is, if you're carrying a burden without knowing it, your life coul
   
 
 [Romanian Translation](http://marius.sigheti.eu/lucruri/)  
-  
-
-[German Translation](http://52wege.de/von-der-wertlosigkeit-der-dinge)

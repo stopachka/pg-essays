@@ -202,5 +202,3 @@ I don't think it's publication that makes the best hackers want to work in resea
   
 
   
-
-If you liked this, you may also like [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

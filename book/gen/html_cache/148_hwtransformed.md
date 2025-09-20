@@ -30,7 +30,3 @@ We know there's room for the [next Steve Jobs](ambitious.html). But there's almo
   
 **Thanks** to Sam Altman, Trevor Blackwell, David Cann, Sanjay Dastoor, Paul Gerhardt, Cameron Robertson, Harj Taggar, and Garry Tan for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[A Hardware Renaissance while �Software Eats the World�?](http://mantellavp.com/a-hardware-renaissance-while-software-eats-the-world/)

@@ -192,5 +192,3 @@ The study of rhetoric was inherited directly from Rome, where it was considered 
 
   
   
-
-If you liked this, you may also like [**_Hackers & Painters_**](hackpaint.html).

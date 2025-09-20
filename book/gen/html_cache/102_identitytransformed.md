@@ -49,11 +49,3 @@ Considering yourself a scientist is equivalent to putting a sign in a cupboard s
   
 **Thanks** to Sam Altman, Trevor Blackwell, Paul Buchheit, and Robert Morris for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://ryba4.com/translations/identity)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Portuguese Translation](http://adriano.mitre.com.br/identidade.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Romanian Translation](http://ro.goobix.com/pg/identity/)

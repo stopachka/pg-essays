@@ -257,7 +257,3 @@ Witte, John. _The Politics and Development of the Federal Income Tax_. Wisconsin
   
 **Related:**  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Too Many Elite American Men Are Obsessed With Work and Wealth](http://www.theatlantic.com/business/archive/2016/04/too-many-elite-american-men-are-obsessed-with-work/479940/)

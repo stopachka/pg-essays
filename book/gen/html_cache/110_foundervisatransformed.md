@@ -33,9 +33,3 @@ How would the government decide who's a startup investor? The same way they deci
   
 **Related:**  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[The United States of Entrepreneurs](http://www.economist.com/surveys/displaystory.cfm?story_id=13216037&fsrc=rss)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif) [About Half of VC-Backed Company Founders are Immigrants](http://venturebeat.com/2006/11/15/note-to-washington-about-half-of-vc-backed-company-founders-are-immigrants)

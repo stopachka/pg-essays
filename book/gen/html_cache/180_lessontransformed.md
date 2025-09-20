@@ -149,11 +149,3 @@ This is not just a lesson for individuals to unlearn, but one for society to unl
   
 **Thanks** to Austen Allred, Trevor Blackwell, Patrick Collison, Jessica Livingston, Robert Morris, and Harj Taggar for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](https://blog.dsent.me/lesson-to-unlearn/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://www.lintschool.com/post/the-lessons-to-unlearn)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Swedish Translation](http://www.jensbackbom.se/2020/09/25/kunskap-som-gor-mer-skada-an-nytta/)

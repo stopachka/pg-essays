@@ -147,4 +147,3 @@ Scribes in ancient Egypt took exams, but they were more the type of proficiency 
   
 \[3\] Progressive tax rates will tend to damp this effect, however, by decreasing the difference between good and bad measurers.  
   
-**Thanks** to Trevor Blackwell, Sarah Harlin, Jessica Livingston, and David Sloo for reading drafts of this.

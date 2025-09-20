@@ -31,4 +31,3 @@ It has turned out to be a great thing that Apple tablets have accelerometers in 
   
   
   
-**Thanks** to Sam Altman, Paul Buchheit, Jessica Livingston, and Robert Morris for reading drafts of this.

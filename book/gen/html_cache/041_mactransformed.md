@@ -62,6 +62,3 @@ So Dad, there's this company called Apple. They make a new kind of computer that
   
 
 [Russian Translation](http://anton.kovalyov.net/translations/return-of-the-mac.html)  
-  
-
-[Chinese Translation](http://flyingapplet.spaces.live.com/blog/cns!F682AFBD82F7E261!390.entry)

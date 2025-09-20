@@ -196,8 +196,3 @@ It seems like it violates some kind of conservation law, but there it is: the be
 ![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_japanese-translation-1.gif)
 
 [Russian Translation](http://the-notebook.org/21/04/2006/idei-dlya-startapa/)  
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_japanese-translation-1.gif)
-
-[Arabic Translation](https://chefrour.blogspot.com/2020/03/blog-post.html)

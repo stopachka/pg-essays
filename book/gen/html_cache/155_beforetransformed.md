@@ -166,7 +166,3 @@ The way universities "teach" students how to be employees is to hand off the tas
   
 **Thanks** to Sam Altman, Paul Buchheit, John Collison, Patrick Collison, Jessica Livingston, Robert Morris, Geoff Ralston, and Fred Wilson for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://caramel.la/yousefales/DyfU-w5hH/qbl-almshrwa-alryady)

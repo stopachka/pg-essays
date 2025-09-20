@@ -80,4 +80,3 @@ I flew into the Bay Area a few days ago. I notice this every time I fly over the
   
   
   
-**Thanks** to Sam Altman, Paul Buchheit, Jessica Livingston, and Harj Taggar for reading drafts of this.

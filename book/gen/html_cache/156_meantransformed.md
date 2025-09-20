@@ -61,11 +61,3 @@ In sufficiently disordered times, even thinking requires control of scarce resou
   
 **Thanks** to Sam Altman, Ron Conway, Daniel Gackle, Jessica Livingston, Robert Morris, Geoff Ralston, and Fred Wilson for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Portuguese Translation](http://hackpedia.com.br/por-que-pessoas-mas-fracassam/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](http://postd.cc/mean-people-fail/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](http://academy.hsoub.com/entrepreneurship/general/%D8%A7%D9%84%D8%A3%D9%86%D8%B0%D8%A7%D9%84-%D9%85%D8%AD%D9%83%D9%88%D9%85-%D8%B9%D9%84%D9%8A%D9%87%D9%85-%D8%A8%D8%A7%D9%84%D9%81%D8%B4%D9%84-mean-people-fail-r61/)

@@ -160,13 +160,3 @@ This seems unlikely at the moment; if anything Boston is falling further and fur
   
 **Thanks** to Trevor Blackwell, Sarah Harlin, Jessica Livingston, Jackie McDonough, Robert Morris, and David Sloo for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Italian Translation](https://marcotrombetti.com/citt%C3%A0)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Portuguese Translation](http://traducoes.pbworks.com/Cidades-e-ambi%C3%A7%C3%A3o#)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Chinese Translation](http://select.yeeyan.org/view/11304/9681)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Korean Translation](https://blog.naver.com/happy_alpaca/221347038144)

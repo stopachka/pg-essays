@@ -219,7 +219,6 @@ function removeOnLispDownload($: CheerioAPI): CheerioAPI {
 }
 
 function cleanMarkdown(markdown: string): string {
-  return markdown;
   const arr = markdown.split("\n");
   let indexToCut = arr.length - 1;
   while (indexToCut > 0) {

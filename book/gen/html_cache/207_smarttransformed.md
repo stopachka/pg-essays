@@ -61,4 +61,3 @@ Those ways of using intelligence are much more common than having new ideas. And
   
   
   
-**Thanks** to Trevor Blackwell, Patrick Collison, Jessica Livingston, Robert Morris, Michael Nielsen, and Lisa Randall for reading drafts of this.

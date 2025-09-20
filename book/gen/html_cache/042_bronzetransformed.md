@@ -158,5 +158,3 @@ but now we've decided it's going to be
 
   
   
-
-If you liked this, you may also like [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

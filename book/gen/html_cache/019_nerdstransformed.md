@@ -254,6 +254,3 @@ I've said some harsh things in this essay, but really the thesis is an optimisti
   
 
 [Portuguese Translation](http://sirfraj.blogspot.com/2009/03/por-que-nerds-nao-sao-populares.html)  
-  
-
-[Spanish Translation](http://historiasecretadelsistemaeducativo.weebly.com/uploads/2/3/8/3/2383384/nerds.html)

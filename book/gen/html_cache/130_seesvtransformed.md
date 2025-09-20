@@ -62,4 +62,3 @@ Silicon Valley has two highways running the length of it: 101, which is pretty u
   
 I skipped the [Computer History Museum](http://www.computerhistory.org/) because this is a list of where to see the Valley itself, not where to see artifacts from it. I also skipped San Jose. San Jose calls itself the capital of Silicon Valley, but when people in the Valley use the phrase "the city," they mean San Francisco. San Jose is a dotted line on a map.  
   
-**Thanks** to Sam Altman, Paul Buchheit, Patrick Collison, and Jessica Livingston for reading drafts of this.

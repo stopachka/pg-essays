@@ -54,4 +54,3 @@ When I was living in Italy, I was once trying to tell someone that I hadn't had 
   
 \[3\] I'd almost say to most people, but I realize (a) I have no idea what most people are like, and (b) I'm pathologically optimistic about people's ability to change.  
   
-**Thanks** to Trevor Blackwell and Jessica Livingston for reading drafts of this.

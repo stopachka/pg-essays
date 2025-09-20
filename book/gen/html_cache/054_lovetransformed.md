@@ -212,6 +212,3 @@ Whichever route you take, expect a struggle. Finding work you love is very diffi
   
 
 [Greek Translation](http://iatromics.com/2014/03/pg-work-love/)  
-  
-
-[Vietnamese Translation](https://thetoobluescientist.com/lam-sao-de-lam-viec-ban-thich-how-to-do-what-you-love/)

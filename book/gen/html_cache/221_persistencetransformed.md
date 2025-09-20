@@ -93,4 +93,3 @@ Considering what it's made of, it's not surprising that the right kind of stubbo
   
   
   
-**Thanks** to Trevor Blackwell, Jessica Livingston, Jackie McDonough, Courtenay Pipkin, Harj Taggar, and Garry Tan for reading drafts of this.

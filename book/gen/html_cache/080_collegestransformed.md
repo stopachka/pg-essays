@@ -79,7 +79,3 @@ Indeed, the great advantage of not caring where people went to college is not ju
   
 **Thanks** to Trevor Blackwell, Sarah Harlin, Jessica Livingston, Jackie McDonough, Peter Norvig, and Robert Morris for reading drafts of this.  
   
-
-  
-
-[French Translation](http://penelope.jdsfriends.com/pg_from_the_front_francais.html)

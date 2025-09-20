@@ -48,4 +48,3 @@ Perhaps the solution is to appeal to politeness. If someone says they can hear a
   
   
   
-**Thanks** to Sam Altman, Trevor Blackwell, Patrick Collison, Antonio Garcia-Martinez, Jessica Livingston, Robert Morris, Michael Nielsen, Geoff Ralston, Max Roser, and Harj Taggar for reading drafts of this.

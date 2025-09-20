@@ -40,4 +40,3 @@ Of course, big companies won't be able to do everything these startups do. In bi
 
 **Founders at Work**  
   
-There can't be more than a couple thousand people who know first-hand what happens in the first month of a successful startup. Jessica Livingston got them to tell us. So despite the interview format, this is really a how-to book. It is probably the single most valuable book a startup founder could read.

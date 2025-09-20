@@ -63,4 +63,3 @@ We could also combine the first two principles, since people are part of the wor
   
   
   
-**Thanks** to Trevor Blackwell, Jessica Livingston, and Robert Morris for reading drafts of this.

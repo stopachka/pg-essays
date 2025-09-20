@@ -228,6 +228,3 @@ So that, I think, should be the highest goal for the marginal. Be inappropriate.
   
 
 [Japanese Translation](http://d.hatena.ne.jp/lionfan/20060725)  
-  
-
-[Chinese Translation](http://flyingapplet.spaces.live.com/blog/cns!F682AFBD82F7E261!399.entry)

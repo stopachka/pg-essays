@@ -194,7 +194,3 @@ This argument seems to me like someone in 1500 looking at the lack of results ac
 **Thanks** to Trevor Blackwell, Paul Buchheit, Jessica Livingston, Robert Morris, Mark Nitzberg, and Peter Norvig for reading drafts of this.  
   
   
-
-  
-
-[French Translation](http://versionfrancaise.blogspot.com/2008/08/comment-faire-de-la-philosophie.html)

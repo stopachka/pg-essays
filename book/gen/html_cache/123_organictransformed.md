@@ -46,4 +46,3 @@ There's nothing more valuable than an unmet need that is just becoming fixable. 
   
 \[3\] Possible exception: It's hard to compete directly with open source software. You can build things for programmers, but there has to be some part you can charge for.  
   
-**Thanks** to Sam Altman, Trevor Blackwell, and Jessica Livingston for reading drafts of this.

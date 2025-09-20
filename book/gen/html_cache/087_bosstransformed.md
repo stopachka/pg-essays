@@ -111,9 +111,3 @@ Watching employees get transformed into founders makes it clear that the differe
 **Thanks** to Trevor Blackwell, Ross Boucher, Aaron Iba, Abby Kirigin, Ivan Kirigin, Jessica Livingston, and Robert Morris for reading drafts of this.  
   
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](http://versionfrancaise.blogspot.com/2008/08/personne-nest-fait-pour-avoir-un-patron.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://akaishi.livejournal.com/39133.html)

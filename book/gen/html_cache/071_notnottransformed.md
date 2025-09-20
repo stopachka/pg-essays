@@ -249,6 +249,3 @@ That's ultimately what drives us to work on Y Combinator. We want to make money,
   
 
 [Japanese Translation](http://www.aoky.net/articles/paul_graham/notnot.htm)  
-  
-
-[Korean Translation](http://blog.yangtheman.com/2009/08/28/%EC%99%9C-%EC%B0%BD%EC%97%85%EC%9D%84-%ED%95%98%EB%A9%B4-%EC%95%8A%EB%90%98%EB%82%98-why-to-not-not-start-a-startup/)

@@ -244,6 +244,3 @@ Historically, scarce-resource arguments have been the losing side in debates abo
   
 
 [Chinese Translation](http://people.brandeis.edu/~liji/_private/translation/better.htm)  
-  
-
-[Test of These Suggestions](http://www.bgl.nu/bogofilter/graham.html)

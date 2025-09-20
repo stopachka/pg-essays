@@ -249,5 +249,3 @@ _
 
   
   
-
-You'll find this essay and 14 others in [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

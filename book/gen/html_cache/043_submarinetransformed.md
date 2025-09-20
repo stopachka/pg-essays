@@ -159,5 +159,3 @@ Actually no one knows how many computers the worm infected, because the remedy w
 
   
   
-
-If you liked this, you may also like [**_Hackers & Painters_**](hackpaint.html).

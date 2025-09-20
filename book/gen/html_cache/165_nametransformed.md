@@ -47,4 +47,3 @@ There are of course examples of startups that have succeeded without having the 
   
 \[3\] Sometimes founders know it's a problem that they don't have the .com of their name, but delusion strikes a step later in the belief that they'll be able to buy it despite having no evidence it's for sale. Don't believe a domain is for sale unless the owner has already told you an asking price.  
   
-**Thanks** to Sam Altman, Jessica Livingston, and Geoff Ralston for reading drafts of this.

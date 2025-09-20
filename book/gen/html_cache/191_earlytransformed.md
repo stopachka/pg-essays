@@ -114,4 +114,3 @@ Curiously enough, the solution to the problem of judging early work too harshly 
   
   
   
-**Thanks** to Trevor Blackwell, John Carmack, Patrick Collison, Jessica Livingston, Michael Nielsen, and Lisa Randall for reading drafts of this.

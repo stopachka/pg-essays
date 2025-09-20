@@ -19,4 +19,3 @@ The real reason we started Y Combinator is neither selfish nor virtuous. We didn
   
 The real reason we started Y Combinator is one probably only a [hacker](gba.html) would understand. We did it because it seems such a great hack. There are thousands of smart people who could start companies and don't, and with a relatively small amount of force applied at just the right place, we can spring on the world a stream of new startups that might otherwise not have existed.  
   
-In a way this is virtuous, because I think startups are a good thing. But really what motivates us is the completely amoral desire that would motivate any hacker who looked at some complex device and realized that with a tiny tweak he could make it run more efficiently. In this case, the device is the world's economy, which fortunately happens to be open source.

@@ -57,4 +57,3 @@ I worry we may be heading for a future in which only a few people plot their own
   
 \[5\] Several people have told me they like the iPad because it lets them bring the Internet into situations where a laptop would be too conspicuous. In other words, it's a hip flask. (This is true of the iPhone too, of course, but this advantage isn't as obvious because it reads as a phone, and everyone's used to those.)  
   
-**Thanks** to Sam Altman, Patrick Collison, Jessica Livingston, and Robert Morris for reading drafts of this.

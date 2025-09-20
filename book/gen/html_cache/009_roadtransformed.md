@@ -363,6 +363,3 @@ You'll find this essay and 14 others in [**_Hackers & Painters_**](hackpaint.htm
   
 
 [Microsoft finally agrees](http://www.informationweek.com/story/showArticle.jhtml?articleID=172900624)  
-  
-
-[Gates Email](gatesemail.html)

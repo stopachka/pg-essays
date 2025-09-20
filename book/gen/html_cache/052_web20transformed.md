@@ -163,5 +163,3 @@ The fact that Google is a "Web 2.0" company shows that, while meaningful, the te
 
   
   
-
-If you liked this, you may also like [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

@@ -314,7 +314,3 @@ Founders are tempted to ignore these clauses, because they think the company wil
   
 **Thanks** to Sam Altman, Hutch Fishman, Steve Huffman, Jessica Livingston, Sesha Pratap, Stan Reiss, Andy Singleton, Zak Stone, and Aaron Swartz for reading drafts of this.  
   
-
-  
-
-[Arabic Translation](https://chefrour.blogspot.com/2020/03/blog-post_11.html)

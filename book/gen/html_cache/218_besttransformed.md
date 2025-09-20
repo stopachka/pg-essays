@@ -163,4 +163,3 @@ Strictly speaking it's the graph of ideas that would be highly connected, not th
   
   
   
-**Thanks** to Sam Altman, Trevor Blackwell, Jessica Livingston, Robert Morris, Courtenay Pipkin, and Harj Taggar for reading drafts of this.

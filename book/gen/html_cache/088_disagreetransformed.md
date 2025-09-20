@@ -115,29 +115,3 @@ If moving up the disagreement hierarchy makes people less mean, that will make m
   
 **Related:**  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[What You Can't Say](say.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[The Age of the Essay](essay.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Italian Translation](http://archivio.internazionale.it/le-parole-giuste-per-essere-in-disaccordo)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://ryba4.com/translations/disagree)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Swedish Translation](http://kyrkansframtid.se/2008/07/hur-man-ar-oense/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Spanish Translation](http://eldiabloenlosdetalles.net/2008/08/07/como-estar-en-desacuerdo/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[German Translation](http://meiert.com/de/publications/translations/paulgraham.com/disagree/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](http://idoric.free.fr/dotclear/index.php/post/2009/06/07/L-art-du-desaccord)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Finnish Translation](https://medium.com/brandin-kirjasto/miten-olla-eri-mielt%C3%A4-a3ac67b60a12)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Italian Translation](https://marcotrombetti.com/disaccordo)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Turkish Translation](https://muhammedkilic.medium.com/ayn%C4%B1-g%C3%B6r%C3%BC%C5%9Fte-olamay%C4%B1%C5%9F-246eba701bb9)

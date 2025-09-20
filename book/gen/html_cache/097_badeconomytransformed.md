@@ -50,11 +50,3 @@ Were you nodding in agreement, thinking "stupid investors" a few paragraphs ago 
   
 So maybe a recession is a good time to start a startup. It's hard to say whether advantages like lack of competition outweigh disadvantages like reluctant investors. But it doesn't matter much either way. It's the people that matter. And for a given set of people working on a given technology, the time to act is always now.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://spring.jumpidea.com/2008/10/paul-graham-badeconomy.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Chinese Translation](https://medium.com/@Yangsupertramp/%E4%B8%BA%E5%95%A5%E8%A6%81%E5%9C%A8%E7%BB%8F%E6%B5%8E%E4%B8%8D%E5%A5%BD%E7%9A%84%E6%97%B6%E5%80%99%E5%8E%BB%E5%88%9B%E4%B8%9A-c1412ca1d558)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://twitter.com/jackzhang904/status/1238388462887137285)

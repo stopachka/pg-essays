@@ -164,6 +164,3 @@ One reason it's hard to imagine a language being too succinct is that if there w
   
 
 [J](http://www.jsoftware.com/books/help/primer/contents.htm)  
-  
-
-[K](http://www.cosy.com/language/k-lang.htm)

@@ -257,6 +257,3 @@ I don't mean to be hard on Google. They did better than their competitors, who m
   
 
 [Chinese Translation](http://www.yeeyan.com/articles/view/little/114)  
-  
-
-[Arabic Translation](https://chefrour.blogspot.com/2020/10/18.html)

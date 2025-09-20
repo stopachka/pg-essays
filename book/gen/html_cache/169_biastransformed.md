@@ -37,9 +37,3 @@ I predict we'll see this technique used more in the future. The information need
   
 **Thanks** to Sam Altman, Jessica Livingston, and Geoff Ralston for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post_29.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Swedish Translation](http://www.jensbackbom.se/2020/09/10/ett-satt-att-upptacka-bias/)

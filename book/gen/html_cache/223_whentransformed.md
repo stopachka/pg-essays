@@ -69,4 +69,3 @@ This thought experiment is also useful for distinguishing between university dep
   
   
   
-**Thanks** to Trevor Blackwell, Paul Buchheit, Jessica Livingston, Robert Morris, Harj Taggar, and Garry Tan for reading drafts of this.

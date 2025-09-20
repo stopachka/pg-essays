@@ -78,11 +78,3 @@ Conversely, it's probably a mistake to do as some European countries have done a
   
 **Thanks** to Sam Altman, Jessica Livingston, and Robert Morris for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Italian Translation](http://www.mapendo.it/2009/09/anatomia-della-determinazione/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Portuguese Translation](http://traducoes.pbworks.com/A-Anatomia-da-Determina%C3%A7%C3%A3o)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://iggant.blogspot.com/2009/09/paul-grehem-anatomy-of-determination.html)

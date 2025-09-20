@@ -129,7 +129,3 @@ You only get one life. Why not do something huge? The phrase "paradigm shift" is
   
 **Thanks** to Trevor Blackwell, Jessica Livingston, and Jackie McDonough for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](http://www.aoky.net/articles/paul_graham/heroes.htm)

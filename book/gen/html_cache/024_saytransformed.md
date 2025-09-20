@@ -256,6 +256,3 @@ How can you see the wave, when you're the water? Always be questioning. That's t
   
 
 [A Blacklist for "Excuse Makers"](http://www.fair.org/index.php?page=2598)  
-  
-
-[What You Can't Say Will Hurt You](http://www.archub.org/stone.txt)

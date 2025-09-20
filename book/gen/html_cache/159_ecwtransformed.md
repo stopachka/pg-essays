@@ -55,9 +55,3 @@ It's hard enough already not to become the prisoner of your own expertise, but i
   
 **Thanks** to Sam Altman, Patrick Collison, and Robert Morris for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Spanish Translation](http://nrike.svbtle.com/cmo-ser-un-experto-en-un-mundo-cambiante)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post_31.html)

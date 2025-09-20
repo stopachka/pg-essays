@@ -159,6 +159,3 @@ Some translators use "calm" instead of "happy." One source of difficulty here is
   
 
 [Russian Translation](http://evilnero.blogspot.com/2008/08/blog-post.html)  
-  
-
-[Russian Translation](http://ryba4.com/translations/wisdom)

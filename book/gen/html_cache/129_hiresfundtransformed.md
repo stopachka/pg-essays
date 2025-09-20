@@ -38,4 +38,3 @@ The most interesting question here may be what high res fundraising will do to t
   
   
   
-**Thanks** to Immad Akhund, Sam Altman, John Bautista, Pete Koomen, Jessica Livingston, Dan Siroker, Harj Taggar, and Fred Wilson for reading drafts of this.

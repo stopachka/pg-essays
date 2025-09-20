@@ -45,4 +45,3 @@ So if you're a founder, here's a deal you can make with yourself that will both 
   
   
   
-**Thanks** to Sam Altman, Harj Taggar, Jessica Livingston, and Geoff Ralston for reading drafts of this, and to Randall Bennett for being such a nice guy.

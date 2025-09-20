@@ -29,4 +29,3 @@ Whatever we call it, the attempt to discover alien truths would be a worthwhile 
   
   
   
-**Thanks** to Trevor Blackwell, Greg Brockman, Patrick Collison, Robert Morris, and Michael Nielsen for reading drafts of this.

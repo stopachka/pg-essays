@@ -100,7 +100,3 @@ Investors are one of the biggest sources of pain for founders; if they stopped c
   
 **Thanks** to Jessica Livingston for reading drafts of this.  
   
-
-  
-
-[Japanese Translation](https://note.com/tokyojack/n/n612e835ac15c)

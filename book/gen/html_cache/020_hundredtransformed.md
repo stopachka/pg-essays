@@ -205,5 +205,3 @@ I believe Lisp Machine Lisp was the first language to embody the principle that 
 
   
   
-
-You'll find this essay and 14 others in [**_Hackers & Painters_**](hackpaint.html).

@@ -75,9 +75,3 @@ People's experiences as parents vary a lot, and I know I've been lucky. But I th
   
 **Thanks** to Trevor Blackwell, Jessica Livingston, and Robert Morris for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation]( https://tldrarabiccontents.blogspot.com/2020/02/blog-post_3.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Slovak Translation](https://otcom.sk/paul-graham-mat-deti/)

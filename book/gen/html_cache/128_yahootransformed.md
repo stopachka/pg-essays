@@ -88,4 +88,3 @@ Why would great programmers want to work for a company that didn't have a hacker
   
 \[2\] In theory you could beat the death spiral by buying good programmers instead of hiring them. You can get programmers who would never have come to you as employees by buying their startups. But so far the only companies smart enough to do this are companies smart enough not to need to.  
   
-**Thanks** to Trevor Blackwell, Jessica Livingston, and Geoff Ralston for reading drafts of this.

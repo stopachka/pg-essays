@@ -205,11 +205,3 @@ I can't predict which these will be, and I don't want to write an essay that wil
   
 **Thanks** to Sam Altman, Marc Andreessen, Trevor Blackwell, Patrick Collison, Jessica Livingston, Jackie McDonough, Robert Morris, and David Sloo for reading drafts of this. And since there are some controversial ideas here, I should add that none of them agreed with everything in it.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[German Translation](http://heiniger-net.ch/archives/167/lies-we-tell-kids/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](http://versionfrancaise.blogspot.com/2008/07/les-mensonges-que-nous-racontons-aux.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://spring.jumpidea.com/2008/08/paul-graham-lies-we-tell-kids.html)

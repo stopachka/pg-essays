@@ -221,5 +221,3 @@ So while I stand by our responsible advice to finish college and then go work fo
 
   
   
-
-If you liked this, you may also like [**_Hackers & Painters_**](http://www.amazon.com/gp/product/0596006624).

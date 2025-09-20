@@ -167,7 +167,3 @@ Having your language designed by a committee is a big pitfall, and not just for 
   
 Is it necessary to take risks to design a good language though? Many people might suspect that language design is something where you should stick fairly close to the conventional wisdom. I bet this isn't true. In everything else people do, reward is proportionate to risk. Why should language design be any different?  
   
-
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070215)

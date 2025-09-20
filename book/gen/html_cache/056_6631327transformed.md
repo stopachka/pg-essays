@@ -37,4 +37,3 @@ The main thing that struck me on reading it, actually, is that lawyers at some p
 
 (That "compat disc player" wasn't a typo, guys.)  
   
-For the fine prose of the original, see the provisional application of February 1998, back when we were still Viaweb and couldn't afford to pay lawyers to turn every "a lot of" into "considerable."

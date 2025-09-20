@@ -33,4 +33,3 @@ But although these are all real advantages of writing simply, none of them are w
   
 There are of course times when you want to use a complicated sentence or fancy word for effect. But you should never do it by accident.  
   
-The other reason my writing ends up being simple is the way I do it. I write the first draft fast, then spend days editing it, trying to get everything just right. Much of this editing is cutting, and that makes simple writing even simpler.

@@ -160,17 +160,3 @@ In the best case, both components of the vector contribute to your company's DNA
   
 **Thanks** to Sam Altman, Paul Buchheit, Patrick Collison, Kevin Hale, Steven Levy, Jessica Livingston, Geoff Ralston, and Garry Tan for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[Japanese Translation](http://postd.cc/do-things-that-dont-scale/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[Russian Translation](http://blog.perevedem.ru/2013/07/25/do-things-that-dont-scale/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[French Translation](https://www.adsteroid.com/101)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[Arabic Translation](http://academy.hsoub.com/entrepreneurship/general/%D8%A7%D9%81%D8%B9%D9%84-%D8%A7%D9%84%D8%A3%D8%B4%D9%8A%D8%A7%D8%A1-%D8%A7%D9%84%D8%AA%D9%8A-%D9%84%D8%A7-%D9%8A%D9%8F%D9%85%D9%83%D9%86-%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D9%85-%D8%A8%D9%87%D8%A7-%D8%B9%D9%84%D9%89-%D9%86%D8%B7%D8%A7%D9%82-%D9%88%D8%A7%D8%B3%D8%B9-do-things-that-dont-scale-r60/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[Italian Translation](https://marcotrombetti.com/nonscalabili)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_the-reddits-2.gif)[Korean Translation](https://medium.com/delightroom/do-things-that-dont-scale-6876c5682a75)

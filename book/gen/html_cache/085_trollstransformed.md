@@ -49,7 +49,3 @@ I'm optimistic we will. We're not depending just on technical tricks. The core u
   
 \[2\] I'm talking here about everyday tagging. Some graffiti is quite impressive (anything becomes art if you do it well enough) but the median tag is just visual spam.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://spring.jumpidea.com/2008/08/paul-graham-trolls.html)

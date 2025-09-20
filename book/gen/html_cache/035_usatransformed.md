@@ -88,6 +88,3 @@ In many technologies, version 2 has higher resolution. Why not in design general
   
 
 [American Gothic](amcars.html)  
-  
-
-[The John Rain Books](http://www.barryeisler.com)

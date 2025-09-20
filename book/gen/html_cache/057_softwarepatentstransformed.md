@@ -161,7 +161,3 @@ The only real role of patents, for most startups, is as an element of the mating
   
 **Thanks** to Dan Bloomberg, Paul Buchheit, Sarah Harlin, Jessica Livingston, and Peter Norvig for reading drafts of this, to Joel Lehrer and Peter Eng for answering my questions about patents, and to Ankur Pansari for inviting me to speak.  
   
-
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20060805)

@@ -81,6 +81,3 @@ Finally, to the people who say that the theory is probably true, but rather depr
   
 
 [Politics and the Art of Acting](http://www.neh.gov/whoweare/miller/lecture.html)  
-  
-
-[Japanese Translation](http://d.hatena.ne.jp/lionfan/20070212)

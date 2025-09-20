@@ -71,6 +71,3 @@ I already know what the reaction to this essay will be. Half the readers will sa
   
 
 [Simplified Chinese Translation](http://flyingapplet.spaces.live.com/blog/cns!F682AFBD82F7E261!555.entry)  
-  
-
-[Korean Translation](http://appledelhi.wordpress.com/2008/10/05/)

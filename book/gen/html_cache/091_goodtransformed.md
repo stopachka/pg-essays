@@ -132,9 +132,3 @@ Most explicitly benevolent projects don't hold themselves sufficiently accountab
   
   
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](http://spring.jumpidea.com/2008/08/paul-graham-good.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[German Translation](http://www.flocutus.de/ubersetzungen/sei-gut/)

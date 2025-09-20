@@ -53,7 +53,3 @@ It can be very useful to talk (in either sense) with other people as you're writ
   
 **Thanks** to Trevor Blackwell, Patrick Collison, and Robert Morris for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](https://dorianmarie.fr/paulgraham/mots.html)

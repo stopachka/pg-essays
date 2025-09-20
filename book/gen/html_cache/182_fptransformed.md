@@ -17,11 +17,3 @@ If you want to try working on unfashionable problems, one of the best places to 
   
 The best protection against getting drawn into working on the same things as everyone else may be to [genuinely love](genius.html) what you're doing. Then you'll continue to work on it even if you make the same mistake as other people and think that it's too marginal to matter.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Japanese Translation](https://note.com/tokyojack/n/n2cd5fc7b8eeb)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Arabic Translation](https://tldrarabiccontents.blogspot.com/2020/01/blog-post_73.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](https://corrigan2.blogspot.com/p/problemes-la-mode-paul-graham.html)

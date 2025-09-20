@@ -38,4 +38,3 @@ It's too late now to be Stripe, but there's plenty still broken in the world, if
   
   
   
-**Thanks** to Sam Altman, Paul Buchheit, Patrick Collison, Aaron Iba, Jessica Livingston, Emmett Shear, and Harj Taggar for reading drafts of this.

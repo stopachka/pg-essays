@@ -71,4 +71,3 @@ Indeed, the two senses of good writing are more like two ends of the same thing.
   
   
   
-**Thanks** to Jessica Livingston and Courtenay Pipkin for reading drafts of this.

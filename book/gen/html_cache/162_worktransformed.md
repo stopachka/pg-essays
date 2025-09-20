@@ -33,9 +33,3 @@ It seemed curious that the same task could be painful to one person and pleasant
   
 **Thanks** to Sam Altman, Trevor Blackwell, Jessica Livingston, Robert Morris, and my father for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Robert Morris: All About Programming](aap.html)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[French Translation](https://corrigan2.blogspot.com/2020/09/quest-ce-qui-ne-semble-pas-etre-du.html)

@@ -122,4 +122,3 @@ There were a couple predecessors. Ron Conway had angel funds starting in the 199
   
 \[7\] Obviously signalling risk is also not a problem if you'll never need to raise more money. But startups are often mistaken about that.  
   
-**Thanks** to Sam Altman, John Bautista, Patrick Collison, James Lindenbaum, Reid Hoffman, Jessica Livingston and Harj Taggar for reading drafts of this.

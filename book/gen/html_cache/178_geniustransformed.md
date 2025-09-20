@@ -123,13 +123,3 @@ Newton tripped over this distinction when he chose to work on theology. His beli
   
 **Thanks** to Marc Andreessen, Trevor Blackwell, Patrick Collison, Kevin Lacker, Jessica Livingston, Jackie McDonough, Robert Morris, Lisa Randall, Zak Stone, and [my 7 year old](https://twitter.com/paulg/status/1196537802621669376) for reading drafts of this.  
   
-
-  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Spanish Translation](https://www.isaacbelmar.com/posts/el-ticket-de-autobus/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Russian Translation](https://ideanomics.ru/articles/19574)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Korean Translation](https://yujonglee.com/genius/)  
-
-![](/Users/stopa/projects/pg-essays/src/../book/gen/assets/s_turbifycdn_com_aah_paulgraham_how-to-get-new-ideas-5.gif)[Armenian Translation](https://davidmayilian.com/blog/2022/genius/)
