@@ -1,0 +1,1370 @@
+[
+  {
+    "index": 0,
+    "slug": "prop62",
+    "url": "http://www.paulgraham.com/prop62.html",
+    "key": "001_prop62"
+  },
+  {
+    "index": 1,
+    "slug": "progbot",
+    "url": "http://www.paulgraham.com/progbot.html",
+    "key": "002_progbot"
+  },
+  {
+    "index": 2,
+    "slug": "lwba",
+    "url": "http://www.paulgraham.com/lwba.html",
+    "key": "003_lwba"
+  },
+  {
+    "index": 3,
+    "slug": "avg",
+    "url": "http://www.paulgraham.com/avg.html",
+    "key": "004_avg"
+  },
+  {
+    "index": 4,
+    "slug": "javacover",
+    "url": "http://www.paulgraham.com/javacover.html",
+    "key": "005_javacover"
+  },
+  {
+    "index": 5,
+    "slug": "popular",
+    "url": "http://www.paulgraham.com/popular.html",
+    "key": "006_popular"
+  },
+  {
+    "index": 6,
+    "slug": "langdes",
+    "url": "http://www.paulgraham.com/langdes.html",
+    "key": "007_langdes"
+  },
+  {
+    "index": 7,
+    "slug": "rootsoflisp",
+    "url": "http://www.paulgraham.com/rootsoflisp.html",
+    "key": "008_rootsoflisp"
+  },
+  {
+    "index": 8,
+    "slug": "road",
+    "url": "http://www.paulgraham.com/road.html",
+    "key": "009_road"
+  },
+  {
+    "index": 9,
+    "slug": "diff",
+    "url": "http://www.paulgraham.com/diff.html",
+    "key": "010_diff"
+  },
+  {
+    "index": 10,
+    "slug": "noop",
+    "url": "http://www.paulgraham.com/noop.html",
+    "key": "011_noop"
+  },
+  {
+    "index": 11,
+    "slug": "taste",
+    "url": "http://www.paulgraham.com/taste.html",
+    "key": "012_taste"
+  },
+  {
+    "index": 12,
+    "slug": "fix",
+    "url": "http://www.paulgraham.com/fix.html",
+    "key": "013_fix"
+  },
+  {
+    "index": 13,
+    "slug": "power",
+    "url": "http://www.paulgraham.com/power.html",
+    "key": "014_power"
+  },
+  {
+    "index": 14,
+    "slug": "icad",
+    "url": "http://www.paulgraham.com/icad.html",
+    "key": "015_icad"
+  },
+  {
+    "index": 15,
+    "slug": "spam",
+    "url": "http://www.paulgraham.com/spam.html",
+    "key": "016_spam"
+  },
+  {
+    "index": 16,
+    "slug": "desres",
+    "url": "http://www.paulgraham.com/desres.html",
+    "key": "017_desres"
+  },
+  {
+    "index": 17,
+    "slug": "better",
+    "url": "http://www.paulgraham.com/better.html",
+    "key": "018_better"
+  },
+  {
+    "index": 18,
+    "slug": "nerds",
+    "url": "http://www.paulgraham.com/nerds.html",
+    "key": "019_nerds"
+  },
+  {
+    "index": 19,
+    "slug": "hundred",
+    "url": "http://www.paulgraham.com/hundred.html",
+    "key": "020_hundred"
+  },
+  {
+    "index": 20,
+    "slug": "iflisp",
+    "url": "http://www.paulgraham.com/iflisp.html",
+    "key": "021_iflisp"
+  },
+  {
+    "index": 21,
+    "slug": "hp",
+    "url": "http://www.paulgraham.com/hp.html",
+    "key": "022_hp"
+  },
+  {
+    "index": 22,
+    "slug": "ffb",
+    "url": "http://www.paulgraham.com/ffb.html",
+    "key": "023_ffb"
+  },
+  {
+    "index": 23,
+    "slug": "say",
+    "url": "http://www.paulgraham.com/say.html",
+    "key": "024_say"
+  },
+  {
+    "index": 24,
+    "slug": "gba",
+    "url": "http://www.paulgraham.com/gba.html",
+    "key": "025_gba"
+  },
+  {
+    "index": 25,
+    "slug": "wealth",
+    "url": "http://www.paulgraham.com/wealth.html",
+    "key": "026_wealth"
+  },
+  {
+    "index": 26,
+    "slug": "gap",
+    "url": "http://www.paulgraham.com/gap.html",
+    "key": "027_gap"
+  },
+  {
+    "index": 27,
+    "slug": "gh",
+    "url": "http://www.paulgraham.com/gh.html",
+    "key": "028_gh"
+  },
+  {
+    "index": 28,
+    "slug": "pypar",
+    "url": "http://www.paulgraham.com/pypar.html",
+    "key": "029_pypar"
+  },
+  {
+    "index": 29,
+    "slug": "essay",
+    "url": "http://www.paulgraham.com/essay.html",
+    "key": "030_essay"
+  },
+  {
+    "index": 30,
+    "slug": "bubble",
+    "url": "http://www.paulgraham.com/bubble.html",
+    "key": "031_bubble"
+  },
+  {
+    "index": 31,
+    "slug": "laundry",
+    "url": "http://www.paulgraham.com/laundry.html",
+    "key": "032_laundry"
+  },
+  {
+    "index": 32,
+    "slug": "polls",
+    "url": "http://www.paulgraham.com/polls.html",
+    "key": "033_polls"
+  },
+  {
+    "index": 33,
+    "slug": "charisma",
+    "url": "http://www.paulgraham.com/charisma.html",
+    "key": "034_charisma"
+  },
+  {
+    "index": 34,
+    "slug": "usa",
+    "url": "http://www.paulgraham.com/usa.html",
+    "key": "035_usa"
+  },
+  {
+    "index": 35,
+    "slug": "hs",
+    "url": "http://www.paulgraham.com/hs.html",
+    "key": "036_hs"
+  },
+  {
+    "index": 36,
+    "slug": "start",
+    "url": "http://www.paulgraham.com/start.html",
+    "key": "037_start"
+  },
+  {
+    "index": 37,
+    "slug": "venturecapital",
+    "url": "http://www.paulgraham.com/venturecapital.html",
+    "key": "038_venturecapital"
+  },
+  {
+    "index": 38,
+    "slug": "college",
+    "url": "http://www.paulgraham.com/college.html",
+    "key": "039_college"
+  },
+  {
+    "index": 39,
+    "slug": "writing44",
+    "url": "http://www.paulgraham.com/writing44.html",
+    "key": "040_writing44"
+  },
+  {
+    "index": 40,
+    "slug": "mac",
+    "url": "http://www.paulgraham.com/mac.html",
+    "key": "041_mac"
+  },
+  {
+    "index": 41,
+    "slug": "bronze",
+    "url": "http://www.paulgraham.com/bronze.html",
+    "key": "042_bronze"
+  },
+  {
+    "index": 42,
+    "slug": "submarine",
+    "url": "http://www.paulgraham.com/submarine.html",
+    "key": "043_submarine"
+  },
+  {
+    "index": 43,
+    "slug": "hiring",
+    "url": "http://www.paulgraham.com/hiring.html",
+    "key": "044_hiring"
+  },
+  {
+    "index": 44,
+    "slug": "opensource",
+    "url": "http://www.paulgraham.com/opensource.html",
+    "key": "045_opensource"
+  },
+  {
+    "index": 45,
+    "slug": "ladder",
+    "url": "http://www.paulgraham.com/ladder.html",
+    "key": "046_ladder"
+  },
+  {
+    "index": 46,
+    "slug": "inequality",
+    "url": "http://www.paulgraham.com/inequality.html",
+    "key": "047_inequality"
+  },
+  {
+    "index": 47,
+    "slug": "sfp",
+    "url": "http://www.paulgraham.com/sfp.html",
+    "key": "048_sfp"
+  },
+  {
+    "index": 48,
+    "slug": "ideas",
+    "url": "http://www.paulgraham.com/ideas.html",
+    "key": "049_ideas"
+  },
+  {
+    "index": 49,
+    "slug": "vcsqueeze",
+    "url": "http://www.paulgraham.com/vcsqueeze.html",
+    "key": "050_vcsqueeze"
+  },
+  {
+    "index": 50,
+    "slug": "startupfunding",
+    "url": "http://www.paulgraham.com/startupfunding.html",
+    "key": "051_startupfunding"
+  },
+  {
+    "index": 51,
+    "slug": "web20",
+    "url": "http://www.paulgraham.com/web20.html",
+    "key": "052_web20"
+  },
+  {
+    "index": 52,
+    "slug": "procrastination",
+    "url": "http://www.paulgraham.com/procrastination.html",
+    "key": "053_procrastination"
+  },
+  {
+    "index": 53,
+    "slug": "love",
+    "url": "http://www.paulgraham.com/love.html",
+    "key": "054_love"
+  },
+  {
+    "index": 54,
+    "slug": "whyyc",
+    "url": "http://www.paulgraham.com/whyyc.html",
+    "key": "055_whyyc"
+  },
+  {
+    "index": 55,
+    "slug": "6631327",
+    "url": "http://www.paulgraham.com/6631327.html",
+    "key": "056_6631327"
+  },
+  {
+    "index": 56,
+    "slug": "softwarepatents",
+    "url": "http://www.paulgraham.com/softwarepatents.html",
+    "key": "057_softwarepatents"
+  },
+  {
+    "index": 57,
+    "slug": "randomness",
+    "url": "http://www.paulgraham.com/randomness.html",
+    "key": "058_randomness"
+  },
+  {
+    "index": 58,
+    "slug": "startuplessons",
+    "url": "http://www.paulgraham.com/startuplessons.html",
+    "key": "059_startuplessons"
+  },
+  {
+    "index": 59,
+    "slug": "siliconvalley",
+    "url": "http://www.paulgraham.com/siliconvalley.html",
+    "key": "060_siliconvalley"
+  },
+  {
+    "index": 60,
+    "slug": "america",
+    "url": "http://www.paulgraham.com/america.html",
+    "key": "061_america"
+  },
+  {
+    "index": 61,
+    "slug": "marginal",
+    "url": "http://www.paulgraham.com/marginal.html",
+    "key": "062_marginal"
+  },
+  {
+    "index": 62,
+    "slug": "island",
+    "url": "http://www.paulgraham.com/island.html",
+    "key": "063_island"
+  },
+  {
+    "index": 63,
+    "slug": "copy",
+    "url": "http://www.paulgraham.com/copy.html",
+    "key": "064_copy"
+  },
+  {
+    "index": 64,
+    "slug": "investors",
+    "url": "http://www.paulgraham.com/investors.html",
+    "key": "065_investors"
+  },
+  {
+    "index": 65,
+    "slug": "mit",
+    "url": "http://www.paulgraham.com/mit.html",
+    "key": "066_mit"
+  },
+  {
+    "index": 66,
+    "slug": "startupmistakes",
+    "url": "http://www.paulgraham.com/startupmistakes.html",
+    "key": "067_startupmistakes"
+  },
+  {
+    "index": 67,
+    "slug": "goodart",
+    "url": "http://www.paulgraham.com/goodart.html",
+    "key": "068_goodart"
+  },
+  {
+    "index": 68,
+    "slug": "foundersatwork",
+    "url": "http://www.paulgraham.com/foundersatwork.html",
+    "key": "069_foundersatwork"
+  },
+  {
+    "index": 69,
+    "slug": "wisdom",
+    "url": "http://www.paulgraham.com/wisdom.html",
+    "key": "070_wisdom"
+  },
+  {
+    "index": 70,
+    "slug": "notnot",
+    "url": "http://www.paulgraham.com/notnot.html",
+    "key": "071_notnot"
+  },
+  {
+    "index": 71,
+    "slug": "microsoft",
+    "url": "http://www.paulgraham.com/microsoft.html",
+    "key": "072_microsoft"
+  },
+  {
+    "index": 72,
+    "slug": "judgement",
+    "url": "http://www.paulgraham.com/judgement.html",
+    "key": "073_judgement"
+  },
+  {
+    "index": 73,
+    "slug": "guidetoinvestors",
+    "url": "http://www.paulgraham.com/guidetoinvestors.html",
+    "key": "074_guidetoinvestors"
+  },
+  {
+    "index": 74,
+    "slug": "unions",
+    "url": "http://www.paulgraham.com/unions.html",
+    "key": "075_unions"
+  },
+  {
+    "index": 75,
+    "slug": "equity",
+    "url": "http://www.paulgraham.com/equity.html",
+    "key": "076_equity"
+  },
+  {
+    "index": 76,
+    "slug": "stuff",
+    "url": "http://www.paulgraham.com/stuff.html",
+    "key": "077_stuff"
+  },
+  {
+    "index": 77,
+    "slug": "head",
+    "url": "http://www.paulgraham.com/head.html",
+    "key": "078_head"
+  },
+  {
+    "index": 78,
+    "slug": "die",
+    "url": "http://www.paulgraham.com/die.html",
+    "key": "079_die"
+  },
+  {
+    "index": 79,
+    "slug": "colleges",
+    "url": "http://www.paulgraham.com/colleges.html",
+    "key": "080_colleges"
+  },
+  {
+    "index": 80,
+    "slug": "philosophy",
+    "url": "http://www.paulgraham.com/philosophy.html",
+    "key": "081_philosophy"
+  },
+  {
+    "index": 81,
+    "slug": "webstartups",
+    "url": "http://www.paulgraham.com/webstartups.html",
+    "key": "082_webstartups"
+  },
+  {
+    "index": 82,
+    "slug": "startuphubs",
+    "url": "http://www.paulgraham.com/startuphubs.html",
+    "key": "083_startuphubs"
+  },
+  {
+    "index": 83,
+    "slug": "newthings",
+    "url": "http://www.paulgraham.com/newthings.html",
+    "key": "084_newthings"
+  },
+  {
+    "index": 84,
+    "slug": "trolls",
+    "url": "http://www.paulgraham.com/trolls.html",
+    "key": "085_trolls"
+  },
+  {
+    "index": 85,
+    "slug": "ycombinator",
+    "url": "http://www.paulgraham.com/ycombinator.html",
+    "key": "086_ycombinator"
+  },
+  {
+    "index": 86,
+    "slug": "boss",
+    "url": "http://www.paulgraham.com/boss.html",
+    "key": "087_boss"
+  },
+  {
+    "index": 87,
+    "slug": "disagree",
+    "url": "http://www.paulgraham.com/disagree.html",
+    "key": "088_disagree"
+  },
+  {
+    "index": 88,
+    "slug": "heroes",
+    "url": "http://www.paulgraham.com/heroes.html",
+    "key": "089_heroes"
+  },
+  {
+    "index": 89,
+    "slug": "googles",
+    "url": "http://www.paulgraham.com/googles.html",
+    "key": "090_googles"
+  },
+  {
+    "index": 90,
+    "slug": "good",
+    "url": "http://www.paulgraham.com/good.html",
+    "key": "091_good"
+  },
+  {
+    "index": 91,
+    "slug": "lies",
+    "url": "http://www.paulgraham.com/lies.html",
+    "key": "092_lies"
+  },
+  {
+    "index": 92,
+    "slug": "distraction",
+    "url": "http://www.paulgraham.com/distraction.html",
+    "key": "093_distraction"
+  },
+  {
+    "index": 93,
+    "slug": "cities",
+    "url": "http://www.paulgraham.com/cities.html",
+    "key": "094_cities"
+  },
+  {
+    "index": 94,
+    "slug": "prcmc",
+    "url": "http://www.paulgraham.com/prcmc.html",
+    "key": "095_prcmc"
+  },
+  {
+    "index": 95,
+    "slug": "fundraising",
+    "url": "http://www.paulgraham.com/fundraising.html",
+    "key": "096_fundraising"
+  },
+  {
+    "index": 96,
+    "slug": "badeconomy",
+    "url": "http://www.paulgraham.com/badeconomy.html",
+    "key": "097_badeconomy"
+  },
+  {
+    "index": 97,
+    "slug": "artistsship",
+    "url": "http://www.paulgraham.com/artistsship.html",
+    "key": "098_artistsship"
+  },
+  {
+    "index": 98,
+    "slug": "highres",
+    "url": "http://www.paulgraham.com/highres.html",
+    "key": "099_highres"
+  },
+  {
+    "index": 99,
+    "slug": "divergence",
+    "url": "http://www.paulgraham.com/divergence.html",
+    "key": "100_divergence"
+  },
+  {
+    "index": 100,
+    "slug": "credentials",
+    "url": "http://www.paulgraham.com/credentials.html",
+    "key": "101_credentials"
+  },
+  {
+    "index": 101,
+    "slug": "identity",
+    "url": "http://www.paulgraham.com/identity.html",
+    "key": "102_identity"
+  },
+  {
+    "index": 102,
+    "slug": "13sentences",
+    "url": "http://www.paulgraham.com/13sentences.html",
+    "key": "103_13sentences"
+  },
+  {
+    "index": 103,
+    "slug": "hackernews",
+    "url": "http://www.paulgraham.com/hackernews.html",
+    "key": "104_hackernews"
+  },
+  {
+    "index": 104,
+    "slug": "maybe",
+    "url": "http://www.paulgraham.com/maybe.html",
+    "key": "105_maybe"
+  },
+  {
+    "index": 105,
+    "slug": "convergence",
+    "url": "http://www.paulgraham.com/convergence.html",
+    "key": "106_convergence"
+  },
+  {
+    "index": 106,
+    "slug": "angelinvesting",
+    "url": "http://www.paulgraham.com/angelinvesting.html",
+    "key": "107_angelinvesting"
+  },
+  {
+    "index": 107,
+    "slug": "relres",
+    "url": "http://www.paulgraham.com/relres.html",
+    "key": "108_relres"
+  },
+  {
+    "index": 108,
+    "slug": "5founders",
+    "url": "http://www.paulgraham.com/5founders.html",
+    "key": "109_5founders"
+  },
+  {
+    "index": 109,
+    "slug": "foundervisa",
+    "url": "http://www.paulgraham.com/foundervisa.html",
+    "key": "110_foundervisa"
+  },
+  {
+    "index": 110,
+    "slug": "twitter",
+    "url": "http://www.paulgraham.com/twitter.html",
+    "key": "111_twitter"
+  },
+  {
+    "index": 111,
+    "slug": "revolution",
+    "url": "http://www.paulgraham.com/revolution.html",
+    "key": "112_revolution"
+  },
+  {
+    "index": 112,
+    "slug": "makersschedule",
+    "url": "http://www.paulgraham.com/makersschedule.html",
+    "key": "113_makersschedule"
+  },
+  {
+    "index": 113,
+    "slug": "ramenprofitable",
+    "url": "http://www.paulgraham.com/ramenprofitable.html",
+    "key": "114_ramenprofitable"
+  },
+  {
+    "index": 114,
+    "slug": "segway",
+    "url": "http://www.paulgraham.com/segway.html",
+    "key": "115_segway"
+  },
+  {
+    "index": 115,
+    "slug": "kate",
+    "url": "http://www.paulgraham.com/kate.html",
+    "key": "116_kate"
+  },
+  {
+    "index": 116,
+    "slug": "determination",
+    "url": "http://www.paulgraham.com/determination.html",
+    "key": "117_determination"
+  },
+  {
+    "index": 117,
+    "slug": "nthings",
+    "url": "http://www.paulgraham.com/nthings.html",
+    "key": "118_nthings"
+  },
+  {
+    "index": 118,
+    "slug": "publishing",
+    "url": "http://www.paulgraham.com/publishing.html",
+    "key": "119_publishing"
+  },
+  {
+    "index": 119,
+    "slug": "discover",
+    "url": "http://www.paulgraham.com/discover.html",
+    "key": "120_discover"
+  },
+  {
+    "index": 120,
+    "slug": "really",
+    "url": "http://www.paulgraham.com/really.html",
+    "key": "121_really"
+  },
+  {
+    "index": 121,
+    "slug": "apple",
+    "url": "http://www.paulgraham.com/apple.html",
+    "key": "122_apple"
+  },
+  {
+    "index": 122,
+    "slug": "organic",
+    "url": "http://www.paulgraham.com/organic.html",
+    "key": "123_organic"
+  },
+  {
+    "index": 123,
+    "slug": "selfindulgence",
+    "url": "http://www.paulgraham.com/selfindulgence.html",
+    "key": "124_selfindulgence"
+  },
+  {
+    "index": 124,
+    "slug": "top",
+    "url": "http://www.paulgraham.com/top.html",
+    "key": "125_top"
+  },
+  {
+    "index": 125,
+    "slug": "addiction",
+    "url": "http://www.paulgraham.com/addiction.html",
+    "key": "126_addiction"
+  },
+  {
+    "index": 126,
+    "slug": "future",
+    "url": "http://www.paulgraham.com/future.html",
+    "key": "127_future"
+  },
+  {
+    "index": 127,
+    "slug": "yahoo",
+    "url": "http://www.paulgraham.com/yahoo.html",
+    "key": "128_yahoo"
+  },
+  {
+    "index": 128,
+    "slug": "hiresfund",
+    "url": "http://www.paulgraham.com/hiresfund.html",
+    "key": "129_hiresfund"
+  },
+  {
+    "index": 129,
+    "slug": "seesv",
+    "url": "http://www.paulgraham.com/seesv.html",
+    "key": "130_seesv"
+  },
+  {
+    "index": 130,
+    "slug": "superangels",
+    "url": "http://www.paulgraham.com/superangels.html",
+    "key": "131_superangels"
+  },
+  {
+    "index": 131,
+    "slug": "founders",
+    "url": "http://www.paulgraham.com/founders.html",
+    "key": "132_founders"
+  },
+  {
+    "index": 132,
+    "slug": "tablets",
+    "url": "http://www.paulgraham.com/tablets.html",
+    "key": "133_tablets"
+  },
+  {
+    "index": 133,
+    "slug": "control",
+    "url": "http://www.paulgraham.com/control.html",
+    "key": "134_control"
+  },
+  {
+    "index": 134,
+    "slug": "airbnb",
+    "url": "http://www.paulgraham.com/airbnb.html",
+    "key": "135_airbnb"
+  },
+  {
+    "index": 135,
+    "slug": "patentpledge",
+    "url": "http://www.paulgraham.com/patentpledge.html",
+    "key": "136_patentpledge"
+  },
+  {
+    "index": 136,
+    "slug": "hubs",
+    "url": "http://www.paulgraham.com/hubs.html",
+    "key": "137_hubs"
+  },
+  {
+    "index": 137,
+    "slug": "vw",
+    "url": "http://www.paulgraham.com/vw.html",
+    "key": "138_vw"
+  },
+  {
+    "index": 138,
+    "slug": "schlep",
+    "url": "http://www.paulgraham.com/schlep.html",
+    "key": "139_schlep"
+  },
+  {
+    "index": 139,
+    "slug": "word",
+    "url": "http://www.paulgraham.com/word.html",
+    "key": "140_word"
+  },
+  {
+    "index": 140,
+    "slug": "ambitious",
+    "url": "http://www.paulgraham.com/ambitious.html",
+    "key": "141_ambitious"
+  },
+  {
+    "index": 141,
+    "slug": "property",
+    "url": "http://www.paulgraham.com/property.html",
+    "key": "142_property"
+  },
+  {
+    "index": 142,
+    "slug": "ycstart",
+    "url": "http://www.paulgraham.com/ycstart.html",
+    "key": "143_ycstart"
+  },
+  {
+    "index": 143,
+    "slug": "speak",
+    "url": "http://www.paulgraham.com/speak.html",
+    "key": "144_speak"
+  },
+  {
+    "index": 144,
+    "slug": "todo",
+    "url": "http://www.paulgraham.com/todo.html",
+    "key": "145_todo"
+  },
+  {
+    "index": 145,
+    "slug": "swan",
+    "url": "http://www.paulgraham.com/swan.html",
+    "key": "146_swan"
+  },
+  {
+    "index": 146,
+    "slug": "growth",
+    "url": "http://www.paulgraham.com/growth.html",
+    "key": "147_growth"
+  },
+  {
+    "index": 147,
+    "slug": "hw",
+    "url": "http://www.paulgraham.com/hw.html",
+    "key": "148_hw"
+  },
+  {
+    "index": 148,
+    "slug": "startupideas",
+    "url": "http://www.paulgraham.com/startupideas.html",
+    "key": "149_startupideas"
+  },
+  {
+    "index": 149,
+    "slug": "invtrend",
+    "url": "http://www.paulgraham.com/invtrend.html",
+    "key": "150_invtrend"
+  },
+  {
+    "index": 150,
+    "slug": "ds",
+    "url": "http://www.paulgraham.com/ds.html",
+    "key": "151_ds"
+  },
+  {
+    "index": 151,
+    "slug": "convince",
+    "url": "http://www.paulgraham.com/convince.html",
+    "key": "152_convince"
+  },
+  {
+    "index": 152,
+    "slug": "herd",
+    "url": "http://www.paulgraham.com/herd.html",
+    "key": "153_herd"
+  },
+  {
+    "index": 153,
+    "slug": "fr",
+    "url": "http://www.paulgraham.com/fr.html",
+    "key": "154_fr"
+  },
+  {
+    "index": 154,
+    "slug": "before",
+    "url": "http://www.paulgraham.com/before.html",
+    "key": "155_before"
+  },
+  {
+    "index": 155,
+    "slug": "mean",
+    "url": "http://www.paulgraham.com/mean.html",
+    "key": "156_mean"
+  },
+  {
+    "index": 156,
+    "slug": "pinch",
+    "url": "http://www.paulgraham.com/pinch.html",
+    "key": "157_pinch"
+  },
+  {
+    "index": 157,
+    "slug": "know",
+    "url": "http://www.paulgraham.com/know.html",
+    "key": "158_know"
+  },
+  {
+    "index": 158,
+    "slug": "ecw",
+    "url": "http://www.paulgraham.com/ecw.html",
+    "key": "159_ecw"
+  },
+  {
+    "index": 159,
+    "slug": "95",
+    "url": "http://www.paulgraham.com/95.html",
+    "key": "160_95"
+  },
+  {
+    "index": 160,
+    "slug": "corpdev",
+    "url": "http://www.paulgraham.com/corpdev.html",
+    "key": "161_corpdev"
+  },
+  {
+    "index": 161,
+    "slug": "work",
+    "url": "http://www.paulgraham.com/work.html",
+    "key": "162_work"
+  },
+  {
+    "index": 162,
+    "slug": "ronco",
+    "url": "http://www.paulgraham.com/ronco.html",
+    "key": "163_ronco"
+  },
+  {
+    "index": 163,
+    "slug": "altair",
+    "url": "http://www.paulgraham.com/altair.html",
+    "key": "164_altair"
+  },
+  {
+    "index": 164,
+    "slug": "name",
+    "url": "http://www.paulgraham.com/name.html",
+    "key": "165_name"
+  },
+  {
+    "index": 165,
+    "slug": "safe",
+    "url": "http://www.paulgraham.com/safe.html",
+    "key": "166_safe"
+  },
+  {
+    "index": 166,
+    "slug": "aord",
+    "url": "http://www.paulgraham.com/aord.html",
+    "key": "167_aord"
+  },
+  {
+    "index": 167,
+    "slug": "talk",
+    "url": "http://www.paulgraham.com/talk.html",
+    "key": "168_talk"
+  },
+  {
+    "index": 168,
+    "slug": "bias",
+    "url": "http://www.paulgraham.com/bias.html",
+    "key": "169_bias"
+  },
+  {
+    "index": 169,
+    "slug": "jessica",
+    "url": "http://www.paulgraham.com/jessica.html",
+    "key": "170_jessica"
+  },
+  {
+    "index": 170,
+    "slug": "re",
+    "url": "http://www.paulgraham.com/re.html",
+    "key": "171_re"
+  },
+  {
+    "index": 171,
+    "slug": "ineq",
+    "url": "http://www.paulgraham.com/ineq.html",
+    "key": "172_ineq"
+  },
+  {
+    "index": 172,
+    "slug": "vb",
+    "url": "http://www.paulgraham.com/vb.html",
+    "key": "173_vb"
+  },
+  {
+    "index": 173,
+    "slug": "pgh",
+    "url": "http://www.paulgraham.com/pgh.html",
+    "key": "174_pgh"
+  },
+  {
+    "index": 174,
+    "slug": "disc",
+    "url": "http://www.paulgraham.com/disc.html",
+    "key": "175_disc"
+  },
+  {
+    "index": 175,
+    "slug": "pow",
+    "url": "http://www.paulgraham.com/pow.html",
+    "key": "176_pow"
+  },
+  {
+    "index": 176,
+    "slug": "sun",
+    "url": "http://www.paulgraham.com/sun.html",
+    "key": "177_sun"
+  },
+  {
+    "index": 177,
+    "slug": "genius",
+    "url": "http://www.paulgraham.com/genius.html",
+    "key": "178_genius"
+  },
+  {
+    "index": 178,
+    "slug": "nov",
+    "url": "http://www.paulgraham.com/nov.html",
+    "key": "179_nov"
+  },
+  {
+    "index": 179,
+    "slug": "lesson",
+    "url": "http://www.paulgraham.com/lesson.html",
+    "key": "180_lesson"
+  },
+  {
+    "index": 180,
+    "slug": "kids",
+    "url": "http://www.paulgraham.com/kids.html",
+    "key": "181_kids"
+  },
+  {
+    "index": 181,
+    "slug": "fp",
+    "url": "http://www.paulgraham.com/fp.html",
+    "key": "182_fp"
+  },
+  {
+    "index": 182,
+    "slug": "mod",
+    "url": "http://www.paulgraham.com/mod.html",
+    "key": "183_mod"
+  },
+  {
+    "index": 183,
+    "slug": "fh",
+    "url": "http://www.paulgraham.com/fh.html",
+    "key": "184_fh"
+  },
+  {
+    "index": 184,
+    "slug": "noob",
+    "url": "http://www.paulgraham.com/noob.html",
+    "key": "185_noob"
+  },
+  {
+    "index": 185,
+    "slug": "useful",
+    "url": "http://www.paulgraham.com/useful.html",
+    "key": "186_useful"
+  },
+  {
+    "index": 186,
+    "slug": "cred",
+    "url": "http://www.paulgraham.com/cred.html",
+    "key": "187_cred"
+  },
+  {
+    "index": 187,
+    "slug": "orth",
+    "url": "http://www.paulgraham.com/orth.html",
+    "key": "188_orth"
+  },
+  {
+    "index": 188,
+    "slug": "conformism",
+    "url": "http://www.paulgraham.com/conformism.html",
+    "key": "189_conformism"
+  },
+  {
+    "index": 189,
+    "slug": "wtax",
+    "url": "http://www.paulgraham.com/wtax.html",
+    "key": "190_wtax"
+  },
+  {
+    "index": 190,
+    "slug": "early",
+    "url": "http://www.paulgraham.com/early.html",
+    "key": "191_early"
+  },
+  {
+    "index": 191,
+    "slug": "think",
+    "url": "http://www.paulgraham.com/think.html",
+    "key": "192_think"
+  },
+  {
+    "index": 192,
+    "slug": "airbnbs",
+    "url": "http://www.paulgraham.com/airbnbs.html",
+    "key": "193_airbnbs"
+  },
+  {
+    "index": 193,
+    "slug": "ace",
+    "url": "http://www.paulgraham.com/ace.html",
+    "key": "194_ace"
+  },
+  {
+    "index": 194,
+    "slug": "earnest",
+    "url": "http://www.paulgraham.com/earnest.html",
+    "key": "195_earnest"
+  },
+  {
+    "index": 195,
+    "slug": "worked",
+    "url": "http://www.paulgraham.com/worked.html",
+    "key": "196_worked"
+  },
+  {
+    "index": 196,
+    "slug": "donate",
+    "url": "http://www.paulgraham.com/donate.html",
+    "key": "197_donate"
+  },
+  {
+    "index": 197,
+    "slug": "simply",
+    "url": "http://www.paulgraham.com/simply.html",
+    "key": "198_simply"
+  },
+  {
+    "index": 198,
+    "slug": "richnow",
+    "url": "http://www.paulgraham.com/richnow.html",
+    "key": "199_richnow"
+  },
+  {
+    "index": 199,
+    "slug": "real",
+    "url": "http://www.paulgraham.com/real.html",
+    "key": "200_real"
+  },
+  {
+    "index": 200,
+    "slug": "nft",
+    "url": "http://www.paulgraham.com/nft.html",
+    "key": "201_nft"
+  },
+  {
+    "index": 201,
+    "slug": "newideas",
+    "url": "http://www.paulgraham.com/newideas.html",
+    "key": "202_newideas"
+  },
+  {
+    "index": 202,
+    "slug": "fn",
+    "url": "http://www.paulgraham.com/fn.html",
+    "key": "203_fn"
+  },
+  {
+    "index": 203,
+    "slug": "own",
+    "url": "http://www.paulgraham.com/own.html",
+    "key": "204_own"
+  },
+  {
+    "index": 204,
+    "slug": "hwh",
+    "url": "http://www.paulgraham.com/hwh.html",
+    "key": "205_hwh"
+  },
+  {
+    "index": 205,
+    "slug": "weird",
+    "url": "http://www.paulgraham.com/weird.html",
+    "key": "206_weird"
+  },
+  {
+    "index": 206,
+    "slug": "smart",
+    "url": "http://www.paulgraham.com/smart.html",
+    "key": "207_smart"
+  },
+  {
+    "index": 207,
+    "slug": "goodtaste",
+    "url": "http://www.paulgraham.com/goodtaste.html",
+    "key": "208_goodtaste"
+  },
+  {
+    "index": 208,
+    "slug": "words",
+    "url": "http://www.paulgraham.com/words.html",
+    "key": "209_words"
+  },
+  {
+    "index": 209,
+    "slug": "heresy",
+    "url": "http://www.paulgraham.com/heresy.html",
+    "key": "210_heresy"
+  },
+  {
+    "index": 210,
+    "slug": "users",
+    "url": "http://www.paulgraham.com/users.html",
+    "key": "211_users"
+  },
+  {
+    "index": 211,
+    "slug": "alien",
+    "url": "http://www.paulgraham.com/alien.html",
+    "key": "212_alien"
+  },
+  {
+    "index": 212,
+    "slug": "want",
+    "url": "http://www.paulgraham.com/want.html",
+    "key": "213_want"
+  },
+  {
+    "index": 213,
+    "slug": "read",
+    "url": "http://www.paulgraham.com/read.html",
+    "key": "214_read"
+  },
+  {
+    "index": 214,
+    "slug": "getideas",
+    "url": "http://www.paulgraham.com/getideas.html",
+    "key": "215_getideas"
+  },
+  {
+    "index": 215,
+    "slug": "greatwork",
+    "url": "http://www.paulgraham.com/greatwork.html",
+    "key": "216_greatwork"
+  },
+  {
+    "index": 216,
+    "slug": "superlinear",
+    "url": "http://www.paulgraham.com/superlinear.html",
+    "key": "217_superlinear"
+  },
+  {
+    "index": 217,
+    "slug": "best",
+    "url": "http://www.paulgraham.com/best.html",
+    "key": "218_best"
+  },
+  {
+    "index": 218,
+    "slug": "google",
+    "url": "http://www.paulgraham.com/google.html",
+    "key": "219_google"
+  },
+  {
+    "index": 219,
+    "slug": "reddits",
+    "url": "http://www.paulgraham.com/reddits.html",
+    "key": "220_reddits"
+  },
+  {
+    "index": 220,
+    "slug": "persistence",
+    "url": "http://www.paulgraham.com/persistence.html",
+    "key": "221_persistence"
+  },
+  {
+    "index": 221,
+    "slug": "foundermode",
+    "url": "http://www.paulgraham.com/foundermode.html",
+    "key": "222_foundermode"
+  },
+  {
+    "index": 222,
+    "slug": "when",
+    "url": "http://www.paulgraham.com/when.html",
+    "key": "223_when"
+  },
+  {
+    "index": 223,
+    "slug": "writes",
+    "url": "http://www.paulgraham.com/writes.html",
+    "key": "224_writes"
+  },
+  {
+    "index": 224,
+    "slug": "woke",
+    "url": "http://www.paulgraham.com/woke.html",
+    "key": "225_woke"
+  },
+  {
+    "index": 225,
+    "slug": "do",
+    "url": "http://www.paulgraham.com/do.html",
+    "key": "226_do"
+  },
+  {
+    "index": 226,
+    "slug": "goodwriting",
+    "url": "http://www.paulgraham.com/goodwriting.html",
+    "key": "227_goodwriting"
+  },
+  {
+    "index": 227,
+    "slug": "field",
+    "url": "http://www.paulgraham.com/field.html",
+    "key": "228_field"
+  }
+]
