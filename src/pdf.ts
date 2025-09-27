@@ -9,10 +9,6 @@ export async function latexToPDF(outputPath: string, texContent: string): Promis
     await $`cd ${outputDir} && rm -f ${tmpName}.*`;
   };
 
-  process.on("SIGINT", () => {
-    cleanup().finally(() => process.exit());
-  });
-
   try {
     await Bun.write(`${outputDir}/${tmpName}.tex`, texContent);
 
