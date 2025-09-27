@@ -1,24 +1,26 @@
 {
-  "name": "pg-essays",
-  "module": "index.js",
+  "name": "pg-essays-2",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
-  "scripts": {
-    "convert": "bun run src/index.ts"
-  },
-  "dependencies": {
-    "cheerio": "^1.1.2",
-    "lodash": "^4.17.21",
-    "marked": "^16.3.0",
-    "p-limit": "^6.2.0",
-    "prettier": "^3.6.2",
-    "puppeteer": "^24.8.2",
-    "turndown": "^7.2.1"
-  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/turndown": "^5.0.5"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.63.0",
+    "@types/lodash": "^4.17.20",
+    "cheerio": "^1.1.2",
+    "dotenv": "^17.2.2",
+    "lodash": "^4.17.21",
+    "p-limit": "^7.1.1",
+    "turndown": "^7.2.1"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
+  "scripts": {
+    "checker": "bun run src/checker.ts"
   }
 }

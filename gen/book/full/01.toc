@@ -1,0 +1,233 @@
+\contentsline {chapter}{\numberline {1}This Year We Can End the Death Penalty in California}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Programming Bottom-Up}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Lisp for Web-Based Applications}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Beating the Averages}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Java's Cover}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Being Popular}{31}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Five Questions about Language Design}{53}{chapter.7}%
+\contentsline {subsection}{Guiding Philosophy}{53}{section*.1}%
+\contentsline {subsection}{Open Problems}{56}{section*.2}%
+\contentsline {subsection}{Little-Known Secrets}{57}{section*.3}%
+\contentsline {subsection}{Ideas Whose Time Has Returned}{59}{section*.4}%
+\contentsline {subsection}{Pitfalls and Gotchas}{60}{section*.5}%
+\contentsline {chapter}{\numberline {8}The Roots of Lisp}{63}{chapter.8}%
+\contentsline {chapter}{\numberline {9}The Other Road Ahead}{65}{chapter.9}%
+\contentsline {chapter}{\numberline {10}What Made Lisp Different}{97}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Why Arc Isn't Especially Object-Oriented}{101}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Taste for Makers}{103}{chapter.12}%
+\contentsline {chapter}{\numberline {13}What Languages Fix}{117}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Succinctness is Power}{119}{chapter.14}%
+\contentsline {chapter}{\numberline {15}Revenge of the Nerds}{129}{chapter.15}%
+\contentsline {chapter}{\numberline {16}A Plan for Spam}{149}{chapter.16}%
+\contentsline {chapter}{\numberline {17}Design and Research}{167}{chapter.17}%
+\contentsline {chapter}{\numberline {18}Better Bayesian Filtering}{175}{chapter.18}%
+\contentsline {chapter}{\numberline {19}Why Nerds are Unpopular}{189}{chapter.19}%
+\contentsline {chapter}{\numberline {20}The Hundred-Year Language}{205}{chapter.20}%
+\contentsline {chapter}{\numberline {21}If Lisp is So Great}{219}{chapter.21}%
+\contentsline {chapter}{\numberline {22}Hackers and Painters}{221}{chapter.22}%
+\contentsline {chapter}{\numberline {23}Filters that Fight Back}{237}{chapter.23}%
+\contentsline {chapter}{\numberline {24}What You Can't Say}{241}{chapter.24}%
+\contentsline {chapter}{\numberline {25}The Word "Hacker"}{259}{chapter.25}%
+\contentsline {chapter}{\numberline {26}How to Make Wealth}{265}{chapter.26}%
+\contentsline {chapter}{\numberline {27}Mind the Gap}{289}{chapter.27}%
+\contentsline {chapter}{\numberline {28}Great Hackers}{303}{chapter.28}%
+\contentsline {chapter}{\numberline {29}The Python Paradox}{317}{chapter.29}%
+\contentsline {chapter}{\numberline {30}The Age of the Essay}{319}{chapter.30}%
+\contentsline {chapter}{\numberline {31}What the Bubble Got Right}{333}{chapter.31}%
+\contentsline {chapter}{\numberline {32}A Version 1.0}{345}{chapter.32}%
+\contentsline {chapter}{\numberline {33}Bradley's Ghost}{357}{chapter.33}%
+\contentsline {chapter}{\numberline {34}It's Charisma, Stupid}{361}{chapter.34}%
+\contentsline {chapter}{\numberline {35}Made in USA}{367}{chapter.35}%
+\contentsline {chapter}{\numberline {36}What You'll Wish You'd Known}{373}{chapter.36}%
+\contentsline {chapter}{\numberline {37}How to Start a Startup}{387}{chapter.37}%
+\contentsline {chapter}{\numberline {38}A Unified Theory of VC Suckage}{413}{chapter.38}%
+\contentsline {chapter}{\numberline {39}Undergraduation}{419}{chapter.39}%
+\contentsline {chapter}{\numberline {40}Writing, Briefly}{429}{chapter.40}%
+\contentsline {chapter}{\numberline {41}Return of the Mac}{431}{chapter.41}%
+\contentsline {chapter}{\numberline {42}Why Smart People Have Bad Ideas}{435}{chapter.42}%
+\contentsline {chapter}{\numberline {43}The Submarine}{445}{chapter.43}%
+\contentsline {chapter}{\numberline {44}Hiring is Obsolete}{453}{chapter.44}%
+\contentsline {chapter}{\numberline {45}What Business Can Learn from Open Source}{467}{chapter.45}%
+\contentsline {chapter}{\numberline {46}After the Ladder}{479}{chapter.46}%
+\contentsline {chapter}{\numberline {47}Inequality and Risk}{481}{chapter.47}%
+\contentsline {chapter}{\numberline {48}What I Did this Summer}{489}{chapter.48}%
+\contentsline {chapter}{\numberline {49}Ideas for Startups}{497}{chapter.49}%
+\contentsline {chapter}{\numberline {50}The Venture Capital Squeeze}{509}{chapter.50}%
+\contentsline {chapter}{\numberline {51}How to Fund a Startup}{515}{chapter.51}%
+\contentsline {chapter}{\numberline {52}Web 2.0}{539}{chapter.52}%
+\contentsline {chapter}{\numberline {53}Good and Bad Procrastination}{549}{chapter.53}%
+\contentsline {chapter}{\numberline {54}How to Do What You Love}{555}{chapter.54}%
+\contentsline {chapter}{\numberline {55}Why YC}{569}{chapter.55}%
+\contentsline {chapter}{\numberline {56}6,631,372}{571}{chapter.56}%
+\contentsline {chapter}{\numberline {57}Are Software Patents Evil?}{575}{chapter.57}%
+\contentsline {chapter}{\numberline {58}See Randomness}{589}{chapter.58}%
+\contentsline {chapter}{\numberline {59}The Hardest Lessons for Startups to Learn}{593}{chapter.59}%
+\contentsline {chapter}{\numberline {60}How to Be Silicon Valley}{607}{chapter.60}%
+\contentsline {chapter}{\numberline {61}Why Startups Condense in America}{619}{chapter.61}%
+\contentsline {chapter}{\numberline {62}The Power of the Marginal}{633}{chapter.62}%
+\contentsline {chapter}{\numberline {63}The Island Test}{651}{chapter.63}%
+\contentsline {chapter}{\numberline {64}Copy What You Like}{655}{chapter.64}%
+\contentsline {chapter}{\numberline {65}How to Present to Investors}{659}{chapter.65}%
+\contentsline {chapter}{\numberline {66}A Student's Guide to Startups}{669}{chapter.66}%
+\contentsline {chapter}{\numberline {67}The 18 Mistakes That Kill Startups}{687}{chapter.67}%
+\contentsline {chapter}{\numberline {68}How Art Can Be Good}{703}{chapter.68}%
+\contentsline {chapter}{\numberline {69}Learning from Founders}{713}{chapter.69}%
+\contentsline {chapter}{\numberline {70}Is It Worth Being Wise?}{717}{chapter.70}%
+\contentsline {chapter}{\numberline {71}Why to Not Not Start a Startup}{727}{chapter.71}%
+\contentsline {chapter}{\numberline {72}Microsoft is Dead}{745}{chapter.72}%
+\contentsline {chapter}{\numberline {73}Two Kinds of Judgement}{749}{chapter.73}%
+\contentsline {chapter}{\numberline {74}The Hacker's Guide to Investors}{753}{chapter.74}%
+\contentsline {chapter}{\numberline {75}An Alternative Theory of Unions}{771}{chapter.75}%
+\contentsline {chapter}{\numberline {76}The Equity Equation}{775}{chapter.76}%
+\contentsline {chapter}{\numberline {77}Stuff}{779}{chapter.77}%
+\contentsline {chapter}{\numberline {78}Holding a Program in One's Head}{783}{chapter.78}%
+\contentsline {chapter}{\numberline {79}How Not to Die}{789}{chapter.79}%
+\contentsline {chapter}{\numberline {80}News from the Front}{795}{chapter.80}%
+\contentsline {chapter}{\numberline {81}How to Do Philosophy}{801}{chapter.81}%
+\contentsline {chapter}{\numberline {82}The Future of Web Startups}{815}{chapter.82}%
+\contentsline {chapter}{\numberline {83}Why to Move to a Startup Hub}{825}{chapter.83}%
+\contentsline {chapter}{\numberline {84}Six Principles for Making New Things}{831}{chapter.84}%
+\contentsline {chapter}{\numberline {85}Trolls}{835}{chapter.85}%
+\contentsline {chapter}{\numberline {86}A New Venture Animal}{839}{chapter.86}%
+\contentsline {chapter}{\numberline {87}You Weren't Meant to Have a Boss}{845}{chapter.87}%
+\contentsline {chapter}{\numberline {88}How to Disagree}{853}{chapter.88}%
+\contentsline {chapter}{\numberline {89}Some Heroes}{859}{chapter.89}%
+\contentsline {chapter}{\numberline {90}Why There Aren't More Googles}{867}{chapter.90}%
+\contentsline {chapter}{\numberline {91}Be Good}{873}{chapter.91}%
+\contentsline {chapter}{\numberline {92}Lies We Tell Kids}{883}{chapter.92}%
+\contentsline {chapter}{\numberline {93}Disconnecting Distraction}{897}{chapter.93}%
+\contentsline {chapter}{\numberline {94}Cities and Ambition}{901}{chapter.94}%
+\contentsline {chapter}{\numberline {95}The Pooled-Risk Company Management Company}{911}{chapter.95}%
+\contentsline {chapter}{\numberline {96}A Fundraising Survival Guide}{917}{chapter.96}%
+\contentsline {chapter}{\numberline {97}Why to Start a Startup in a Bad Economy}{931}{chapter.97}%
+\contentsline {chapter}{\numberline {98}The Other Half of "Artists Ship" }{935}{chapter.98}%
+\contentsline {chapter}{\numberline {99}The High-Res Society}{939}{chapter.99}%
+\contentsline {chapter}{\numberline {100}Could VC be a Casualty of the Recession?}{945}{chapter.100}%
+\contentsline {chapter}{\numberline {101}After Credentials}{949}{chapter.101}%
+\contentsline {chapter}{\numberline {102}Keep Your Identity Small }{957}{chapter.102}%
+\contentsline {chapter}{\numberline {103}Startups in 13 Sentences}{961}{chapter.103}%
+\contentsline {chapter}{\numberline {104}What I've Learned from Hacker News}{967}{chapter.104}%
+\contentsline {chapter}{\numberline {105}Can You Buy a Silicon Valley? Maybe.}{975}{chapter.105}%
+\contentsline {chapter}{\numberline {106}Why TV Lost}{981}{chapter.106}%
+\contentsline {chapter}{\numberline {107}How to Be an Angel Investor}{987}{chapter.107}%
+\contentsline {chapter}{\numberline {108}Relentlessly Resourceful}{997}{chapter.108}%
+\contentsline {chapter}{\numberline {109}Five Founders}{1001}{chapter.109}%
+\contentsline {chapter}{\numberline {110}The Founder Visa}{1005}{chapter.110}%
+\contentsline {chapter}{\numberline {111}Why Twitter is a Big Deal}{1007}{chapter.111}%
+\contentsline {chapter}{\numberline {112}A Local Revolution?}{1009}{chapter.112}%
+\contentsline {chapter}{\numberline {113}Maker's Schedule, Manager's Schedule }{1013}{chapter.113}%
+\contentsline {chapter}{\numberline {114}Ramen Profitable}{1017}{chapter.114}%
+\contentsline {chapter}{\numberline {115}The Trouble with the Segway}{1023}{chapter.115}%
+\contentsline {chapter}{\numberline {116}What Kate Saw in Silicon Valley }{1025}{chapter.116}%
+\contentsline {chapter}{\numberline {117}The Anatomy of Determination }{1029}{chapter.117}%
+\contentsline {chapter}{\numberline {118}The List of N Things}{1035}{chapter.118}%
+\contentsline {chapter}{\numberline {119}Post-Medium Publishing}{1039}{chapter.119}%
+\contentsline {chapter}{\numberline {120}Persuade xor Discover }{1045}{chapter.120}%
+\contentsline {chapter}{\numberline {121}What Startups Are Really Like}{1049}{chapter.121}%
+\contentsline {chapter}{\numberline {122}Apple's Mistake}{1069}{chapter.122}%
+\contentsline {chapter}{\numberline {123}Organic Startup Ideas}{1077}{chapter.123}%
+\contentsline {chapter}{\numberline {124}How to Lose Time and Money }{1081}{chapter.124}%
+\contentsline {chapter}{\numberline {125}The Top Idea in Your Mind }{1085}{chapter.125}%
+\contentsline {chapter}{\numberline {126}The Acceleration of Addictiveness}{1089}{chapter.126}%
+\contentsline {chapter}{\numberline {127}The Future of Startup Funding }{1093}{chapter.127}%
+\contentsline {chapter}{\numberline {128}What Happened to Yahoo }{1105}{chapter.128}%
+\contentsline {chapter}{\numberline {129}High Resolution Fundraising }{1111}{chapter.129}%
+\contentsline {chapter}{\numberline {130}Where to See Silicon Valley}{1115}{chapter.130}%
+\contentsline {chapter}{\numberline {131}The New Funding Landscape}{1119}{chapter.131}%
+\contentsline {chapter}{\numberline {132}What We Look for in Founders}{1129}{chapter.132}%
+\contentsline {chapter}{\numberline {133}Tablets}{1133}{chapter.133}%
+\contentsline {chapter}{\numberline {134}Founder Control}{1135}{chapter.134}%
+\contentsline {chapter}{\numberline {135}Subject: Airbnb}{1139}{chapter.135}%
+\contentsline {chapter}{\numberline {136}The Patent Pledge}{1145}{chapter.136}%
+\contentsline {chapter}{\numberline {137}Why Startup Hubs Work}{1149}{chapter.137}%
+\contentsline {chapter}{\numberline {138}Snapshot: Viaweb, June 1998}{1155}{chapter.138}%
+\contentsline {chapter}{\numberline {139}Schlep Blindness}{1159}{chapter.139}%
+\contentsline {chapter}{\numberline {140}A Word to the Resourceful}{1163}{chapter.140}%
+\contentsline {chapter}{\numberline {141}Frighteningly Ambitious Startup Ideas}{1167}{chapter.141}%
+\contentsline {chapter}{\numberline {142}Defining Property}{1179}{chapter.142}%
+\contentsline {chapter}{\numberline {143}How Y Combinator Started}{1183}{chapter.143}%
+\contentsline {chapter}{\numberline {144}Writing and Speaking}{1187}{chapter.144}%
+\contentsline {chapter}{\numberline {145}The Top of My Todo List}{1191}{chapter.145}%
+\contentsline {chapter}{\numberline {146}Black Swan Farming}{1193}{chapter.146}%
+\contentsline {chapter}{\numberline {147}Startup = Growth}{1199}{chapter.147}%
+\contentsline {chapter}{\numberline {148}The Hardware Renaissance}{1215}{chapter.148}%
+\contentsline {chapter}{\numberline {149}How to Get Startup Ideas}{1217}{chapter.149}%
+\contentsline {chapter}{\numberline {150}Startup Investing Trends}{1237}{chapter.150}%
+\contentsline {chapter}{\numberline {151}Do Things that Don't Scale}{1245}{chapter.151}%
+\contentsline {chapter}{\numberline {152}How to Convince Investors}{1257}{chapter.152}%
+\contentsline {chapter}{\numberline {153}Investor Herd Dynamics}{1267}{chapter.153}%
+\contentsline {chapter}{\numberline {154}How to Raise Money}{1271}{chapter.154}%
+\contentsline {chapter}{\numberline {155}Before the Startup}{1299}{chapter.155}%
+\contentsline {chapter}{\numberline {156}Mean People Fail}{1311}{chapter.156}%
+\contentsline {chapter}{\numberline {157}The Fatal Pinch}{1315}{chapter.157}%
+\contentsline {chapter}{\numberline {158}How You Know}{1321}{chapter.158}%
+\contentsline {chapter}{\numberline {159}How to Be an Expert in a Changing World}{1325}{chapter.159}%
+\contentsline {chapter}{\numberline {160}Let the Other 95\% of Great Programmers In}{1329}{chapter.160}%
+\contentsline {chapter}{\numberline {161}Don't Talk to Corp Dev}{1333}{chapter.161}%
+\contentsline {chapter}{\numberline {162}What Doesn't Seem Like Work?}{1337}{chapter.162}%
+\contentsline {chapter}{\numberline {163}The Ronco Principle}{1339}{chapter.163}%
+\contentsline {chapter}{\numberline {164}What Microsoft Is this the Altair Basic of?}{1343}{chapter.164}%
+\contentsline {chapter}{\numberline {165}Change Your Name}{1345}{chapter.165}%
+\contentsline {chapter}{\numberline {166}Why It's Safe for Founders to Be Nice}{1349}{chapter.166}%
+\contentsline {chapter}{\numberline {167}Default Alive or Default Dead?}{1353}{chapter.167}%
+\contentsline {chapter}{\numberline {168}Write Like You Talk}{1359}{chapter.168}%
+\contentsline {chapter}{\numberline {169}A Way to Detect Bias}{1363}{chapter.169}%
+\contentsline {chapter}{\numberline {170}Jessica Livingston}{1365}{chapter.170}%
+\contentsline {chapter}{\numberline {171}The Refragmentation}{1371}{chapter.171}%
+\contentsline {chapter}{\numberline {172}Economic Inequality}{1391}{chapter.172}%
+\contentsline {chapter}{\numberline {173}Life is Short}{1401}{chapter.173}%
+\contentsline {chapter}{\numberline {174}How to Make Pittsburgh a Startup Hub}{1407}{chapter.174}%
+\contentsline {chapter}{\numberline {175}The Risk of Discovery}{1415}{chapter.175}%
+\contentsline {chapter}{\numberline {176}Charisma / Power}{1417}{chapter.176}%
+\contentsline {chapter}{\numberline {177}General and Surprising}{1419}{chapter.177}%
+\contentsline {chapter}{\numberline {178}The Bus Ticket Theory of Genius}{1421}{chapter.178}%
+\contentsline {chapter}{\numberline {179}Novelty and Heresy}{1429}{chapter.179}%
+\contentsline {chapter}{\numberline {180}The Lesson to Unlearn}{1431}{chapter.180}%
+\contentsline {chapter}{\numberline {181}Having Kids}{1443}{chapter.181}%
+\contentsline {chapter}{\numberline {182}Fashionable Problems}{1449}{chapter.182}%
+\contentsline {chapter}{\numberline {183}The Two Kinds of Moderate}{1451}{chapter.183}%
+\contentsline {chapter}{\numberline {184}Haters}{1455}{chapter.184}%
+\contentsline {chapter}{\numberline {185}Being a Noob}{1459}{chapter.185}%
+\contentsline {chapter}{\numberline {186}How to Write Usefully}{1461}{chapter.186}%
+\contentsline {chapter}{\numberline {187}Coronavirus and Credibility}{1471}{chapter.187}%
+\contentsline {chapter}{\numberline {188}Orthodox Privilege}{1473}{chapter.188}%
+\contentsline {chapter}{\numberline {189}The Four Quadrants of Conformism}{1477}{chapter.189}%
+\contentsline {chapter}{\numberline {190}Modeling a Wealth Tax}{1483}{chapter.190}%
+\contentsline {chapter}{\numberline {191}Early Work}{1487}{chapter.191}%
+\contentsline {chapter}{\numberline {192}How to Think for Yourself}{1495}{chapter.192}%
+\contentsline {chapter}{\numberline {193}The Airbnbs}{1505}{chapter.193}%
+\contentsline {chapter}{\numberline {194}Billionaires Build}{1509}{chapter.194}%
+\contentsline {chapter}{\numberline {195}Earnestness}{1519}{chapter.195}%
+\contentsline {chapter}{\numberline {196}What I Worked On}{1525}{chapter.196}%
+\contentsline {chapter}{\numberline {197}Donate Unrestricted}{1559}{chapter.197}%
+\contentsline {chapter}{\numberline {198}Write Simply}{1561}{chapter.198}%
+\contentsline {chapter}{\numberline {199}How People Get Rich Now}{1563}{chapter.199}%
+\contentsline {chapter}{\numberline {200}The Real Reason to End the Death Penalty}{1571}{chapter.200}%
+\contentsline {chapter}{\numberline {201}An NFT That Saves Lives}{1575}{chapter.201}%
+\contentsline {chapter}{\numberline {202}Crazy New Ideas}{1577}{chapter.202}%
+\contentsline {chapter}{\numberline {203}Fierce Nerds}{1581}{chapter.203}%
+\contentsline {chapter}{\numberline {204}A Project of One's Own}{1585}{chapter.204}%
+\contentsline {chapter}{\numberline {205}How to Work Hard}{1593}{chapter.205}%
+\contentsline {chapter}{\numberline {206}Weird Languages}{1603}{chapter.206}%
+\contentsline {chapter}{\numberline {207}Beyond Smart}{1605}{chapter.207}%
+\contentsline {chapter}{\numberline {208}Is There Such a Thing as Good Taste?}{1609}{chapter.208}%
+\contentsline {chapter}{\numberline {209}Putting Ideas into Words}{1613}{chapter.209}%
+\contentsline {chapter}{\numberline {210}Heresy}{1617}{chapter.210}%
+\contentsline {chapter}{\numberline {211}What I've Learned from Users}{1623}{chapter.211}%
+\contentsline {chapter}{\numberline {212}Alien Truth}{1631}{chapter.212}%
+\contentsline {chapter}{\numberline {213}What You (Want to)* Want}{1635}{chapter.213}%
+\contentsline {chapter}{\numberline {214}The Need to Read}{1637}{chapter.214}%
+\contentsline {chapter}{\numberline {215}How to Get New Ideas}{1639}{chapter.215}%
+\contentsline {chapter}{\numberline {216}How to Do Great Work}{1641}{chapter.216}%
+\contentsline {chapter}{\numberline {217}Superlinear Returns}{1673}{chapter.217}%
+\contentsline {chapter}{\numberline {218}The Best Essay}{1685}{chapter.218}%
+\contentsline {chapter}{\numberline {219}How to Start Google}{1697}{chapter.219}%
+\contentsline {chapter}{\numberline {220}The Reddits}{1705}{chapter.220}%
+\contentsline {chapter}{\numberline {221}The Right Kind of Stubborn}{1709}{chapter.221}%
+\contentsline {chapter}{\numberline {222}Founder Mode}{1715}{chapter.222}%
+\contentsline {chapter}{\numberline {223}When To Do What You Love}{1719}{chapter.223}%
+\contentsline {chapter}{\numberline {224}Writes and Write-Nots}{1725}{chapter.224}%
+\contentsline {chapter}{\numberline {225}The Origins of Wokeness}{1729}{chapter.225}%
+\contentsline {chapter}{\numberline {226}What to Do}{1745}{chapter.226}%
+\contentsline {chapter}{\numberline {227}Good Writing}{1751}{chapter.227}%
+\contentsline {chapter}{\numberline {228}The Shape of the Essay Field}{1757}{chapter.228}%
