@@ -1,7 +1,7 @@
-import { getInputEssays } from "./articleIndex";
-import { processBook } from "./book";
-import { essayFiles, processEssay } from "./essay";
-import * as gen from "./gen";
+import { getInputEssays } from "./src/articleIndex";
+import { processBook } from "./src/book";
+import { essayFiles, processEssay } from "./src/essay";
+import * as gen from "./src/gen";
 
 import { $ } from "bun";
 
