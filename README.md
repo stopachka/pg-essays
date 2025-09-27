@@ -1,4 +1,30 @@
-# pg-essays-2
+# pg-essays
+
+Ever wanted all of PG's essays into books that you could read or print? This tool parses PG's blog, converts essays to latex, and produces nice book versions.
+
+You can check out the results in `gen/book`.
+
+# Development
+
+Make sure you install dependencies:
+
+```bash
+brew install basictex pandoc imagemagick
+sudo tlmgr install tocloft fancyhdr
+bun install
+```
+
+## Preview an essay
+
+You can preview a particular essay with by asking for the essay's slug:
+
+```bash
+bun run cli.ts --slug progbot
+```
+
+## Build the books
+
+Otherwise run the command as is and you'll generate a fresh copy of books.
 
 To install dependencies:
 
