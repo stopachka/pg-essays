@@ -41,8 +41,7 @@ function removeEndNotes(essay: InputEssay, input: string): string {
     if (
       !line ||
       line === "\\textbf{Notes}" ||
-      line ===
-        "\\textbf{New:} href{onlisptext.html}{Download On Lisp for Free}."
+      line === "\\textbf{New:} href{onlisptext.html}{Download On Lisp for Free}."
     ) {
       idx--;
       continue;
@@ -79,16 +78,14 @@ function transformFootnotes(essay: InputEssay, input: string): string {
 
     if (matches.length === 1) {
       const [occurrence] = matches;
-      const startIndex = occurrence.index!;
+      const startIndex = occurrence!.index!;
 
       if (!footnoteLooksLikeDefinition(input, startIndex)) {
-        console.warn(
-          `${essay.slug} Footnote ${num} only has one occurrence - skipping`
-        );
+        console.warn(`${essay.slug} Footnote ${num} only has one occurrence - skipping`);
         continue;
       }
 
-      const defStart = startIndex + occurrence[0].length;
+      const defStart = startIndex + occurrence![0].length;
       const defEnd = findFootnoteEnd(input, defStart);
       const footnoteText = input.slice(defStart, defEnd).trim();
 
@@ -109,9 +106,7 @@ function transformFootnotes(essay: InputEssay, input: string): string {
 
     const [firstOccurrence, secondOccurrence] = matches;
     if (!secondOccurrence) {
-      throw new Error(
-        `[footnote] ${essay.slug}  expected a second occurence for ${num}`
-      );
+      throw new Error(`[footnote] ${essay.slug}  expected a second occurence for ${num}`);
     }
 
     const defStart = secondOccurrence.index! + secondOccurrence[0].length;
@@ -119,8 +114,8 @@ function transformFootnotes(essay: InputEssay, input: string): string {
     const footnoteText = input.slice(defStart, defEnd).trim();
 
     replacements.push({
-      start: firstOccurrence.index!,
-      end: firstOccurrence.index! + firstOccurrence[0].length,
+      start: firstOccurrence!.index!,
+      end: firstOccurrence!.index! + firstOccurrence![0].length,
       replacement: `\\footnote{${footnoteText}}`,
     });
 
