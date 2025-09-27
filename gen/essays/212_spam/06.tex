@@ -99,7 +99,7 @@ here is one that we wrote in order to test a new Lisp dialect called
    (unless (< (+ g b) 5)
      (max .01
           (min .99 (float (/ (min 1 (/ b nbad))
-                             (+ (min 1 (/ g ngood))
+                             (+ (min 1 (/ g ngood))   
                                 (min 1 (/ b nbad)))))))))
 \end{verbatim}
 
@@ -174,7 +174,7 @@ is a list of the fifteen individual probabilities, you calculate the
 \begin{verbatim}
 
 (let ((prod (apply #'* probs)))
-  (/ prod (+ prod (apply #'* (mapcar #'(lambda (x)
+  (/ prod (+ prod (apply #'* (mapcar #'(lambda (x) 
                                          (- 1 x))
                                      probs)))))
 \end{verbatim}
@@ -454,7 +454,7 @@ quality         0.8921298
 organization    0.12454646
 investment      0.8568143
 very            0.14758544
-valuable        0.82347786
+valuable        0.82347786 
 \end{verbatim}
 
 This time the evidence is a mix of good and bad. A word like
@@ -534,10 +534,10 @@ continuation  0.01
 describe      0.01
 continuations 0.01
 example       0.033600237
-programming   0.05214485
+programming   0.05214485 
 i'm           0.055427782
-examples      0.07972858
-color         0.9189189
+examples      0.07972858 
+color         0.9189189  
 localhost     0.09883721
 hi            0.116539136
 california    0.84421706

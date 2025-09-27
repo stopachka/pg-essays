@@ -7,6 +7,8 @@ import { $ } from "bun";
 
 import { parseArgs } from "util";
 
+await main();
+
 async function main() {
   const { values } = parseArgs({
     args: Bun.argv,
@@ -16,6 +18,7 @@ async function main() {
       },
     },
     strict: true,
+    allowPositionals: true,
   });
 
   const slug = values.slug;
