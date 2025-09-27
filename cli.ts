@@ -1,5 +1,5 @@
 import { getInputEssays } from "./src/articleIndex";
-import { processBook } from "./src/book";
+import { getInputBooks, processBook } from "./src/book";
 import { essayFiles, processEssay } from "./src/essay";
 import * as gen from "./src/gen";
 
@@ -18,30 +18,53 @@ async function main() {
       slug: {
         type: "string",
       },
+      vol: {
+        type: "string",
+      },
     },
     strict: true,
     allowPositionals: true,
   });
 
   const slug = values.slug;
-
   if (slug) {
-    console.log(`Preview: ${slug}`);
-    await produceEssay(slug);
+    console.log(`Build Essay: ${slug}`);
+    await handleEssaySlug(slug);
     return;
   }
 
-  console.log(`Build: book`);
+  const vol = values.vol;
+  if (vol) {
+    console.log(`Preview Book: ${vol}`);
+    await handleBookVol(vol);
+    return;
+  }
 
-  await produceBook();
+  await handleAllBooks();
 }
 
-async function produceEssay(slug: string) {
+async function handleAllBooks() {
+  const inputs = await getInputBooks();
+  await Promise.all(inputs.map(processBook));
+  console.log(`Processed: ${inputs.map((x) => x.slug).join(",")}`);
+}
+
+async function handleBookVol(vol: string) {
+  const inputs = await getInputBooks();
+  const book = inputs.find((x) => x.slug == `vol${vol}`);
+  if (!book) {
+    throw new Error(`Could not find ${vol}`);
+  }
+  await processBook(book);
+}
+
+async function handleEssaySlug(slug: string) {
   const inputs = await getInputEssays();
   const essay = inputs.find((x) => x.slug === "spam");
   if (!essay) {
-    throw new Error("not found!");
+    throw new Error(`Could not find ${slug}`);
   }
+
   await processEssay(essay);
 
   await latexToPDF(
@@ -53,14 +76,7 @@ async function produceEssay(slug: string) {
 }
 
 async function produceBook() {
-  const inputs = await getInputEssays();
-  const processedEssays = await Promise.all(inputs.map(processEssay));
-  await processBook({
-    title: "Essays by Paul Graham",
-    essays: processedEssays,
-    slug: "full",
-    dir: "book/full",
-  });
+  // await processBook();
 
   await $`open ${gen.fullPath("book/full", "03.pdf")}`;
 }
