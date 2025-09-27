@@ -5063,7 +5063,7 @@ and in Perl 5,
 
 \begin{verbatim}
 
-sub foo {
+sub foo {  
   my ($n) = @_;
   sub {$n += shift}
 }
@@ -5076,10 +5076,10 @@ In Smalltalk the code is slightly longer than in Lisp
 
 \begin{verbatim}
 
-foo: n
-  |s|
-  s := n.
-  ^[:i| s := s+i. ]
+foo: n                              
+  |s|                      
+  s := n.                          
+  ^[:i| s := s+i. ] 
 \end{verbatim}
 
 because although in general lexical variables work, you can't do an
@@ -5091,8 +5091,8 @@ explicit return statements to return values:
 
 \begin{verbatim}
 
-function foo(n) {
-  return function (i) {
+function foo(n) { 
+  return function (i) { 
            return n += i } }
 \end{verbatim}
 
@@ -5113,7 +5113,7 @@ def foo(n):
   s = [n]
   def bar(i):
     s[0] += i
-    return s[0]
+    return s[0] 
   return bar
 \end{verbatim}
 
@@ -5266,7 +5266,7 @@ generating by hand the expansions of some macro that I need to write.
 
 \begin{verbatim}
 
-Scheme: (define (foo n)
+Scheme: (define (foo n) 
           (lambda (i) (set! n (+ n i)) n))
 Goo:    (df foo (n) (op incf n _)))
 Arc:    (def foo (n) [++ n _])
@@ -5405,7 +5405,7 @@ here is one that we wrote in order to test a new Lisp dialect called
    (unless (< (+ g b) 5)
      (max .01
           (min .99 (float (/ (min 1 (/ b nbad))
-                             (+ (min 1 (/ g ngood))
+                             (+ (min 1 (/ g ngood))   
                                 (min 1 (/ b nbad)))))))))
 \end{verbatim}
 
@@ -5480,7 +5480,7 @@ is a list of the fifteen individual probabilities, you calculate the
 \begin{verbatim}
 
 (let ((prod (apply #'* probs)))
-  (/ prod (+ prod (apply #'* (mapcar #'(lambda (x)
+  (/ prod (+ prod (apply #'* (mapcar #'(lambda (x) 
                                          (- 1 x))
                                      probs)))))
 \end{verbatim}
@@ -5760,7 +5760,7 @@ quality         0.8921298
 organization    0.12454646
 investment      0.8568143
 very            0.14758544
-valuable        0.82347786
+valuable        0.82347786 
 \end{verbatim}
 
 This time the evidence is a mix of good and bad. A word like
@@ -5840,10 +5840,10 @@ continuation  0.01
 describe      0.01
 continuations 0.01
 example       0.033600237
-programming   0.05214485
+programming   0.05214485 
 i'm           0.055427782
-examples      0.07972858
-color         0.9189189
+examples      0.07972858 
+color         0.9189189  
 localhost     0.09883721
 hi            0.116539136
 california    0.84421706
@@ -6513,7 +6513,7 @@ Free!
 free!
 FREE
 Free
-free
+free              
 \end{verbatim}
 
 If you do this, be sure to consider versions with initial caps as well

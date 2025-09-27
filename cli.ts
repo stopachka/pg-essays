@@ -6,6 +6,8 @@ import * as gen from "./src/gen";
 import { $ } from "bun";
 
 import { parseArgs } from "util";
+import { latexToPDF } from "./src/pdf";
+import { asBookLatex } from "./src/bookLatex";
 
 await main();
 
@@ -42,11 +44,10 @@ async function produceEssay(slug: string) {
   }
   await processEssay(essay);
 
-  await $`pandoc --pdf-engine=xelatex \
-      -V mainfont="Baskerville" \
-      -V mainfontoptions="Ligatures=TeX" \
-      -o ${gen.fullPath(essay.dir, essayFiles.pdf)} \
-      ${gen.fullPath(essay.dir, essayFiles.xfTex)}`;
+  await latexToPDF(
+    gen.fullPath(essay.dir, essayFiles.pdf),
+    asBookLatex({ title: essay.title, latexChapters: [gen.readText(essay.dir, essayFiles.xfTex)] })
+  );
 
   await $`open ${gen.fullPath(essay.dir, essayFiles.pdf)}`;
 }

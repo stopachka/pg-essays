@@ -530,7 +530,7 @@ and in Perl 5,
 
 \begin{verbatim}
 
-sub foo {
+sub foo {  
   my ($n) = @_;
   sub {$n += shift}
 }
@@ -543,10 +543,10 @@ In Smalltalk the code is slightly longer than in Lisp
 
 \begin{verbatim}
 
-foo: n
-  |s|
-  s := n.
-  ^[:i| s := s+i. ]
+foo: n                              
+  |s|                      
+  s := n.                          
+  ^[:i| s := s+i. ] 
 \end{verbatim}
 
 because although in general lexical variables work, you can't do an
@@ -558,8 +558,8 @@ explicit return statements to return values:
 
 \begin{verbatim}
 
-function foo(n) {
-  return function (i) {
+function foo(n) { 
+  return function (i) { 
            return n += i } }
 \end{verbatim}
 
@@ -580,7 +580,7 @@ def foo(n):
   s = [n]
   def bar(i):
     s[0] += i
-    return s[0]
+    return s[0] 
   return bar
 \end{verbatim}
 
@@ -733,7 +733,7 @@ generating by hand the expansions of some macro that I need to write.
 
 \begin{verbatim}
 
-Scheme: (define (foo n)
+Scheme: (define (foo n) 
           (lambda (i) (set! n (+ n i)) n))
 Goo:    (df foo (n) (op incf n _)))
 Arc:    (def foo (n) [++ n _])

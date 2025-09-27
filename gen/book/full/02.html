@@ -4356,7 +4356,7 @@ accumulate.)</p>
   (lambda (i) (incf n i)))</code></pre>
 <p>and in Perl 5,</p>
 <pre><code>
-sub foo {
+sub foo {  
   my ($n) = @_;
   sub {$n += shift}
 }</code></pre>
@@ -4364,18 +4364,18 @@ sub foo {
 extract parameters manually in Perl.</p>
 <p>In Smalltalk the code is slightly longer than in Lisp</p>
 <pre><code>
-foo: n
-  |s|
-  s := n.
-  ^[:i| s := s+i. ]</code></pre>
+foo: n                              
+  |s|                      
+  s := n.                          
+  ^[:i| s := s+i. ] </code></pre>
 <p>because although in general lexical variables work, you can’t do an
 assignment to a parameter, so you have to create a new variable s.</p>
 <p>In Javascript the example is, again, slightly longer, because
 Javascript retains the distinction between statements and expressions,
 so you need explicit return statements to return values:</p>
 <pre><code>
-function foo(n) {
-  return function (i) {
+function foo(n) { 
+  return function (i) { 
            return n += i } }</code></pre>
 <p>(To be fair, Perl also retains this distinction, but deals with it in
 typical Perl fashion by letting you omit returns.)</p>
@@ -4391,7 +4391,7 @@ def foo(n):
   s = [n]
   def bar(i):
     s[0] += i
-    return s[0]
+    return s[0] 
   return bar</code></pre>
 <p>Python users might legitimately ask why they can’t just write</p>
 <pre><code>
@@ -4504,7 +4504,7 @@ Spacewar, in 1962.</p></li>
 software in Lisp, you could try telling him it’s XML.</p></li>
 <li><p>Here is the accumulator generator in other Lisp dialects:</p>
 <pre><code>
-Scheme: (define (foo n)
+Scheme: (define (foo n) 
           (lambda (i) (set! n (+ n i)) n))
 Goo:    (df foo (n) (op incf n _)))
 Arc:    (def foo (n) [++ n _])</code></pre></li>
@@ -4614,7 +4614,7 @@ role="doc-noteref"><sup>26</sup></a>:</p>
    (unless (&lt; (+ g b) 5)
      (max .01
           (min .99 (float (/ (min 1 (/ b nbad))
-                             (+ (min 1 (/ g ngood))
+                             (+ (min 1 (/ g ngood))   
                                 (min 1 (/ b nbad)))))))))</code></pre>
 <p>where</p>
 <pre><code>word</code></pre>
@@ -4654,7 +4654,7 @@ probability that the mail is spam. If</p>
 <a href="naivebayes.html">combined</a> probability thus:</p>
 <pre><code>
 (let ((prod (apply #&#39;* probs)))
-  (/ prod (+ prod (apply #&#39;* (mapcar #&#39;(lambda (x)
+  (/ prod (+ prod (apply #&#39;* (mapcar #&#39;(lambda (x) 
                                          (- 1 x))
                                      probs)))))</code></pre>
 <p>One question that arises in practice is what probability to assign to
@@ -4893,7 +4893,7 @@ quality         0.8921298
 organization    0.12454646
 investment      0.8568143
 very            0.14758544
-valuable        0.82347786</code></pre>
+valuable        0.82347786 </code></pre>
 <p>This time the evidence is a mix of good and bad. A word like
 “shortest” is almost as much evidence for innocence as a word like
 “madam” or “promotion” is for guilt. But still the case for guilt is
@@ -4959,10 +4959,10 @@ continuation  0.01
 describe      0.01
 continuations 0.01
 example       0.033600237
-programming   0.05214485
+programming   0.05214485 
 i&#39;m           0.055427782
-examples      0.07972858
-color         0.9189189
+examples      0.07972858 
+color         0.9189189  
 localhost     0.09883721
 hi            0.116539136
 california    0.84421706
@@ -5499,7 +5499,7 @@ Free!
 free!
 FREE
 Free
-free</code></pre>
+free              </code></pre>
 <p>If you do this, be sure to consider versions with initial caps as
 well as all uppercase and all lowercase. Spams tend to have more
 sentences in imperative mood, and in those the first word is a verb. So
