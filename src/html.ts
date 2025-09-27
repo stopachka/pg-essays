@@ -1,5 +1,5 @@
 import type { CheerioAPI } from "cheerio";
-import * as gen from "./gen";
+import * as overrides from "./overrides";
 
 export function transformHTML($html: CheerioAPI): CheerioAPI {
   const ch$ = [
@@ -39,10 +39,7 @@ function removeHr($: CheerioAPI): CheerioAPI {
 }
 
 function removeApplyYC($: CheerioAPI): CheerioAPI {
-  $('font:contains("Want to start a startup")')
-    .last()
-    .closest("table")
-    .remove();
+  $('font:contains("Want to start a startup")').last().closest("table").remove();
   return $;
 }
 
@@ -89,8 +86,8 @@ function removeFontTags($: CheerioAPI): CheerioAPI {
   return $;
 }
 
-const sayNotesHTML = gen.readText("custom", "sayNotes.html");
-const bbnHTML = gen.readText("custom", "bbn.html");
+const sayNotesHTML = overrides.readText("sayNotes.html");
+const bbnHTML = overrides.readText("bbn.html");
 
 function replaceSayNotesLink($: CheerioAPI): CheerioAPI {
   $('a[href="http://www.paulgraham.com/saynotes.html"]').each((_, el) => {
