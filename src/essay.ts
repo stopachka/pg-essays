@@ -4,7 +4,6 @@ import { transformHTML } from "./html";
 import { load } from "cheerio";
 import { cheerioToMarkdown, transformMarkdown } from "./markdown";
 import { markdownToLatex, transformLatex } from "./latex";
-import { $ } from "bun";
 import type { InputEssay, ProcessedEssay } from "./types";
 import { limitedFetch } from "./fetch";
 
@@ -41,14 +40,6 @@ export async function processEssay(essay: InputEssay): Promise<ProcessedEssay> {
   // 06 -- transforms latex -- mainly makes footnotes work
   const transformedTex = transformLatex(essay, tex);
   gen.save(essay.dir, essayFiles.xfTex, transformedTex);
-
-  // 07 -- create the pdf!
-
-  // await $`pandoc --pdf-engine=xelatex \
-  //     -V mainfont="Baskerville" \
-  //     -V mainfontoptions="Ligatures=TeX" \
-  //     -o ${gen.fullPath(essay.dir, "07.pdf")} \
-  //     ${gen.fullPath(essay.dir, essayFiles.xfTex)}`;
 
   return { ...essay, processed: true };
 }
