@@ -6,7 +6,7 @@ export async function latexToPDF(outputPath: string, texContent: string): Promis
   const tmpName = crypto.randomUUID();
 
   const cleanup = async () => {
-    await $`cd ${outputDir} && rm -f ${tmpName}.*; rm texput.log`;
+    await $`cd ${outputDir} && rm -f ${tmpName}.*`;
   };
 
   process.on("SIGINT", () => {
