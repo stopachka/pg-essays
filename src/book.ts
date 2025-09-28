@@ -67,7 +67,8 @@ export const bookFiles = {
   pdf: "03.pdf",
   epub: "04.epub",
   mobi: "05.mobi",
-  cover: "cover.pdf",
+  coverPaperback: "cover-paperback.pdf",
+  coverHardcover: "cover-hardcover.pdf",
 };
 
 export async function processBook(book: Book): Promise<void> {
@@ -94,5 +95,7 @@ export async function processBook(book: Book): Promise<void> {
 
   await $`./lib/kindlegen ${gen.fullPath(book.dir, bookFiles.epub)} -o ${bookFiles.mobi}`.nothrow();
 
-  await generateCover(gen.fullPath(book.dir, bookFiles.cover), book);
+  // Generate both paperback and hardcover covers
+  await generateCover(gen.fullPath(book.dir, bookFiles.coverPaperback), book, "paperback");
+  await generateCover(gen.fullPath(book.dir, bookFiles.coverHardcover), book, "hardcover");
 }

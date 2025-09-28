@@ -4,59 +4,25 @@ Ever wanted all of PG's essays into books that you could read or print? This too
 
 You can check out the results in `gen/book`.
 
-# Development
+## Development
 
 Make sure you install dependencies:
 
 ```bash
 brew install basictex pandoc imagemagick
-sudo tlmgr install tocloft fancyhdr
+sudo tlmgr install tocloft fancyhdr titlesec
 bun install
 ```
 
-## Build an essay
-
-You can preview a particular essay with by asking for the essay's slug:
+Then start building:
 
 ```bash
+# A particular essay
 bun run cli.ts --essay progbot
-```
-
-## Build a book
-
-Similarily, preview a book by it's slug
-
-```bash
+# A particular volume
 bun run cli.ts --book vol1
+# Check out a cover
+bun run cli.ts --cover vol1
+# Or run the process for all books
+bun run cli.ts
 ```
-
-## Build all books
-
-Otherwise run the command as is and you'll generate a fresh copy of books.
-
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-Run the automated transformation checker (requires `ANTHROPIC_API_KEY`):
-
-```bash
-ANTHROPIC_API_KEY=... bun run checker
-```
-
-This project was created using `bun init` in bun v1.2.21. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
-
-Don't forget pandoc and basictex
-
-eval "$(/usr/libexec/path_helper)"
-
-ImageMagick
-tlmgr install tocloft fancyhdr

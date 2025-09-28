@@ -2,7 +2,13 @@ import puppeteer from "puppeteer";
 
 import type { Book } from "./types";
 
-export async function generateCover(outputPath: string, book: Book): Promise<void> {
+export type CoverType = "paperback" | "hardcover";
+
+export async function generateCover(
+  outputPath: string,
+  book: Book,
+  coverType: CoverType = "paperback"
+): Promise<void> {
   const browser = await puppeteer.launch({
     headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
@@ -10,22 +16,23 @@ export async function generateCover(outputPath: string, book: Book): Promise<voi
 
   try {
     const page = await browser.newPage();
-    const html = await coverHTML(book);
+    const html = await coverHTML(book, coverType);
 
     await page.setContent(html, { waitUntil: "networkidle0" });
 
     // Set viewport to match the cover dimensions
+    const dimensions = getCoverDimensions(coverType);
     await page.setViewport({
-      width: 1290, // Rounded up from 1289.472
-      height: 888,
+      width: Math.ceil(dimensions.widthPx),
+      height: Math.ceil(dimensions.heightPx),
       deviceScaleFactor: 2, // Higher quality
     });
 
     // Generate PDF with exact dimensions
     await page.pdf({
       path: outputPath,
-      width: "13.432in",
-      height: "9.25in",
+      width: dimensions.widthIn,
+      height: dimensions.heightIn,
       printBackground: true,
       preferCSSPageSize: false,
       displayHeaderFooter: false,
@@ -43,16 +50,67 @@ export async function generateCover(outputPath: string, book: Book): Promise<voi
   }
 }
 
-async function coverHTML(book: Book): Promise<string> {
+function getCoverDimensions(coverType: CoverType) {
+  if (coverType === "hardcover") {
+    // Hardcover dimensions with flaps
+    // Total width: 21.125" (includes front, spine, back, and two flaps)
+    // Flap width: 3.25" each
+    // Spine width: 1.375"
+    // Available width for covers: 21.125 - 1.375 - (2 * 3.25) = 13.25"
+    // Each cover width: 13.25 / 2 = 6.625"
+    const widthIn = "21.125in";
+    const heightIn = "9.75in";
+    const widthPx = 2028; // 21.125 * 96 DPI
+    const heightPx = 936; // 9.75 * 96 DPI
+    const spineWidthPx = 132; // 1.375 * 96 DPI
+    const flapWidthPx = 312; // 3.25 * 96 DPI
+    // Correct calculation: (total - spine - 2*flaps) / 2
+    const coverWidthPx = (widthPx - spineWidthPx - 2 * flapWidthPx) / 2;
+
+    return {
+      widthIn,
+      heightIn,
+      widthPx,
+      heightPx,
+      spineWidthPx,
+      flapWidthPx,
+      coverWidthPx,
+      hasFlaps: true,
+    };
+  } else {
+    // Paperback dimensions (existing)
+    const widthIn = "13.432in";
+    const heightIn = "9.25in";
+    const widthPx = 1289.472;
+    const heightPx = 888;
+    const spineWidthPx = 113.472;
+    const coverWidthPx = (widthPx - spineWidthPx) / 2;
+
+    return {
+      widthIn,
+      heightIn,
+      widthPx,
+      heightPx,
+      spineWidthPx,
+      flapWidthPx: 0,
+      coverWidthPx,
+      hasFlaps: false,
+    };
+  }
+}
+
+async function coverHTML(book: Book, coverType: CoverType): Promise<string> {
   const bgColor = "#040C27";
   const textColor = "white";
   const spineTextColor = "#FB651F";
 
-  // Dimensions from Lulu
-  const totalWidth = 1289.472;
-  const height = 888;
-  const spineWidth = 113.472;
-  const coverWidth = (totalWidth - spineWidth) / 2;
+  // Get dimensions based on cover type
+  const dimensions = getCoverDimensions(coverType);
+  const totalWidth = dimensions.widthPx;
+  const height = dimensions.heightPx;
+  const spineWidth = dimensions.spineWidthPx;
+  const coverWidth = dimensions.coverWidthPx;
+  const flapWidth = dimensions.flapWidthPx;
 
   return `<!DOCTYPE html>
 <html>
@@ -149,9 +207,30 @@ async function coverHTML(book: Book): Promise<string> {
       text-align: center;
       max-width: 80%;
     }
+    ${dimensions.hasFlaps ? `
+    .flap {
+      width: ${flapWidth}px;
+      height: ${height}px;
+      background-color: ${bgColor};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .flap-text {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: center;
+      opacity: 0.7;
+    }` : ''}
   </style>
 </head>
 <body>
+  ${dimensions.hasFlaps ? `<div class="flap">
+    <div class="flap-text"></div>
+  </div>` : ''}
+
   <div class="back-cover">
     <div class="back-description">
     </div>
@@ -166,6 +245,10 @@ async function coverHTML(book: Book): Promise<string> {
     <div class="title">${book.title}</div>
     <div class="author">Paul Graham</div>
   </div>
+
+  ${dimensions.hasFlaps ? `<div class="flap">
+    <div class="flap-text"></div>
+  </div>` : ''}
 </body>
 </html>`;
 }

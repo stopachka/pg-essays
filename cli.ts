@@ -67,9 +67,10 @@ async function handleCoverSlug(slug: string) {
     throw new Error(`Could not find ${slug}`);
   }
 
-  await generateCover(gen.fullPath(book.dir, bookFiles.cover), book);
-
-  await $`open ${gen.fullPath(book.dir, bookFiles.cover)}`;
+  await generateCover(gen.fullPath(book.dir, bookFiles.coverPaperback), book, "paperback");
+  await generateCover(gen.fullPath(book.dir, bookFiles.coverHardcover), book, "hardcover");
+  await $`open ${gen.fullPath(book.dir, bookFiles.coverPaperback)}`;
+  await $`open ${gen.fullPath(book.dir, bookFiles.coverHardcover)}`;
 }
 
 async function handleBookSlug(slug: string) {
