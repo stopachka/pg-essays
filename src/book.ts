@@ -58,6 +58,8 @@ export const bookFiles = {
   tex: "01.tex",
   html: "02.html",
   pdf: "03.pdf",
+  epub: "04.epub",
+  mobi: "05.mobi",
 };
 
 export async function processBook(book: Book): Promise<void> {
@@ -76,4 +78,11 @@ export async function processBook(book: Book): Promise<void> {
   )} ${gen.fullPath(book.dir, bookFiles.tex)}`;
 
   await latexToPDF(gen.fullPath(book.dir, bookFiles.pdf), bookLatex);
+
+  await $`pandoc --from=latex --to=epub --toc --toc-depth=1 -o ${gen.fullPath(
+    book.dir,
+    bookFiles.epub
+  )} ${gen.fullPath(book.dir, bookFiles.tex)}`;
+
+  await $`./lib/kindlegen ${gen.fullPath(book.dir, bookFiles.epub)} -o ${bookFiles.mobi}`.nothrow();
 }
