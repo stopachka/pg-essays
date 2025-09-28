@@ -20,6 +20,13 @@ function buildPreamble(title: string): string {
     "\\hfuzz=2pt", // Tolerate overfull hbox up to 2pt without warning
     "\\setcounter{secnumdepth}{1}",
     "\\setcounter{tocdepth}{1}",
+    // Customize chapter formatting with titlesec
+    "\\usepackage{titlesec}",
+    "\\titleformat{\\chapter}[display]",
+    "  {\\normalfont\\bfseries}", // format for both
+    "  {\\small\\chaptertitlename\\ \\thechapter}", // make "Chapter n" smaller
+    "  {0.5em}", // separation between label and title
+    "  {\\huge}", // make chapter title larger
     // Use tocloft for TOC customization
     "\\usepackage{tocloft}",
     "\\renewcommand{\\cftchapfont}{\\normalfont\\small}", // Smaller, non-bold font
@@ -32,9 +39,9 @@ function buildPreamble(title: string): string {
     "\\pagestyle{fancy}",
     "\\fancyhf{}",
     "\\fancyhead[LE,RO]{\\thepage}",
-    "\\fancyhead[RE,LO]{Chapter \\thechapter}", // Just "Chapter X"
+    "\\fancyhead[RE,LO]{}", // Remove chapter header
     "\\renewcommand{\\headrulewidth}{0pt}",
-    "\\renewcommand{\\chaptermark}[1]{\\markboth{Chapter \\thechapter}{Chapter \\thechapter}}",
+    "\\renewcommand{\\chaptermark}[1]{}",
     "\\makeatletter",
     "\\@addtoreset{footnote}{chapter}",
     "\\makeatother",

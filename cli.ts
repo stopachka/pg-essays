@@ -98,15 +98,3 @@ async function handleEssaySlug(slug: string) {
 
   await $`open ${gen.fullPath(essay.dir, essayFiles.pdf)}`;
 }
-
-async function produceBook() {
-  // await processBook();
-
-  await $`open ${gen.fullPath("book/full", "03.pdf")}`;
-}
-
-// --------
-// All
-
-// --------
-// Single
