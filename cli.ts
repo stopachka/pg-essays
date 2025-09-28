@@ -8,6 +8,7 @@ import { $ } from "bun";
 import { parseArgs } from "util";
 import { latexToPDF } from "./src/pdf";
 import { asBookLatex } from "./src/bookLatex";
+import { generateCover } from "./src/cover";
 
 await main();
 
@@ -19,6 +20,9 @@ async function main() {
         type: "string",
       },
       book: {
+        type: "string",
+      },
+      cover: {
         type: "string",
       },
     },
@@ -35,8 +39,15 @@ async function main() {
 
   const bookSlug = values.book;
   if (bookSlug) {
-    console.log(`Preview Book: ${bookSlug}`);
-    await handleBookSlug(bookSlug);
+    console.log(`Build Book: ${bookSlug}`);
+    await handleCoverSlug(bookSlug);
+    return;
+  }
+
+  const coverSlug = values.cover;
+  if (coverSlug) {
+    console.log(`Build Cover: ${coverSlug}`);
+    await handleCoverSlug(coverSlug);
     return;
   }
 
@@ -47,6 +58,18 @@ async function handleAllBooks() {
   const inputs = await getInputBooks();
   await Promise.all(inputs.map(processBook));
   console.log(`Processed: ${inputs.map((x) => x.slug).join(",")}`);
+}
+
+async function handleCoverSlug(slug: string) {
+  const inputs = await getInputBooks();
+  const book = inputs.find((x) => x.slug == slug);
+  if (!book) {
+    throw new Error(`Could not find ${slug}`);
+  }
+
+  await generateCover(gen.fullPath(book.dir, bookFiles.cover), book);
+
+  await $`open ${gen.fullPath(book.dir, bookFiles.cover)}`;
 }
 
 async function handleBookSlug(slug: string) {

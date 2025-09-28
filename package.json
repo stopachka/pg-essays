@@ -17,6 +17,7 @@
     "dotenv": "^17.2.2",
     "lodash": "^4.17.21",
     "p-limit": "^7.1.1",
+    "puppeteer": "^24.22.3",
     "turndown": "^7.2.1"
   },
   "scripts": {

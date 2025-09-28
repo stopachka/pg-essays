@@ -1,17 +1,11 @@
 import { $ } from "bun";
 import { essayFiles, processEssay } from "./essay";
 import * as gen from "./gen";
-import type { ProcessedEssay } from "./types";
+import type { Book, ProcessedEssay } from "./types";
 import { latexToPDF } from "./pdf";
 import { asBookLatex } from "./bookLatex";
 import { getInputEssays } from "./articleIndex";
-
-type Book = {
-  title: string;
-  slug: string;
-  dir: string;
-  essays: ProcessedEssay[];
-};
+import { generateCover } from "./cover";
 
 const essaysToSkip = new Set(["prop62"]);
 
@@ -22,14 +16,22 @@ export async function getInputBooks(): Promise<Book[]> {
   const allProcessed = await Promise.all(filtered.map(processEssay));
 
   const full = {
-    title: "Essays, Full",
+    title: "Essays",
     essays: allProcessed,
     slug: "full",
     dir: "book/full",
+    coverTextColor: "white",
+    coverBackgroundColor: "red",
   };
-  const lastSym = Symbol.for("last");
-  const { vols } = ["sfp", "angelinvesting", "pinch", lastSym].reduce(
-    ({ vols, startIdx: prevIdx }, slug, i) => {
+
+  const lastSym = "__last";
+  const { vols } = [
+    { slug: "sfp" },
+    { slug: "angelinvesting" },
+    { slug: "pinch" },
+    { slug: lastSym },
+  ].reduce(
+    ({ vols, startIdx: prevIdx }, { slug }, i) => {
       const cutIdx =
         slug === lastSym ? allProcessed.length - 1 : allProcessed.findIndex((x) => x.slug === slug);
 
@@ -39,11 +41,20 @@ export async function getInputBooks(): Promise<Book[]> {
 
       const essays = allProcessed.slice(prevIdx, cutIdx + 1);
       const volumeNum = i + 1;
+      const volumeToNumeral = new Map([
+        [1, "I"],
+        [2, "II"],
+        [3, "III"],
+        [4, "IV"],
+        [5, "V"],
+      ]);
       const vol: Book = {
-        title: `Essays, Volume ${volumeNum}`,
+        title: `Essays, ${volumeToNumeral.get(volumeNum)}`,
         slug: `vol${volumeNum}`,
         dir: `book/vol${volumeNum}`,
         essays: essays,
+        coverTextColor: "white",
+        coverBackgroundColor: "red",
       };
       const newVols = [...vols, vol];
       return { vols: newVols, startIdx: cutIdx + 1 };
@@ -60,6 +71,7 @@ export const bookFiles = {
   pdf: "03.pdf",
   epub: "04.epub",
   mobi: "05.mobi",
+  cover: "cover.pdf",
 };
 
 export async function processBook(book: Book): Promise<void> {
@@ -85,4 +97,6 @@ export async function processBook(book: Book): Promise<void> {
   )} ${gen.fullPath(book.dir, bookFiles.tex)}`;
 
   await $`./lib/kindlegen ${gen.fullPath(book.dir, bookFiles.epub)} -o ${bookFiles.mobi}`.nothrow();
+
+  await generateCover(gen.fullPath(book.dir, bookFiles.cover), book);
 }
