@@ -22,23 +22,36 @@ export async function getInputBooks(): Promise<Book[]> {
   const allProcessed = await Promise.all(filtered.map(processEssay));
 
   const full = {
-    title: "Essays by Paul Graham",
+    title: "Essays, Full",
     essays: allProcessed,
     slug: "full",
     dir: "book/full",
   };
+  const lastSym = Symbol.for("last");
+  const { vols } = ["sfp", "angelinvesting", "pinch", lastSym].reduce(
+    ({ vols, startIdx: prevIdx }, slug, i) => {
+      const cutIdx =
+        slug === lastSym ? allProcessed.length - 1 : allProcessed.findIndex((x) => x.slug === slug);
 
-  const vol1Idx = allProcessed.findIndex((x) => x.slug === "mac");
-  const vol1Processed = allProcessed.slice(0, vol1Idx + 1);
+      if (cutIdx < 0) {
+        throw new Error(`Could not find idx for ${String(slug)}`);
+      }
 
-  const vol1 = {
-    title: "Essays by Paul Graha",
-    essays: vol1Processed,
-    slug: "vol1",
-    dir: "book/vol1",
-  };
+      const essays = allProcessed.slice(prevIdx, cutIdx + 1);
+      const volumeNum = i + 1;
+      const vol: Book = {
+        title: `Essays, Volume ${volumeNum}`,
+        slug: `vol${volumeNum}`,
+        dir: `book/vol${volumeNum}`,
+        essays: essays,
+      };
+      const newVols = [...vols, vol];
+      return { vols: newVols, startIdx: cutIdx + 1 };
+    },
+    { vols: [] as Book[], startIdx: 0 }
+  );
 
-  return [full, vol1];
+  return [full, ...vols];
 }
 
 export const bookFiles = {

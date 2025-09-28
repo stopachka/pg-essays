@@ -34,7 +34,7 @@
 \providecommand{\pandocbounded}[1]{#1}
 \let\oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[2][]{\oldincludegraphics[width=\textwidth,height=4cm,keepaspectratio,#1]{#2}}
-\title{Essays by Paul Graha}
+\title{Essays, Volume 1}
 \author{Paul Graham}
 \date{}
 \begin{document}
@@ -15498,5 +15498,2295 @@ computer that's as well designed as a Bang \& Olufsen stereo system, and
 underneath is the best Unix machine you can buy. Yes, the price to
 earnings ratio is kind of high, but I think a lot of people are going to
 want these.
+\chapter{Why Smart People Have Bad Ideas}
+
+April 2005
+
+This summer, as an experiment, some friends and I are giving
+\href{http://ycombinator.com}{seed funding} to a bunch of new startups.
+It's an experiment because we're prepared to fund younger founders than
+most investors would. That's why we're doing it during the summer---so
+even college students can participate.
+
+We know from Google and Yahoo that grad students can start successful
+startups. And we know from experience that some undergrads are as
+capable as most grad students. The accepted age for startup founders has
+been creeping downward. We're trying to find the lower bound.
+
+The deadline has now passed, and we're sifting through 227 applications.
+We expected to divide them into two categories, promising and
+unpromising. But we soon saw we needed a third: promising people with
+unpromising ideas. \footnote{SFP applicants: please don't assume that not being accepted
+means we think your idea is bad. Because we want to keep the number of
+startups small this first summer, we're going to have to turn down some
+good proposals too.}
+
+\textbf{The Artix Phase}
+
+We should have expected this. It's very common for a group of founders
+to go through one lame idea before realizing that a startup has to make
+something people will pay for. In fact, we ourselves did.
+
+Viaweb wasn't the first startup Robert Morris and I started. In January
+1995, we and a couple friends started a company called Artix. The plan
+was to put art galleries on the Web. In retrospect, I wonder how we
+could have wasted our time on anything so stupid. Galleries are not
+especially \href{http://www.knoedlergallery.com/}{excited} about being
+on the Web even now, ten years later. They don't want to have their
+stock visible to any random visitor, like an antique store.
+\footnote{Dealers try to give each customer the impression that the stuff
+they're showing him is something special that only a few people have
+seen, when in fact it may have been sitting in their racks for years
+while they tried to unload it on buyer after buyer.}
+
+Besides which, art dealers are the most technophobic people on earth.
+They didn't become art dealers after a difficult choice between that and
+a career in the hard sciences. Most of them had never seen the Web
+before we came to tell them why they should be on it. Some didn't even
+have computers. It doesn't do justice to the situation to describe it as
+a hard \emph{sell}; we soon sank to building sites for free, and it was
+hard to convince galleries even to do that.
+
+Gradually it dawned on us that instead of trying to make Web sites for
+people who didn't want them, we could make sites for people who did. In
+fact, software that would let people who wanted sites make their own. So
+we ditched Artix and started a new company, Viaweb, to make software for
+building online stores. That one succeeded.
+
+We're in good company here. Microsoft was not the first company Paul
+Allen and Bill Gates started either. The first was called Traf-o-data.
+It does not seem to have done as well as Micro-soft.
+
+In Robert's defense, he was skeptical about Artix. I dragged him into
+it. \footnote{On the other hand, he was skeptical about Viaweb too. I have a
+precise measure of that, because at one point in the first couple months
+we made a bet: if he ever made a million dollars out of Viaweb, he'd get
+his ear pierced. We didn't let him \href{pierced.html}{off}, either.} But there were moments when he was
+optimistic. And if we, who were 29 and 30 at the time, could get excited
+about such a thoroughly boneheaded idea, we should not be surprised that
+hackers aged 21 or 22 are pitching us ideas with little hope of making
+money.
+
+\textbf{The Still Life Effect}
+
+Why does this happen? Why do good hackers have bad business ideas?
+
+Let's look at our case. One reason we had such a lame idea was that it
+was the first thing we thought of. I was in New York trying to be a
+starving artist at the time (the starving part is actually quite easy),
+so I was haunting galleries anyway. When I learned about the Web, it
+seemed natural to mix the two. Make Web sites for galleries---that's the
+ticket!
+
+If you're going to spend years working on something, you'd think it
+might be wise to spend at least a couple days considering different
+ideas, instead of going with the first that comes into your head. You'd
+think. But people don't. In fact, this is a constant problem when you're
+painting still lifes. You plonk down a bunch of stuff on a table, and
+maybe spend five or ten minutes rearranging it to look interesting. But
+you're so impatient to get started painting that ten minutes of
+rearranging feels very long. So you start painting. Three days later,
+having spent twenty hours staring at it, you're kicking yourself for
+having set up such an awkward and boring composition, but by then it's
+too late.
+
+Part of the problem is that big projects tend to grow out of small ones.
+You set up a still life to make a quick sketch when you have a spare
+hour, and days later you're still working on it. I once spent a month
+painting three versions of a still life I set up in about four minutes.
+At each point (a day, a week, a month) I thought I'd already put in so
+much time that it was too late to change.
+
+So the biggest cause of bad ideas is the still life effect: you come up
+with a random idea, plunge into it, and then at each point (a day, a
+week, a month) feel you've put so much time into it that this must be
+\emph{the} idea.
+
+How do we fix that? I don't think we should discard plunging. Plunging
+into an idea is a good thing. The solution is at the other end: to
+realize that having invested time in something doesn't make it good.
+
+This is clearest in the case of names. Viaweb was originally called
+Webgen, but we discovered someone else had a product called that. We
+were so attached to our name that we offered him \emph{5\% of the
+company} if he'd let us have it. But he wouldn't, so we had to think of
+another. \footnote{I wrote a program to generate all the combinations of ``Web''
+plus a three letter word. I learned from this that most three letter
+words are bad: Webpig, Webdog, Webfat, Webzit, Webfug. But one of them
+was Webvia; I swapped them to make Viaweb.} The best we could do was Viaweb, which
+we disliked at first. It was like having a new mother. But within three
+days we loved it, and Webgen sounded lame and old-fashioned.
+
+If it's hard to change something so simple as a name, imagine how hard
+it is to garbage-collect an idea. A name only has one point of
+attachment into your head. An idea for a company gets woven into your
+thoughts. So you must consciously discount for that. Plunge in, by all
+means, but remember later to look at your idea in the harsh light of
+morning and ask: is this something people will pay for? Is this, of all
+the things we could make, the thing people will pay most for?
+
+\textbf{Muck}
+
+The second mistake we made with Artix is also very common. Putting
+galleries on the Web seemed cool.
+
+One of the most valuable things my father taught me is an old Yorkshire
+saying: where there's muck, there's brass. Meaning that unpleasant work
+pays. And more to the point here, vice versa. Work people like doesn't
+pay well, for reasons of supply and demand. The most extreme case is
+developing programming languages, which doesn't pay at all, because
+people like it so much they do it for free.
+
+When we started Artix, I was still ambivalent about business. I wanted
+to keep one foot in the art world. Big, big, mistake. Going into
+business is like a hang-glider launch: you'd better do it
+wholeheartedly, or not at all. The purpose of a company, and a startup
+especially, is to make money. You can't have divided loyalties.
+
+Which is not to say that you have to do the most disgusting sort of
+work, like spamming, or starting a company whose only purpose is patent
+litigation. What I mean is, if you're starting a company that will do
+something cool, the aim had better be to make money and maybe be cool,
+not to be cool and maybe make money.
+
+It's hard enough to make money that you can't do it by accident. Unless
+it's your first priority, it's unlikely to happen at all.
+
+\textbf{Hyenas}
+
+When I probe our motives with Artix, I see a third mistake: timidity. If
+you'd proposed at the time that we go into the e-commerce business, we'd
+have found the idea terrifying. Surely a field like that would be
+dominated by fearsome startups with five million dollars of VC money
+each. Whereas we felt pretty sure that we could hold our own in the
+slightly less competitive business of generating Web sites for art
+galleries.
+
+We erred ridiculously far on the side of safety. As it turns out,
+VC-backed startups are not that fearsome. They're too busy trying to
+spend all that \href{venturecapital.html}{money} to get software
+written. In 1995, the e-commerce business was very competitive as
+measured in press releases, but not as measured in software. And really
+it never was. The big fish like Open Market (rest their souls) were just
+consulting companies pretending to be product companies
+\footnote{It's much easier to sell services than a product, just as it's
+easier to make a living playing at weddings than by selling recordings.
+But the margins are greater on products. So during the Bubble a lot of
+companies used consulting to generate revenues they could attribute to
+the sale of products, because it made a better story for an IPO.}, and the offerings at our end of the market were
+a couple hundred lines of Perl scripts. Or could have been implemented
+as a couple hundred lines of Perl; in fact they were probably tens of
+thousands of lines of C++ or Java. Once we actually took the plunge into
+e-commerce, it turned out to be surprisingly easy to compete.
+
+So why were we afraid? We felt we were good at programming, but we
+lacked confidence in our ability to do a mysterious, undifferentiated
+thing we called ``business.'' In fact there is no such thing as
+``business.'' There's selling, promotion, figuring out what people want,
+deciding how much to charge, customer support, paying your bills,
+getting customers to pay you, getting incorporated, raising money, and
+so on. And the combination is not as hard as it seems, because some
+tasks (like raising money and getting incorporated) are an O(1) pain in
+the ass, whether you're big or small, and others (like selling and
+promotion) depend more on energy and imagination than any kind of
+special training.
+
+Artix was like a hyena, content to survive on carrion because we were
+afraid of the lions. Except the lions turned out not to have any teeth,
+and the business of putting galleries online barely qualified as
+carrion.
+
+\textbf{A Familiar Problem}
+
+Sum up all these sources of error, and it's no wonder we had such a bad
+idea for a company. We did the first thing we thought of; we were
+ambivalent about being in business at all; and we deliberately chose an
+impoverished market to avoid competition.
+
+Looking at the applications for the Summer Founders Program, I see signs
+of all three. But the first is by far the biggest problem. Most of the
+groups applying have not stopped to ask: of all the things we could do,
+is \emph{this} the one with the best chance of making money?
+
+If they'd already been through their Artix phase, they'd have learned to
+ask that. After the reception we got from art dealers, we were ready to.
+This time, we thought, let's make something people want.
+
+Reading the \emph{Wall Street Journal} for a week should give anyone
+ideas for two or three new startups. The articles are full of
+descriptions of problems that need to be solved. But most of the
+applicants don't seem to have looked far for ideas.
+
+We expected the most common proposal to be for multiplayer games. We
+were not far off: this was the second most common. The most common was
+some combination of a blog, a calendar, a dating site, and Friendster.
+Maybe there is some new killer app to be discovered here, but it seems
+perverse to go poking around in this fog when there are valuable,
+unsolved problems lying about in the open for anyone to see. Why did no
+one propose a new scheme for micropayments? An ambitious project,
+perhaps, but I can't believe we've considered every alternative. And
+newspapers and magazines are (literally) dying for a solution.
+
+Why did so few applicants really think about what customers want? I
+think the problem with many, as with people in their early twenties
+generally, is that they've been trained their whole lives to jump
+through predefined hoops. They've spent 15-20 years solving problems
+other people have set for them. And how much time deciding what problems
+would be good to solve? Two or three course projects? They're good at
+solving problems, but bad at choosing them.
+
+But that, I'm convinced, is just the effect of training. Or more
+precisely, the effect of grading. To make grading efficient, everyone
+has to solve the same problem, and that means it has to be decided in
+advance. It would be great if schools taught students how to choose
+problems as well as how to solve them, but I don't know how you'd run
+such a class in practice.
+
+\textbf{Copper and Tin}
+
+The good news is, choosing problems is something that can be learned. I
+know that from experience. Hackers can learn to make things customers
+want. \footnote{Trevor Blackwell presents the following recipe for a startup:
+``Watch people who have money to spend, see what they're wasting their
+time on, cook up a solution, and try selling it to them. It's surprising
+how small a problem can be and still provide a profitable market for a
+solution.''}
+
+This is a controversial view. One expert on ``entrepreneurship'' told me
+that any startup had to include business people, because only they could
+focus on what customers wanted. I'll probably alienate this guy forever
+by quoting him, but I have to risk it, because his email was such a
+perfect example of this view:
+
+\begin{quote}
+80\% of MIT spinoffs succeed \emph{provided} they have at least one
+management person in the team at the start. The business person
+represents the ``voice of the customer'' and that's what keeps the
+engineers and product development on track.
+\end{quote}
+
+This is, in my opinion, a crock. Hackers are perfectly capable of
+hearing the voice of the customer without a business person to amplify
+the signal for them. Larry Page and Sergey Brin were grad students in
+computer science, which presumably makes them ``engineers.'' Do you
+suppose Google is only good because they had some business guy
+whispering in their ears what customers wanted? It seems to me the
+business guys who did the most for Google were the ones who obligingly
+flew Altavista into a hillside just as Google was getting started.
+
+The hard part about figuring out what customers want is figuring out
+that you need to figure it out. But that's something you can learn
+quickly. It's like seeing the other interpretation of an ambiguous
+picture. As soon as someone tells you there's a rabbit as well as a
+duck, it's hard not to see it.
+
+And compared to the sort of problems hackers are used to solving, giving
+customers what they want is easy. Anyone who can write an optimizing
+compiler can design a UI that doesn't confuse users, once they
+\emph{choose} to focus on that problem. And once you apply that kind of
+brain power to petty but profitable questions, you can create wealth
+very rapidly.
+
+That's the essence of a startup: having brilliant people do work that's
+beneath them. Big companies try to hire the right person for the job.
+Startups win because they don't---because they take people so smart that
+they would in a big company be doing ``research,'' and set them to work
+instead on problems of the most immediate and mundane sort. Think
+Einstein designing refrigerators. \footnote{You need to offer especially large rewards to get great people
+to do tedious work. That's why startups always pay equity rather than
+just salary.}
+
+If you want to learn what people want, read Dale Carnegie's \emph{How to
+Win Friends and Influence People.} \footnote{Buy an
+\href{http://dogbert.abebooks.com/servlet/SearchResults?bx=on&sts=t&ds=30&bi=0&an=carnegie&kn=1938+OR+1939+OR+1940+OR+1941+OR+1942+OR+1943+OR+1944+OR+1945+OR+1946+OR+1947+OR+1948&tn=influence+friends&sortby=2}{old}
+copy from the 1940s or 50s instead of the current edition, which has
+been rewritten to suit present fashions. The original edition contained
+a few unPC ideas, but it's always better to read an original book,
+bearing in mind that it's a book from a past era, than to read a new
+version sanitized for your protection.} When a friend
+recommended this book, I couldn't believe he was serious. But he
+insisted it was good, so I read it, and he was right. It deals with the
+most difficult problem in human experience: how to see things from other
+people's point of view, instead of thinking only of yourself.
+
+Most smart people don't do that very well. But adding this ability to
+raw brainpower is like adding tin to copper. The result is bronze, which
+is so much harder that it seems a different metal.
+
+A hacker who has learned what to make, and not just how to make, is
+extraordinarily powerful. And not just at making money: look what a
+small group of volunteers has achieved with Firefox.
+
+Doing an Artix teaches you to make something people want in the same way
+that not drinking anything would teach you how much you depend on water.
+But it would be more convenient for all involved if the Summer Founders
+didn't learn this on our dime---if they could skip the Artix phase and
+go right on to make something customers wanted. That, I think, is going
+to be the real experiment this summer. How long will it take them to
+grasp this?
+
+We decided we ought to have T-Shirts for the SFP, and we'd been thinking
+about what to print on the back. Till now we'd been planning to use
+
+\begin{quote}
+If you can read this, I should be working.
+\end{quote}
+
+but now we've decided it's going to be
+
+\begin{quote}
+Make something people want.
+\end{quote}
+
+
+\textbf{Thanks} to Bill Birch, Trevor Blackwell, Jessica Livingston, and
+Robert Morris for reading drafts of this.
+\chapter{The Submarine}
+
+April 2005
+
+``Suits make a corporate comeback,'' says the
+\href{http://www.nytimes.com/2005/04/14/fashion/thursdaystyles/14peacock.html?ex=1271131200&en=e96f2670387e3636&ei=5090&partner=rssuserland}{\emph{New
+York Times}}. Why does this sound familiar? Maybe because the suit was
+also back in
+\href{http://www.cvbizlink.com/articles/2005/04/07/news/news/doc42406f05edf53293947237.prt}{February},
+\href{http://www.usatoday.com/money/industries/retail/2004-09-01-suits_x.htm}{September
+2004},
+\href{http://www.cnn.com/2004/BUSINESS/06/23/go.fashion.jones/}{June
+2004}, \href{http://www.post-gazette.com/pg/04062/279616.stm}{March
+2004},
+\href{http://www.southcoasttoday.com/daily/09-03/09-21-03/c01li238.htm}{September
+2003},
+\href{http://www.businessweek.com/magazine/content/02_46/b3808122.htm}{November
+2002}, \href{http://www.pittsburghlive.com/x/s_65540.html}{April 2002},
+and \href{http://news.bbc.co.uk/1/hi/business/1836010.stm}{February
+2002}.
+
+Why do the media keep running stories saying suits are back? Because PR
+firms \href{http://www.maximumexposurepr.com/middleMAA.html}{tell} them
+to. One of the most surprising things I discovered during my brief
+business career was the existence of the PR industry, lurking like a
+huge, quiet submarine beneath the news. Of the stories you read in
+traditional media that aren't about politics, crimes, or disasters, more
+than half probably come from PR firms.
+
+I know because I spent years hunting such ``press hits.'' Our startup
+spent its entire marketing budget on PR: at a time when we were
+assembling our own computers to save money, we were paying a PR firm
+\$16,000 a month. And they were worth it. PR is the news equivalent of
+search engine optimization; instead of buying ads, which readers ignore,
+you get yourself inserted directly into the stories.
+\footnote{PR has at least one beneficial feature: it favors small
+companies. If PR didn't work, the only alternative would be to
+advertise, and only big companies can afford that.}
+
+\href{http://schwartz-pr.com/client_coverage.php}{Our PR firm} was one
+of the best in the business. In 18 months, they got press hits in over
+60 different publications. And we weren't the only ones they did great
+things for. In 1997 I got a call from another startup founder
+considering hiring them to promote his company. I told him they were PR
+gods, worth every penny of their outrageous fees. But I remember
+thinking his company's name was odd. Why call an auction site ``eBay''?
+
+\textbf{Symbiosis}
+
+PR is not dishonest. Not quite. In fact, the reason the best PR firms
+are so effective is precisely that they aren't dishonest. They give
+reporters genuinely valuable information. A good PR firm won't bug
+reporters just because the client tells them to; they've worked hard to
+build their credibility with reporters, and they don't want to destroy
+it by feeding them mere propaganda.
+
+If anyone is dishonest, it's the reporters. The main reason PR firms
+exist is that reporters are lazy. Or, to put it more nicely, overworked.
+Really they ought to be out there digging up stories for themselves. But
+it's so tempting to sit in their offices and let PR firms bring the
+stories to them. After all, they know good PR firms won't lie to them.
+
+A good flatterer doesn't lie, but tells his victim selective truths
+(what a nice color your eyes are). Good PR firms use the same strategy:
+they give reporters stories that are true, but whose truth favors their
+clients.
+
+For example, our PR firm often pitched stories about how the Web let
+small merchants compete with big ones. This was perfectly true. But the
+reason reporters ended up writing stories about this particular truth,
+rather than some other one, was that small merchants were our target
+market, and we were paying the piper.
+
+Different publications vary greatly in their reliance on PR firms. At
+the bottom of the heap are the trade press, who make most of their money
+from advertising and would give the magazines away for free if
+advertisers would let them. \footnote{Advertisers pay less for ads in free publications, because they
+assume readers ignore something they get for free. This is why so many
+trade publications nominally have a cover price and yet give away free
+subscriptions with such abandon.} The average trade
+publication is a bunch of ads, glued together by just enough articles to
+make it look like a magazine. They're so desperate for ``content'' that
+some will print your press releases almost verbatim, if you take the
+trouble to write them to read like articles.
+
+At the other extreme are publications like the \emph{New York Times} and
+the \emph{Wall Street Journal}. Their reporters do go out and find their
+own stories, at least some of the time. They'll listen to PR firms, but
+briefly and skeptically. We managed to get press hits in almost every
+publication we wanted, but we never managed to crack the print edition
+of the \emph{Times}. \footnote{Different sections of the \emph{Times} vary so much in their
+standards that they're practically different papers. Whoever fed the
+style section reporter this story about suits coming back would have
+been sent packing by the regular news reporters.}
+
+The weak point of the top reporters is not laziness, but vanity. You
+don't pitch stories to them. You have to approach them as if you were a
+specimen under their all-seeing microscope, and make it seem as if the
+story you want them to run is something they thought of themselves.
+
+Our greatest PR coup was a two-part one. We estimated, based on some
+fairly informal math, that there were about 5000 stores on the Web. We
+got one paper to print this number, which seemed neutral enough. But
+once this ``fact'' was out there in print, we could quote it to other
+publications, and claim that with 1000 users we had 20\% of the online
+store market.
+
+This was roughly true. We really did have the biggest share of the
+online store market, and 5000 was our best guess at its size. But the
+way the story appeared in the press sounded a lot more definite.
+
+Reporters like definitive statements. For example, many of the stories
+about Jeremy Jaynes's conviction say that he was one of the 10 worst
+spammers. This ``fact'' originated in Spamhaus's ROKSO list, which I
+think even Spamhaus would admit is a rough guess at the top spammers.
+The first stories about Jaynes cited this source, but now it's simply
+repeated as if it were part of the indictment. \footnote{The most striking example I know of this type is the ``fact''
+that the Internet worm of 1988 infected 6000 computers. I was there when
+it was cooked up, and this was the recipe: someone guessed that there
+were about 60,000 computers attached to the Internet, and that the worm
+might have infected ten percent of them.
+
+Actually no one knows how many computers the worm infected, because the
+remedy was to reboot them, and this destroyed all traces. But people
+like numbers. And so this one is now
+\href{http://www.google.com/search?q=internet+worm+1988+6000}{replicated}
+all over the Internet, like a little worm of its own.}
+
+All you can say with certainty about Jaynes is that he was a fairly big
+spammer. But reporters don't want to print vague stuff like ``fairly
+big.'' They want statements with punch, like ``top ten.'' And PR firms
+give them what they want. Wearing suits, we're told, will make us
+\href{http://sanfrancisco.bizjournals.com/sanfrancisco/stories/2002/02/25/story5.html?t=printable}{3.6
+percent} more productive.
+
+\textbf{Buzz}
+
+Where the work of PR firms really does get deliberately misleading is in
+the generation of ``buzz.'' They usually feed the same story to several
+different publications at once. And when readers see similar stories in
+multiple places, they think there is some important trend afoot. Which
+is exactly what they're supposed to think.
+
+When Windows 95 was launched, people waited outside stores at midnight
+to buy the first copies. None of them would have been there without PR
+firms, who generated such a buzz in the news media that it became
+self-reinforcing, like a nuclear chain reaction.
+
+I doubt PR firms realize it yet, but the Web makes it possible to track
+them at work. If you search for the obvious phrases, you turn up several
+efforts over the years to place stories about the return of the suit.
+For example, the Reuters article that got picked up by
+\href{http://www.usatoday.com/money/industries/retail/2004-09-01-suits_x.htm}{USA
+Today} in September 2004. ``The suit is back,'' it begins.
+
+Trend articles like this are almost always the work of PR firms. Once
+you know how to read them, it's straightforward to figure out who the
+client is. With trend stories, PR firms usually line up one or more
+``experts'' to talk about the industry generally. In this case we get
+three: the NPD Group, the creative director of GQ, and a research
+director at Smith Barney. \footnote{Not all were necessarily supplied by the PR firm. Reporters
+sometimes call a few additional sources on their own, like someone
+adding a few fresh vegetables to a can of soup.} When you get to the
+end of the experts, look for the client. And bingo, there it is: The
+Men's Wearhouse.
+
+Not surprising, considering The Men's Wearhouse was at that moment
+running ads saying ``The Suit is Back.'' Talk about a successful press
+hit-- a wire service article whose first sentence is your own ad copy.
+
+The secret to finding other press hits from a given pitch is to realize
+that they all started from the same document back at the PR firm. Search
+for a few key phrases and the names of the clients and the experts, and
+you'll turn up other variants of this story.
+
+\href{http://bostonworks.boston.com/globe/articles/091904_suit.html}{Casual
+fridays are out and dress codes are in} writes Diane E. Lewis in
+\emph{The Boston Globe}. In a remarkable coincidence, Ms.~Lewis's
+industry contacts also include the creative director of GQ.
+
+\href{http://www.usnews.com/usnews/biztech/articles/041108/8eedress.htm}{Ripped
+jeans and T-shirts are out,} writes Mary Kathleen Flynn in \emph{US News
+\& World Report}. And \emph{she too} knows the creative director of GQ.
+
+\href{http://www.sexbuzz.com/style/9,0004,00.shtml}{Men's suits are
+back} writes Nicole Ford in Sexbuzz.Com (``the ultimate men's
+entertainment magazine'').
+
+\href{http://www.detnews.com/2004/careers/0405/28/b01-149207.htm}{Dressing
+down loses appeal as men suit up at the office} writes Tenisha Mercer of
+\emph{The Detroit News}.
+
+Now that so many news articles are online, I suspect you could find a
+similar pattern for most trend stories placed by PR firms. I propose we
+call this new sport ``PR diving,'' and I'm sure there are far more
+striking examples out there than this clump of five stories.
+
+\textbf{Online}
+
+After spending years chasing them, it's now second nature to me to
+recognize press hits for what they are. But before we hired a PR firm I
+had no idea where articles in the mainstream media came from. I could
+tell a lot of them were crap, but I didn't realize why.
+
+Remember the exercises in critical reading you did in school, where you
+had to look at a piece of writing and step back and ask whether the
+author was telling the whole truth? If you really want to be a critical
+reader, it turns out you have to step back one step further, and ask not
+just whether the author is telling the truth, but \emph{why he's writing
+about this subject at all.}
+
+Online, the answer tends to be a lot simpler. Most people who publish
+online write what they write for the simple reason that they want to.
+You can't see the fingerprints of PR firms all over the articles, as you
+can in so many print publications-- which is one of the reasons, though
+they may not consciously realize it, that readers trust bloggers more
+than \emph{Business Week}.
+
+I was talking recently to a friend who works for a big newspaper. He
+thought the print media were in serious trouble, and that they were
+still mostly in denial about it. ``They think the decline is cyclic,''
+he said. ``Actually it's structural.''
+
+In other words, the readers are leaving, and they're not coming back.
+
+Why? I think the main reason is that the writing online is more honest.
+Imagine how incongruous the \emph{New York Times} article about suits
+would sound if you read it in a blog:
+
+\begin{quote}
+The urge to look corporate-- sleek, commanding, prudent, yet with just a
+touch of hubris on your well-cut sleeve-- is an unexpected development
+in a time of business disgrace.
+\end{quote}
+
+The problem with this article is not just that it originated in a PR
+firm. The whole tone is bogus. This is the tone of someone writing down
+to their audience.
+
+Whatever its flaws, the writing you find online is authentic. It's not
+mystery meat cooked up out of scraps of pitch letters and press
+releases, and pressed into molds of zippy journalese. It's people
+writing what they think.
+
+I didn't realize, till there was an alternative, just how artificial
+most of the writing in the mainstream media was. I'm not saying I used
+to believe what I read in \emph{Time} and \emph{Newsweek}. Since high
+school, at least, I've thought of magazines like that more as guides to
+what ordinary people were being \href{say.html}{told} to think than as
+sources of information. But I didn't realize till the last few years
+that writing for publication didn't have to mean writing that way. I
+didn't realize you could write as candidly and informally as you would
+if you were writing to a friend.
+
+Readers aren't the only ones who've noticed the change. The PR industry
+has too. A hilarious
+\href{http://www.prsa.org/_Publications/magazines/0802news1.asp}{article}
+on the site of the PR Society of America gets to the heart of the
+matter:
+
+\begin{quote}
+Bloggers are sensitive about becoming mouthpieces for other
+organizations and companies, which is the reason they began blogging in
+the first place.
+\end{quote}
+
+PR people fear bloggers for the same reason readers like them. And that
+means there may be a struggle ahead. As this new kind of writing draws
+readers away from traditional media, we should be prepared for whatever
+PR mutates into to compensate. When I think how hard PR firms work to
+score press hits in the traditional media, I can't imagine they'll work
+any less hard to feed stories to bloggers, if they can figure out how.
+
+
+\textbf{Thanks} to Ingrid Basset, Trevor Blackwell, Sarah Harlin,
+Jessica Livingston, Jackie McDonough, Robert Morris, and Aaron Swartz
+(who also found the PRSA article) for reading drafts of this.
+
+\textbf{Correction:} Earlier versions used a recent \emph{Business Week}
+article mentioning del.icio.us as an example of a press hit, but Joshua
+Schachter tells me it was spontaneous.
+\chapter{Hiring is Obsolete}
+
+\href{https://s.turbifycdn.com/aah/paulgraham/hiring-is-obsolete-11.gif}{\pandocbounded{\includegraphics[keepaspectratio]{../../images/hiring-is-obsolete-12.jpg}}}
+
+May 2005
+
+\emph{(This essay is derived from a talk at the Berkeley CSUA.)}
+
+The three big powers on the Internet now are Yahoo, Google, and
+Microsoft. Average age of their founders: 24. So it is pretty well
+established now that grad students can start successful companies. And
+if grad students can do it, why not undergrads?
+
+Like everything else in technology, the cost of starting a startup has
+decreased dramatically. Now it's so low that it has disappeared into the
+noise. The main cost of starting a Web-based startup is food and rent.
+Which means it doesn't cost much more to start a company than to be a
+total slacker. You can probably start a startup on ten thousand dollars
+of seed funding, if you're prepared to live on ramen.
+
+The less it costs to start a company, the less you need the permission
+of investors to do it. So a lot of people will be able to start
+companies now who never could have before.
+
+The most interesting subset may be those in their early twenties. I'm
+not so excited about founders who have everything investors want except
+intelligence, or everything except energy. The most promising group to
+be liberated by the new, lower threshold are those who have everything
+investors want except experience.
+
+\textbf{Market Rate}
+
+I once claimed that \href{nerds.html}{nerds} were unpopular in secondary
+school mainly because they had better things to do than work full-time
+at being popular. Some said I was just telling people what they wanted
+to hear. Well, I'm now about to do that in a spectacular way: I think
+undergraduates are undervalued.
+
+Or more precisely, I think few realize the huge spread in the value of
+20 year olds. Some, it's true, are not very capable. But others are more
+capable than all but a handful of 30 year olds. \footnote{The average B-17 pilot in World War II was in his early
+twenties. (Thanks to Tad Marko for pointing this out.)}
+
+Till now the problem has always been that it's difficult to pick them
+out. Every VC in the world, if they could go back in time, would try to
+invest in Microsoft. But which would have then? How many would have
+understood that this particular 19 year old was Bill Gates?
+
+It's hard to judge the young because (a) they change rapidly, (b) there
+is great variation between them, and (c) they're individually
+inconsistent. That last one is a big problem. When you're young, you
+occasionally say and do stupid things even when you're smart. So if the
+algorithm is to filter out people who say stupid things, as many
+investors and employers unconsciously do, you're going to get a lot of
+false positives.
+
+Most organizations who hire people right out of college are only aware
+of the average value of 22 year olds, which is not that high. And so the
+idea for most of the twentieth century was that everyone had to begin as
+a trainee in some
+\href{http://slashdot.org/comments.pl?sid=158756&cid=13299057}{entry-level}
+job. Organizations realized there was a lot of variation in the incoming
+stream, but instead of pursuing this thought they tended to suppress it,
+in the belief that it was good for even the most promising kids to start
+at the bottom, so they didn't get swelled heads.
+
+The most productive young people will \emph{always} be undervalued by
+large organizations, because the young have no performance to measure
+yet, and any error in guessing their ability will tend toward the mean.
+
+What's an especially productive 22 year old to do? One thing you can do
+is go over the heads of organizations, directly to the users. Any
+company that hires you is, economically, acting as a proxy for the
+customer. The rate at which they value you (though they may not
+consciously realize it) is an attempt to guess your value to the user.
+But there's a way to appeal their judgement. If you want, you can opt to
+be valued directly by users, by starting your own company.
+
+The market is a lot more discerning than any employer. And it is
+completely non-discriminatory. On the Internet, nobody knows you're a
+dog. And more to the point, nobody knows you're 22. All users care about
+is whether your site or software gives them what they want. They don't
+care if the person behind it is a high school kid.
+
+If you're really productive, why not make employers pay market rate for
+you? Why go work as an ordinary employee for a big company, when you
+could start a startup and make them buy it to get you?
+
+When most people hear the word ``startup,'' they think of the famous
+ones that have gone public. But most startups that succeed do it by
+getting bought. And usually the acquirer doesn't just want the
+technology, but the people who created it as well.
+
+Often big companies buy startups before they're profitable. Obviously in
+such cases they're not after revenues. What they want is the development
+team and the software they've built so far. When a startup gets bought
+for 2 or 3 million six months in, it's really more of a hiring bonus
+than an acquisition.
+
+I think this sort of thing will happen more and more, and that it will
+be better for everyone. It's obviously better for the people who start
+the startup, because they get a big chunk of money up front. But I think
+it will be better for the acquirers too. The central problem in big
+companies, and the main reason they're so much less productive than
+small companies, is the difficulty of valuing each person's work. Buying
+larval startups solves that problem for them: the acquirer doesn't pay
+till the developers have proven themselves. Acquirers are protected on
+the downside, but still get most of the upside.
+
+\textbf{Product Development}
+
+Buying startups also solves another problem afflicting big companies:
+they can't do product development. Big companies are good at extracting
+the value from existing products, but bad at creating new ones.
+
+Why? It's worth studying this phenomenon in detail, because this is the
+raison d'etre of startups.
+
+To start with, most big companies have some kind of turf to protect, and
+this tends to warp their development decisions. For example,
+\href{road.html}{Web-based} applications are hot now, but within
+Microsoft there must be a lot of ambivalence about them, because the
+very idea of Web-based software threatens the desktop. So any Web-based
+application that Microsoft ends up with, will probably, like Hotmail, be
+something developed outside the company.
+
+Another reason big companies are bad at developing new products is that
+the kind of people who do that tend not to have much power in big
+companies (unless they happen to be the CEO). Disruptive technologies
+are developed by disruptive people. And they either don't work for the
+big company, or have been outmaneuvered by yes-men and have
+comparatively little influence.
+
+Big companies also lose because they usually only build one of each
+thing. When you only have one Web browser, you can't do anything really
+risky with it. If ten different startups design ten different Web
+browsers and you take the best, you'll probably get something better.
+
+The more general version of this problem is that there are too many new
+ideas for companies to explore them all. There might be 500 startups
+right now who think they're making something Microsoft might buy. Even
+Microsoft probably couldn't manage 500 development projects in-house.
+
+Big companies also don't pay people the right way. People developing a
+new product at a big company get paid roughly the same whether it
+succeeds or fails. People at a startup expect to get rich if the product
+succeeds, and get nothing if it fails. \footnote{If a company tried to pay employees this way, they'd be called
+unfair. And yet when they buy some startups and not others, no one
+thinks of calling that unfair.} So
+naturally the people at the startup work a lot harder.
+
+The mere bigness of big companies is an obstacle. In startups,
+developers are often forced to talk directly to users, whether they want
+to or not, because there is no one else to do sales and support. It's
+painful doing sales, but you learn much more from trying to sell people
+something than reading what they said in focus groups.
+
+And then of course, big companies are bad at product development because
+they're bad at everything. Everything happens slower in big companies
+than small ones, and product development is something that has to happen
+fast, because you have to go through a lot of iterations to get
+something good.
+
+\textbf{Trend}
+
+I think the trend of big companies buying startups will only accelerate.
+One of the biggest remaining obstacles is pride. Most companies, at
+least unconsciously, feel they ought to be able to develop stuff in
+house, and that buying startups is to some degree an admission of
+failure. And so, as people generally do with admissions of failure, they
+put it off for as long as possible. That makes the acquisition very
+expensive when it finally happens.
+
+What companies should do is go out and discover startups when they're
+young, before VCs have puffed them up into something that costs hundreds
+of millions to acquire. Much of what VCs add, the acquirer doesn't need
+anyway.
+
+Why don't acquirers try to predict the companies they're going to have
+to buy for hundreds of millions, and grab them early for a tenth or a
+twentieth of that? Because they can't predict the winners in advance? If
+they're only paying a twentieth as much, they only have to predict a
+twentieth as well. Surely they can manage that.
+
+I think companies that acquire technology will gradually learn to go
+after earlier stage startups. They won't necessarily buy them outright.
+The solution may be some hybrid of investment and acquisition: for
+example, to buy a chunk of the company and get an option to buy the rest
+later.
+
+When companies buy startups, they're effectively fusing recruiting and
+product development. And I think that's more efficient than doing the
+two separately, because you always get people who are really committed
+to what they're working on.
+
+Plus this method yields teams of developers who already work well
+together. Any conflicts between them have been ironed out under the very
+hot iron of running a startup. By the time the acquirer gets them,
+they're finishing one another's sentences. That's valuable in software,
+because so many bugs occur at the boundaries between different people's
+code.
+
+\textbf{Investors}
+
+The increasing cheapness of starting a company doesn't just give hackers
+more power relative to employers. It also gives them more power relative
+to investors.
+
+The conventional wisdom among VCs is that hackers shouldn't be allowed
+to run their own companies. The founders are supposed to accept MBAs as
+their bosses, and themselves take on some title like Chief Technical
+Officer. There may be cases where this is a good idea. But I think
+founders will increasingly be able to push back in the matter of
+control, because they just don't need the investors' money as much as
+they used to.
+
+Startups are a comparatively new phenomenon. Fairchild Semiconductor is
+considered the first VC-backed startup, and they were founded in 1959,
+less than fifty years ago. Measured on the time scale of social change,
+what we have now is pre-beta. So we shouldn't assume the way startups
+work now is the way they have to work.
+
+Fairchild needed a lot of money to get started. They had to build actual
+factories. What does the first round of venture funding for a Web-based
+startup get spent on today? More money can't get software written
+faster; it isn't needed for facilities, because those can now be quite
+cheap; all money can really buy you is sales and marketing. A sales
+force is worth something, I'll admit. But marketing is increasingly
+irrelevant. On the Internet, anything genuinely good will spread by word
+of mouth.
+
+Investors' power comes from money. When startups need less money,
+investors have less power over them. So future founders may not have to
+accept new CEOs if they don't want them. The VCs will have to be dragged
+kicking and screaming down this road, but like many things people have
+to be dragged kicking and screaming toward, it may actually be good for
+them.
+
+Google is a sign of the way things are going. As a condition of funding,
+their investors insisted they hire someone old and experienced as CEO.
+But from what I've heard the founders didn't just give in and take
+whoever the VCs wanted. They delayed for an entire year, and when they
+did finally take a CEO, they chose a guy with a PhD in computer science.
+
+It sounds to me as if the founders are still the most powerful people in
+the company, and judging by Google's performance, their youth and
+inexperience doesn't seem to have hurt them. Indeed, I suspect Google
+has done better than they would have if the founders had given the VCs
+what they wanted, when they wanted it, and let some MBA take over as
+soon as they got their first round of funding.
+
+I'm not claiming the business guys installed by VCs have no value.
+Certainly they have. But they don't need to become the founders' bosses,
+which is what that title CEO means. I predict that in the future the
+executives installed by VCs will increasingly be COOs rather than CEOs.
+The founders will run engineering directly, and the rest of the company
+through the COO.
+
+\textbf{The Open Cage}
+
+With both employers and investors, the balance of power is slowly
+shifting towards the young. And yet they seem the last to realize it.
+Only the most ambitious undergrads even consider starting their own
+company when they graduate. Most just want to get a job.
+
+Maybe this is as it should be. Maybe if the idea of starting a startup
+is intimidating, you filter out the uncommitted. But I suspect the
+filter is set a little too high. I think there are people who could, if
+they tried, start successful startups, and who instead let themselves be
+swept into the intake ducts of big companies.
+
+Have you ever noticed that when animals are let out of cages, they don't
+always realize at first that the door's open? Often they have to be
+poked with a stick to get them out. Something similar happened with
+blogs. People could have been publishing online in 1995, and yet
+blogging has only really taken off in the last couple years. In 1995 we
+thought only professional writers were entitled to publish their ideas,
+and that anyone else who did was a crank. Now publishing online is
+becoming so popular that everyone wants to do it, even print
+journalists. But blogging has not taken off recently because of any
+technical innovation; it just took eight years for everyone to realize
+the cage was open.
+
+I think most undergrads don't realize yet that the economic cage is
+open. A lot have been told by their parents that the route to success is
+to get a good job. This was true when their parents were in college, but
+it's less true now. The route to success is to build something valuable,
+and you don't have to be working for an existing company to do that.
+Indeed, you can often do it better if you're not.
+
+When I talk to undergrads, what surprises me most about them is how
+conservative they are. Not politically, of course. I mean they don't
+seem to want to take risks. This is a mistake, because the younger you
+are, the more risk you can take.
+
+\textbf{Risk}
+
+Risk and reward are always proportionate. For example, stocks are
+riskier than bonds, and over time always have greater returns. So why
+does anyone invest in bonds? The catch is that phrase ``over time.''
+Stocks will generate greater returns over thirty years, but they might
+lose value from year to year. So what you should invest in depends on
+how soon you need the money. If you're young, you should take the
+riskiest investments you can find.
+
+All this talk about investing may seem very theoretical. Most undergrads
+probably have more debts than assets. They may feel they have nothing to
+invest. But that's not true: they have their time to invest, and the
+same rule about risk applies there. Your early twenties are exactly the
+time to take insane career risks.
+
+The reason risk is always proportionate to reward is that market forces
+make it so. People will pay extra for stability. So if you choose
+stability-- by buying bonds, or by going to work for a big company--
+it's going to cost you.
+
+Riskier career moves pay better on average, because there is less demand
+for them. Extreme choices like starting a startup are so frightening
+that most people won't even try. So you don't end up having as much
+competition as you might expect, considering the prizes at stake.
+
+The math is brutal. While perhaps 9 out of 10 startups fail, the one
+that succeeds will pay the founders more than 10 times what they would
+have made in an ordinary job. \footnote{The 1/10 success rate for startups is a bit of an urban legend.
+It's suspiciously neat. My guess is the odds are slightly worse.} That's the sense
+in which startups pay better ``on average.''
+
+Remember that. If you start a startup, you'll probably fail. Most
+startups fail. It's the nature of the business. But it's not necessarily
+a mistake to try something that has a 90\% chance of failing, if you can
+afford the risk. Failing at 40, when you have a family to support, could
+be serious. But if you fail at 22, so what? If you try to start a
+startup right out of college and it tanks, you'll end up at 23 broke and
+a lot smarter. Which, if you think about it, is roughly what you hope to
+get from a graduate program.
+
+Even if your startup does tank, you won't harm your prospects with
+employers. To make sure I asked some friends who work for big companies.
+I asked managers at Yahoo, Google, Amazon, Cisco and Microsoft how
+they'd feel about two candidates, both 24, with equal ability, one who'd
+tried to start a startup that tanked, and another who'd spent the two
+years since college working as a developer at a big company. Every one
+responded that they'd prefer the guy who'd tried to start his own
+company. Zod Nazem, who's in charge of engineering at Yahoo, said:
+
+\begin{quote}
+I actually put more value on the guy with the failed startup. And you
+can quote me!
+\end{quote}
+
+So there you have it. Want to get hired by Yahoo? Start your own
+company.
+
+\textbf{The Man is the Customer}
+
+If even big employers think highly of young hackers who start companies,
+why don't more do it? Why are undergrads so conservative? I think it's
+because they've spent so much time in institutions.
+
+The first twenty years of everyone's life consists of being piped from
+one institution to another. You probably didn't have much choice about
+the secondary schools you went to. And after high school it was probably
+understood that you were supposed to go to college. You may have had a
+few different colleges to choose between, but they were probably pretty
+similar. So by this point you've been riding on a subway line for twenty
+years, and the next stop seems to be a job.
+
+Actually college is where the line ends. Superficially, going to work
+for a company may feel like just the next in a series of institutions,
+but underneath, everything is different. The end of school is the
+fulcrum of your life, the point where you go from net consumer to net
+producer.
+
+The other big change is that now, you're steering. You can go anywhere
+you want. So it may be worth standing back and understanding what's
+going on, instead of just doing the default thing.
+
+All through college, and probably long before that, most undergrads have
+been thinking about what employers want. But what really matters is what
+customers want, because they're the ones who give employers the money to
+pay you.
+
+So instead of thinking about what employers want, you're probably better
+off thinking directly about what users want. To the extent there's any
+difference between the two, you can even use that to your advantage if
+you start a company of your own. For example, big companies like docile
+conformists. But this is merely an artifact of their bigness, not
+something customers need.
+
+\textbf{Grad School}
+
+I didn't consciously realize all this when I was graduating from
+college-- partly because I went straight to grad school. Grad school can
+be a pretty good deal, even if you think of one day starting a startup.
+You can start one when you're done, or even pull the ripcord part way
+through, like the founders of Yahoo and Google.
+
+Grad school makes a good launch pad for startups, because you're
+collected together with a lot of smart people, and you have bigger
+chunks of time to work on your own projects than an undergrad or
+corporate employee would. As long as you have a fairly tolerant advisor,
+you can take your time developing an idea before turning it into a
+company. David Filo and Jerry Yang started the Yahoo directory in
+February 1994 and were getting a million hits a day by the fall, but
+they didn't actually drop out of grad school and start a company till
+March 1995.
+
+You could also try the startup first, and if it doesn't work, then go to
+grad school. When startups tank they usually do it fairly quickly.
+Within a year you'll know if you're wasting your time.
+
+If it fails, that is. If it succeeds, you may have to delay grad school
+a little longer. But you'll have a much more enjoyable life once there
+than you would on a regular grad student stipend.
+
+\textbf{Experience}
+
+Another reason people in their early twenties don't start startups is
+that they feel they don't have enough experience. Most investors feel
+the same.
+
+I remember hearing a lot of that word ``experience'' when I was in
+college. What do people really mean by it? Obviously it's not the
+experience itself that's valuable, but something it changes in your
+brain. What's different about your brain after you have ``experience,''
+and can you make that change happen faster?
+
+I now have some data on this, and I can tell you what tends to be
+missing when people lack experience. I've said that every
+\href{start.html}{startup} needs three things: to start with good
+people, to make something users want, and not to spend too much money.
+It's the middle one you get wrong when you're inexperienced. There are
+plenty of undergrads with enough technical skill to write good software,
+and undergrads are not especially prone to waste money. If they get
+something wrong, it's usually not realizing they have to make something
+people \href{bronze.html}{want}.
+
+This is not exclusively a failing of the young. It's common for startup
+founders of all ages to build things no one wants.
+
+Fortunately, this flaw should be easy to fix. If undergrads were all bad
+programmers, the problem would be a lot harder. It can take years to
+learn how to program. But I don't think it takes years to learn how to
+make things people want. My hypothesis is that all you have to do is
+smack hackers on the side of the head and tell them: Wake up. Don't sit
+here making up a priori theories about what users need. Go find some
+users and see what they need.
+
+Most successful startups not only do something very specific, but solve
+a problem people already know they have.
+
+The big change that ``experience'' causes in your brain is learning that
+you need to solve people's problems. Once you grasp that, you advance
+quickly to the next step, which is figuring out what those problems are.
+And that takes some effort, because the way software actually gets used,
+especially by the people who pay the most for it, is not at all what you
+might expect. For example, the stated purpose of Powerpoint is to
+present ideas. Its real role is to overcome people's fear of public
+speaking. It allows you to give an impressive-looking talk about
+nothing, and it causes the audience to sit in a dark room looking at
+slides, instead of a bright one looking at you.
+
+This kind of thing is out there for anyone to see. The key is to know to
+look for it-- to realize that having an idea for a startup is not like
+having an idea for a class project. The goal in a startup is not to
+write a cool piece of software. It's to make something people want. And
+to do that you have to look at users-- forget about hacking, and just
+look at users. This can be quite a mental adjustment, because little if
+any of the software you write in school even has users.
+
+A few steps before a Rubik's Cube is solved, it still looks like a mess.
+I think there are a lot of undergrads whose brains are in a similar
+position: they're only a few steps away from being able to start
+successful startups, if they wanted to, but they don't realize it. They
+have more than enough technical skill. They just haven't realized yet
+that the way to create wealth is to make what users want, and that
+employers are just proxies for users in which risk is pooled.
+
+If you're young and smart, you don't need either of those. You don't
+need someone else to tell you what users want, because you can figure it
+out yourself. And you don't want to pool risk, because the younger you
+are, the more risk you should take.
+
+\textbf{A Public Service Message}
+
+I'd like to conclude with a joint message from me and your parents.
+Don't drop out of college to start a startup. There's no rush. There
+will be plenty of time to start companies after you graduate. In fact,
+it may be just as well to go work for an existing company for a couple
+years after you graduate, to learn how companies work.
+
+And yet, when I think about it, I can't imagine telling Bill Gates at 19
+that he should wait till he graduated to start a company. He'd have told
+me to get lost. And could I have honestly claimed that he was harming
+his future-- that he was learning less by working at ground zero of the
+microcomputer revolution than he would have if he'd been taking classes
+back at Harvard? No, probably not.
+
+And yes, while it is probably true that you'll learn some valuable
+things by going to work for an existing company for a couple years
+before starting your own, you'd learn a thing or two running your own
+company during that time too.
+
+The advice about going to work for someone else would get an even colder
+reception from the 19 year old Bill Gates. So I'm supposed to finish
+college, then go work for another company for two years, and then I can
+start my own? I have to wait till I'm 23? That's \emph{four years}.
+That's more than twenty percent of my life so far. Plus in four years it
+will be way too late to make money writing a Basic interpreter for the
+Altair.
+
+And he'd be right. The Apple II was launched just two years later. In
+fact, if Bill had finished college and gone to work for another company
+as we're suggesting, he might well have gone to work for Apple. And
+while that would probably have been better for all of us, it wouldn't
+have been better for him.
+
+So while I stand by our responsible advice to finish college and then go
+work for a while before starting a startup, I have to admit it's one of
+those things the old tell the young, but don't expect them to listen to.
+We say this sort of thing mainly so we can claim we warned you. So don't
+say I didn't warn you.
+
+
+\textbf{Thanks} to Jessica Livingston for reading drafts of this, to the
+friends I promised anonymity to for their opinions about hiring, and to
+Karen Nguyen and the Berkeley CSUA for organizing this talk.
+\chapter{What Business Can Learn from Open Source}
+
+August 2005
+
+\emph{(This essay is derived from a talk at Oscon 2005.)}
+
+Lately companies have been paying more attention to open source. Ten
+years ago there seemed a real danger Microsoft would extend its monopoly
+to servers. It seems safe to say now that open source has prevented
+that. A recent survey found 52\% of companies are replacing Windows
+servers with Linux servers. \footnote{Survey by Forrester Research reported in the cover story of
+Business Week, 31 Jan 2005. Apparently someone believed you have to
+replace the actual server in order to switch the operating system.}
+
+More significant, I think, is \emph{which} 52\% they are. At this point,
+anyone proposing to run Windows on servers should be prepared to explain
+what they know about servers that Google, Yahoo, and Amazon don't.
+
+But the biggest thing business has to learn from open source is not
+about Linux or Firefox, but about the forces that produced them.
+Ultimately these will affect a lot more than what software you use.
+
+We may be able to get a fix on these underlying forces by triangulating
+from open source and blogging. As you've probably noticed, they have a
+lot in common.
+
+Like open source, blogging is something people do themselves, for free,
+because they enjoy it. Like open source hackers, bloggers compete with
+people working for money, and often win. The method of ensuring quality
+is also the same: Darwinian. Companies ensure quality through rules to
+prevent employees from screwing up. But you don't need that when the
+audience can communicate with one another. People just produce whatever
+they want; the good stuff spreads, and the bad gets ignored. And in both
+cases, feedback from the audience improves the best work.
+
+Another thing blogging and open source have in common is the Web. People
+have always been willing to do great work for free, but before the Web
+it was harder to reach an audience or collaborate on projects.
+
+\textbf{Amateurs}
+
+I think the most important of the new principles business has to learn
+is that people work a lot harder on stuff they like. Well, that's news
+to no one. So how can I claim business has to learn it? When I say
+business doesn't know this, I mean the structure of business doesn't
+reflect it.
+
+Business still reflects an older model, exemplified by the French word
+for working: \emph{travailler}. It has an English cousin, travail, and
+what it means is torture. \footnote{It derives from the late Latin \emph{tripalium}, a torture
+device so called because it consisted of three stakes. I don't know how
+the stakes were used. ``Travel'' has the same root.}
+
+This turns out not to be the last word on work, however. As societies
+get richer, they learn something about work that's a lot like what they
+learn about diet. We know now that the healthiest diet is the one our
+peasant ancestors were forced to eat because they were poor. Like rich
+food, idleness only seems desirable when you don't get enough of it. I
+think we were designed to work, just as we were designed to eat a
+certain amount of fiber, and we feel bad if we don't.
+
+There's a name for people who work for the love of it: amateurs. The
+word now has such bad connotations that we forget its etymology, though
+it's staring us in the face. ``Amateur'' was originally rather a
+complimentary word. But the thing to be in the twentieth century was
+professional, which amateurs, by definition, are not.
+
+That's why the business world was so surprised by one lesson from open
+source: that people working for love often surpass those working for
+money. Users don't switch from Explorer to Firefox because they want to
+hack the source. They switch because it's a better browser.
+
+It's not that Microsoft isn't trying. They know controlling the browser
+is one of the keys to retaining their monopoly. The problem is the same
+they face in operating systems: they can't pay people enough to build
+something better than a group of inspired hackers will build for free.
+
+I suspect professionalism was always overrated-- not just in the literal
+sense of working for money, but also connotations like formality and
+detachment. Inconceivable as it would have seemed in, say, 1970, I think
+professionalism was largely a fashion, driven by conditions that
+happened to exist in the twentieth century.
+
+One of the most powerful of those was the existence of ``channels.''
+Revealingly, the same term was used for both products and information:
+there were distribution channels, and TV and radio channels.
+
+It was the narrowness of such channels that made professionals seem so
+superior to amateurs. There were only a few jobs as professional
+journalists, for example, so competition ensured the average journalist
+was fairly good. Whereas anyone can express opinions about current
+events in a bar. And so the average person expressing his opinions in a
+bar sounds like an idiot compared to a journalist writing about the
+subject.
+
+On the Web, the barrier for publishing your ideas is even lower. You
+don't have to buy a drink, and they even let kids in. Millions of people
+are publishing online, and the average level of what they're writing, as
+you might expect, is not very good. This has led some in the media to
+conclude that blogs don't present much of a threat-- that blogs are just
+a fad.
+
+Actually, the fad is the word ``blog,'' at least the way the print media
+now use it. What they mean by ``blogger'' is not someone who publishes
+in a weblog format, but anyone who publishes online. That's going to
+become a problem as the Web becomes the default medium for publication.
+So I'd like to suggest an alternative word for someone who publishes
+online. How about ``writer?''
+
+Those in the print media who dismiss the writing online because of its
+low average quality are missing an important point: no one reads the
+\emph{average} blog. In the old world of channels, it meant something to
+talk about average quality, because that's what you were getting whether
+you liked it or not. But now you can read any writer you want. So the
+average quality of writing online isn't what the print media are
+competing against. They're competing against the best writing online.
+And, like Microsoft, they're losing.
+
+I know that from my own experience as a reader. Though most print
+publications are online, I probably read two or three articles on
+individual people's sites for every one I read on the site of a
+newspaper or magazine.
+
+And when I read, say, New York Times stories, I never reach them through
+the Times front page. Most I find through aggregators like Google News
+or Slashdot or Delicious. Aggregators show how much
+\href{http://reddit.com}{better} you can do than the channel. The New
+York Times front page is a list of articles written by people who work
+for the New York Times. Delicious is a list of articles that are
+interesting. And it's only now that you can see the two side by side
+that you notice how little overlap there is.
+
+Most articles in the print media are boring. For example, the president
+notices that a majority of voters now think invading Iraq was a mistake,
+so he makes an address to the nation to drum up support. Where is the
+man bites dog in that? I didn't hear the speech, but I could probably
+tell you exactly what he said. A speech like that is, in the most
+literal sense, not news: there is nothing \emph{new} in it.
+\footnote{It would be much bigger news, in that sense, if the president
+faced unscripted questions by giving a press conference.}
+
+Nor is there anything new, except the names and places, in most ``news''
+about things going wrong. A child is abducted; there's a tornado; a
+ferry sinks; someone gets bitten by a shark; a small plane crashes. And
+what do you learn about the world from these stories? Absolutely
+nothing. They're outlying data points; what makes them gripping also
+makes them irrelevant.
+
+As in software, when professionals produce such crap, it's not
+surprising if amateurs can do better. Live by the channel, die by the
+channel: if you depend on an oligopoly, you sink into bad habits that
+are hard to overcome when you suddenly get competition.
+\footnote{One measure of the incompetence of newspapers is that so many
+still make you register to read stories. I have yet to find a blog that
+tried that.}
+
+\textbf{Workplaces}
+
+Another thing blogs and open source software have in common is that
+they're often made by people working at home. That may not seem
+surprising. But it should be. It's the architectural equivalent of a
+home-made aircraft shooting down an F-18. Companies spend millions to
+build office buildings for a single purpose: to be a place to work. And
+yet people working in their own homes, which aren't even designed to be
+workplaces, end up being more productive.
+
+This proves something a lot of us have suspected. The average office is
+a miserable place to get work done. And a lot of what makes offices bad
+are the very qualities we associate with professionalism. The sterility
+of offices is supposed to suggest efficiency. But suggesting efficiency
+is a different thing from actually being efficient.
+
+The atmosphere of the average workplace is to productivity what flames
+painted on the side of a car are to speed. And it's not just the way
+offices look that's bleak. The way people act is just as bad.
+
+Things are different in a startup. Often as not a startup begins in an
+apartment. Instead of matching beige cubicles they have an assortment of
+furniture they bought used. They work odd hours, wearing the most casual
+of clothing. They look at whatever they want online without worrying
+whether it's ``work safe.'' The cheery, bland language of the office is
+replaced by wicked humor. And you know what? The company at this stage
+is probably the most productive it's ever going to be.
+
+Maybe it's not a coincidence. Maybe some aspects of professionalism are
+actually a net lose.
+
+To me the most demoralizing aspect of the traditional office is that
+you're supposed to be there at certain times. There are usually a few
+people in a company who really have to, but the reason most employees
+work fixed hours is that the company can't measure their productivity.
+
+The basic idea behind office hours is that if you can't make people
+work, you can at least prevent them from having fun. If employees have
+to be in the building a certain number of hours a day, and are forbidden
+to do non-work things while there, then they must be working. In theory.
+In practice they spend a lot of their time in a no-man's land, where
+they're neither working nor having fun.
+
+If you could measure how much work people did, many companies wouldn't
+need any fixed workday. You could just say: this is what you have to do.
+Do it whenever you like, wherever you like. If your work requires you to
+talk to other people in the company, then you may need to be here a
+certain amount. Otherwise we don't care.
+
+That may seem utopian, but it's what we told people who came to work for
+our company. There were no fixed office hours. I never showed up before
+11 in the morning. But we weren't saying this to be benevolent. We were
+saying: if you work here we expect you to get a lot done. Don't try to
+fool us just by being here a lot.
+
+The problem with the facetime model is not just that it's demoralizing,
+but that the people pretending to work interrupt the ones actually
+working. I'm convinced the facetime model is the main reason large
+organizations have so many meetings. Per capita, large organizations
+accomplish very little. And yet all those people have to be on site at
+least eight hours a day. When so much time goes in one end and so little
+achievement comes out the other, something has to give. And meetings are
+the main mechanism for taking up the slack.
+
+For one year I worked at a regular nine to five job, and I remember well
+the strange, cozy feeling that comes over one during meetings. I was
+very aware, because of the novelty, that I was being paid for
+programming. It seemed just amazing, as if there was a machine on my
+desk that spat out a dollar bill every two minutes no matter what I did.
+Even while I was in the bathroom! But because the imaginary machine was
+always running, I felt I always ought to be working. And so meetings
+felt wonderfully relaxing. They counted as work, just like programming,
+but they were so much easier. All you had to do was sit and look
+attentive.
+
+Meetings are like an opiate with a network effect. So is email, on a
+smaller scale. And in addition to the direct cost in time, there's the
+cost in fragmentation-- breaking people's day up into bits too small to
+be useful.
+
+You can see how dependent you've become on something by removing it
+suddenly. So for big companies I propose the following experiment. Set
+aside one day where meetings are forbidden-- where everyone has to sit
+at their desk all day and work without interruption on things they can
+do without talking to anyone else. Some amount of communication is
+necessary in most jobs, but I'm sure many employees could find eight
+hours worth of stuff they could do by themselves. You could call it
+``Work Day.''
+
+The other problem with pretend work is that it often looks better than
+real work. When I'm writing or hacking I spend as much time just
+thinking as I do actually typing. Half the time I'm sitting drinking a
+cup of tea, or walking around the neighborhood. This is a critical
+phase-- this is where ideas come from-- and yet I'd feel guilty doing
+this in most offices, with everyone else looking busy.
+
+It's hard to see how bad some practice is till you have something to
+compare it to. And that's one reason open source, and even blogging in
+some cases, are so important. They show us what real work looks like.
+
+We're funding eight new startups at the moment. A friend asked what they
+were doing for office space, and seemed surprised when I said we
+expected them to work out of whatever apartments they found to live in.
+But we didn't propose that to save money. We did it because we want
+their software to be good. Working in crappy informal spaces is one of
+the things startups do right without realizing it. As soon as you get
+into an office, work and life start to drift apart.
+
+That is one of the key tenets of professionalism. Work and life are
+supposed to be separate. But that part, I'm convinced, is a mistake.
+
+\textbf{Bottom-Up}
+
+The third big lesson we can learn from open source and blogging is that
+ideas can bubble up from the bottom, instead of flowing down from the
+top. Open source and blogging both work bottom-up: people make what they
+want, and the best stuff prevails.
+
+Does this sound familiar? It's the principle of a market economy.
+Ironically, though open source and blogs are done for free, those worlds
+resemble market economies, while most companies, for all their talk
+about the value of free markets, are run internally like communist
+states.
+
+There are two forces that together steer design: ideas about what to do
+next, and the enforcement of quality. In the channel era, both flowed
+down from the top. For example, newspaper editors assigned stories to
+reporters, then edited what they wrote.
+
+Open source and blogging show us things don't have to work that way.
+Ideas and even the enforcement of quality can flow bottom-up. And in
+both cases the results are not merely acceptable, but better. For
+example, open source software is more reliable precisely because it's
+open source; anyone can find mistakes.
+
+The same happens with writing. As we got close to publication, I found I
+was very worried about the essays in
+\href{http://www.amazon.com/exec/obidos/tg/detail/-/0596006624}{Hackers
+\& Painters} that hadn't been online. Once an essay has had a couple
+thousand page views I feel reasonably confident about it. But these had
+had literally orders of magnitude less scrutiny. It felt like releasing
+software without testing it.
+
+That's what all publishing used to be like. If you got ten people to
+read a manuscript, you were lucky. But I'd become so used to publishing
+online that the old method now seemed alarmingly unreliable, like
+navigating by dead reckoning once you'd gotten used to a GPS.
+
+The other thing I like about publishing online is that you can write
+what you want and publish when you want. Earlier this year I wrote
+\href{inequality.html}{something} that seemed suitable for a magazine,
+so I sent it to an editor I know. As I was waiting to hear back, I found
+to my surprise that I was hoping they'd reject it. Then I could put it
+online right away. If they accepted it, it wouldn't be read by anyone
+for months, and in the meantime I'd have to fight word-by-word to save
+it from being mangled by some twenty five year old copy editor.
+\footnote{They accepted the article, but I took so long to send them the
+final version that by the time I did the section of the magazine they'd
+accepted it for had disappeared in a reorganization.}
+
+Many employees would \emph{like} to build great things for the companies
+they work for, but more often than not management won't let them. How
+many of us have heard stories of employees going to management and
+saying, please let us build this thing to make money for you-- and the
+company saying no? The most famous example is probably Steve Wozniak,
+who originally wanted to build microcomputers for his then-employer, HP.
+And they turned him down. On the blunderometer, this episode ranks with
+IBM accepting a non-exclusive license for DOS. But I think this happens
+all the time. We just don't hear about it usually, because to prove
+yourself right you have to quit and start your own company, like Wozniak
+did.
+
+\textbf{Startups}
+
+So these, I think, are the three big lessons open source and blogging
+have to teach business: (1) that people work harder on stuff they like,
+(2) that the standard office environment is very unproductive, and (3)
+that bottom-up often works better than top-down.
+
+I can imagine managers at this point saying: what is this guy talking
+about? What good does it do me to know that my programmers would be more
+productive working at home on their own projects? I need their asses in
+here working on version 3.2 of our software, or we're never going to
+make the release date.
+
+And it's true, the benefit that specific manager could derive from the
+forces I've described is near zero. When I say business can learn from
+open source, I don't mean any specific business can. I mean business can
+learn about new conditions the same way a gene pool does. I'm not
+claiming companies can get smarter, just that dumb ones will die.
+
+So what will business look like when it has assimilated the lessons of
+open source and blogging? I think the big obstacle preventing us from
+seeing the future of business is the assumption that people working for
+you have to be employees. But think about what's going on underneath:
+the company has some money, and they pay it to the employee in the hope
+that he'll make something worth more than they paid him. Well, there are
+other ways to arrange that relationship. Instead of paying the guy money
+as a salary, why not give it to him as investment? Then instead of
+coming to your office to work on your projects, he can work wherever he
+wants on projects of his own.
+
+Because few of us know any alternative, we have no idea how much better
+we could do than the traditional employer-employee relationship. Such
+customs evolve with glacial slowness. Our employer-employee relationship
+still retains a big chunk of master-servant DNA. \footnote{The word ``boss'' is derived from the Dutch \emph{baas}, meaning
+``master.''}
+
+I dislike being on either end of it. I'll work my ass off for a
+customer, but I resent being told what to do by a boss. And being a boss
+is also horribly frustrating; half the time it's easier just to do stuff
+yourself than to get someone else to do it for you. I'd rather do almost
+anything than give or receive a performance review.
+
+On top of its unpromising origins, employment has accumulated a lot of
+cruft over the years. The list of what you can't ask in job interviews
+is now so long that for convenience I assume it's infinite. Within the
+office you now have to walk on eggshells lest anyone
+\href{say.html}{say} or do something that makes the company prey to a
+lawsuit. And God help you if you fire anyone.
+
+Nothing shows more clearly that employment is not an ordinary economic
+relationship than companies being sued for firing people. In any purely
+economic relationship you're free to do what you want. If you want to
+stop buying steel pipe from one supplier and start buying it from
+another, you don't have to explain why. No one can accuse you of
+\emph{unjustly} switching pipe suppliers. Justice implies some kind of
+paternal obligation that isn't there in transactions between equals.
+
+Most of the legal restrictions on employers are intended to protect
+employees. But you can't have action without an equal and opposite
+reaction. You can't expect employers to have some kind of paternal
+responsibility toward employees without putting employees in the
+position of children. And that seems a bad road to go down.
+
+Next time you're in a moderately large city, drop by the main post
+office and watch the body language of the people working there. They
+have the same sullen resentment as children made to do something they
+don't want to. Their union has exacted pay increases and work
+restrictions that would have been the envy of previous generations of
+postal workers, and yet they don't seem any happier for it. It's
+demoralizing to be on the receiving end of a paternalistic relationship,
+no matter how cozy the terms. Just ask any teenager.
+
+I see the disadvantages of the employer-employee relationship because
+I've been on both sides of a better one: the investor-founder
+relationship. I wouldn't claim it's painless. When I was running a
+startup, the thought of our investors used to keep me up at night. And
+now that I'm an \href{http://ycombinator.com}{investor}, the thought of
+our startups keeps me up at night. All the pain of whatever problem
+you're trying to solve is still there. But the pain hurts less when it
+isn't mixed with resentment.
+
+I had the misfortune to participate in what amounted to a controlled
+experiment to prove that. After Yahoo bought our startup I went to work
+for them. I was doing exactly the same work, except with bosses. And to
+my horror I started acting like a child. The situation pushed buttons
+I'd forgotten I had.
+
+The big advantage of investment over employment, as the examples of open
+source and blogging suggest, is that people working on projects of their
+own are enormously more productive. And a \href{start.html}{startup} is
+a project of one's own in two senses, both of them important: it's
+creatively one's own, and also economically ones's own.
+
+Google is a rare example of a big company in tune with the forces I've
+described. They've tried hard to make their offices less sterile than
+the usual cube farm. They give employees who do great work large grants
+of stock to simulate the rewards of a startup. They even let hackers
+spend 20\% of their time on their own projects.
+
+Why not let people spend 100\% of their time on their own projects, and
+instead of trying to approximate the value of what they create, give
+them the actual market value? Impossible? That is in fact what venture
+capitalists do.
+
+So am I claiming that no one is going to be an employee anymore-- that
+everyone should go and start a startup? Of course not. But more people
+could do it than do it now. At the moment, even the smartest students
+leave school thinking they have to get a \href{hiring.html}{job}.
+Actually what they need to do is make something valuable. A job is one
+way to do that, but the more ambitious ones will ordinarily be better
+off taking money from an investor than an employer.
+
+Hackers tend to think business is for MBAs. But business administration
+is not what you're doing in a startup. What you're doing is business
+\emph{creation}. And the first phase of that is mostly product
+creation-- that is, hacking. That's the hard part. It's a lot harder to
+create something people love than to take something people love and
+figure out how to make money from it.
+
+Another thing that keeps people away from starting startups is the risk.
+Someone with kids and a mortgage should think twice before doing it. But
+most young hackers have neither.
+
+And as the example of open source and blogging suggests, you'll enjoy it
+more, even if you fail. You'll be working on your own thing, instead of
+going to some office and doing what you're told. There may be more pain
+in your own company, but it won't hurt as much.
+
+That may be the greatest effect, in the long run, of the forces
+underlying open source and blogging: finally ditching the old
+paternalistic employer-employee relationship, and replacing it with a
+purely economic one, between equals.
+
+
+\textbf{Thanks} to Sarah Harlin, Jessica Livingston, and Robert Morris
+for reading drafts of this.
+\chapter{After the Ladder}
+
+August 2005
+
+Thirty years ago, one was supposed to work one's way up the corporate
+ladder. That's less the rule now. Our generation wants to get paid up
+front. Instead of developing a product for some big company in the
+expectation of getting job security in return, we develop the product
+ourselves, in a startup, and sell it to the big company. At the very
+least we want options.
+
+Among other things, this shift has created the appearance of a rapid
+increase in economic inequality. But really the two cases are not as
+different as they look in economic statistics.
+
+Economic statistics are misleading because they ignore the value of safe
+jobs. An easy job from which one can't be fired is worth money;
+exchanging the two is one of the commonest forms of corruption. A
+sinecure is, in effect, an annuity. Except sinecures don't appear in
+economic statistics. If they did, it would be clear that in practice
+socialist countries have nontrivial disparities of wealth, because they
+usually have a class of powerful bureaucrats who are paid mostly by
+seniority and can never be fired.
+
+While not a sinecure, a position on the corporate ladder was genuinely
+valuable, because big companies tried not to fire people, and promoted
+from within based largely on seniority. A position on the corporate
+ladder had a value analogous to the ``goodwill'' that is a very real
+element in the valuation of companies. It meant one could expect future
+high paying jobs.
+
+One of main causes of the decay of the corporate ladder is the trend for
+takeovers that began in the 1980s. Why waste your time climbing a ladder
+that might disappear before you reach the top?
+
+And, by no coincidence, the corporate ladder was one of the reasons the
+early corporate raiders were so successful. It's not only economic
+statistics that ignore the value of safe jobs. Corporate balance sheets
+do too. One reason it was profitable to carve up 1980s companies and
+sell them for parts was that they hadn't formally acknowledged their
+implicit debt to employees who had done good work and expected to be
+rewarded with high-paying executive jobs when their time came.
+
+In the movie \emph{Wall Street}, Gordon Gekko ridicules a company
+overloaded with vice presidents. But the company may not be as corrupt
+as it seems; those VPs' cushy jobs were probably payment for work done
+earlier.
+
+I like the new model better. For one thing, it seems a bad plan to treat
+jobs as rewards. Plenty of good engineers got made into bad managers
+that way. And the old system meant people had to deal with a lot more
+corporate politics, in order to protect the work they'd invested in a
+position on the ladder.
+
+The big disadvantage of the new system is that it involves more
+\href{inequality.html}{risk}. If you develop ideas in a startup instead
+of within a big company, any number of random factors could sink you
+before you can finish. But maybe the older generation would laugh at me
+for saying that the way we do things is riskier. After all, projects
+within big companies were always getting cancelled as a result of
+arbitrary decisions from higher up. My father's entire industry (breeder
+reactors) disappeared that way.
+
+For better or worse, the idea of the corporate ladder is probably gone
+for good. The new model seems more liquid, and more efficient. But it is
+less of a change, financially, than one might think. Our fathers weren't
+\emph{that} stupid.
+\chapter{Inequality and Risk}
+
+August 2005
+
+\emph{(This essay is derived from a talk at Defcon 2005.)}
+
+Suppose you wanted to get rid of economic inequality. There are two ways
+to do it: give money to the poor, or take it away from the rich. But
+they amount to the same thing, because if you want to give money to the
+poor, you have to get it from somewhere. You can't get it from the poor,
+or they just end up where they started. You have to get it from the
+rich.
+
+There is of course a way to make the poor richer without simply shifting
+money from the rich. You could help the poor become more productive ---
+for example, by improving access to education. Instead of taking money
+from engineers and giving it to checkout clerks, you could enable people
+who would have become checkout clerks to become engineers.
+
+This is an excellent strategy for making the poor richer. But the
+evidence of the last 200 years shows that it doesn't reduce economic
+inequality, because it makes the rich richer too. If there are more
+engineers, then there are more opportunities to hire them and to sell
+them things. Henry Ford couldn't have made a fortune building cars in a
+society in which most people were still subsistence farmers; he would
+have had neither workers nor customers.
+
+If you want to reduce economic inequality instead of just improving the
+overall standard of living, it's not enough just to raise up the poor.
+What if one of your newly minted engineers gets ambitious and goes on to
+become another Bill Gates? Economic inequality will be as bad as ever.
+If you actually want to compress the gap between rich and poor, you have
+to push down on the top as well as pushing up on the bottom.
+
+How do you push down on the top? You could try to decrease the
+productivity of the people who make the most money: make the best
+surgeons operate with their left hands, force popular actors to overeat,
+and so on. But this approach is hard to implement. The only practical
+solution is to let people do the best work they can, and then (either by
+taxation or by limiting what they can charge) to confiscate whatever you
+deem to be surplus.
+
+So let's be clear what reducing economic inequality means. It is
+identical with taking money from the rich.
+
+When you transform a mathematical expression into another form, you
+often notice new things. So it is in this case. Taking money from the
+rich turns out to have consequences one might not foresee when one
+phrases the same idea in terms of ``reducing inequality.''
+
+The problem is, risk and reward have to be proportionate. A bet with
+only a 10\% chance of winning has to pay more than one with a 50\%
+chance of winning, or no one will take it. So if you lop off the top of
+the possible rewards, you thereby decrease people's willingness to take
+risks.
+
+Transposing into our original expression, we get: decreasing economic
+inequality means decreasing the risk people are willing to take.
+
+There are whole classes of risks that are no longer worth taking if the
+maximum return is decreased. One reason high tax rates are disastrous is
+that this class of risks includes starting new companies.
+
+\textbf{Investors}
+
+Startups are intrinsically risky. A startup is like a small boat in the
+open sea. One big wave and you're sunk. A competing product, a downturn
+in the economy, a delay in getting funding or regulatory approval, a
+patent suit, changing technical standards, the departure of a key
+employee, the loss of a big account --- any one of these can destroy you
+overnight. It seems only about 1 in 10 startups succeeds.
+\footnote{Success here is defined from the initial investors' point of
+view: either an IPO, or an acquisition for more than the valuation at
+the last round of funding. The conventional 1 in 10 success rate is
+suspiciously neat, but conversations with VCs suggest it's roughly
+correct for startups overall. Top VC firms expect to do better.}
+
+Our startup paid its first round of outside investors 36x. Which meant,
+with current US tax rates, that it made sense to invest in us if we had
+better than a 1 in 24 chance of succeeding. That sounds about right.
+That's probably roughly how we looked when we were a couple of nerds
+with no business experience operating out of an apartment.
+
+If that kind of risk doesn't pay, venture investing, as we know it,
+doesn't happen.
+
+That might be ok if there were other sources of capital for new
+companies. Why not just have the government, or some large
+almost-government organization like Fannie Mae, do the venture investing
+instead of private funds?
+
+I'll tell you why that wouldn't work. Because then you're asking
+government or almost-government employees to do the one thing they are
+least able to do: take risks.
+
+As anyone who has worked for the government knows, the important thing
+is not to make the right choices, but to make choices that can be
+justified later if they fail. If there is a safe option, that's the one
+a bureaucrat will choose. But that is exactly the wrong way to do
+venture investing. The nature of the business means that you want to
+make terribly risky choices, if the upside looks good enough.
+
+VCs are currently \href{venturecapital.html}{paid} in a way that makes
+them focus on the upside: they get a percentage of the fund's gains. And
+that helps overcome their understandable fear of investing in a company
+run by nerds who look like (and perhaps are) college students.
+
+If VCs weren't allowed to get rich, they'd behave like bureaucrats.
+Without hope of gain, they'd have only fear of loss. And so they'd make
+the wrong choices. They'd turn down the nerds in favor of the
+smooth-talking MBA in a suit, because that investment would be easier to
+justify later if it failed.
+
+\textbf{Founders}
+
+But even if you could somehow redesign venture funding to work without
+allowing VCs to become rich, there's another kind of investor you simply
+cannot replace: the startups' founders and early employees.
+
+What they invest is their time and ideas. But these are equivalent to
+money; the proof is that investors are willing (if forced) to treat them
+as interchangeable, granting the same status to ``sweat equity'' and the
+equity they've purchased with cash.
+
+The fact that you're investing time doesn't change the relationship
+between risk and reward. If you're going to invest your time in
+something with a small chance of succeeding, you'll only do it if there
+is a proportionately large payoff. \footnote{I'm not claiming founders sit down and calculate the expected
+after-tax return from a startup. They're motivated by examples of other
+people who did it. And those examples do reflect after-tax returns.} If large
+payoffs aren't allowed, you may as well play it safe.
+
+Like many startup founders, I did it to get rich. But not because I
+wanted to buy expensive things. What I wanted was security. I wanted to
+make enough money that I didn't have to worry about money. If I'd been
+forbidden to make enough from a startup to do this, I would have sought
+security by some other means: for example, by going to work for a big,
+stable organization from which it would be hard to get fired. Instead of
+busting my ass in a startup, I would have tried to get a nice,
+low-stress job at a big research lab, or tenure at a university.
+
+That's what everyone does in societies where risk isn't rewarded. If you
+can't ensure your own security, the next best thing is to make a nest
+for yourself in some large organization where your status depends mostly
+on \href{ladder.html}{seniority}. \footnote{Conjecture: The variation in wealth in a (non-corrupt) country
+or organization will be inversely proportional to the prevalence of
+systems of seniority. So if you suppress variation in wealth, seniority
+will become correspondingly more important. So far, I know of no
+counterexamples, though in very corrupt countries you may get both
+simultaneously. (Thanks to Daniel Sobral for pointing this out.)}
+
+Even if we could somehow replace investors, I don't see how we could
+replace founders. Investors mainly contribute money, which in principle
+is the same no matter what the source. But the founders contribute
+ideas. You can't replace those.
+
+Let's rehearse the chain of argument so far. I'm heading for a
+conclusion to which many readers will have to be dragged kicking and
+screaming, so I've tried to make each link unbreakable. Decreasing
+economic inequality means taking money from the rich. Since risk and
+reward are equivalent, decreasing potential rewards automatically
+decreases people's appetite for risk. Startups are intrinsically risky.
+Without the prospect of rewards proportionate to the risk, founders will
+not invest their time in a startup. Founders are irreplaceable. So
+eliminating economic inequality means eliminating startups.
+
+Economic inequality is not just a consequence of startups. It's the
+engine that drives them, in the same way a fall of water drives a water
+mill. People start startups in the hope of becoming much richer than
+they were before. And if your society tries to prevent anyone from being
+much richer than anyone else, it will also prevent one person from being
+much richer at t2 than t1.
+
+\textbf{Growth}
+
+This argument applies proportionately. It's not just that if you
+eliminate economic inequality, you get no startups. To the extent you
+reduce economic inequality, you decrease the number of startups.
+\footnote{In a country with a truly feudal economy, you might be able to
+redistribute wealth successfully, because there are no startups to kill.} Increase taxes, and willingness to take risks
+decreases in proportion.
+
+And that seems bad for everyone. New technology and new jobs both come
+disproportionately from new companies. Indeed, if you don't have
+startups, pretty soon you won't have established companies either, just
+as, if you stop having kids, pretty soon you won't have any adults.
+
+It sounds benevolent to say we ought to reduce economic inequality. When
+you phrase it that way, who can argue with you? \emph{Inequality} has to
+be bad, right? It sounds a good deal less benevolent to say we ought to
+reduce the rate at which new companies are founded. And yet the one
+implies the other.
+
+Indeed, it may be that reducing investors' appetite for risk doesn't
+merely kill off larval startups, but kills off the most promising ones
+especially. Startups yield faster growth at greater risk than
+established companies. Does this trend also hold among startups? That
+is, are the riskiest startups the ones that generate most growth if they
+succeed? I suspect the answer is yes. And that's a chilling thought,
+because it means that if you cut investors' appetite for risk, the most
+beneficial startups are the first to go.
+
+Not all rich people got that way from startups, of course. What if we
+let people get rich by starting startups, but taxed away all other
+surplus wealth? Wouldn't that at least decrease inequality?
+
+Less than you might think. If you made it so that people could only get
+rich by starting startups, people who wanted to get rich would all start
+startups. And that might be a great thing. But I don't think it would
+have much effect on the distribution of wealth. People who want to get
+rich will do whatever they have to. If startups are the only way to do
+it, you'll just get far more people starting startups. (If you write the
+laws very carefully, that is. More likely, you'll just get a lot of
+people doing things that can be made to look on paper like startups.)
+
+If we're determined to eliminate economic inequality, there is still one
+way out: we could say that we're willing to go ahead and do without
+startups. What would happen if we did?
+
+At a minimum, we'd have to accept lower rates of technological growth.
+If you believe that large, established companies could somehow be made
+to develop new technology as fast as startups, the ball is in your court
+to explain how. (If you can come up with a remotely plausible story, you
+can make a fortune writing business books and consulting for large
+companies.) \footnote{The speed at which startups develop new techology is the other
+reason they pay so well. As I explained in \href{wealth.html}{``How to
+Make Wealth''}, what you do in a startup is compress a lifetime's worth
+of work into a few years. It seems as dumb to discourage that as to
+discourage risk-taking.}
+
+Ok, so we get slower growth. Is that so bad? Well, one reason it's bad
+in practice is that other countries might not agree to slow down with
+us. If you're content to develop new technologies at a slower rate than
+the rest of the world, what happens is that you don't invent anything at
+all. Anything you might discover has already been invented elsewhere.
+And the only thing you can offer in return is raw materials and cheap
+labor. Once you sink that low, other countries can do whatever they like
+with you: install puppet governments, siphon off your best workers, use
+your women as prostitutes, dump their toxic waste on your territory ---
+all the things we do to poor countries now. The only defense is to
+isolate yourself, as communist countries did in the twentieth century.
+But the problem then is, you have to become a police state to enforce
+it.
+
+\textbf{Wealth and Power}
+
+I realize startups are not the main target of those who want to
+eliminate economic inequality. What they really dislike is the sort of
+wealth that becomes self-perpetuating through an alliance with power.
+For example, construction firms that fund politicians' campaigns in
+return for government contracts, or rich parents who get their children
+into good colleges by sending them to expensive schools designed for
+that purpose. But if you try to attack this type of wealth through
+\emph{economic} policy, it's hard to hit without destroying startups as
+collateral damage.
+
+The problem here is not wealth, but corruption. So why not go after
+corruption?
+
+We don't need to prevent people from being rich if we can prevent wealth
+from translating into power. And there has been progress on that front.
+Before he died of drink in 1925, Commodore Vanderbilt's wastrel grandson
+Reggie ran down pedestrians on five separate occasions, killing two of
+them. By 1969, when Ted Kennedy drove off the bridge at Chappaquiddick,
+the limit seemed to be down to one. Today it may well be zero. But
+what's changed is not variation in wealth. What's changed is the ability
+to translate wealth into power.
+
+How do you break the connection between wealth and power? Demand
+transparency. Watch closely how power is exercised, and demand an
+account of how decisions are made. Why aren't all police interrogations
+videotaped? Why did 36\% of Princeton's class of 2007 come from prep
+schools, when only 1.7\% of American kids attend them? Why did the US
+really invade Iraq? Why don't government officials disclose more about
+their finances, and why only during their term of office?
+
+A friend of mine who knows a lot about computer security says the single
+most important step is to log everything. Back when he was a kid trying
+to break into computers, what worried him most was the idea of leaving a
+trail. He was more inconvenienced by the need to avoid that than by any
+obstacle deliberately put in his path.
+
+Like all illicit connections, the connection between wealth and power
+flourishes in secret. Expose all transactions, and you will greatly
+reduce it. Log everything. That's a strategy that already seems to be
+working, and it doesn't have the side effect of making your whole
+country poor.
+
+I don't think many people realize there is a connection between economic
+inequality and risk. I didn't fully grasp it till recently. I'd known
+for years of course that if one didn't score in a startup, the other
+alternative was to get a cozy, tenured research job. But I didn't
+understand the equation governing my behavior. Likewise, it's obvious
+empirically that a country that doesn't let people get rich is headed
+for disaster, whether it's Diocletian's Rome or Harold Wilson's Britain.
+But I did not till recently understand the role risk played.
+
+If you try to attack wealth, you end up nailing risk as well, and with
+it growth. If we want a fairer world, I think we're better off attacking
+one step downstream, where wealth turns into power.
+
+
+\textbf{Thanks} to Chris Anderson, Trevor Blackwell, Dan Giffin, Jessica
+Livingston, and Evan Williams for reading drafts of this essay, and to
+Langley Steinert, Sangam Pant, and Mike Moritz for information about
+venture investing.
+\chapter{What I Did this Summer}
+
+\href{https://s.turbifycdn.com/aah/paulgraham/what-i-did-this-summer-11.gif}{\pandocbounded{\includegraphics[keepaspectratio]{../../images/what-i-did-this-summer-12.jpg}}}
+
+October 2005
+
+The first Summer Founders Program has just finished. We were surprised
+how well it went. Overall only about 10\% of startups succeed, but if I
+had to guess now, I'd predict three or four of the eight startups we
+funded will make it.
+
+Of the startups that needed further funding, I believe all have either
+closed a round or are likely to soon. Two have already turned down
+(lowball) acquisition offers.
+
+We would have been happy if just one of the eight seemed promising by
+the end of the summer. What's going on? Did some kind of anomaly make
+this summer's applicants especially good? We worry about that, but we
+can't think of one. We'll find out this winter.
+
+The whole summer was full of surprises. The best was that the
+\href{hiring.html}{hypothesis} we were testing seems to be correct.
+Young hackers can start viable companies. This is good news for two
+reasons: (a) it's an encouraging thought, and (b) it means that Y
+Combinator, which is predicated on the idea, is not hosed.
+
+\textbf{Age}
+
+More precisely, the hypothesis was that success in a startup depends
+mainly on how smart and energetic you are, and much less on how old you
+are or how much business experience you have. The results so far bear
+this out. The 2005 summer founders ranged in age from 18 to 28 (average
+23), and there is no correlation between their ages and how well they're
+doing.
+
+This should not really be surprising. Bill Gates and Michael Dell were
+both 19 when they started the companies that made them famous. Young
+founders are not a new phenomenon: the trend began as soon as computers
+got cheap enough for college kids to afford them.
+
+Another of our hypotheses was that you can start a startup on less money
+than most people think. Other investors were surprised to hear the most
+we gave any group was \$20,000. But we knew it was possible to start on
+that little because we started Viaweb on \$10,000.
+
+And so it proved this summer. Three months' funding is enough to get
+into second gear. We had a demo day for potential investors ten weeks
+in, and seven of the eight groups had a prototype ready by that time.
+One, \href{http://reddit.com}{Reddit}, had already launched, and were
+able to give a demo of their live site.
+
+A researcher who studied the SFP startups said the one thing they had in
+common was that they all worked ridiculously hard. People this age are
+commonly seen as lazy. I think in some cases it's not so much that they
+lack the appetite for work, but that the work they're offered is
+unappetizing.
+
+The experience of the SFP suggests that if you let motivated people do
+real work, they work hard, whatever their age. As one of the founders
+said ``I'd read that starting a startup consumed your life, but I had no
+idea what that meant until I did it.''
+
+I'd feel guilty if I were a boss making people work this hard. But we're
+not these people's bosses. They're working on their own projects. And
+what makes them work is not us but their competitors. Like good
+athletes, they don't work hard because the coach yells at them, but
+because they want to win.
+
+We have less power than bosses, and yet the founders work harder than
+employees. It seems like a win for everyone. The only catch is that we
+get on average only about 5-7\% of the upside, while an employer gets
+nearly all of it. (We're counting on it being 5-7\% of a much larger
+number.)
+
+As well as working hard, the groups all turned out to be extraordinarily
+responsible. I can't think of a time when one failed to do something
+they'd promised to, even by being late for an appointment. This is
+another lesson the world has yet to learn. One of the founders
+discovered that the hardest part of arranging a meeting with executives
+at a big cell phone carrier was getting a rental company to rent him a
+car, because he was too young.
+
+I think the problem here is much the same as with the apparent laziness
+of people this age. They seem lazy because the work they're given is
+pointless, and they act irresponsible because they're not given any
+power. Some of them, anyway. We only have a sample size of about twenty,
+but it seems so far that if you let people in their early twenties be
+their own bosses, they rise to the occasion.
+
+\textbf{Morale}
+
+The summer founders were as a rule very idealistic. They also wanted
+very much to get rich. These qualities might seem incompatible, but
+they're not. These guys want to get rich, but they want to do it by
+changing the world. They wouldn't (well, seven of the eight groups
+wouldn't) be interested in making money by speculating in stocks. They
+want to make something people use.
+
+I think this makes them more effective as founders. As hard as people
+will work for money, they'll work harder for a cause. And since success
+in a startup depends so much on motivation, the paradoxical result is
+that the people likely to make the most money are those who aren't in it
+just for the money.
+
+The founders of \href{http://kiko.com}{Kiko}, for example, are working
+on an Ajax calendar. They want to get rich, but they pay more attention
+to design than they would if that were their only motivation. You can
+tell just by looking at it.
+
+I never considered it till this summer, but this might be another reason
+startups run by hackers tend to do better than those run by MBAs.
+Perhaps it's not just that hackers understand technology better, but
+that they're driven by more powerful motivations. Microsoft, as I've
+said before, is a dangerously misleading example. Their mean corporate
+culture only works for monopolies. Google is a better model.
+
+Considering that the summer founders are the sharks in this ocean, we
+were surprised how frightened most of them were of competitors. But now
+that I think of it, we were just as frightened when we started Viaweb.
+For the first year, our initial reaction to news of a competitor was
+always: we're doomed. Just as a hypochondriac magnifies his symptoms
+till he's convinced he has some terrible disease, when you're not used
+to competitors you magnify them into monsters.
+
+Here's a handy rule for startups: competitors are rarely as dangerous as
+they seem. Most will self-destruct before you can destroy them. And it
+certainly doesn't matter how many of them there are, any more than it
+matters to the winner of a marathon how many runners are behind him.
+
+``It's a crowded market,'' I remember one founder saying worriedly.
+
+``Are you the current leader?'' I asked.
+
+``Yes.''
+
+``Is anyone able to develop software faster than you?''
+
+``Probably not.''
+
+``Well, if you're ahead now, and you're the fastest, then you'll stay
+ahead. What difference does it make how many others there are?''
+
+Another group was worried when they realized they had to rewrite their
+software from scratch. I told them it would be a bad sign if they
+didn't. The main function of your initial version is to be rewritten.
+
+That's why we advise groups to ignore issues like scalability,
+internationalization, and heavy-duty security at first. \footnote{By heavy-duty security I mean efforts to protect against truly
+determined attackers.
+
+The
+\href{https://sep.turbifycdn.com/ty/cdn/paulgraham/sfptable.jpg?t=1688221954&}{image}
+shows us, the 2005 summer founders, and Smartleaf co-founders Mark
+Nitzberg and Olin Shivers at the 30-foot table Kate Courteau designed
+for us. Photo by Alex Lewin.} I can
+imagine an advocate of ``best practices'' saying these ought to be
+considered from the start. And he'd be right, except that they interfere
+with the primary function of software in a startup: to be a vehicle for
+experimenting with its own design. Having to retrofit
+internationalization or scalability is a pain, certainly. The only
+bigger pain is not needing to, because your initial version was too big
+and rigid to evolve into something users wanted.
+
+I suspect this is another reason startups beat big companies. Startups
+can be irresponsible and release version 1s that are light enough to
+evolve. In big companies, all the pressure is in the direction of
+over-engineering.
+
+\textbf{What Got Learned}
+
+One thing we were curious about this summer was where these groups would
+need help. That turned out to vary a lot. Some we helped with technical
+advice-- for example, about how to set up an application to run on
+multiple servers. Most we helped with strategy questions, like what to
+patent, and what to charge for and what to give away. Nearly all wanted
+advice about dealing with future investors: how much money should they
+take and what kind of terms should they expect?
+
+However, all the groups quickly learned how to deal with stuff like
+patents and investors. These problems aren't intrinsically difficult,
+just unfamiliar.
+
+It was surprising-- slightly frightening even-- how fast they learned.
+The weekend before the demo day for investors, we had a practice session
+where all the groups gave their presentations. They were all terrible.
+We tried to explain how to make them better, but we didn't have much
+hope. So on demo day I told the assembled angels and VCs that these guys
+were hackers, not MBAs, and so while their software was good, we should
+not expect slick presentations from them.
+
+The groups then proceeded to give fabulously slick presentations. Gone
+were the mumbling recitations of lists of features. It was as if they'd
+spent the past week at acting school. I still don't know how they did
+it.
+
+Perhaps watching each others' presentations helped them see what they'd
+been doing wrong. Just as happens in college, the summer founders
+learned a lot from one another-- maybe more than they learned from us. A
+lot of the problems they face are the same, from dealing with investors
+to hacking Javascript.
+
+I don't want to give the impression there were no problems this summer.
+A lot went wrong, as usually happens with startups. One group got an
+``\href{http://www.ventureblog.com/articles/indiv/2003/000024.html}{exploding
+term-sheet}'' from some VCs. Pretty much all the groups who had dealings
+with big companies found that big companies do everything infinitely
+slowly. (This is to be expected. If big companies weren't incapable,
+there would be no room for startups to exist.) And of course there were
+the usual nightmares associated with servers.
+
+In short, the disasters this summer were just the usual childhood
+diseases. Some of this summer's eight startups will probably die
+eventually; it would be extraordinary if all eight succeeded. But what
+kills them will not be dramatic, external threats, but a mundane,
+internal one: not getting enough done.
+
+So far, though, the news is all good. In fact, we were surprised how
+much fun the summer was for us. The main reason was how much we liked
+the founders. They're so earnest and hard-working. They seem to like us
+too. And this illustrates another advantage of investing over hiring:
+our relationship with them is way better than it would be between a boss
+and an employee. Y Combinator ends up being more like an older brother
+than a parent.
+
+I was surprised how much time I spent making introductions. Fortunately
+I discovered that when a startup needed to talk to someone, I could
+usually get to the right person by at most one hop. I remember
+wondering, how did my friends get to be so eminent? and a second later
+realizing: shit, I'm forty.
+
+Another surprise was that the three-month batch format, which we were
+forced into by the constraints of the summer, turned out to be an
+advantage. When we started Y Combinator, we planned to invest the way
+other venture firms do: as proposals came in, we'd evaluate them and
+decide yes or no. The SFP was just an experiment to get things started.
+But it worked so well that we plan to do
+\href{http://ycombinator.com/funding.html}{all} our investing this way,
+one cycle in the summer and one in winter. It's more efficient for us,
+and better for the startups too.
+
+Several groups said our weekly dinners saved them from a common problem
+afflicting startups: working so hard that one has no social life. (I
+remember that part all too well.) This way, they were guaranteed a
+social event at least once a week.
+
+\textbf{Independence}
+
+I've heard Y Combinator described as an ``incubator.'' Actually we're
+the opposite: incubators exert more control than ordinary VCs, and we
+make a point of exerting less. Among other things, incubators usually
+make you work in their office-- that's where the word ``incubator''
+comes from. That seems the wrong model. If investors get too involved,
+they smother one of the most powerful forces in a startup: the feeling
+that it's your own company.
+
+Incubators were conspicuous failures during the Bubble. There's still
+debate about whether this was because of the Bubble, or because they're
+a bad idea. My vote is they're a bad idea. I think they fail because
+they select for the wrong people. When we were starting a startup, we
+would never have taken funding from an ``incubator.'' We can find office
+space, thanks; just give us the money. And people with that attitude are
+the ones likely to succeed in startups.
+
+Indeed, one quality all the founders shared this summer was a spirit of
+independence. I've been wondering about that. Are some people just a lot
+more independent than others, or would everyone be this way if they were
+allowed to?
+
+As with most nature/nurture questions, the answer is probably: some of
+each. But my main conclusion from the summer is that there's more
+environment in the mix than most people realize. I could see that from
+how the founders' attitudes \emph{changed} during the summer. Most were
+emerging from twenty or so years of being told what to do. They seemed a
+little surprised at having total freedom. But they grew into it really
+quickly; some of these guys now seem about four inches taller
+(metaphorically) than they did at the beginning of the summer.
+
+When we asked the summer founders what surprised them most about
+starting a company, one said ``the most shocking thing is that it
+worked.''
+
+It will take more experience to know for sure, but my guess is that a
+lot of hackers could do this-- that if you put people in a position of
+independence, they develop the qualities they need. Throw them off a
+cliff, and most will find on the way down that they have wings.
+
+The reason this is news to anyone is that the same forces work in the
+other direction too. Most hackers are employees, and this
+\href{http://software.ericsink.com/entries/No_Great_Hackers.html}{molds}
+you into someone to whom starting a startup seems impossible as surely
+as starting a startup molds you into someone who can handle it.
+
+If I'm right, ``hacker'' will mean something different in twenty years
+than it does now. Increasingly it will mean the people who run the
+company. Y Combinator is just accelerating a process that would have
+happened anyway. Power is shifting from the people who deal with money
+to the people who create technology, and if our experience this summer
+is any guide, this will be a good thing.
+
+
+\textbf{Thanks} to Sarah Harlin, Steve Huffman, Jessica Livingston, Zak
+Stone, and Aaron Swartz for reading drafts of this.
 
 \end{document}
