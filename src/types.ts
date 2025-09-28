@@ -3,8 +3,6 @@ export type Book = {
   slug: string;
   dir: string;
   essays: ProcessedEssay[];
-  coverTextColor: string;
-  coverBackgroundColor: string;
 };
 
 export type InputEssay = {

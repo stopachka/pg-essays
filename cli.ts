@@ -40,7 +40,7 @@ async function main() {
   const bookSlug = values.book;
   if (bookSlug) {
     console.log(`Build Book: ${bookSlug}`);
-    await handleCoverSlug(bookSlug);
+    await handleBookSlug(bookSlug);
     return;
   }
 

@@ -7,7 +7,7 @@ import { asBookLatex } from "./bookLatex";
 import { getInputEssays } from "./articleIndex";
 import { generateCover } from "./cover";
 
-const essaysToSkip = new Set(["prop62"]);
+const essaysToSkip = new Set(["prop62", "rootsoflisp"]);
 
 export async function getInputBooks(): Promise<Book[]> {
   const inputs = await getInputEssays();
@@ -15,13 +15,11 @@ export async function getInputBooks(): Promise<Book[]> {
 
   const allProcessed = await Promise.all(filtered.map(processEssay));
 
-  const full = {
+  const full: Book = {
     title: "Essays",
     essays: allProcessed,
     slug: "full",
     dir: "book/full",
-    coverTextColor: "white",
-    coverBackgroundColor: "red",
   };
 
   const lastSym = "__last";
@@ -53,8 +51,6 @@ export async function getInputBooks(): Promise<Book[]> {
         slug: `vol${volumeNum}`,
         dir: `book/vol${volumeNum}`,
         essays: essays,
-        coverTextColor: "white",
-        coverBackgroundColor: "red",
       };
       const newVols = [...vols, vol];
       return { vols: newVols, startIdx: cutIdx + 1 };

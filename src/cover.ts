@@ -44,6 +44,10 @@ export async function generateCover(outputPath: string, book: Book): Promise<voi
 }
 
 async function coverHTML(book: Book): Promise<string> {
+  const bgColor = "#040C27";
+  const textColor = "white";
+  const spineTextColor = "#FB651F";
+
   // Dimensions from Lulu
   const totalWidth = 1289.472;
   const height = 888;
@@ -66,8 +70,8 @@ async function coverHTML(book: Book): Promise<string> {
       height: ${height}px;
       display: flex;
       font-family: 'Baskerville', serif;
-      background-color: ${book.coverBackgroundColor};
-      color: ${book.coverTextColor};
+      background-color: ${bgColor};
+      color: ${textColor};
       position: relative;
     }
 
@@ -87,9 +91,8 @@ async function coverHTML(book: Book): Promise<string> {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: ${book.coverBackgroundColor};
-      border-left: 1px solid rgba(0,0,0,0.1);
-      border-right: 1px solid rgba(0,0,0,0.1);
+      background-color: ${bgColor};
+      color: ${spineTextColor};
     }
 
     .spine-text {
