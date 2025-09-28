@@ -14,15 +14,23 @@ sudo tlmgr install tocloft fancyhdr
 bun install
 ```
 
-## Preview an essay
+## Build an essay
 
 You can preview a particular essay with by asking for the essay's slug:
 
 ```bash
-bun run cli.ts --slug progbot
+bun run cli.ts --essay progbot
 ```
 
-## Build the books
+## Build a book
+
+Similarily, preview a book by it's slug
+
+```bash
+bun run cli.ts --book vol1
+```
+
+## Build all books
 
 Otherwise run the command as is and you'll generate a fresh copy of books.
 

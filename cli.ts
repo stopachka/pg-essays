@@ -1,5 +1,5 @@
 import { getInputEssays } from "./src/articleIndex";
-import { getInputBooks, processBook } from "./src/book";
+import { bookFiles, getInputBooks, processBook } from "./src/book";
 import { essayFiles, processEssay } from "./src/essay";
 import * as gen from "./src/gen";
 
@@ -15,10 +15,10 @@ async function main() {
   const { values } = parseArgs({
     args: Bun.argv,
     options: {
-      slug: {
+      essay: {
         type: "string",
       },
-      vol: {
+      book: {
         type: "string",
       },
     },
@@ -26,17 +26,17 @@ async function main() {
     allowPositionals: true,
   });
 
-  const slug = values.slug;
-  if (slug) {
-    console.log(`Build Essay: ${slug}`);
-    await handleEssaySlug(slug);
+  const essaySlug = values.essay;
+  if (essaySlug) {
+    console.log(`Build Essay: ${essaySlug}`);
+    await handleEssaySlug(essaySlug);
     return;
   }
 
-  const vol = values.vol;
-  if (vol) {
-    console.log(`Preview Book: ${vol}`);
-    await handleBookVol(vol);
+  const bookSlug = values.book;
+  if (bookSlug) {
+    console.log(`Preview Book: ${bookSlug}`);
+    await handleBookSlug(bookSlug);
     return;
   }
 
@@ -49,18 +49,19 @@ async function handleAllBooks() {
   console.log(`Processed: ${inputs.map((x) => x.slug).join(",")}`);
 }
 
-async function handleBookVol(vol: string) {
+async function handleBookSlug(slug: string) {
   const inputs = await getInputBooks();
-  const book = inputs.find((x) => x.slug == `vol${vol}`);
+  const book = inputs.find((x) => x.slug == slug);
   if (!book) {
-    throw new Error(`Could not find ${vol}`);
+    throw new Error(`Could not find ${slug}`);
   }
   await processBook(book);
+  await $`open ${gen.fullPath(book.dir, bookFiles.pdf)}`;
 }
 
 async function handleEssaySlug(slug: string) {
   const inputs = await getInputEssays();
-  const essay = inputs.find((x) => x.slug === "spam");
+  const essay = inputs.find((x) => x.slug === slug);
   if (!essay) {
     throw new Error(`Could not find ${slug}`);
   }
