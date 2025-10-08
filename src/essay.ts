@@ -46,7 +46,6 @@ export async function processEssay(essay: InputEssay): Promise<ProcessedEssay> {
 
 async function fetchOriginalHTML(essay: InputEssay): Promise<string> {
   if (gen.exists(essay.dir, essayFiles.initHTML)) {
-    console.log("[html] from cache", essay.slug);
     return gen.readText(essay.dir, essayFiles.initHTML);
   }
   console.log("[html] from fetch", essay.slug);

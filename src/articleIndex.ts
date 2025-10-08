@@ -5,7 +5,6 @@ import type { InputEssay } from "./types";
 
 export async function getInputEssays(): Promise<InputEssay[]> {
   if (gen.exists("articleIndex", "inputEssays.json")) {
-    console.log("[articles] from cache");
     const txt = gen.readText("articleIndex", "inputEssays.json");
     return JSON.parse(txt);
   }
@@ -14,11 +13,7 @@ export async function getInputEssays(): Promise<InputEssay[]> {
   const html = await res.text();
   const $ = load(html);
   const inputEssays = getEssays($);
-  gen.saveText(
-    "articleIndex",
-    "inputEssays.json",
-    JSON.stringify(inputEssays, null, 2)
-  );
+  gen.saveText("articleIndex", "inputEssays.json", JSON.stringify(inputEssays, null, 2));
   return inputEssays;
 }
 

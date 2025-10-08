@@ -25,6 +25,9 @@ async function main() {
       cover: {
         type: "string",
       },
+      count: {
+        type: "boolean",
+      },
     },
     strict: true,
     allowPositionals: true,
@@ -50,8 +53,22 @@ async function main() {
     await handleCoverSlug(coverSlug);
     return;
   }
-
+  const count = values.count;
+  if (count != undefined) {
+    console.log(`Counting pdf length`);
+    await handleCounts();
+    return;
+  }
   await handleAllBooks();
+}
+
+async function handleCounts() {
+  const inputs = await getInputBooks();
+  for (const book of inputs) {
+    console.log(`[${book.slug}]`);
+    await $`mdls -name kMDItemNumberOfPages -raw ${gen.fullPath(book.dir, bookFiles.pdf)}`;
+    console.log("\n");
+  }
 }
 
 async function handleAllBooks() {

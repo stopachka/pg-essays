@@ -25,8 +25,7 @@ const fontImageToText = {
   "five-questions-about-language-design-22.gif": "Pitfalls and Gotchas",
   "five-questions-about-language-design-19.gif": "Open Problems",
   "five-questions-about-language-design-20.gif": "Little-Known Secrets",
-  "five-questions-about-language-design-21.gif":
-    "Ideas Whose Time Has Returned",
+  "five-questions-about-language-design-21.gif": "Ideas Whose Time Has Returned",
 };
 
 const urlToFilename = (url: string): string => {
@@ -53,16 +52,12 @@ export async function localiseImages($html: CheerioAPI): Promise<CheerioAPI> {
 
         const res = await limitedFetch(remote);
         if (!res.ok) {
-          console.log("removing", remote, res.status);
           $html(node).remove();
           return;
         }
         const buf = Buffer.from(await res.arrayBuffer());
         const url = new URL(remote);
-        let extension = extensionFromResponse(
-          res.headers.get("content-type"),
-          url
-        );
+        let extension = extensionFromResponse(res.headers.get("content-type"), url);
 
         // Convert GIF to JPEG
         let finalBuf = buf;
@@ -78,9 +73,7 @@ export async function localiseImages($html: CheerioAPI): Promise<CheerioAPI> {
           await $`convert ${tempGifPath} ${tempJpgPath}`.quiet();
 
           // Read the converted JPEG
-          finalBuf = await Bun.file(tempJpgPath)
-            .arrayBuffer()
-            .then(Buffer.from);
+          finalBuf = await Bun.file(tempJpgPath).arrayBuffer().then(Buffer.from);
 
           // Clean up temp files
           await $`rm -f ${tempGifPath} ${tempJpgPath}`.quiet();
@@ -92,7 +85,7 @@ export async function localiseImages($html: CheerioAPI): Promise<CheerioAPI> {
         }
         // Use relative path from book directory to avoid overfull hbox in LaTeX
         node.attribs.src = `../../images/${filename}`;
-      })
+      }),
   );
 
   return $html;
@@ -122,9 +115,7 @@ const toLocalName = (url: URL, extension: string): string => {
   return `${base}${normalizedExtension}`;
 };
 
-const extensionFromContentType = (
-  contentType: string | null
-): string | null => {
+const extensionFromContentType = (contentType: string | null): string | null => {
   if (!contentType) {
     return null;
   }
@@ -140,15 +131,10 @@ const normalizeExtension = (extension: string): string => {
   if (!extension) {
     return ".bin";
   }
-  return extension.startsWith(".")
-    ? extension.toLowerCase()
-    : `.${extension.toLowerCase()}`;
+  return extension.startsWith(".") ? extension.toLowerCase() : `.${extension.toLowerCase()}`;
 };
 
-const extensionFromResponse = (
-  contentType: string | null,
-  url: URL
-): string => {
+const extensionFromResponse = (contentType: string | null, url: URL): string => {
   const fromContentType = extensionFromContentType(contentType);
   if (fromContentType) {
     return fromContentType;
