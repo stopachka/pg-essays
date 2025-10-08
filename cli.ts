@@ -94,7 +94,7 @@ async function handleEssaySlug(slug: string) {
 
   await latexToPDF(
     gen.fullPath(essay.dir, essayFiles.pdf),
-    asBookLatex({ title: essay.title, latexChapters: [gen.readText(essay.dir, essayFiles.xfTex)] })
+    asBookLatex({ title: essay.title, latexChapters: [gen.readText(essay.dir, essayFiles.xfTex)] }),
   );
 
   await $`open ${gen.fullPath(essay.dir, essayFiles.pdf)}`;

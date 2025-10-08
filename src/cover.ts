@@ -7,7 +7,7 @@ export type CoverType = "paperback" | "hardcover";
 export async function generateCover(
   outputPath: string,
   book: Book,
-  coverType: CoverType = "paperback"
+  coverType: CoverType = "paperback",
 ): Promise<void> {
   const browser = await puppeteer.launch({
     headless: true,
@@ -163,9 +163,8 @@ async function coverHTML(book: Book, coverType: CoverType): Promise<string> {
     .spine-author {
       writing-mode: vertical-rl;
       transform: rotate(180deg);
-      font-size: 18px;
-      margin-top: 30px;
-      opacity: 0.8;
+      font-size: 24px;
+      margin-top: 34px;
     }
 
     .front-cover {
@@ -207,7 +206,9 @@ async function coverHTML(book: Book, coverType: CoverType): Promise<string> {
       text-align: center;
       max-width: 80%;
     }
-    ${dimensions.hasFlaps ? `
+    ${
+      dimensions.hasFlaps
+        ? `
     .flap {
       width: ${flapWidth}px;
       height: ${height}px;
@@ -223,13 +224,19 @@ async function coverHTML(book: Book, coverType: CoverType): Promise<string> {
       line-height: 1.6;
       text-align: center;
       opacity: 0.7;
-    }` : ''}
+    }`
+        : ""
+    }
   </style>
 </head>
 <body>
-  ${dimensions.hasFlaps ? `<div class="flap">
+  ${
+    dimensions.hasFlaps
+      ? `<div class="flap">
     <div class="flap-text"></div>
-  </div>` : ''}
+  </div>`
+      : ""
+  }
 
   <div class="back-cover">
     <div class="back-description">
@@ -246,9 +253,13 @@ async function coverHTML(book: Book, coverType: CoverType): Promise<string> {
     <div class="author">Paul Graham</div>
   </div>
 
-  ${dimensions.hasFlaps ? `<div class="flap">
+  ${
+    dimensions.hasFlaps
+      ? `<div class="flap">
     <div class="flap-text"></div>
-  </div>` : ''}
+  </div>`
+      : ""
+  }
 </body>
 </html>`;
 }
