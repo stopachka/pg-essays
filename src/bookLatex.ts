@@ -35,10 +35,10 @@ function buildPreamble(title: string): string {
     "\\setlength{\\cftbeforechapskip}{0.5em}", // Reduce spacing between entries
     // Use fancyhdr for custom headers
     "\\usepackage{fancyhdr}",
-    "\\setlength{\\headheight}{15pt}", // Fix headheight warning
+    "\\setlength{\\headheight}{20pt}", // Fix headheight warning
     "\\pagestyle{fancy}",
     "\\fancyhf{}",
-    "\\fancyhead[LE,RO]{\\thepage}",
+    "\\fancyhead[LE,RO]{\\small\\textit{\\thepage}}",
     "\\fancyhead[RE,LO]{}", // Remove chapter header
     "\\renewcommand{\\headrulewidth}{0pt}",
     "\\renewcommand{\\chaptermark}[1]{}",
