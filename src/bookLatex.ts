@@ -10,7 +10,7 @@ function buildPreamble(title: string): string {
     "\\usepackage{geometry}",
     "\\usepackage{hyperref}",
     "\\usepackage{graphicx}",
-    "\\geometry{paperwidth=6.25in,paperheight=9.25in,inner=1.0in,outer=0.6in,top=0.8in,bottom=0.8in}",
+    "\\geometry{paperwidth=6.25in,paperheight=9.25in,inner=1.0in,outer=0.7in,top=0.8in,bottom=0.8in}",
     "\\setmainfont{Baskerville}",
     "\\setlength{\\parindent}{0pt}",
     "\\setlength{\\parskip}{0.6em}",
