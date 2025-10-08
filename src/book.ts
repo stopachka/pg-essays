@@ -24,9 +24,10 @@ export async function getInputBooks(): Promise<Book[]> {
 
   const lastSym = "__last";
   const { vols } = [
-    { slug: "sfp" },
-    { slug: "angelinvesting" },
-    { slug: "pinch" },
+    { slug: "bubble" },
+    { slug: "mit" },
+    { slug: "discover" },
+    { slug: "disc" },
     { slug: lastSym },
   ].reduce(
     ({ vols, startIdx: prevIdx }, { slug }, i) => {

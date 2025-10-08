@@ -9,6 +9,7 @@ import { parseArgs } from "util";
 import { latexToPDF } from "./src/pdf";
 import { asBookLatex } from "./src/bookLatex";
 import { generateCover } from "./src/cover";
+import type { Book } from "./src/types";
 
 await main();
 
@@ -56,18 +57,18 @@ async function main() {
   const count = values.count;
   if (count != undefined) {
     console.log(`Counting pdf length`);
-    await handleCounts();
+    const inputs = await getInputBooks();
+    await countPages(inputs);
     return;
   }
   await handleAllBooks();
 }
 
-async function handleCounts() {
-  const inputs = await getInputBooks();
-  for (const book of inputs) {
-    console.log(`[${book.slug}]`);
-    await $`mdls -name kMDItemNumberOfPages -raw ${gen.fullPath(book.dir, bookFiles.pdf)}`;
-    console.log("\n");
+async function countPages(books: Book[]) {
+  for (const book of books) {
+    const pdfInfo =
+      await $`pdfinfo ${gen.fullPath(book.dir, bookFiles.pdf)} | grep Pages | awk '/Pages/ {print $2}'`.text();
+    console.log(`[${book.slug}] ${pdfInfo}`);
   }
 }
 
@@ -75,6 +76,7 @@ async function handleAllBooks() {
   const inputs = await getInputBooks();
   await Promise.all(inputs.map(processBook));
   console.log(`Processed: ${inputs.map((x) => x.slug).join(",")}`);
+  await countPages(inputs);
 }
 
 async function handleCoverSlug(slug: string) {

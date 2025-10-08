@@ -9,7 +9,7 @@ You can check out the results in `gen/book`.
 Make sure you install dependencies:
 
 ```bash
-brew install basictex pandoc imagemagick
+brew install basictex pandoc imagemagick poppler
 sudo tlmgr install tocloft fancyhdr titlesec
 bun install
 ```
