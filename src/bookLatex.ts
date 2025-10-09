@@ -26,7 +26,8 @@ function buildPreamble(title: string): string {
     "  {\\normalfont\\bfseries}", // format for both
     "  {\\small\\chaptertitlename\\ \\thechapter}", // make "Chapter n" smaller
     "  {0.5em}", // separation between label and title
-    "  {\\huge}", // make chapter title larger
+    "  {\\LARGE\\raggedright\\hyphenpenalty=10000\\exhyphenpenalty=10000}", // make chapter title larger and avoid hyphenation
+    "\\titlespacing*{\\chapter}{0pt}{*4}{1.25em}", // tighten space below chapter title
     // Use tocloft for TOC customization
     "\\usepackage{tocloft}",
     "\\renewcommand{\\cftchapfont}{\\normalfont\\small}", // Smaller, non-bold font
