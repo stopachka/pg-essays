@@ -4,6 +4,26 @@ import type { Book } from "./types";
 
 export type CoverType = "paperback" | "hardcover";
 
+const CSS_DPI = 96;
+
+type CoverDimensions = {
+  totalWidthInches: number;
+  totalHeightInches: number;
+  spineWidthInches: number;
+  coverWidthInches: number;
+  flapWidthInches: number;
+  hasFlaps: boolean;
+  totalWidthPx: number;
+  totalHeightPx: number;
+  spineWidthPx: number;
+  coverWidthPx: number;
+  flapWidthPx: number;
+  widthIn: string;
+  heightIn: string;
+  viewportWidth: number;
+  viewportHeight: number;
+};
+
 export async function generateCover(
   outputPath: string,
   book: Book,
@@ -23,8 +43,8 @@ export async function generateCover(
     // Set viewport to match the cover dimensions
     const dimensions = getCoverDimensions(coverType);
     await page.setViewport({
-      width: Math.ceil(dimensions.widthPx),
-      height: Math.ceil(dimensions.heightPx),
+      width: dimensions.viewportWidth,
+      height: dimensions.viewportHeight,
       deviceScaleFactor: 2, // Higher quality
     });
 
@@ -50,53 +70,67 @@ export async function generateCover(
   }
 }
 
-function getCoverDimensions(coverType: CoverType) {
+function inchesToPixels(value: number): number {
+  return value * CSS_DPI;
+}
+
+function formatInches(value: number): string {
+  return `${Number(value.toFixed(3))}in`;
+}
+
+function buildDimensions(base: {
+  totalWidthInches: number;
+  totalHeightInches: number;
+  spineWidthInches: number;
+  flapWidthInches?: number;
+  hasFlaps?: boolean;
+}): CoverDimensions {
+  const hasFlaps = Boolean(base.hasFlaps);
+  const flapWidthInches = hasFlaps ? base.flapWidthInches ?? 0 : 0;
+  const coverWidthInches =
+    (base.totalWidthInches - base.spineWidthInches - flapWidthInches * (hasFlaps ? 2 : 0)) / 2;
+
+  const totalWidthPx = inchesToPixels(base.totalWidthInches);
+  const totalHeightPx = inchesToPixels(base.totalHeightInches);
+  const spineWidthPx = inchesToPixels(base.spineWidthInches);
+  const coverWidthPx = inchesToPixels(coverWidthInches);
+  const flapWidthPx = inchesToPixels(flapWidthInches);
+
+  return {
+    totalWidthInches: base.totalWidthInches,
+    totalHeightInches: base.totalHeightInches,
+    spineWidthInches: base.spineWidthInches,
+    coverWidthInches,
+    flapWidthInches,
+    hasFlaps,
+    totalWidthPx,
+    totalHeightPx,
+    spineWidthPx,
+    coverWidthPx,
+    flapWidthPx,
+    widthIn: formatInches(base.totalWidthInches),
+    heightIn: formatInches(base.totalHeightInches),
+    viewportWidth: Math.round(totalWidthPx),
+    viewportHeight: Math.round(totalHeightPx),
+  };
+}
+
+function getCoverDimensions(coverType: CoverType): CoverDimensions {
   if (coverType === "hardcover") {
-    // Hardcover dimensions with flaps
-    // Total width: 21.125" (includes front, spine, back, and two flaps)
-    // Flap width: 3.25" each
-    // Spine width: 1.375"
-    // Available width for covers: 21.125 - 1.375 - (2 * 3.25) = 13.25"
-    // Each cover width: 13.25 / 2 = 6.625"
-    const widthIn = "21.125in";
-    const heightIn = "9.75in";
-    const widthPx = 2028; // 21.125 * 96 DPI
-    const heightPx = 936; // 9.75 * 96 DPI
-    const spineWidthPx = 132; // 1.375 * 96 DPI
-    const flapWidthPx = 312; // 3.25 * 96 DPI
-    // Correct calculation: (total - spine - 2*flaps) / 2
-    const coverWidthPx = (widthPx - spineWidthPx - 2 * flapWidthPx) / 2;
-
-    return {
-      widthIn,
-      heightIn,
-      widthPx,
-      heightPx,
-      spineWidthPx,
-      flapWidthPx,
-      coverWidthPx,
+    return buildDimensions({
+      totalWidthInches: 21.125,
+      totalHeightInches: 9.75,
+      spineWidthInches: 1.375,
+      flapWidthInches: 3.25,
       hasFlaps: true,
-    };
-  } else {
-    // Paperback dimensions (existing)
-    const widthIn = "13.432in";
-    const heightIn = "9.25in";
-    const widthPx = 1289.472;
-    const heightPx = 888;
-    const spineWidthPx = 113.472;
-    const coverWidthPx = (widthPx - spineWidthPx) / 2;
-
-    return {
-      widthIn,
-      heightIn,
-      widthPx,
-      heightPx,
-      spineWidthPx,
-      flapWidthPx: 0,
-      coverWidthPx,
-      hasFlaps: false,
-    };
+    });
   }
+
+  return buildDimensions({
+    totalWidthInches: 13.139,
+    totalHeightInches: 9.25,
+    spineWidthInches: 0.889,
+  });
 }
 
 async function coverHTML(book: Book, coverType: CoverType): Promise<string> {
@@ -106,8 +140,8 @@ async function coverHTML(book: Book, coverType: CoverType): Promise<string> {
 
   // Get dimensions based on cover type
   const dimensions = getCoverDimensions(coverType);
-  const totalWidth = dimensions.widthPx;
-  const height = dimensions.heightPx;
+  const totalWidth = dimensions.totalWidthPx;
+  const height = dimensions.totalHeightPx;
   const spineWidth = dimensions.spineWidthPx;
   const coverWidth = dimensions.coverWidthPx;
   const flapWidth = dimensions.flapWidthPx;
