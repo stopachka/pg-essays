@@ -153,18 +153,19 @@ async function coverHTML(book: Book, coverType: CoverType): Promise<string> {
       color: ${spineTextColor};
     }
 
-    .spine-text {
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
-      font-size: 24px;
-      letter-spacing: 2px;
+    .spine-inner {
+      transform: rotate(90deg);
+      display: flex;
+      align-items: center;
+      gap: 34px;
     }
 
+    .spine-text,
     .spine-author {
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
       font-size: 24px;
-      margin-top: 34px;
+      letter-spacing: 2px;
+      transform-origin: center;
+      white-space: nowrap;
     }
 
     .front-cover {
@@ -244,8 +245,10 @@ async function coverHTML(book: Book, coverType: CoverType): Promise<string> {
   </div>
 
   <div class="spine">
-    <div class="spine-text">${book.title}</div>
-    <div class="spine-author">Paul Graham</div>
+    <div class="spine-inner">
+      <div class="spine-author">Paul Graham</div>
+      <div class="spine-text">${book.title}</div>
+    </div>
   </div>
 
   <div class="front-cover">
