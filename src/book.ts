@@ -1,7 +1,7 @@
 import { $ } from "bun";
 import { essayFiles, processEssay } from "./essay";
 import * as gen from "./gen";
-import type { Book, ProcessedEssay } from "./types";
+import type { Book, ProcessedEssay, BookContent } from "./types";
 import { latexToPDF } from "./pdf";
 import { asBookLatex } from "./bookLatex";
 import { getInputEssays } from "./articleIndex";
@@ -15,9 +15,14 @@ export async function getInputBooks(): Promise<Book[]> {
 
   const allProcessed = await Promise.all(filtered.map(processEssay));
 
+  const fullContents: BookContent[] = allProcessed.map((essay) => ({
+    type: "essay",
+    essay,
+  }));
+
   const full: Book = {
     title: "Essays",
-    essays: allProcessed,
+    contents: fullContents,
     slug: "full",
     dir: "book/full",
   };
@@ -39,6 +44,7 @@ export async function getInputBooks(): Promise<Book[]> {
       }
 
       const essays = allProcessed.slice(prevIdx, cutIdx + 1);
+      const contents: BookContent[] = essays.map((essay) => ({ type: "essay", essay }));
       const volumeNum = i + 1;
       const volumeToNumeral = new Map([
         [1, "I"],
@@ -51,7 +57,7 @@ export async function getInputBooks(): Promise<Book[]> {
         title: `Essays, ${volumeToNumeral.get(volumeNum)}`,
         slug: `vol${volumeNum}`,
         dir: `book/vol${volumeNum}`,
-        essays: essays,
+        contents: contents,
       };
       const newVols = [...vols, vol];
       return { vols: newVols, startIdx: cutIdx + 1 };
@@ -59,7 +65,64 @@ export async function getInputBooks(): Promise<Book[]> {
     { vols: [] as Book[], startIdx: 0 }
   );
 
-  return [full, ...vols];
+  // Stopa's Selection
+  const stopaMap = new Map<string, ProcessedEssay>(allProcessed.map((e) => [e.slug, e]));
+  const getEssay = (slug: string) => {
+    const essay = stopaMap.get(slug);
+    if (!essay) throw new Error(`Essay not found: ${slug}`);
+    return { type: "essay" as const, essay };
+  };
+  const part = (title: string) => ({ type: "latex" as const, content: `\\part{${title}}` });
+  const dedication = {
+    type: "latex" as const,
+    content: [
+      "\\cleardoublepage",
+      "\\thispagestyle{empty}",
+      "\\vspace*{\\fill}",
+      "\\begin{center}",
+      "\\textit{For my love, Nicole}",
+      "\\end{center}",
+      "\\vspace*{\\fill}",
+      "\\clearpage",
+    ].join(String.fromCharCode(10)),
+  };
+
+  const stopaContents: BookContent[] = [
+    dedication,
+    part("Life"),
+    getEssay("hs"),
+    getEssay("vb"),
+    part("Philosophy"),
+    getEssay("say"),
+    part("Economics"),
+    getEssay("wealth"),
+    getEssay("gap"),
+    part("Writing"),
+    getEssay("essay"),
+    part("Art"),
+    getEssay("goodart"),
+    getEssay("taste"),
+    part("Work"),
+    getEssay("before"),
+    getEssay("marginal"),
+    getEssay("genius"),
+    getEssay("procrastination"),
+    getEssay("makersschedule"),
+    part("Startups"),
+    getEssay("start"),
+    getEssay("startupideas"),
+    getEssay("ds"),
+    getEssay("startuplessons"),
+  ];
+
+  const stopaBook: Book = {
+    title: "Stopa's Selection",
+    slug: "stopa",
+    dir: "book/stopa",
+    contents: stopaContents,
+  };
+
+  return [full, ...vols, stopaBook];
 }
 
 export const bookFiles = {
@@ -73,9 +136,13 @@ export const bookFiles = {
 };
 
 export async function processBook(book: Book): Promise<void> {
-  const chapters = book.essays.map((essay) => {
-    const chapter = gen.readText(essay.dir, essayFiles.xfTex).trim();
-    return chapter;
+  const chapters = book.contents.map((content) => {
+    if (content.type === "essay") {
+      const chapter = gen.readText(content.essay.dir, essayFiles.xfTex).trim();
+      return chapter;
+    } else {
+      return content.content;
+    }
   });
 
   const bookLatex = asBookLatex({ title: book.title, latexChapters: chapters });

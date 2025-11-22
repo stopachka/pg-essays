@@ -1,8 +1,12 @@
+export type BookContent =
+  | { type: "essay"; essay: ProcessedEssay }
+  | { type: "latex"; content: string };
+
 export type Book = {
   title: string;
   slug: string;
   dir: string;
-  essays: ProcessedEssay[];
+  contents: BookContent[];
 };
 
 export type InputEssay = {
