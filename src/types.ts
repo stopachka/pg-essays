@@ -1,8 +1,15 @@
+export type Section = {
+  title: string;
+  essaySlugs: string[];
+};
+
 export type Book = {
   title: string;
   slug: string;
   dir: string;
   essays: ProcessedEssay[];
+  sections?: Section[];
+  dedication?: string;
 };
 
 export type InputEssay = {

@@ -1,9 +1,31 @@
-export function asBookLatex({ title, latexChapters }: { latexChapters: string[]; title: string }) {
-  return [buildPreamble(title), latexChapters.join("\n"), "\\end{document}\n"].join("\n\n");
+export function asBookLatex({
+  title,
+  latexChapters,
+  dedication
+}: {
+  latexChapters: string[];
+  title: string;
+  dedication?: string;
+}) {
+  const parts = [buildPreamble(title, dedication), latexChapters.join("\n"), "\\end{document}\n"];
+  return parts.join("\n\n");
 }
 
-function buildPreamble(title: string): string {
-  return [
+export function sectionDivider(sectionTitle: string): string {
+  return `
+\\clearpage
+\\thispagestyle{empty}
+\\vspace*{\\fill}
+\\begin{center}
+{\\LARGE\\bfseries ${sectionTitle}}
+\\end{center}
+\\vspace*{\\fill}
+\\clearpage
+`;
+}
+
+function buildPreamble(title: string, dedication?: string): string {
+  const preambleLines = [
     "\\documentclass[12pt]{book}",
     "\\usepackage{fontspec}",
     "\\usepackage{microtype}",
@@ -56,8 +78,26 @@ function buildPreamble(title: string): string {
     "\\begin{document}",
     "\\frontmatter",
     "\\maketitle",
+  ];
+
+  if (dedication) {
+    preambleLines.push(
+      "\\clearpage",
+      "\\thispagestyle{empty}",
+      "\\vspace*{\\fill}",
+      "\\begin{center}",
+      `{\\large\\itshape ${dedication}}`,
+      "\\end{center}",
+      "\\vspace*{\\fill}",
+      "\\clearpage"
+    );
+  }
+
+  preambleLines.push(
     "\\tableofcontents",
     "\\clearpage",
-    "\\mainmatter",
-  ].join("\n");
+    "\\mainmatter"
+  );
+
+  return preambleLines.join("\n");
 }

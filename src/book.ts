@@ -1,9 +1,9 @@
 import { $ } from "bun";
 import { essayFiles, processEssay } from "./essay";
 import * as gen from "./gen";
-import type { Book, ProcessedEssay } from "./types";
+import type { Book, ProcessedEssay, Section } from "./types";
 import { latexToPDF } from "./pdf";
-import { asBookLatex } from "./bookLatex";
+import { asBookLatex, sectionDivider } from "./bookLatex";
 import { getInputEssays } from "./articleIndex";
 import { generateCover } from "./cover";
 
@@ -59,7 +59,54 @@ export async function getInputBooks(): Promise<Book[]> {
     { vols: [] as Book[], startIdx: 0 }
   );
 
-  return [full, ...vols];
+  // Stopa's Selection - curated essays with sections
+  const stopasSections: Section[] = [
+    {
+      title: "Life",
+      essaySlugs: ["hs", "vb"],
+    },
+    {
+      title: "Philosophy",
+      essaySlugs: ["say"],
+    },
+    {
+      title: "Economics",
+      essaySlugs: ["wealth", "gap"],
+    },
+    {
+      title: "Writing",
+      essaySlugs: ["essay"],
+    },
+    {
+      title: "Art",
+      essaySlugs: ["goodart", "taste"],
+    },
+    {
+      title: "Work",
+      essaySlugs: ["before", "marginal", "genius", "procrastination", "makersschedule"],
+    },
+    {
+      title: "Startups",
+      essaySlugs: ["start", "startupideas", "ds", "startuplessons"],
+    },
+  ];
+
+  const allStopaSlugs = stopasSections.flatMap((s) => s.essaySlugs);
+  const essayBySlug = new Map(allProcessed.map((e) => [e.slug, e]));
+  const stopasEssays = allStopaSlugs
+    .map((slug) => essayBySlug.get(slug))
+    .filter((e): e is ProcessedEssay => e !== undefined);
+
+  const stopasSelection: Book = {
+    title: "Stopa's Selection",
+    slug: "stopas-selection",
+    dir: "book/stopas-selection",
+    essays: stopasEssays,
+    sections: stopasSections,
+    dedication: "For my love, Nicole",
+  };
+
+  return [full, ...vols, stopasSelection];
 }
 
 export const bookFiles = {
@@ -73,12 +120,39 @@ export const bookFiles = {
 };
 
 export async function processBook(book: Book): Promise<void> {
-  const chapters = book.essays.map((essay) => {
-    const chapter = gen.readText(essay.dir, essayFiles.xfTex).trim();
-    return chapter;
-  });
+  let chapters: string[];
 
-  const bookLatex = asBookLatex({ title: book.title, latexChapters: chapters });
+  if (book.sections) {
+    // Build chapters with section dividers
+    chapters = [];
+    const essayBySlug = new Map(book.essays.map((e) => [e.slug, e]));
+
+    for (const section of book.sections) {
+      // Add section divider
+      chapters.push(sectionDivider(section.title));
+
+      // Add essays in this section
+      for (const slug of section.essaySlugs) {
+        const essay = essayBySlug.get(slug);
+        if (essay) {
+          const chapter = gen.readText(essay.dir, essayFiles.xfTex).trim();
+          chapters.push(chapter);
+        }
+      }
+    }
+  } else {
+    // Standard book without sections
+    chapters = book.essays.map((essay) => {
+      const chapter = gen.readText(essay.dir, essayFiles.xfTex).trim();
+      return chapter;
+    });
+  }
+
+  const bookLatex = asBookLatex({
+    title: book.title,
+    latexChapters: chapters,
+    dedication: book.dedication,
+  });
 
   gen.save(book.dir, bookFiles.tex, bookLatex);
 
