@@ -105,11 +105,39 @@ export const bookFiles = {
   coverHardcover: "cover-hardcover.pdf",
 };
 
+function sectionDivider(title: string): string {
+  return [
+    "\\clearpage",
+    "\\thispagestyle{empty}",
+    "\\vspace*{\\fill}",
+    "\\begin{center}",
+    `\\Large ${title}`,
+    "\\end{center}",
+    "\\vspace*{\\fill}",
+    "\\clearpage",
+  ].join("\n");
+}
+
+function buildNicoleChapters(essays: ProcessedEssay[]): string[] {
+  const chapters: string[] = [];
+  const essayMap = new Map(essays.map((e) => [e.slug, gen.readText(e.dir, essayFiles.xfTex).trim()]));
+
+  for (const section of nicoleSections) {
+    chapters.push(sectionDivider(section.title));
+    for (const slug of section.essaySlugs) {
+      const chapter = essayMap.get(slug);
+      if (chapter) chapters.push(chapter);
+    }
+  }
+
+  return chapters;
+}
+
 export async function processBook(book: Book): Promise<void> {
-  const chapters = book.essays.map((essay) => {
-    const chapter = gen.readText(essay.dir, essayFiles.xfTex).trim();
-    return chapter;
-  });
+  const chapters =
+    book.slug === "volumenicole"
+      ? buildNicoleChapters(book.essays)
+      : book.essays.map((essay) => gen.readText(essay.dir, essayFiles.xfTex).trim());
 
   const bookLatex = asBookLatex({ title: book.title, latexChapters: chapters, titlePageFn: book.titlePageFn });
 
