@@ -84,6 +84,8 @@ function getCoverDimensions(): CoverDimensions {
   };
 
   const coverWidthInches = (base.totalWidthInches - base.spineWidthInches) / 2;
+
+  // Use exact pixels (no rounding) for CSS - CSS handles fractional pixels fine
   const totalWidthPx = inchesToPixels(base.totalWidthInches);
   const totalHeightPx = inchesToPixels(base.totalHeightInches);
   const spineWidthPx = inchesToPixels(base.spineWidthInches);
@@ -96,10 +98,12 @@ function getCoverDimensions(): CoverDimensions {
     totalHeightPx,
     spineWidthPx,
     coverWidthPx,
+    // PDF uses exact inches
     widthIn: formatInches(base.totalWidthInches),
     heightIn: formatInches(base.totalHeightInches),
-    viewportWidth: Math.round(totalWidthPx),
-    viewportHeight: Math.round(totalHeightPx),
+    // Viewport must be integers, use ceil to ensure it's large enough
+    viewportWidth: Math.ceil(totalWidthPx),
+    viewportHeight: Math.ceil(totalHeightPx),
   };
 }
 
@@ -113,13 +117,7 @@ function nicoleCoverHTML() {
   const dimensions = getCoverDimensions();
   const totalWidth = dimensions.totalWidthPx;
   const height = dimensions.totalHeightPx;
-  const spineWidth = dimensions.spineWidthPx;
-  const coverWidth = dimensions.coverWidthPx;
   const imageDataUrl = getImageBase64();
-
-  // Position text on the front cover (right side)
-  // Front cover starts after back cover + spine
-  const frontCoverLeft = coverWidth + spineWidth;
 
   return `<!DOCTYPE html>
 <html>
@@ -144,14 +142,7 @@ function nicoleCoverHTML() {
       -webkit-font-smoothing: antialiased;
       position: relative;
       overflow: hidden;
-    }
-
-    .background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      /* Background directly on body - can't be clipped */
       background-image: url('${imageDataUrl}');
       background-size: 260%;
       background-position: 24% 3%;
@@ -178,7 +169,6 @@ function nicoleCoverHTML() {
   </style>
 </head>
 <body>
-  <div class="background"></div>
   <div class="text-container">
     <div class="title">PG Essays</div>
     <div class="subtitle">a special selection</div>
