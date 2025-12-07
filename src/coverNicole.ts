@@ -29,7 +29,7 @@ export async function generateNicoleCover(
   _coverType: CoverType = "paperback",
 ): Promise<void> {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
@@ -63,7 +63,7 @@ export async function generateNicoleCover(
 
     console.log(`Generated Nicole cover: ${outputPath}`);
   } finally {
-    // await new Promise((resolve) => setTimeout(resolve, 50000));
+    // await new Promise((resolve) => setTimeout(resolve, 50000000));
     await browser.close();
   }
 }
@@ -72,15 +72,15 @@ function inchesToPixels(value: number): number {
   return value * CSS_DPI;
 }
 
-function formatInches(value: number): string {
-  return `${Number(value.toFixed(3))}in`;
+function formatInches(inches: number): string {
+  return `${Number(inches.toFixed(3))}in`;
 }
 
 function getCoverDimensions(): CoverDimensions {
   const base = {
-    totalWidthInches: 13.139,
+    totalWidthInches: 12.851, // Compensate for Puppeteer rounding (target: 12.864")
     totalHeightInches: 9.25,
-    spineWidthInches: 0.889,
+    spineWidthInches: 0.614, // Thinner spine for fewer pages
   };
 
   const coverWidthInches = (base.totalWidthInches - base.spineWidthInches) / 2;
@@ -98,12 +98,11 @@ function getCoverDimensions(): CoverDimensions {
     totalHeightPx,
     spineWidthPx,
     coverWidthPx,
-    // PDF uses exact inches
+    // PDF dimensions in inches
     widthIn: formatInches(base.totalWidthInches),
     heightIn: formatInches(base.totalHeightInches),
-    // Viewport must be integers, use ceil to ensure it's large enough
-    viewportWidth: Math.ceil(totalWidthPx),
-    viewportHeight: Math.ceil(totalHeightPx),
+    viewportWidth: Math.round(totalWidthPx),
+    viewportHeight: Math.round(totalHeightPx),
   };
 }
 
@@ -145,13 +144,13 @@ function nicoleCoverHTML() {
       /* Background directly on body - can't be clipped */
       background-image: url('${imageDataUrl}');
       background-size: 260%;
-      background-position: 24% 3%;
+      background-position: 21% 3%;
     }
 
     .text-container {
       position: absolute;
       top: 46%;
-      left: 901px;
+      left: 936px;
       color: #1a1a1a;
     }
 
