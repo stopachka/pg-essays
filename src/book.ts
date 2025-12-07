@@ -10,16 +10,6 @@ import { generateNicoleCover } from "./coverNicole";
 
 const essaysToSkip = new Set(["prop62", "rootsoflisp"]);
 
-const nicoleSections = [
-  { title: "Life", essaySlugs: ["hs", "vb"] },
-  { title: "Philosophy", essaySlugs: ["say"] },
-  { title: "Economics", essaySlugs: ["wealth", "gap"] },
-  { title: "Writing", essaySlugs: ["essay"] },
-  { title: "Art", essaySlugs: ["goodart", "taste"] },
-  { title: "Work", essaySlugs: ["before", "marginal", "genius", "procrastination", "makersschedule"] },
-  { title: "Startups", essaySlugs: ["start", "startupideas", "ds", "startuplessons"] },
-];
-
 export async function getInputBooks(): Promise<Book[]> {
   const inputs = await getInputEssays();
   const filtered = inputs.filter((x) => !essaysToSkip.has(x.slug));
@@ -70,29 +60,7 @@ export async function getInputBooks(): Promise<Book[]> {
     { vols: [] as Book[], startIdx: 0 }
   );
 
-  // Create Nicole's special volume
-  const nicoleSlugs = nicoleSections.flatMap((s) => s.essaySlugs);
-  const nicoleEssays = nicoleSlugs
-    .map((slug) => allProcessed.find((e) => e.slug === slug))
-    .filter((e): e is ProcessedEssay => e !== undefined);
-
-  const volumenicole: Book = {
-    title: "Essays, Nicole",
-    slug: "volumenicole",
-    dir: "book/volumenicole",
-    essays: nicoleEssays,
-    coverFn: generateNicoleCover,
-    titlePageFn: () => [
-      "\\vspace*{\\fill}",
-      "\\begin{center}",
-      "\\textit{For Nicole}",
-      "\\end{center}",
-      "\\vspace*{\\fill}",
-      "\\clearpage",
-    ].join("\n"),
-  };
-
-  return [full, ...vols, volumenicole];
+  return [full, ...vols, createNicoleBook(allProcessed)];
 }
 
 export const bookFiles = {
@@ -105,39 +73,61 @@ export const bookFiles = {
   coverHardcover: "cover-hardcover.pdf",
 };
 
-function sectionDivider(title: string): string {
-  return [
-    "\\clearpage",
-    "\\thispagestyle{empty}",
-    "\\vspace*{\\fill}",
-    "\\begin{center}",
-    `\\Large ${title}`,
-    "\\end{center}",
-    "\\vspace*{\\fill}",
-    "\\clearpage",
-  ].join("\n");
-}
+function createNicoleBook(allProcessed: ProcessedEssay[]): Book {
+  const sections = [
+    { title: "Life", essaySlugs: ["hs", "vb"] },
+    { title: "Philosophy", essaySlugs: ["say"] },
+    { title: "Economics", essaySlugs: ["wealth", "gap"] },
+    { title: "Writing", essaySlugs: ["essay"] },
+    { title: "Art", essaySlugs: ["goodart", "taste"] },
+    { title: "Work", essaySlugs: ["before", "marginal", "genius", "procrastination", "makersschedule"] },
+    { title: "Startups", essaySlugs: ["start", "startupideas", "ds", "startuplessons"] },
+  ];
 
-function buildNicoleChapters(essays: ProcessedEssay[]): string[] {
-  const chapters: string[] = [];
-  const essayMap = new Map(essays.map((e) => [e.slug, gen.readText(e.dir, essayFiles.xfTex).trim()]));
+  const slugs = sections.flatMap((s) => s.essaySlugs);
+  const essays = slugs
+    .map((slug) => allProcessed.find((e) => e.slug === slug))
+    .filter((e): e is ProcessedEssay => e !== undefined);
 
-  for (const section of nicoleSections) {
-    chapters.push(sectionDivider(section.title));
-    for (const slug of section.essaySlugs) {
-      const chapter = essayMap.get(slug);
-      if (chapter) chapters.push(chapter);
-    }
-  }
+  const sectionDivider = (title: string) =>
+    [
+      "\\clearpage",
+      "\\thispagestyle{empty}",
+      "\\vspace*{\\fill}",
+      "\\begin{center}",
+      `\\Large ${title}`,
+      "\\end{center}",
+      "\\vspace*{\\fill}",
+      "\\clearpage",
+    ].join("\n");
 
-  return chapters;
+  return {
+    title: "Essays, Nicole",
+    slug: "volumenicole",
+    dir: "book/volumenicole",
+    essays,
+    coverFn: generateNicoleCover,
+    titlePageFn: () =>
+      ["\\vspace*{\\fill}", "\\begin{center}", "\\textit{For Nicole}", "\\end{center}", "\\vspace*{\\fill}", "\\clearpage"].join("\n"),
+    buildChaptersFn: (essays) => {
+      const chapters: string[] = [];
+      const essayMap = new Map(essays.map((e) => [e.slug, gen.readText(e.dir, essayFiles.xfTex).trim()]));
+      for (const section of sections) {
+        chapters.push(sectionDivider(section.title));
+        for (const slug of section.essaySlugs) {
+          const chapter = essayMap.get(slug);
+          if (chapter) chapters.push(chapter);
+        }
+      }
+      return chapters;
+    },
+  };
 }
 
 export async function processBook(book: Book): Promise<void> {
-  const chapters =
-    book.slug === "volumenicole"
-      ? buildNicoleChapters(book.essays)
-      : book.essays.map((essay) => gen.readText(essay.dir, essayFiles.xfTex).trim());
+  const chapters = book.buildChaptersFn
+    ? book.buildChaptersFn(book.essays)
+    : book.essays.map((essay) => gen.readText(essay.dir, essayFiles.xfTex).trim());
 
   const bookLatex = asBookLatex({ title: book.title, latexChapters: chapters, titlePageFn: book.titlePageFn });
 
