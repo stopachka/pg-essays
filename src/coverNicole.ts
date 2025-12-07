@@ -25,20 +25,21 @@ type CoverDimensions = {
 export async function generateNicoleCover(
   outputPath: string,
   _book: Book,
-  coverType: CoverType = "paperback",
+  // Right now, we only want Nicole's cover to be paperback
+  _coverType: CoverType = "paperback",
 ): Promise<void> {
   const browser = await puppeteer.launch({
-    headless: true,
+    headless: false,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
   try {
     const page = await browser.newPage();
-    const html = nicoleCoverHTML(coverType);
+    const html = nicoleCoverHTML();
 
     await page.setContent(html, { waitUntil: "networkidle0" });
 
-    const dimensions = getCoverDimensions(coverType);
+    const dimensions = getCoverDimensions();
     await page.setViewport({
       width: dimensions.viewportWidth,
       height: dimensions.viewportHeight,
@@ -62,6 +63,7 @@ export async function generateNicoleCover(
 
     console.log(`Generated Nicole cover: ${outputPath}`);
   } finally {
+    // await new Promise((resolve) => setTimeout(resolve, 50000));
     await browser.close();
   }
 }
@@ -74,19 +76,12 @@ function formatInches(value: number): string {
   return `${Number(value.toFixed(3))}in`;
 }
 
-function getCoverDimensions(coverType: CoverType): CoverDimensions {
-  const base =
-    coverType === "hardcover"
-      ? {
-          totalWidthInches: 21.125,
-          totalHeightInches: 9.75,
-          spineWidthInches: 1.375,
-        }
-      : {
-          totalWidthInches: 13.139,
-          totalHeightInches: 9.25,
-          spineWidthInches: 0.889,
-        };
+function getCoverDimensions(): CoverDimensions {
+  const base = {
+    totalWidthInches: 13.139,
+    totalHeightInches: 9.25,
+    spineWidthInches: 0.889,
+  };
 
   const coverWidthInches = (base.totalWidthInches - base.spineWidthInches) / 2;
   const totalWidthPx = inchesToPixels(base.totalWidthInches);
@@ -114,8 +109,8 @@ function getImageBase64(): string {
   return `data:image/png;base64,${imageBuffer.toString("base64")}`;
 }
 
-function nicoleCoverHTML(coverType: CoverType): string {
-  const dimensions = getCoverDimensions(coverType);
+function nicoleCoverHTML() {
+  const dimensions = getCoverDimensions();
   const totalWidth = dimensions.totalWidthPx;
   const height = dimensions.totalHeightPx;
   const spineWidth = dimensions.spineWidthPx;
@@ -146,6 +141,7 @@ function nicoleCoverHTML(coverType: CoverType): string {
       width: ${totalWidth}px;
       height: ${height}px;
       font-family: 'Baskerville', serif;
+      -webkit-font-smoothing: antialiased;
       position: relative;
       overflow: hidden;
     }
@@ -158,23 +154,19 @@ function nicoleCoverHTML(coverType: CoverType): string {
       height: 100%;
       background-image: url('${imageDataUrl}');
       background-size: 260%;
-      background-position: 25% 10%;
+      background-position: 24% 3%;
     }
 
     .text-container {
       position: absolute;
-      top: 50%;
-      left: ${frontCoverLeft + coverWidth * 0.5}px;
-      transform: translate(-50%, -50%);
-      text-align: center;
+      top: 46%;
+      left: 901px;
       color: #1a1a1a;
     }
 
     .title {
-      font-size: 64px;
+      font-size: 54px;
       font-weight: normal;
-      letter-spacing: 2px;
-      margin-bottom: 8px;
     }
 
     .subtitle {
@@ -182,6 +174,7 @@ function nicoleCoverHTML(coverType: CoverType): string {
       font-style: italic;
       font-weight: normal;
     }
+
   </style>
 </head>
 <body>
