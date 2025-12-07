@@ -82,6 +82,14 @@ export async function getInputBooks(): Promise<Book[]> {
     dir: "book/volumenicole",
     essays: nicoleEssays,
     coverFn: generateNicoleCover,
+    titlePageFn: () => [
+      "\\vspace*{\\fill}",
+      "\\begin{center}",
+      "\\textit{For Nicole}",
+      "\\end{center}",
+      "\\vspace*{\\fill}",
+      "\\clearpage",
+    ].join("\n"),
   };
 
   return [full, ...vols, volumenicole];
@@ -103,7 +111,7 @@ export async function processBook(book: Book): Promise<void> {
     return chapter;
   });
 
-  const bookLatex = asBookLatex({ title: book.title, latexChapters: chapters });
+  const bookLatex = asBookLatex({ title: book.title, latexChapters: chapters, titlePageFn: book.titlePageFn });
 
   gen.save(book.dir, bookFiles.tex, bookLatex);
 

@@ -6,6 +6,7 @@ export type Book = {
   dir: string;
   essays: ProcessedEssay[];
   coverFn?: (outputPath: string, book: Book, coverType: CoverType) => Promise<void>;
+  titlePageFn?: () => string;
 };
 
 export type InputEssay = {
