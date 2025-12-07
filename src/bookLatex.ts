@@ -1,8 +1,18 @@
-export function asBookLatex({ title, latexChapters }: { latexChapters: string[]; title: string }) {
-  return [buildPreamble(title), latexChapters.join("\n"), "\\end{document}\n"].join("\n\n");
+export function asBookLatex({
+  title,
+  latexChapters,
+  titlePageFn,
+}: {
+  latexChapters: string[];
+  title: string;
+  titlePageFn?: () => string;
+}) {
+  return [buildPreamble(title, titlePageFn), latexChapters.join("\n"), "\\end{document}\n"].join("\n\n");
 }
 
-function buildPreamble(title: string): string {
+function buildPreamble(title: string, titlePageFn?: () => string): string {
+  const titlePage = titlePageFn?.() ?? ["\\maketitle"].join("\n");
+
   return [
     "\\documentclass[12pt]{book}",
     "\\usepackage{fontspec}",
@@ -55,7 +65,7 @@ function buildPreamble(title: string): string {
     "\\date{}",
     "\\begin{document}",
     "\\frontmatter",
-    "\\maketitle",
+    titlePage,
     "\\tableofcontents",
     "\\clearpage",
     "\\mainmatter",

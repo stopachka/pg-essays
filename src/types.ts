@@ -1,8 +1,13 @@
+export type CoverType = "paperback" | "hardcover";
+
 export type Book = {
   title: string;
   slug: string;
   dir: string;
   essays: ProcessedEssay[];
+  coverFn?: (outputPath: string, book: Book, coverType: CoverType) => Promise<void>;
+  titlePageFn?: () => string;
+  buildChaptersFn?: (essays: ProcessedEssay[]) => string[];
 };
 
 export type InputEssay = {

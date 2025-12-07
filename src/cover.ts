@@ -1,8 +1,6 @@
 import puppeteer from "puppeteer";
 
-import type { Book } from "./types";
-
-export type CoverType = "paperback" | "hardcover";
+import type { Book, CoverType } from "./types";
 
 const CSS_DPI = 96;
 
