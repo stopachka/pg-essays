@@ -2,8 +2,7 @@ import puppeteer from "puppeteer";
 import { readFileSync } from "fs";
 import { resolve } from "path";
 
-import type { Book } from "./types";
-import type { CoverType } from "./cover";
+import type { Book, CoverType } from "./types";
 
 const CSS_DPI = 96;
 

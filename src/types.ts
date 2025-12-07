@@ -1,4 +1,4 @@
-import type { CoverType } from "./cover";
+export type CoverType = "paperback" | "hardcover";
 
 export type Book = {
   title: string;
