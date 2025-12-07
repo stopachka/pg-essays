@@ -62,7 +62,6 @@ export async function generateNicoleCover(
 
     console.log(`Generated Nicole cover: ${outputPath}`);
   } finally {
-    // await new Promise((resolve) => setTimeout(resolve, 50000000));
     await browser.close();
   }
 }
