@@ -6,8 +6,19 @@ import { latexToPDF } from "./pdf";
 import { asBookLatex } from "./bookLatex";
 import { getInputEssays } from "./articleIndex";
 import { generateCover } from "./cover";
+import { generateNicoleCover } from "./coverNicole";
 
 const essaysToSkip = new Set(["prop62", "rootsoflisp"]);
+
+const nicoleSections = [
+  { title: "Life", essaySlugs: ["hs", "vb"] },
+  { title: "Philosophy", essaySlugs: ["say"] },
+  { title: "Economics", essaySlugs: ["wealth", "gap"] },
+  { title: "Writing", essaySlugs: ["essay"] },
+  { title: "Art", essaySlugs: ["goodart", "taste"] },
+  { title: "Work", essaySlugs: ["before", "marginal", "genius", "procrastination", "makersschedule"] },
+  { title: "Startups", essaySlugs: ["start", "startupideas", "ds", "startuplessons"] },
+];
 
 export async function getInputBooks(): Promise<Book[]> {
   const inputs = await getInputEssays();
@@ -59,7 +70,21 @@ export async function getInputBooks(): Promise<Book[]> {
     { vols: [] as Book[], startIdx: 0 }
   );
 
-  return [full, ...vols];
+  // Create Nicole's special volume
+  const nicoleSlugs = nicoleSections.flatMap((s) => s.essaySlugs);
+  const nicoleEssays = nicoleSlugs
+    .map((slug) => allProcessed.find((e) => e.slug === slug))
+    .filter((e): e is ProcessedEssay => e !== undefined);
+
+  const volumenicole: Book = {
+    title: "Essays, Nicole",
+    slug: "volumenicole",
+    dir: "book/volumenicole",
+    essays: nicoleEssays,
+    coverFn: generateNicoleCover,
+  };
+
+  return [full, ...vols, volumenicole];
 }
 
 export const bookFiles = {
@@ -97,6 +122,7 @@ export async function processBook(book: Book): Promise<void> {
   await $`./lib/kindlegen ${gen.fullPath(book.dir, bookFiles.epub)} -o ${bookFiles.mobi}`.nothrow();
 
   // Generate both paperback and hardcover covers
-  await generateCover(gen.fullPath(book.dir, bookFiles.coverPaperback), book, "paperback");
-  await generateCover(gen.fullPath(book.dir, bookFiles.coverHardcover), book, "hardcover");
+  const coverFn = book.coverFn ?? generateCover;
+  await coverFn(gen.fullPath(book.dir, bookFiles.coverPaperback), book, "paperback");
+  await coverFn(gen.fullPath(book.dir, bookFiles.coverHardcover), book, "hardcover");
 }

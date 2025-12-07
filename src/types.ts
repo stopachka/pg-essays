@@ -1,8 +1,11 @@
+import type { CoverType } from "./cover";
+
 export type Book = {
   title: string;
   slug: string;
   dir: string;
   essays: ProcessedEssay[];
+  coverFn?: (outputPath: string, book: Book, coverType: CoverType) => Promise<void>;
 };
 
 export type InputEssay = {
