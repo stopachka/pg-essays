@@ -6,7 +6,19 @@ You can check out the results in `gen/book`.
 
 ## Development
 
-Make sure you install dependencies:
+### Quick Setup
+
+Run the setup script to check and install all required dependencies:
+
+```bash
+./setup.sh
+```
+
+The script will check for all required dependencies and provide platform-specific installation instructions if anything is missing.
+
+### Manual Setup
+
+Alternatively, you can manually install dependencies:
 
 ```bash
 brew install basictex pandoc imagemagick poppler
