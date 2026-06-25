@@ -18,10 +18,11 @@ export async function getInputEssays(): Promise<InputEssay[]> {
 }
 
 function getEssays($: CheerioAPI): InputEssay[] {
-  return $("table:nth-of-type(2)")
+  // PG lists essays newest-first; reverse so the array is oldest-first.
+  const parsed = $("table:nth-of-type(2)")
     .find("a")
     .toArray()
-    .map((node: any, i) => {
+    .map((node: any) => {
       const href = node.attribs && node.attribs.href;
       if (typeof href !== "string" || href.indexOf("http") !== -1) {
         return;
@@ -29,14 +30,22 @@ function getEssays($: CheerioAPI): InputEssay[] {
 
       const title = $(node).text() as string;
       const slug = href.split(".")[0] as string;
-      const pad = `${i}`.padStart(3, "0");
-      return {
-        title,
-        slug,
-        url: `https://www.paulgraham.com/${href}`,
-        dir: `essays/${pad}_${slug}`,
-      };
+      return { title, slug, href };
     })
-    .filter((x) => !!x)
+    .filter((x): x is { title: string; slug: string; href: string } => !!x)
     .reverse(); // earlier first
+
+  // Number directories by oldest-first position (000 = oldest). Because PG only
+  // prepends new essays, this index is append-only: existing essays keep their
+  // number forever and new posts get the next one. (Deriving the number from the
+  // raw newest-first position instead would renumber every dir on each re-sync.)
+  return parsed.map(({ title, slug, href }, i) => {
+    const pad = `${i}`.padStart(3, "0");
+    return {
+      title,
+      slug,
+      url: `https://www.paulgraham.com/${href}`,
+      dir: `essays/${pad}_${slug}`,
+    };
+  });
 }
