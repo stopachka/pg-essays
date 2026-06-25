@@ -3,1386 +3,1386 @@
     "title": "This Year We Can End the Death Penalty in California",
     "slug": "prop62",
     "url": "https://www.paulgraham.com/prop62.html",
-    "dir": "essays/229_prop62"
+    "dir": "essays/000_prop62"
   },
   {
     "title": "Programming Bottom-Up",
     "slug": "progbot",
     "url": "https://www.paulgraham.com/progbot.html",
-    "dir": "essays/228_progbot"
+    "dir": "essays/001_progbot"
   },
   {
     "title": "Lisp for Web-Based Applications",
     "slug": "lwba",
     "url": "https://www.paulgraham.com/lwba.html",
-    "dir": "essays/225_lwba"
+    "dir": "essays/002_lwba"
   },
   {
     "title": "Beating the Averages",
     "slug": "avg",
     "url": "https://www.paulgraham.com/avg.html",
-    "dir": "essays/224_avg"
+    "dir": "essays/003_avg"
   },
   {
     "title": "Java's Cover",
     "slug": "javacover",
     "url": "https://www.paulgraham.com/javacover.html",
-    "dir": "essays/223_javacover"
+    "dir": "essays/004_javacover"
   },
   {
     "title": "Being Popular",
     "slug": "popular",
     "url": "https://www.paulgraham.com/popular.html",
-    "dir": "essays/222_popular"
+    "dir": "essays/005_popular"
   },
   {
     "title": "Five Questions about Language Design",
     "slug": "langdes",
     "url": "https://www.paulgraham.com/langdes.html",
-    "dir": "essays/221_langdes"
+    "dir": "essays/006_langdes"
   },
   {
     "title": "The Roots of Lisp",
     "slug": "rootsoflisp",
     "url": "https://www.paulgraham.com/rootsoflisp.html",
-    "dir": "essays/220_rootsoflisp"
+    "dir": "essays/007_rootsoflisp"
   },
   {
     "title": "The Other Road Ahead",
     "slug": "road",
     "url": "https://www.paulgraham.com/road.html",
-    "dir": "essays/219_road"
+    "dir": "essays/008_road"
   },
   {
     "title": "What Made Lisp Different",
     "slug": "diff",
     "url": "https://www.paulgraham.com/diff.html",
-    "dir": "essays/218_diff"
+    "dir": "essays/009_diff"
   },
   {
     "title": "Why Arc Isn't Especially Object-Oriented",
     "slug": "noop",
     "url": "https://www.paulgraham.com/noop.html",
-    "dir": "essays/217_noop"
+    "dir": "essays/010_noop"
   },
   {
     "title": "Taste for Makers",
     "slug": "taste",
     "url": "https://www.paulgraham.com/taste.html",
-    "dir": "essays/216_taste"
+    "dir": "essays/011_taste"
   },
   {
     "title": "What Languages Fix",
     "slug": "fix",
     "url": "https://www.paulgraham.com/fix.html",
-    "dir": "essays/215_fix"
+    "dir": "essays/012_fix"
   },
   {
     "title": "Succinctness is Power",
     "slug": "power",
     "url": "https://www.paulgraham.com/power.html",
-    "dir": "essays/214_power"
+    "dir": "essays/013_power"
   },
   {
     "title": "Revenge of the Nerds",
     "slug": "icad",
     "url": "https://www.paulgraham.com/icad.html",
-    "dir": "essays/213_icad"
+    "dir": "essays/014_icad"
   },
   {
     "title": "A Plan for Spam",
     "slug": "spam",
     "url": "https://www.paulgraham.com/spam.html",
-    "dir": "essays/212_spam"
+    "dir": "essays/015_spam"
   },
   {
     "title": "Design and Research",
     "slug": "desres",
     "url": "https://www.paulgraham.com/desres.html",
-    "dir": "essays/211_desres"
+    "dir": "essays/016_desres"
   },
   {
     "title": "Better Bayesian Filtering",
     "slug": "better",
     "url": "https://www.paulgraham.com/better.html",
-    "dir": "essays/210_better"
+    "dir": "essays/017_better"
   },
   {
     "title": "Why Nerds are Unpopular",
     "slug": "nerds",
     "url": "https://www.paulgraham.com/nerds.html",
-    "dir": "essays/209_nerds"
+    "dir": "essays/018_nerds"
   },
   {
     "title": "The Hundred-Year Language",
     "slug": "hundred",
     "url": "https://www.paulgraham.com/hundred.html",
-    "dir": "essays/208_hundred"
+    "dir": "essays/019_hundred"
   },
   {
     "title": "If Lisp is So Great",
     "slug": "iflisp",
     "url": "https://www.paulgraham.com/iflisp.html",
-    "dir": "essays/207_iflisp"
+    "dir": "essays/020_iflisp"
   },
   {
     "title": "Hackers and Painters",
     "slug": "hp",
     "url": "https://www.paulgraham.com/hp.html",
-    "dir": "essays/206_hp"
+    "dir": "essays/021_hp"
   },
   {
     "title": "Filters that Fight Back",
     "slug": "ffb",
     "url": "https://www.paulgraham.com/ffb.html",
-    "dir": "essays/205_ffb"
+    "dir": "essays/022_ffb"
   },
   {
     "title": "What You Can't Say",
     "slug": "say",
     "url": "https://www.paulgraham.com/say.html",
-    "dir": "essays/204_say"
+    "dir": "essays/023_say"
   },
   {
     "title": "The Word \"Hacker\"",
     "slug": "gba",
     "url": "https://www.paulgraham.com/gba.html",
-    "dir": "essays/203_gba"
+    "dir": "essays/024_gba"
   },
   {
     "title": "How to Make Wealth",
     "slug": "wealth",
     "url": "https://www.paulgraham.com/wealth.html",
-    "dir": "essays/202_wealth"
+    "dir": "essays/025_wealth"
   },
   {
     "title": "Mind the Gap",
     "slug": "gap",
     "url": "https://www.paulgraham.com/gap.html",
-    "dir": "essays/201_gap"
+    "dir": "essays/026_gap"
   },
   {
     "title": "Great Hackers",
     "slug": "gh",
     "url": "https://www.paulgraham.com/gh.html",
-    "dir": "essays/200_gh"
+    "dir": "essays/027_gh"
   },
   {
     "title": "The Python Paradox",
     "slug": "pypar",
     "url": "https://www.paulgraham.com/pypar.html",
-    "dir": "essays/199_pypar"
+    "dir": "essays/028_pypar"
   },
   {
     "title": "The Age of the Essay",
     "slug": "essay",
     "url": "https://www.paulgraham.com/essay.html",
-    "dir": "essays/198_essay"
+    "dir": "essays/029_essay"
   },
   {
     "title": "What the Bubble Got Right",
     "slug": "bubble",
     "url": "https://www.paulgraham.com/bubble.html",
-    "dir": "essays/197_bubble"
+    "dir": "essays/030_bubble"
   },
   {
     "title": "A Version 1.0",
     "slug": "laundry",
     "url": "https://www.paulgraham.com/laundry.html",
-    "dir": "essays/196_laundry"
+    "dir": "essays/031_laundry"
   },
   {
     "title": "Bradley's Ghost",
     "slug": "polls",
     "url": "https://www.paulgraham.com/polls.html",
-    "dir": "essays/195_polls"
+    "dir": "essays/032_polls"
   },
   {
     "title": "It's Charisma, Stupid",
     "slug": "charisma",
     "url": "https://www.paulgraham.com/charisma.html",
-    "dir": "essays/194_charisma"
+    "dir": "essays/033_charisma"
   },
   {
     "title": "Made in USA",
     "slug": "usa",
     "url": "https://www.paulgraham.com/usa.html",
-    "dir": "essays/193_usa"
+    "dir": "essays/034_usa"
   },
   {
     "title": "What You'll Wish You'd Known",
     "slug": "hs",
     "url": "https://www.paulgraham.com/hs.html",
-    "dir": "essays/192_hs"
+    "dir": "essays/035_hs"
   },
   {
     "title": "How to Start a Startup",
     "slug": "start",
     "url": "https://www.paulgraham.com/start.html",
-    "dir": "essays/191_start"
+    "dir": "essays/036_start"
   },
   {
     "title": "A Unified Theory of VC Suckage",
     "slug": "venturecapital",
     "url": "https://www.paulgraham.com/venturecapital.html",
-    "dir": "essays/190_venturecapital"
+    "dir": "essays/037_venturecapital"
   },
   {
     "title": "Undergraduation",
     "slug": "college",
     "url": "https://www.paulgraham.com/college.html",
-    "dir": "essays/189_college"
+    "dir": "essays/038_college"
   },
   {
     "title": "Writing,  Briefly",
     "slug": "writing44",
     "url": "https://www.paulgraham.com/writing44.html",
-    "dir": "essays/188_writing44"
+    "dir": "essays/039_writing44"
   },
   {
     "title": "Return of the Mac",
     "slug": "mac",
     "url": "https://www.paulgraham.com/mac.html",
-    "dir": "essays/187_mac"
+    "dir": "essays/040_mac"
   },
   {
     "title": "Why Smart People Have Bad Ideas",
     "slug": "bronze",
     "url": "https://www.paulgraham.com/bronze.html",
-    "dir": "essays/186_bronze"
+    "dir": "essays/041_bronze"
   },
   {
     "title": "The Submarine",
     "slug": "submarine",
     "url": "https://www.paulgraham.com/submarine.html",
-    "dir": "essays/185_submarine"
+    "dir": "essays/042_submarine"
   },
   {
     "title": "Hiring is Obsolete",
     "slug": "hiring",
     "url": "https://www.paulgraham.com/hiring.html",
-    "dir": "essays/184_hiring"
+    "dir": "essays/043_hiring"
   },
   {
     "title": "What Business Can Learn from Open Source",
     "slug": "opensource",
     "url": "https://www.paulgraham.com/opensource.html",
-    "dir": "essays/183_opensource"
+    "dir": "essays/044_opensource"
   },
   {
     "title": "After the Ladder",
     "slug": "ladder",
     "url": "https://www.paulgraham.com/ladder.html",
-    "dir": "essays/182_ladder"
+    "dir": "essays/045_ladder"
   },
   {
     "title": "Inequality and Risk",
     "slug": "inequality",
     "url": "https://www.paulgraham.com/inequality.html",
-    "dir": "essays/181_inequality"
+    "dir": "essays/046_inequality"
   },
   {
     "title": "What I Did this Summer",
     "slug": "sfp",
     "url": "https://www.paulgraham.com/sfp.html",
-    "dir": "essays/180_sfp"
+    "dir": "essays/047_sfp"
   },
   {
     "title": "Ideas for Startups",
     "slug": "ideas",
     "url": "https://www.paulgraham.com/ideas.html",
-    "dir": "essays/179_ideas"
+    "dir": "essays/048_ideas"
   },
   {
     "title": "The Venture Capital Squeeze",
     "slug": "vcsqueeze",
     "url": "https://www.paulgraham.com/vcsqueeze.html",
-    "dir": "essays/178_vcsqueeze"
+    "dir": "essays/049_vcsqueeze"
   },
   {
     "title": "How to Fund a Startup",
     "slug": "startupfunding",
     "url": "https://www.paulgraham.com/startupfunding.html",
-    "dir": "essays/177_startupfunding"
+    "dir": "essays/050_startupfunding"
   },
   {
     "title": "Web 2.0",
     "slug": "web20",
     "url": "https://www.paulgraham.com/web20.html",
-    "dir": "essays/176_web20"
+    "dir": "essays/051_web20"
   },
   {
     "title": "Good and Bad Procrastination",
     "slug": "procrastination",
     "url": "https://www.paulgraham.com/procrastination.html",
-    "dir": "essays/175_procrastination"
+    "dir": "essays/052_procrastination"
   },
   {
     "title": "How to Do What You Love",
     "slug": "love",
     "url": "https://www.paulgraham.com/love.html",
-    "dir": "essays/174_love"
+    "dir": "essays/053_love"
   },
   {
     "title": "Why YC",
     "slug": "whyyc",
     "url": "https://www.paulgraham.com/whyyc.html",
-    "dir": "essays/173_whyyc"
+    "dir": "essays/054_whyyc"
   },
   {
     "title": "6,631,372",
     "slug": "6631327",
     "url": "https://www.paulgraham.com/6631327.html",
-    "dir": "essays/172_6631327"
+    "dir": "essays/055_6631327"
   },
   {
     "title": "Are Software Patents Evil?",
     "slug": "softwarepatents",
     "url": "https://www.paulgraham.com/softwarepatents.html",
-    "dir": "essays/171_softwarepatents"
+    "dir": "essays/056_softwarepatents"
   },
   {
     "title": "See Randomness",
     "slug": "randomness",
     "url": "https://www.paulgraham.com/randomness.html",
-    "dir": "essays/170_randomness"
+    "dir": "essays/057_randomness"
   },
   {
     "title": "The Hardest Lessons for Startups to Learn",
     "slug": "startuplessons",
     "url": "https://www.paulgraham.com/startuplessons.html",
-    "dir": "essays/169_startuplessons"
+    "dir": "essays/058_startuplessons"
   },
   {
     "title": "How to Be Silicon Valley",
     "slug": "siliconvalley",
     "url": "https://www.paulgraham.com/siliconvalley.html",
-    "dir": "essays/168_siliconvalley"
+    "dir": "essays/059_siliconvalley"
   },
   {
     "title": "Why Startups Condense in America",
     "slug": "america",
     "url": "https://www.paulgraham.com/america.html",
-    "dir": "essays/167_america"
+    "dir": "essays/060_america"
   },
   {
     "title": "The Power of the Marginal",
     "slug": "marginal",
     "url": "https://www.paulgraham.com/marginal.html",
-    "dir": "essays/166_marginal"
+    "dir": "essays/061_marginal"
   },
   {
     "title": "The Island Test",
     "slug": "island",
     "url": "https://www.paulgraham.com/island.html",
-    "dir": "essays/165_island"
+    "dir": "essays/062_island"
   },
   {
     "title": "Copy What You Like",
     "slug": "copy",
     "url": "https://www.paulgraham.com/copy.html",
-    "dir": "essays/164_copy"
+    "dir": "essays/063_copy"
   },
   {
     "title": "How to Present to Investors",
     "slug": "investors",
     "url": "https://www.paulgraham.com/investors.html",
-    "dir": "essays/163_investors"
+    "dir": "essays/064_investors"
   },
   {
     "title": "A Student's Guide to Startups",
     "slug": "mit",
     "url": "https://www.paulgraham.com/mit.html",
-    "dir": "essays/162_mit"
+    "dir": "essays/065_mit"
   },
   {
     "title": "The 18 Mistakes That Kill Startups",
     "slug": "startupmistakes",
     "url": "https://www.paulgraham.com/startupmistakes.html",
-    "dir": "essays/161_startupmistakes"
+    "dir": "essays/066_startupmistakes"
   },
   {
     "title": "How Art Can Be Good",
     "slug": "goodart",
     "url": "https://www.paulgraham.com/goodart.html",
-    "dir": "essays/160_goodart"
+    "dir": "essays/067_goodart"
   },
   {
     "title": "Learning from Founders",
     "slug": "foundersatwork",
     "url": "https://www.paulgraham.com/foundersatwork.html",
-    "dir": "essays/159_foundersatwork"
+    "dir": "essays/068_foundersatwork"
   },
   {
     "title": "Is It Worth Being Wise?",
     "slug": "wisdom",
     "url": "https://www.paulgraham.com/wisdom.html",
-    "dir": "essays/158_wisdom"
+    "dir": "essays/069_wisdom"
   },
   {
     "title": "Why to Not Not Start a Startup",
     "slug": "notnot",
     "url": "https://www.paulgraham.com/notnot.html",
-    "dir": "essays/157_notnot"
+    "dir": "essays/070_notnot"
   },
   {
     "title": "Microsoft is Dead",
     "slug": "microsoft",
     "url": "https://www.paulgraham.com/microsoft.html",
-    "dir": "essays/156_microsoft"
+    "dir": "essays/071_microsoft"
   },
   {
     "title": "Two Kinds of Judgement",
     "slug": "judgement",
     "url": "https://www.paulgraham.com/judgement.html",
-    "dir": "essays/155_judgement"
+    "dir": "essays/072_judgement"
   },
   {
     "title": "The Hacker's Guide to Investors",
     "slug": "guidetoinvestors",
     "url": "https://www.paulgraham.com/guidetoinvestors.html",
-    "dir": "essays/154_guidetoinvestors"
+    "dir": "essays/073_guidetoinvestors"
   },
   {
     "title": "An Alternative Theory of Unions",
     "slug": "unions",
     "url": "https://www.paulgraham.com/unions.html",
-    "dir": "essays/153_unions"
+    "dir": "essays/074_unions"
   },
   {
     "title": "The Equity Equation",
     "slug": "equity",
     "url": "https://www.paulgraham.com/equity.html",
-    "dir": "essays/152_equity"
+    "dir": "essays/075_equity"
   },
   {
     "title": "Stuff",
     "slug": "stuff",
     "url": "https://www.paulgraham.com/stuff.html",
-    "dir": "essays/151_stuff"
+    "dir": "essays/076_stuff"
   },
   {
     "title": "Holding a Program in One's Head",
     "slug": "head",
     "url": "https://www.paulgraham.com/head.html",
-    "dir": "essays/150_head"
+    "dir": "essays/077_head"
   },
   {
     "title": "How Not to Die",
     "slug": "die",
     "url": "https://www.paulgraham.com/die.html",
-    "dir": "essays/149_die"
+    "dir": "essays/078_die"
   },
   {
     "title": "News from the Front",
     "slug": "colleges",
     "url": "https://www.paulgraham.com/colleges.html",
-    "dir": "essays/148_colleges"
+    "dir": "essays/079_colleges"
   },
   {
     "title": "How to Do Philosophy",
     "slug": "philosophy",
     "url": "https://www.paulgraham.com/philosophy.html",
-    "dir": "essays/147_philosophy"
+    "dir": "essays/080_philosophy"
   },
   {
     "title": "The Future of Web Startups",
     "slug": "webstartups",
     "url": "https://www.paulgraham.com/webstartups.html",
-    "dir": "essays/146_webstartups"
+    "dir": "essays/081_webstartups"
   },
   {
     "title": "Why to Move to a Startup Hub",
     "slug": "startuphubs",
     "url": "https://www.paulgraham.com/startuphubs.html",
-    "dir": "essays/145_startuphubs"
+    "dir": "essays/082_startuphubs"
   },
   {
     "title": "Six Principles for Making New Things",
     "slug": "newthings",
     "url": "https://www.paulgraham.com/newthings.html",
-    "dir": "essays/144_newthings"
+    "dir": "essays/083_newthings"
   },
   {
     "title": "Trolls",
     "slug": "trolls",
     "url": "https://www.paulgraham.com/trolls.html",
-    "dir": "essays/143_trolls"
+    "dir": "essays/084_trolls"
   },
   {
     "title": "A New Venture Animal",
     "slug": "ycombinator",
     "url": "https://www.paulgraham.com/ycombinator.html",
-    "dir": "essays/142_ycombinator"
+    "dir": "essays/085_ycombinator"
   },
   {
     "title": "You Weren't Meant to Have a Boss",
     "slug": "boss",
     "url": "https://www.paulgraham.com/boss.html",
-    "dir": "essays/141_boss"
+    "dir": "essays/086_boss"
   },
   {
     "title": "How to Disagree",
     "slug": "disagree",
     "url": "https://www.paulgraham.com/disagree.html",
-    "dir": "essays/140_disagree"
+    "dir": "essays/087_disagree"
   },
   {
     "title": "Some Heroes",
     "slug": "heroes",
     "url": "https://www.paulgraham.com/heroes.html",
-    "dir": "essays/139_heroes"
+    "dir": "essays/088_heroes"
   },
   {
     "title": "Why There Aren't More Googles",
     "slug": "googles",
     "url": "https://www.paulgraham.com/googles.html",
-    "dir": "essays/138_googles"
+    "dir": "essays/089_googles"
   },
   {
     "title": "Be Good",
     "slug": "good",
     "url": "https://www.paulgraham.com/good.html",
-    "dir": "essays/137_good"
+    "dir": "essays/090_good"
   },
   {
     "title": "Lies We Tell Kids",
     "slug": "lies",
     "url": "https://www.paulgraham.com/lies.html",
-    "dir": "essays/136_lies"
+    "dir": "essays/091_lies"
   },
   {
     "title": "Disconnecting Distraction",
     "slug": "distraction",
     "url": "https://www.paulgraham.com/distraction.html",
-    "dir": "essays/135_distraction"
+    "dir": "essays/092_distraction"
   },
   {
     "title": "Cities and Ambition",
     "slug": "cities",
     "url": "https://www.paulgraham.com/cities.html",
-    "dir": "essays/134_cities"
+    "dir": "essays/093_cities"
   },
   {
     "title": "The Pooled-Risk Company Management Company",
     "slug": "prcmc",
     "url": "https://www.paulgraham.com/prcmc.html",
-    "dir": "essays/133_prcmc"
+    "dir": "essays/094_prcmc"
   },
   {
     "title": "A Fundraising Survival Guide",
     "slug": "fundraising",
     "url": "https://www.paulgraham.com/fundraising.html",
-    "dir": "essays/132_fundraising"
+    "dir": "essays/095_fundraising"
   },
   {
     "title": "Why to Start a Startup in a Bad Economy",
     "slug": "badeconomy",
     "url": "https://www.paulgraham.com/badeconomy.html",
-    "dir": "essays/131_badeconomy"
+    "dir": "essays/096_badeconomy"
   },
   {
     "title": "The Other Half of \"Artists Ship\"  ",
     "slug": "artistsship",
     "url": "https://www.paulgraham.com/artistsship.html",
-    "dir": "essays/130_artistsship"
+    "dir": "essays/097_artistsship"
   },
   {
     "title": "The High-Res Society",
     "slug": "highres",
     "url": "https://www.paulgraham.com/highres.html",
-    "dir": "essays/129_highres"
+    "dir": "essays/098_highres"
   },
   {
     "title": "Could VC be a Casualty of the Recession?",
     "slug": "divergence",
     "url": "https://www.paulgraham.com/divergence.html",
-    "dir": "essays/128_divergence"
+    "dir": "essays/099_divergence"
   },
   {
     "title": "After Credentials",
     "slug": "credentials",
     "url": "https://www.paulgraham.com/credentials.html",
-    "dir": "essays/127_credentials"
+    "dir": "essays/100_credentials"
   },
   {
     "title": "Keep Your Identity Small  ",
     "slug": "identity",
     "url": "https://www.paulgraham.com/identity.html",
-    "dir": "essays/126_identity"
+    "dir": "essays/101_identity"
   },
   {
     "title": "Startups in 13 Sentences",
     "slug": "13sentences",
     "url": "https://www.paulgraham.com/13sentences.html",
-    "dir": "essays/125_13sentences"
+    "dir": "essays/102_13sentences"
   },
   {
     "title": "What I've Learned from Hacker News",
     "slug": "hackernews",
     "url": "https://www.paulgraham.com/hackernews.html",
-    "dir": "essays/124_hackernews"
+    "dir": "essays/103_hackernews"
   },
   {
     "title": "Can You Buy a Silicon Valley?  Maybe.",
     "slug": "maybe",
     "url": "https://www.paulgraham.com/maybe.html",
-    "dir": "essays/123_maybe"
+    "dir": "essays/104_maybe"
   },
   {
     "title": "Why TV Lost",
     "slug": "convergence",
     "url": "https://www.paulgraham.com/convergence.html",
-    "dir": "essays/122_convergence"
+    "dir": "essays/105_convergence"
   },
   {
     "title": "How to Be an Angel Investor",
     "slug": "angelinvesting",
     "url": "https://www.paulgraham.com/angelinvesting.html",
-    "dir": "essays/121_angelinvesting"
+    "dir": "essays/106_angelinvesting"
   },
   {
     "title": "Relentlessly Resourceful",
     "slug": "relres",
     "url": "https://www.paulgraham.com/relres.html",
-    "dir": "essays/120_relres"
+    "dir": "essays/107_relres"
   },
   {
     "title": "Five Founders",
     "slug": "5founders",
     "url": "https://www.paulgraham.com/5founders.html",
-    "dir": "essays/119_5founders"
+    "dir": "essays/108_5founders"
   },
   {
     "title": "The Founder Visa",
     "slug": "foundervisa",
     "url": "https://www.paulgraham.com/foundervisa.html",
-    "dir": "essays/118_foundervisa"
+    "dir": "essays/109_foundervisa"
   },
   {
     "title": "Why Twitter is a Big Deal",
     "slug": "twitter",
     "url": "https://www.paulgraham.com/twitter.html",
-    "dir": "essays/117_twitter"
+    "dir": "essays/110_twitter"
   },
   {
     "title": "A Local Revolution?",
     "slug": "revolution",
     "url": "https://www.paulgraham.com/revolution.html",
-    "dir": "essays/116_revolution"
+    "dir": "essays/111_revolution"
   },
   {
     "title": "Maker's Schedule, Manager's Schedule ",
     "slug": "makersschedule",
     "url": "https://www.paulgraham.com/makersschedule.html",
-    "dir": "essays/115_makersschedule"
+    "dir": "essays/112_makersschedule"
   },
   {
     "title": "Ramen Profitable",
     "slug": "ramenprofitable",
     "url": "https://www.paulgraham.com/ramenprofitable.html",
-    "dir": "essays/114_ramenprofitable"
+    "dir": "essays/113_ramenprofitable"
   },
   {
     "title": "The Trouble with the Segway",
     "slug": "segway",
     "url": "https://www.paulgraham.com/segway.html",
-    "dir": "essays/113_segway"
+    "dir": "essays/114_segway"
   },
   {
     "title": "What Kate Saw in Silicon Valley  ",
     "slug": "kate",
     "url": "https://www.paulgraham.com/kate.html",
-    "dir": "essays/112_kate"
+    "dir": "essays/115_kate"
   },
   {
     "title": "The Anatomy of Determination ",
     "slug": "determination",
     "url": "https://www.paulgraham.com/determination.html",
-    "dir": "essays/111_determination"
+    "dir": "essays/116_determination"
   },
   {
     "title": "The List of N Things",
     "slug": "nthings",
     "url": "https://www.paulgraham.com/nthings.html",
-    "dir": "essays/110_nthings"
+    "dir": "essays/117_nthings"
   },
   {
     "title": "Post-Medium Publishing",
     "slug": "publishing",
     "url": "https://www.paulgraham.com/publishing.html",
-    "dir": "essays/109_publishing"
+    "dir": "essays/118_publishing"
   },
   {
     "title": "Persuade xor Discover ",
     "slug": "discover",
     "url": "https://www.paulgraham.com/discover.html",
-    "dir": "essays/108_discover"
+    "dir": "essays/119_discover"
   },
   {
     "title": "What Startups Are Really Like",
     "slug": "really",
     "url": "https://www.paulgraham.com/really.html",
-    "dir": "essays/107_really"
+    "dir": "essays/120_really"
   },
   {
     "title": "Apple's Mistake",
     "slug": "apple",
     "url": "https://www.paulgraham.com/apple.html",
-    "dir": "essays/106_apple"
+    "dir": "essays/121_apple"
   },
   {
     "title": "Organic Startup Ideas",
     "slug": "organic",
     "url": "https://www.paulgraham.com/organic.html",
-    "dir": "essays/105_organic"
+    "dir": "essays/122_organic"
   },
   {
     "title": "How to Lose Time and Money ",
     "slug": "selfindulgence",
     "url": "https://www.paulgraham.com/selfindulgence.html",
-    "dir": "essays/104_selfindulgence"
+    "dir": "essays/123_selfindulgence"
   },
   {
     "title": "The Top Idea in Your Mind ",
     "slug": "top",
     "url": "https://www.paulgraham.com/top.html",
-    "dir": "essays/103_top"
+    "dir": "essays/124_top"
   },
   {
     "title": "The Acceleration of Addictiveness",
     "slug": "addiction",
     "url": "https://www.paulgraham.com/addiction.html",
-    "dir": "essays/102_addiction"
+    "dir": "essays/125_addiction"
   },
   {
     "title": "The Future of Startup Funding ",
     "slug": "future",
     "url": "https://www.paulgraham.com/future.html",
-    "dir": "essays/101_future"
+    "dir": "essays/126_future"
   },
   {
     "title": "What Happened to Yahoo ",
     "slug": "yahoo",
     "url": "https://www.paulgraham.com/yahoo.html",
-    "dir": "essays/100_yahoo"
+    "dir": "essays/127_yahoo"
   },
   {
     "title": "High Resolution Fundraising ",
     "slug": "hiresfund",
     "url": "https://www.paulgraham.com/hiresfund.html",
-    "dir": "essays/099_hiresfund"
+    "dir": "essays/128_hiresfund"
   },
   {
     "title": "Where to See Silicon Valley",
     "slug": "seesv",
     "url": "https://www.paulgraham.com/seesv.html",
-    "dir": "essays/098_seesv"
+    "dir": "essays/129_seesv"
   },
   {
     "title": "The New Funding Landscape",
     "slug": "superangels",
     "url": "https://www.paulgraham.com/superangels.html",
-    "dir": "essays/097_superangels"
+    "dir": "essays/130_superangels"
   },
   {
     "title": "What We Look for in Founders",
     "slug": "founders",
     "url": "https://www.paulgraham.com/founders.html",
-    "dir": "essays/096_founders"
+    "dir": "essays/131_founders"
   },
   {
     "title": "Tablets",
     "slug": "tablets",
     "url": "https://www.paulgraham.com/tablets.html",
-    "dir": "essays/095_tablets"
+    "dir": "essays/132_tablets"
   },
   {
     "title": "Founder Control",
     "slug": "control",
     "url": "https://www.paulgraham.com/control.html",
-    "dir": "essays/094_control"
+    "dir": "essays/133_control"
   },
   {
     "title": "Subject: Airbnb",
     "slug": "airbnb",
     "url": "https://www.paulgraham.com/airbnb.html",
-    "dir": "essays/093_airbnb"
+    "dir": "essays/134_airbnb"
   },
   {
     "title": "The Patent Pledge",
     "slug": "patentpledge",
     "url": "https://www.paulgraham.com/patentpledge.html",
-    "dir": "essays/092_patentpledge"
+    "dir": "essays/135_patentpledge"
   },
   {
     "title": "Why Startup Hubs Work",
     "slug": "hubs",
     "url": "https://www.paulgraham.com/hubs.html",
-    "dir": "essays/091_hubs"
+    "dir": "essays/136_hubs"
   },
   {
     "title": "Snapshot: Viaweb, June 1998",
     "slug": "vw",
     "url": "https://www.paulgraham.com/vw.html",
-    "dir": "essays/090_vw"
+    "dir": "essays/137_vw"
   },
   {
     "title": "Schlep Blindness",
     "slug": "schlep",
     "url": "https://www.paulgraham.com/schlep.html",
-    "dir": "essays/089_schlep"
+    "dir": "essays/138_schlep"
   },
   {
     "title": "A Word to the Resourceful",
     "slug": "word",
     "url": "https://www.paulgraham.com/word.html",
-    "dir": "essays/088_word"
+    "dir": "essays/139_word"
   },
   {
     "title": "Frighteningly Ambitious Startup Ideas",
     "slug": "ambitious",
     "url": "https://www.paulgraham.com/ambitious.html",
-    "dir": "essays/087_ambitious"
+    "dir": "essays/140_ambitious"
   },
   {
     "title": "Defining Property",
     "slug": "property",
     "url": "https://www.paulgraham.com/property.html",
-    "dir": "essays/086_property"
+    "dir": "essays/141_property"
   },
   {
     "title": "How Y Combinator Started",
     "slug": "ycstart",
     "url": "https://www.paulgraham.com/ycstart.html",
-    "dir": "essays/085_ycstart"
+    "dir": "essays/142_ycstart"
   },
   {
     "title": "Writing and Speaking",
     "slug": "speak",
     "url": "https://www.paulgraham.com/speak.html",
-    "dir": "essays/084_speak"
+    "dir": "essays/143_speak"
   },
   {
     "title": "The Top of My Todo List",
     "slug": "todo",
     "url": "https://www.paulgraham.com/todo.html",
-    "dir": "essays/083_todo"
+    "dir": "essays/144_todo"
   },
   {
     "title": "Black Swan Farming",
     "slug": "swan",
     "url": "https://www.paulgraham.com/swan.html",
-    "dir": "essays/082_swan"
+    "dir": "essays/145_swan"
   },
   {
     "title": "Startup = Growth",
     "slug": "growth",
     "url": "https://www.paulgraham.com/growth.html",
-    "dir": "essays/081_growth"
+    "dir": "essays/146_growth"
   },
   {
     "title": "The Hardware Renaissance",
     "slug": "hw",
     "url": "https://www.paulgraham.com/hw.html",
-    "dir": "essays/080_hw"
+    "dir": "essays/147_hw"
   },
   {
     "title": "How to Get Startup Ideas",
     "slug": "startupideas",
     "url": "https://www.paulgraham.com/startupideas.html",
-    "dir": "essays/079_startupideas"
+    "dir": "essays/148_startupideas"
   },
   {
     "title": "Startup Investing Trends",
     "slug": "invtrend",
     "url": "https://www.paulgraham.com/invtrend.html",
-    "dir": "essays/078_invtrend"
+    "dir": "essays/149_invtrend"
   },
   {
     "title": "Do Things that Don't Scale",
     "slug": "ds",
     "url": "https://www.paulgraham.com/ds.html",
-    "dir": "essays/077_ds"
+    "dir": "essays/150_ds"
   },
   {
     "title": "How to Convince Investors",
     "slug": "convince",
     "url": "https://www.paulgraham.com/convince.html",
-    "dir": "essays/076_convince"
+    "dir": "essays/151_convince"
   },
   {
     "title": "Investor Herd Dynamics",
     "slug": "herd",
     "url": "https://www.paulgraham.com/herd.html",
-    "dir": "essays/075_herd"
+    "dir": "essays/152_herd"
   },
   {
     "title": "How to Raise Money",
     "slug": "fr",
     "url": "https://www.paulgraham.com/fr.html",
-    "dir": "essays/074_fr"
+    "dir": "essays/153_fr"
   },
   {
     "title": "Before the Startup",
     "slug": "before",
     "url": "https://www.paulgraham.com/before.html",
-    "dir": "essays/073_before"
+    "dir": "essays/154_before"
   },
   {
     "title": "Mean People Fail",
     "slug": "mean",
     "url": "https://www.paulgraham.com/mean.html",
-    "dir": "essays/072_mean"
+    "dir": "essays/155_mean"
   },
   {
     "title": "The Fatal Pinch",
     "slug": "pinch",
     "url": "https://www.paulgraham.com/pinch.html",
-    "dir": "essays/071_pinch"
+    "dir": "essays/156_pinch"
   },
   {
     "title": "How You Know",
     "slug": "know",
     "url": "https://www.paulgraham.com/know.html",
-    "dir": "essays/070_know"
+    "dir": "essays/157_know"
   },
   {
     "title": "How to Be an Expert in a Changing World",
     "slug": "ecw",
     "url": "https://www.paulgraham.com/ecw.html",
-    "dir": "essays/069_ecw"
+    "dir": "essays/158_ecw"
   },
   {
     "title": "Let the Other 95% of Great Programmers In",
     "slug": "95",
     "url": "https://www.paulgraham.com/95.html",
-    "dir": "essays/068_95"
+    "dir": "essays/159_95"
   },
   {
     "title": "Don't Talk to Corp Dev",
     "slug": "corpdev",
     "url": "https://www.paulgraham.com/corpdev.html",
-    "dir": "essays/067_corpdev"
+    "dir": "essays/160_corpdev"
   },
   {
     "title": "What Doesn't Seem Like Work?",
     "slug": "work",
     "url": "https://www.paulgraham.com/work.html",
-    "dir": "essays/066_work"
+    "dir": "essays/161_work"
   },
   {
     "title": "The Ronco Principle",
     "slug": "ronco",
     "url": "https://www.paulgraham.com/ronco.html",
-    "dir": "essays/065_ronco"
+    "dir": "essays/162_ronco"
   },
   {
     "title": "What Microsoft Is this the Altair Basic of?",
     "slug": "altair",
     "url": "https://www.paulgraham.com/altair.html",
-    "dir": "essays/064_altair"
+    "dir": "essays/163_altair"
   },
   {
     "title": "Change Your Name",
     "slug": "name",
     "url": "https://www.paulgraham.com/name.html",
-    "dir": "essays/063_name"
+    "dir": "essays/164_name"
   },
   {
     "title": "Why It's Safe for Founders to Be Nice",
     "slug": "safe",
     "url": "https://www.paulgraham.com/safe.html",
-    "dir": "essays/062_safe"
+    "dir": "essays/165_safe"
   },
   {
     "title": "Default Alive or Default Dead?",
     "slug": "aord",
     "url": "https://www.paulgraham.com/aord.html",
-    "dir": "essays/061_aord"
+    "dir": "essays/166_aord"
   },
   {
     "title": "Write Like You Talk",
     "slug": "talk",
     "url": "https://www.paulgraham.com/talk.html",
-    "dir": "essays/060_talk"
+    "dir": "essays/167_talk"
   },
   {
     "title": "A Way to Detect Bias",
     "slug": "bias",
     "url": "https://www.paulgraham.com/bias.html",
-    "dir": "essays/059_bias"
+    "dir": "essays/168_bias"
   },
   {
     "title": "Jessica Livingston",
     "slug": "jessica",
     "url": "https://www.paulgraham.com/jessica.html",
-    "dir": "essays/058_jessica"
+    "dir": "essays/169_jessica"
   },
   {
     "title": "The Refragmentation",
     "slug": "re",
     "url": "https://www.paulgraham.com/re.html",
-    "dir": "essays/057_re"
+    "dir": "essays/170_re"
   },
   {
     "title": "Economic Inequality",
     "slug": "ineq",
     "url": "https://www.paulgraham.com/ineq.html",
-    "dir": "essays/056_ineq"
+    "dir": "essays/171_ineq"
   },
   {
     "title": "Life is Short",
     "slug": "vb",
     "url": "https://www.paulgraham.com/vb.html",
-    "dir": "essays/055_vb"
+    "dir": "essays/172_vb"
   },
   {
     "title": "How to Make Pittsburgh a Startup Hub",
     "slug": "pgh",
     "url": "https://www.paulgraham.com/pgh.html",
-    "dir": "essays/054_pgh"
+    "dir": "essays/173_pgh"
   },
   {
     "title": "The Risk of Discovery",
     "slug": "disc",
     "url": "https://www.paulgraham.com/disc.html",
-    "dir": "essays/053_disc"
+    "dir": "essays/174_disc"
   },
   {
     "title": "Charisma / Power",
     "slug": "pow",
     "url": "https://www.paulgraham.com/pow.html",
-    "dir": "essays/052_pow"
+    "dir": "essays/175_pow"
   },
   {
     "title": "General and Surprising",
     "slug": "sun",
     "url": "https://www.paulgraham.com/sun.html",
-    "dir": "essays/051_sun"
+    "dir": "essays/176_sun"
   },
   {
     "title": "The Bus Ticket Theory of Genius",
     "slug": "genius",
     "url": "https://www.paulgraham.com/genius.html",
-    "dir": "essays/050_genius"
+    "dir": "essays/177_genius"
   },
   {
     "title": "Novelty and Heresy",
     "slug": "nov",
     "url": "https://www.paulgraham.com/nov.html",
-    "dir": "essays/049_nov"
+    "dir": "essays/178_nov"
   },
   {
     "title": "The Lesson to Unlearn",
     "slug": "lesson",
     "url": "https://www.paulgraham.com/lesson.html",
-    "dir": "essays/048_lesson"
+    "dir": "essays/179_lesson"
   },
   {
     "title": "Having Kids",
     "slug": "kids",
     "url": "https://www.paulgraham.com/kids.html",
-    "dir": "essays/047_kids"
+    "dir": "essays/180_kids"
   },
   {
     "title": "Fashionable Problems",
     "slug": "fp",
     "url": "https://www.paulgraham.com/fp.html",
-    "dir": "essays/046_fp"
+    "dir": "essays/181_fp"
   },
   {
     "title": "The Two Kinds of Moderate",
     "slug": "mod",
     "url": "https://www.paulgraham.com/mod.html",
-    "dir": "essays/045_mod"
+    "dir": "essays/182_mod"
   },
   {
     "title": "Haters",
     "slug": "fh",
     "url": "https://www.paulgraham.com/fh.html",
-    "dir": "essays/044_fh"
+    "dir": "essays/183_fh"
   },
   {
     "title": "Being a Noob",
     "slug": "noob",
     "url": "https://www.paulgraham.com/noob.html",
-    "dir": "essays/043_noob"
+    "dir": "essays/184_noob"
   },
   {
     "title": "How to Write Usefully",
     "slug": "useful",
     "url": "https://www.paulgraham.com/useful.html",
-    "dir": "essays/042_useful"
+    "dir": "essays/185_useful"
   },
   {
     "title": "Coronavirus and Credibility",
     "slug": "cred",
     "url": "https://www.paulgraham.com/cred.html",
-    "dir": "essays/041_cred"
+    "dir": "essays/186_cred"
   },
   {
     "title": "Orthodox Privilege",
     "slug": "orth",
     "url": "https://www.paulgraham.com/orth.html",
-    "dir": "essays/040_orth"
+    "dir": "essays/187_orth"
   },
   {
     "title": "The Four Quadrants of Conformism",
     "slug": "conformism",
     "url": "https://www.paulgraham.com/conformism.html",
-    "dir": "essays/039_conformism"
+    "dir": "essays/188_conformism"
   },
   {
     "title": "Modeling a Wealth Tax",
     "slug": "wtax",
     "url": "https://www.paulgraham.com/wtax.html",
-    "dir": "essays/038_wtax"
+    "dir": "essays/189_wtax"
   },
   {
     "title": "Early Work",
     "slug": "early",
     "url": "https://www.paulgraham.com/early.html",
-    "dir": "essays/037_early"
+    "dir": "essays/190_early"
   },
   {
     "title": "How to Think for Yourself",
     "slug": "think",
     "url": "https://www.paulgraham.com/think.html",
-    "dir": "essays/036_think"
+    "dir": "essays/191_think"
   },
   {
     "title": "The Airbnbs",
     "slug": "airbnbs",
     "url": "https://www.paulgraham.com/airbnbs.html",
-    "dir": "essays/035_airbnbs"
+    "dir": "essays/192_airbnbs"
   },
   {
     "title": "Billionaires Build",
     "slug": "ace",
     "url": "https://www.paulgraham.com/ace.html",
-    "dir": "essays/034_ace"
+    "dir": "essays/193_ace"
   },
   {
     "title": "Earnestness",
     "slug": "earnest",
     "url": "https://www.paulgraham.com/earnest.html",
-    "dir": "essays/033_earnest"
+    "dir": "essays/194_earnest"
   },
   {
     "title": "What I Worked On",
     "slug": "worked",
     "url": "https://www.paulgraham.com/worked.html",
-    "dir": "essays/032_worked"
+    "dir": "essays/195_worked"
   },
   {
     "title": "Donate Unrestricted",
     "slug": "donate",
     "url": "https://www.paulgraham.com/donate.html",
-    "dir": "essays/031_donate"
+    "dir": "essays/196_donate"
   },
   {
     "title": "Write Simply",
     "slug": "simply",
     "url": "https://www.paulgraham.com/simply.html",
-    "dir": "essays/030_simply"
+    "dir": "essays/197_simply"
   },
   {
     "title": "How People Get Rich Now",
     "slug": "richnow",
     "url": "https://www.paulgraham.com/richnow.html",
-    "dir": "essays/029_richnow"
+    "dir": "essays/198_richnow"
   },
   {
     "title": "The Real Reason to End the Death Penalty",
     "slug": "real",
     "url": "https://www.paulgraham.com/real.html",
-    "dir": "essays/028_real"
+    "dir": "essays/199_real"
   },
   {
     "title": "An NFT That Saves Lives",
     "slug": "nft",
     "url": "https://www.paulgraham.com/nft.html",
-    "dir": "essays/027_nft"
+    "dir": "essays/200_nft"
   },
   {
     "title": "Crazy New Ideas",
     "slug": "newideas",
     "url": "https://www.paulgraham.com/newideas.html",
-    "dir": "essays/026_newideas"
+    "dir": "essays/201_newideas"
   },
   {
     "title": "Fierce Nerds",
     "slug": "fn",
     "url": "https://www.paulgraham.com/fn.html",
-    "dir": "essays/025_fn"
+    "dir": "essays/202_fn"
   },
   {
     "title": "A Project of One's Own",
     "slug": "own",
     "url": "https://www.paulgraham.com/own.html",
-    "dir": "essays/024_own"
+    "dir": "essays/203_own"
   },
   {
     "title": "How to Work Hard",
     "slug": "hwh",
     "url": "https://www.paulgraham.com/hwh.html",
-    "dir": "essays/023_hwh"
+    "dir": "essays/204_hwh"
   },
   {
     "title": "Weird Languages",
     "slug": "weird",
     "url": "https://www.paulgraham.com/weird.html",
-    "dir": "essays/022_weird"
+    "dir": "essays/205_weird"
   },
   {
     "title": "Beyond Smart",
     "slug": "smart",
     "url": "https://www.paulgraham.com/smart.html",
-    "dir": "essays/021_smart"
+    "dir": "essays/206_smart"
   },
   {
     "title": "Is There Such a Thing as Good Taste?",
     "slug": "goodtaste",
     "url": "https://www.paulgraham.com/goodtaste.html",
-    "dir": "essays/020_goodtaste"
+    "dir": "essays/207_goodtaste"
   },
   {
     "title": "Putting Ideas into Words",
     "slug": "words",
     "url": "https://www.paulgraham.com/words.html",
-    "dir": "essays/019_words"
+    "dir": "essays/208_words"
   },
   {
     "title": "Heresy",
     "slug": "heresy",
     "url": "https://www.paulgraham.com/heresy.html",
-    "dir": "essays/018_heresy"
+    "dir": "essays/209_heresy"
   },
   {
     "title": "What I've Learned from Users",
     "slug": "users",
     "url": "https://www.paulgraham.com/users.html",
-    "dir": "essays/017_users"
+    "dir": "essays/210_users"
   },
   {
     "title": "Alien Truth",
     "slug": "alien",
     "url": "https://www.paulgraham.com/alien.html",
-    "dir": "essays/016_alien"
+    "dir": "essays/211_alien"
   },
   {
     "title": "What You (Want to)* Want",
     "slug": "want",
     "url": "https://www.paulgraham.com/want.html",
-    "dir": "essays/015_want"
+    "dir": "essays/212_want"
   },
   {
     "title": "The Need to Read",
     "slug": "read",
     "url": "https://www.paulgraham.com/read.html",
-    "dir": "essays/014_read"
+    "dir": "essays/213_read"
   },
   {
     "title": "How to Get New Ideas",
     "slug": "getideas",
     "url": "https://www.paulgraham.com/getideas.html",
-    "dir": "essays/013_getideas"
+    "dir": "essays/214_getideas"
   },
   {
     "title": "How to Do Great Work",
     "slug": "greatwork",
     "url": "https://www.paulgraham.com/greatwork.html",
-    "dir": "essays/012_greatwork"
+    "dir": "essays/215_greatwork"
   },
   {
     "title": "Superlinear Returns",
     "slug": "superlinear",
     "url": "https://www.paulgraham.com/superlinear.html",
-    "dir": "essays/011_superlinear"
+    "dir": "essays/216_superlinear"
   },
   {
     "title": "The Best Essay",
     "slug": "best",
     "url": "https://www.paulgraham.com/best.html",
-    "dir": "essays/010_best"
+    "dir": "essays/217_best"
   },
   {
     "title": "How to Start Google",
     "slug": "google",
     "url": "https://www.paulgraham.com/google.html",
-    "dir": "essays/009_google"
+    "dir": "essays/218_google"
   },
   {
     "title": "The Reddits",
     "slug": "reddits",
     "url": "https://www.paulgraham.com/reddits.html",
-    "dir": "essays/008_reddits"
+    "dir": "essays/219_reddits"
   },
   {
     "title": "The Right Kind of Stubborn",
     "slug": "persistence",
     "url": "https://www.paulgraham.com/persistence.html",
-    "dir": "essays/007_persistence"
+    "dir": "essays/220_persistence"
   },
   {
     "title": "Founder Mode",
     "slug": "foundermode",
     "url": "https://www.paulgraham.com/foundermode.html",
-    "dir": "essays/006_foundermode"
+    "dir": "essays/221_foundermode"
   },
   {
     "title": "When To Do What You Love",
     "slug": "when",
     "url": "https://www.paulgraham.com/when.html",
-    "dir": "essays/005_when"
+    "dir": "essays/222_when"
   },
   {
     "title": "Writes and Write-Nots",
     "slug": "writes",
     "url": "https://www.paulgraham.com/writes.html",
-    "dir": "essays/004_writes"
+    "dir": "essays/223_writes"
   },
   {
     "title": "The Origins of Wokeness",
     "slug": "woke",
     "url": "https://www.paulgraham.com/woke.html",
-    "dir": "essays/003_woke"
+    "dir": "essays/224_woke"
   },
   {
     "title": "What to Do",
     "slug": "do",
     "url": "https://www.paulgraham.com/do.html",
-    "dir": "essays/002_do"
+    "dir": "essays/225_do"
   },
   {
     "title": "Good Writing",
     "slug": "goodwriting",
     "url": "https://www.paulgraham.com/goodwriting.html",
-    "dir": "essays/001_goodwriting"
+    "dir": "essays/226_goodwriting"
   },
   {
     "title": "The Shape of the Essay Field",
     "slug": "field",
     "url": "https://www.paulgraham.com/field.html",
-    "dir": "essays/000_field"
+    "dir": "essays/227_field"
   },
   {
     "title": "The Brand Age",
     "slug": "brandage",
     "url": "https://www.paulgraham.com/brandage.html",
-    "dir": "essays/230_brandage"
+    "dir": "essays/228_brandage"
   },
   {
     "title": "How to Convert Between Wealth and Income Tax",
     "slug": "winc",
     "url": "https://www.paulgraham.com/winc.html",
-    "dir": "essays/231_winc"
+    "dir": "essays/229_winc"
   },
   {
     "title": "How to Earn a Billion Dollars",
     "slug": "earn",
     "url": "https://www.paulgraham.com/earn.html",
-    "dir": "essays/232_earn"
+    "dir": "essays/230_earn"
   }
 ]
