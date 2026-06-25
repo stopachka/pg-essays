@@ -1366,5 +1366,23 @@
     "slug": "field",
     "url": "https://www.paulgraham.com/field.html",
     "dir": "essays/000_field"
+  },
+  {
+    "title": "The Brand Age",
+    "slug": "brandage",
+    "url": "https://www.paulgraham.com/brandage.html",
+    "dir": "essays/230_brandage"
+  },
+  {
+    "title": "How to Convert Between Wealth and Income Tax",
+    "slug": "winc",
+    "url": "https://www.paulgraham.com/winc.html",
+    "dir": "essays/231_winc"
+  },
+  {
+    "title": "How to Earn a Billion Dollars",
+    "slug": "earn",
+    "url": "https://www.paulgraham.com/earn.html",
+    "dir": "essays/232_earn"
   }
 ]
